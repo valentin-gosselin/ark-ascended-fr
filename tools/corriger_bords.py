@@ -20,8 +20,19 @@ def bords(s):
     return re.match(r"^\s*", s).group(), re.search(r"\s*$", s).group()
 
 
+def placeholders(s):
+    return re.findall(r"\{[A-Za-z0-9_.:|]*\}", s)
+
+
 def corriger(en, fr):
     notes = []
+    # un placeholder est un identifiant, jamais du texte : {Targeting} traduit
+    # en {Ciblage} casserait la substitution à l'exécution
+    pe, pf = placeholders(en), placeholders(fr)
+    if pe != pf and len(pe) == len(pf):
+        for a, b in zip(pf, pe):
+            fr = fr.replace(a, b, 1)
+        notes.append("placeholders restaurés")
     # échappement littéral \n présent dans le source mais déplié dans la trad
     if "\\n" in en and "\n" in fr and "\\n" not in fr:
         fr = fr.replace("\n", "\\n")

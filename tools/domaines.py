@@ -58,14 +58,20 @@ CONTEXTES = {
     "interface_options": (
         "Libellés du menu Paramètres (audio, vidéo, graphismes, interface, "
         "caméra, commandes, manette). Style : impératif court et net, comme "
-        "dans les options d'un jeu PC. « Toggle » -> « Activer/Désactiver », "
-        "« Reset » -> « Réinitialiser », « Gamepad » -> « Manette », "
-        "« Cosmetics » -> « Cosmétiques », « UI » -> « Interface »."),
+        "dans les options d'un jeu PC. « Reset » -> « Réinitialiser », "
+        "« Gamepad » -> « Manette », « Cosmetics » -> « Cosmétiques », "
+        "« UI » -> « Interface ». **« Toggle X » se traduit par le verbe "
+        "d'action seul**, jamais par « Activer/Désactiver X » qui est trop long "
+        "pour un libellé : « Toggle HUD » -> « Afficher l'ATH », « Toggle "
+        "Fists » -> « Sortir les poings », « Toggle Lights » -> « Allumer les "
+        "lumières », « Toggle Map » -> « Afficher la carte »."),
     "interface_generale": (
         "Boutons, onglets, menus, navigateur de serveurs et ATH. Style : très "
         "concis, ce sont des libellés cliquables. « Back » -> « Retour » (JAMAIS "
         "« Dos »), « Hide » -> « Masquer », « Join Game » -> « Rejoindre une "
-        "partie », « Ping » reste « Ping », « Refresh » -> « Actualiser »."),
+        "partie », « Ping » reste « Ping », « Refresh » -> « Actualiser ». "
+        "**« Toggle X » se traduit par le verbe d'action seul** (« Afficher », "
+        "« Allumer », « Sortir »...), jamais par « Activer/Désactiver X »."),
     "creatures": (
         "Créatures, apprivoisement, élevage, selles. « Tame » -> « apprivoiser », "
         "« Saddle » -> « Selle », « Imprint » -> « Imprégnation », « Torpidity » "
