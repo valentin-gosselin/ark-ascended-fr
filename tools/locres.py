@@ -62,9 +62,31 @@ def w_fstring(out, s):
         out += struct.pack("<i", -(len(b) // 2)) + b
 
 
+def read_legacy(d):
+    """Locres v0 (ASE/UE4) : pas de magic, valeurs en ligne, pas de table."""
+    r = R(d)
+    ns_count = r.u32()
+    namespaces = []
+    strings = []
+    for _ in range(ns_count):
+        ns = r.fstring()
+        key_count = r.u32()
+        keys = []
+        for _ in range(key_count):
+            key = r.fstring()
+            src_hash = r.u32()
+            val = r.fstring()
+            keys.append((0, key, src_hash, len(strings)))
+            strings.append((val, 1))
+        namespaces.append((0, ns, keys))
+    total = sum(len(k) for _, _, k in namespaces)
+    return 0, namespaces, strings, total
+
+
 def read(path):
     d = open(path, "rb").read()
-    assert d[:16] == MAGIC, "pas un locres v2+"
+    if d[:16] != MAGIC:
+        return read_legacy(d)
     r = R(d, 16)
     version = r.u8()
     assert version >= 2, f"version locres {version} non gérée"
