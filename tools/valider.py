@@ -17,8 +17,23 @@ import re
 import sys
 
 
+# Un placeholder UE est un identifiant (pas d'espace) : {0}, {Multiplier}, {DayPct}.
+# Une accolade contenant une phrase est du texte affiché littéralement, donc
+# traduisible. Même logique pour les chevrons : <RichColor ...> est une balise,
+# « <Web tracing complete> » est du texte.
+PLACEHOLDER = re.compile(r"\{[A-Za-z0-9_.:|]*\}")
+# Balise = fermeture (</> ou </x>), auto-fermante (<x/>), attributs (<x a="b">)
+# ou mot seul (<br>). « <Web tracing complete> » n'entre dans aucun cas : c'est
+# du texte entre chevrons, donc traduisible.
+BALISE = re.compile(
+    r"</[^<>]*>"
+    r"|<[A-Za-z][A-Za-z0-9_.]*\s*/>"
+    r"|<[A-Za-z][A-Za-z0-9_.]*(?:\s+[A-Za-z0-9_.]+\s*=\s*[^<>]*)+/?>"
+    r"|<[A-Za-z][A-Za-z0-9_.]*>")
+
+
 def tokens(s):
-    return sorted(re.findall(r"\{[^{}]*\}", s)), sorted(re.findall(r"<[^<>]+>", s))
+    return sorted(PLACEHOLDER.findall(s)), sorted(BALISE.findall(s))
 
 
 def edges(s):
