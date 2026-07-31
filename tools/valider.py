@@ -45,7 +45,7 @@ def edges(s):
 def check(mode, in_dir, out_dir):
     errors = 0
     for in_path in sorted(glob.glob(os.path.join(in_dir, "in_*.json"))):
-        num = os.path.basename(in_path)[3:5]
+        num = os.path.basename(in_path)[3:-5]
         out_path = os.path.join(out_dir, f"{mode}_{num}.json")
         if not os.path.exists(out_path):
             print(f"[{mode}_{num}] MANQUANT")

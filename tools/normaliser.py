@@ -42,7 +42,7 @@ def main(in_dir, out_dir, prefix):
     total = 0
     detail = []
     for out_path in sorted(glob.glob(os.path.join(out_dir, f"{prefix}_*.json"))):
-        num = os.path.basename(out_path).split("_")[1].split(".")[0]
+        num = os.path.basename(out_path).split("_",1)[1].rsplit(".",1)[0]
         in_path = os.path.join(in_dir, f"in_{num}.json")
         if not os.path.exists(in_path):
             continue
