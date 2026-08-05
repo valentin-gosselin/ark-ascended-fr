@@ -1,4 +1,8 @@
-work/
+liboo2core*
+*.pak
+__pycache__/
+tools/oodle/
+tools/oodle.zip
 tools/repak.tar.gz
 tools/retoc.tar.gz
-tools/oodle.zip
+work/

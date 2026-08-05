@@ -1,58 +1,109 @@
-# Patch de traduction française pour ARK: Survival Ascended
+# TradFR — patch de traduction française pour ARK: Survival Ascended
 
-La traduction française officielle d'ASA est incomplète (~4 400 chaînes manquantes
-qui s'affichent en anglais) et truffée d'erreurs. Ce projet reconstruit un
-`ShooterGame.locres` français corrigé et le distribue sous forme d'un pak patch
-(`TradFR_P.pak`) à déposer dans le dossier `Paks` du jeu.
+La traduction française officielle d'ASA est incomplète (des milliers de chaînes
+s'affichent en anglais) et truffée d'erreurs (« Ammo » rendu par « Mais »,
+« Hide » par « Masquer », des noms latins déformés…). Ce patch remplace la
+traduction française entière par une version **révisée de bout en bout** :
 
-## Utilisation
+- **~35 400 chaînes relues ou retraduites** depuis l'anglais, lore compris
+- **3 466 chaînes ajoutées** qui n'existaient pas en français (elles
+  s'affichaient en anglais, même avec le jeu en français)
+- noms de créatures et d'objets **alignés sur ARK: Survival Evolved**
+  (les noms officiels que les joueurs connaissent : Smilodon, Croquette,
+  Argile, artefacts d'Evolved…)
+- accents corrigés dans les textes en capitales (fini les « SANTé » et
+  « DéGâTS DE MéLéE »), quêtes « Tuez N… » accordées en genre et en nombre,
+  séparateurs cassés des cartes au trésor réparés
 
-    ./build.py              # extrait, applique data/, packe et installe
+Aucun fichier du jeu n'est modifié : c'est un pak additionnel, compatible avec
+tous les serveurs (il n'agit que sur votre affichage).
+
+## Installation (joueurs)
+
+1. Téléchargez `TradFR_P.pak` dans la
+   [dernière release](../../releases/latest).
+2. Copiez-le dans le dossier du jeu :
+   `…\SteamLibrary\steamapps\common\ARK Survival Ascended\ShooterGame\Content\Paks\`
+   (sous Windows, `installer.bat` fourni dans la release fait la copie pour vous).
+3. Lancez le jeu en français. C'est tout.
+
+**Mise à jour** : retéléchargez le fichier de la nouvelle release et remplacez
+l'ancien (pas de mise à jour automatique — ce n'est pas un mod CurseForge).
+
+**Désinstallation** : supprimez `TradFR_P.pak` du dossier `Paks`.
+
+## Signaler une erreur, proposer une correction
+
+C'est un projet communautaire : chaque signalement améliore le patch pour tout
+le monde.
+
+- **Le plus simple** : [ouvrir une issue](../../issues/new/choose) avec une
+  capture d'écran et le texte fautif.
+- **Mieux** : proposer une pull request d'une ligne dans
+  `data/corrections.json` (`"namespace\tclé": "texte corrigé"` — la clé se
+  retrouve en cherchant le texte anglais dans `work/en.json` après extraction,
+  ou demandez dans l'issue).
+
+## Limitations connues (bugs du jeu, pas du patch)
+
+- L'ordre des plaques de créatures est imposé par le code du jeu :
+  « [Sauvage] Mâle Smilodon » (le nom arrive toujours en dernier).
+- Les descriptions d'objets affichées dans le panneau des structures perdent
+  leurs accents en capitales (« NéCESSITE… ») : le même texte s'affiche
+  normalement ailleurs, aucune donnée ne peut satisfaire les deux widgets.
+  La VF officielle a le même artefact.
+- « Crafting Requirements », « WEIGHT », « - {NAME} - » et le journal de tribu
+  en anglais viennent du code du jeu ou de mods, pas des fichiers de langue.
+- Les entrées passées du journal de tribu restent en anglais (elles sont
+  figées au moment de l'événement) ; les nouvelles seront en français.
+
+## Reconstruire le patch (mainteneurs)
+
+    ./build.py              # extrait les locres du jeu, applique data/, packe, installe
     ./build.py --no-install # sans copier dans le dossier du jeu
+    ./release.sh vX.Y.Z     # build + tag + release GitHub
 
-Désinstallation : supprimer `TradFR_P.pak` du dossier
-`ShooterGame/Content/Paks` du jeu (aucun fichier d'origine n'est modifié).
+Prérequis : le jeu installé (les locres d'origine sont extraits de
+`pakchunk0-Windows.pak`, ils ne sont pas distribuables), Python 3, et la
+bibliothèque de décompression Oodle (`liboo2corelinux64.so.9` à placer dans
+`tools/retoc_cli-x86_64-unknown-linux-gnu/` — non redistribuable, copiez-la
+depuis n'importe quel jeu Unreal ou le SDK Oodle).
 
-## Contenu actuel
+### Données du patch
 
-- **3 466 chaînes traduites** qui s'affichaient en anglais faute de version
-  française (les textes manquants passent de 4 427 à 961, le reliquat étant des
-  chemins d'assets et identifiants jamais montrés au joueur)
-- **555 traductions fautives corrigées**, arbitrées contre la traduction
-  d'ARK: Survival Evolved quand le texte anglais source est identique
-  (« Ammo » rendu par « Mais », « Back » par « ouvrir », « Cannot Charge » par
-  « Impossible de facturer »...)
-
-## Données du patch
-
-- `data/overrides.json` — corrections de chaînes existantes (`"namespace\tclé": "texte"`)
+- `data/overrides.json` — traductions des chaînes existantes (`"namespace\tclé": "texte"`)
 - `data/additions.json` — traductions des clés absentes du locres FR officiel
+- `data/corrections.json` — couche prioritaire appliquée en dernier (c'est ici
+  que vont les correctifs communautaires)
+- `data/noms_officiels_ase.json` — table figée des noms officiels de créatures
+  (ARK: Survival Evolved)
 
-## Contrôles
-
-    python3 tools/valider.py A work/batches/A work/batches/out   # intégrité technique
-    python3 tools/audit.py work/batches/A work/batches/out A work/glossaire.tsv
-    python3 tools/corriger_bords.py work/batches/A work/batches/out A
-
-`valider.py` vérifie que placeholders, balises et espaces de bord du source sont
-préservés ; `audit.py` signale anglais résiduel, typographie et écarts de
-glossaire ; `corriger_bords.py` répare mécaniquement les espaces de bord et les
-échappements littéraux.
-
-## Outils (`tools/`)
+### Outils (`tools/`)
 
 - `pakv12.py` — lecteur du format pak V12 custom de Wildcard (index en clair,
   compression Oodle) ; `repak` ne lit que jusqu'à la V11
-- `locres.py` — dump/rebuild/merge de fichiers `.locres` v3 ; le rebuild à vide
-  est bit-exact avec le fichier d'origine
-- `repak` — packe le pak patch final (V11, accepté par le jeu)
-- `oodle/` — bibliothèque de décompression Oodle (build officiel Epic)
+- `locres.py` — dump/rebuild/merge de fichiers `.locres` v3, bit-exact en
+  round-trip ; le merge greffe les clés manquantes en copiant les hashes du
+  locres anglais, à leur position native
+- `integrer.py` — reconstruit `data/overrides.json` depuis les lots de
+  traduction et `data/corrections.json`
+- `valider.py` / `audit.py` — contrôles (placeholders, balises, espaces de
+  bord, anglais résiduel, glossaire)
 
-## Notes techniques
+### Notes techniques
 
 - Les locres des 14 langues sont dans `pakchunk0-Windows.pak`, chemin
   `ShooterGame/Content/Localization/ShooterGame/<lang>/ShooterGame.locres`
 - Paks non chiffrés, pas de fichiers .sig : les paks custom `_P` sont chargés
   sans vérification de signature
-- Les hashes (namespace, clé, source) sont préservés tels quels ; l'ajout de
-  clés manquantes copie les hashes depuis le locres anglais
+- Le jeu met certains libellés en capitales avec une routine qui ignore les
+  accents (bug moteur `ToUpper` ASCII, présent dans les 14 langues) : les
+  libellés concernés (stats, noms d'objets accentués) sont pré-capitalisés
+  dans les données
+
+## Crédits et avertissement
+
+Projet non affilié à Studio Wildcard. Les textes traduits dérivent du contenu
+d'ARK: Survival Ascended (© Studio Wildcard) et ne sont distribués que pour
+permettre aux joueurs francophones de profiter du jeu ; sur demande des ayants
+droit, la distribution sera retirée.
