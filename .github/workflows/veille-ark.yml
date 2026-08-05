@@ -18,6 +18,7 @@ on:
 permissions:
   contents: write        # pousser la branche de la veille
   pull-requests: write   # ouvrir la pull request qui porte le travail
+  statuses: write        # publier le resultat de la validation sur le commit
 
 jobs:
   detecter:
@@ -111,9 +112,19 @@ jobs:
           # le robot ne pousse jamais sur master : il ouvre une pull request,
           # relue et fusionnee par un humain comme n'importe quelle contribution
           BRANCHE="veille/build-$BUILD"
-          git checkout -b "$BRANCHE"
+          git checkout -B "$BRANCHE"
           git commit -m "Veille : ARK build $BUILD, lots de traduction mis a jour"
           git push -u origin "$BRANCHE" --force
+
+          # Une pull request ouverte par le robot ne declenche pas d'autre
+          # workflow (protection anti-boucle de GitHub) : la validation ne
+          # tournerait jamais sur cette branche. On l'execute donc ici, avec le
+          # meme script que pour les contributions humaines, et on publie son
+          # resultat comme etat de commit.
+          if python3 tools/valider_donnees.py; then ETAT=success; else ETAT=failure; fi
+          gh api -X POST "repos/$GITHUB_REPOSITORY/statuses/$(git rev-parse HEAD)" \
+            -f state="$ETAT" -f context=valider \
+            -f description="validation des donnees executee par la veille" >/dev/null
           if gh pr view "$BRANCHE" >/dev/null 2>&1; then
             echo "pull request deja ouverte pour ce build"
           else
