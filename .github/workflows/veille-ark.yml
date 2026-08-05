@@ -87,22 +87,37 @@ jobs:
         run: |
           git config user.name "Veille TradFR"
           git config user.email "actions@github.com"
-          python3 tools/veille.py --en /tmp/en.json --forcer
+          python3 tools/veille.py --en /tmp/en.json --forcer --local
         env:
           GH_TOKEN: ${{ github.token }}
 
-      - name: Avancer la reference et l'etat Steam
+      - name: Proposer les changements en pull request
+        env:
+          GH_TOKEN: ${{ github.token }}
+          BUILD: ${{ needs.detecter.outputs.buildid }}
         run: |
           python3 - <<'PY'
-          import json
+          import json, os
           ref = json.load(open("data/reference_en.json"))
           ref["chaines"] = json.load(open("/tmp/en.json"))
           json.dump(ref, open("data/reference_en.json", "w"), ensure_ascii=False, indent=0)
-          json.dump({"buildid": "${{ needs.detecter.outputs.buildid }}"},
-                    open("data/etat_steam.json", "w"), indent=0)
+          json.dump({"buildid": os.environ["BUILD"]}, open("data/etat_steam.json", "w"), indent=0)
           PY
           git add data
           [ -d delta ] && git add delta || true
-          git diff --cached --quiet || git commit -m \
-            "Veille : ARK build ${{ needs.detecter.outputs.buildid }}, lots de traduction mis a jour"
-          git push
+          if git diff --cached --quiet; then
+            echo "rien a proposer"; exit 0
+          fi
+          # le robot ne pousse jamais sur master : il ouvre une pull request,
+          # relue et fusionnee par un humain comme n'importe quelle contribution
+          BRANCHE="veille/build-$BUILD"
+          git checkout -b "$BRANCHE"
+          git commit -m "Veille : ARK build $BUILD, lots de traduction mis a jour"
+          git push -u origin "$BRANCHE" --force
+          if gh pr view "$BRANCHE" >/dev/null 2>&1; then
+            echo "pull request deja ouverte pour ce build"
+          else
+            gh pr create --base master --head "$BRANCHE" \
+              --title "Veille : ARK build $BUILD" \
+              --body-file delta/rapport.md --label traduction
+          fi

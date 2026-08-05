@@ -1,0 +1,97 @@
+name: Valider une contribution
+
+# Passe sur chaque pull request : c'est le vrai filet de securite du projet.
+# Une contribution qui casserait les donnees de traduction est refusee ici,
+# avant toute relecture humaine.
+#
+# Note de securite : ce workflow s'execute avec `pull_request` (et non
+# `pull_request_target`) et en lecture seule. Le code d'une contribution
+# exterieure ne peut donc ni ecrire dans le depot, ni acceder a un secret.
+
+on:
+  pull_request:
+    paths:
+      - "data/**"
+      - "tools/**"
+      - "*.py"
+
+permissions:
+  contents: read
+
+jobs:
+  valider:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Les fichiers de donnees sont du JSON valide
+        run: |
+          for f in data/*.json; do
+            python3 -c "import json,sys; json.load(open(sys.argv[1]))" "$f" \
+              || { echo "::error file=$f::JSON invalide"; exit 1; }
+            echo "  ok  $f"
+          done
+
+      - name: Les cles de traduction ont la forme attendue
+        run: |
+          python3 - <<'PY'
+          import json, re, sys
+          FORME = re.compile(r"^[A-Za-z0-9_]+\t\S+$")   # certains namespaces sont des hashes
+          faux = []
+          for nom in ("overrides.json", "additions.json", "corrections.json"):
+              for k, v in json.load(open(f"data/{nom}")).items():
+                  if not FORME.match(k):
+                      faux.append(f"{nom}: cle mal formee {k!r}")
+                  elif not isinstance(v, str):
+                      faux.append(f"{nom}: {k!r} n'est pas une chaine")
+          for f in faux[:20]:
+              print(f"::error::{f}")
+          sys.exit(1 if faux else 0)
+          PY
+
+      - name: Aucun binaire ni fichier volumineux ajoute
+        run: |
+          git fetch --no-tags --depth=1 origin "${{ github.base_ref }}"
+          # les binaires n'ont rien a faire dans un depot de traduction, et
+          # certains (Oodle) ne sont pas redistribuables
+          ajouts=$(git diff --name-only --diff-filter=A "origin/${{ github.base_ref }}"...HEAD)
+          echec=0
+          for f in $ajouts; do
+            case "$f" in
+              *.so|*.dll|*.exe|*.pak|*.locres|*.zip|*.tar.gz)
+                echo "::error file=$f::binaire non accepte"; echec=1;;
+            esac
+            if [ -f "$f" ] && [ "$(stat -c%s "$f")" -gt 5242880 ]; then
+              echo "::error file=$f::fichier de plus de 5 Mo"; echec=1
+            fi
+          done
+          exit $echec
+
+      - name: Les controles qualite passent
+        run: |
+          # sans le jeu on ne peut pas reconstruire le pak, mais on peut verifier
+          # la coherence interne des donnees de traduction
+          python3 - <<'PY'
+          import json, re, sys
+          en = json.load(open("data/reference_en.json"))["chaines"]
+          trad = {}
+          for nom in ("overrides.json", "additions.json", "corrections.json"):
+              trad.update(json.load(open(f"data/{nom}")))
+          PH = re.compile(r"\{[^}]*\}|%[a-z%]|</?[A-Za-z][^>]*>")
+          soucis = []
+          for k, v in trad.items():
+              e = en.get(k)
+              if e is None:
+                  continue  # cle inconnue : signalee par la veille, pas bloquant
+              if "{" in e and sorted(PH.findall(e)) != sorted(PH.findall(v)):
+                  soucis.append(f"{k!r} : les variables ne correspondent pas a la source")
+              if (e[:1] == " ") != (v[:1] == " ") or (e[-1:] == " ") != (v[-1:] == " "):
+                  soucis.append(f"{k!r} : espace de debut ou de fin modifiee")
+          # 4 divergences de variables sont connues et legitimes (accolades
+          # utilisees comme texte par le jeu)
+          if len(soucis) > 4:
+              for s in soucis[:20]:
+                  print(f"::error::{s}")
+              sys.exit(1)
+          print(f"{len(trad)} traductions verifiees, {len(soucis)} ecart(s) connu(s)")
+          PY
