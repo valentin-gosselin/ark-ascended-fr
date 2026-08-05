@@ -80,9 +80,30 @@ le monde.
 
 ## Reconstruire le patch (mainteneurs)
 
-    ./build.py              # extrait les locres du jeu, applique data/, packe, installe
-    ./build.py --no-install # sans copier dans le dossier du jeu
-    ./release.sh vX.Y.Z     # build + tag + release GitHub
+    ./build.py                    # extrait les locres du jeu, applique data/, packe, installe
+    ./build.py --no-install       # sans copier dans le dossier du jeu
+    python3 tools/detecteurs.py   # rejoue les contrôles qualité sur le build
+    ./release.sh vX.Y.Z           # build + tag + release GitHub
+
+### Après une mise à jour du jeu
+
+Wildcard ajoute et modifie des chaînes à chaque patch, sans rien signaler : le
+patch continue de se construire et les nouveaux textes s'affichent simplement en
+anglais. `delta.py` rend ce décalage visible et produit le lot de travail exact.
+
+    ./delta.py              # compare le jeu à la référence figée, affiche le rapport
+    ./delta.py --lots       # écrit les lots dans work/delta/
+    ./delta.py --figer      # fige l'état courant comme nouvelle référence
+
+Les lots produits : `a_traduire.json` (nouvelles chaînes), `a_revoir.json` (l'anglais
+a changé, la traduction dit peut-être autre chose — avec la version actuelle en
+regard), `orphelines.json` (clés supprimées du jeu que le patch traduisait encore),
+`techniques.json` (écarté automatiquement : debug, séparateurs, code du DevKit).
+
+Le cycle : `./delta.py --lots` → traduire → verser dans `data/corrections.json` →
+`./build.py` → `python3 tools/detecteurs.py` → `./delta.py --figer` → `./release.sh`.
+La référence (`data/reference_en.json`) est versionnée dans le dépôt : n'importe
+qui peut donc calculer le delta, pas seulement le mainteneur d'origine.
 
 Prérequis : le jeu installé (les locres d'origine sont extraits de
 `pakchunk0-Windows.pak`, ils ne sont pas distribuables), Python 3, et la
