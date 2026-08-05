@@ -48,7 +48,10 @@ def main():
     # `--avec-additions` permet de refaire l'essai si on trouve la parade.
     avec_add = "--sans-additions" not in sys.argv  # greffe validee en jeu le 05/08/2026
     edits = {}
-    fichiers = ["overrides.json"] + (["additions.json"] if avec_add else [])
+    # corrections.json repasse en dernier : c'est la couche prioritaire, et elle
+    # doit aussi battre additions.json (cles greffees), pas seulement overrides
+    fichiers = (["overrides.json"] + (["additions.json"] if avec_add else [])
+                + ["corrections.json"])
     for name in fichiers:
         path = os.path.join(ROOT, "data", name)
         if os.path.exists(path):
