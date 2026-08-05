@@ -9,6 +9,6 @@ labels: traduction
 
 **Où ça s'affiche** (inventaire, engrammes, carte, HUD, infobulle…) :
 
-**Capture d'écran** (glissez l'image ici — c'est ce qui aide le plus) :
+**Capture d'écran** (glissez l'image ici : c'est ce qui aide le plus) :
 
 **Ce que ça devrait dire** (si vous avez une proposition) :

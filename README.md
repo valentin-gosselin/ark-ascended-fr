@@ -1,4 +1,4 @@
-# TradFR — patch de traduction française pour ARK: Survival Ascended
+# TradFR - patch de traduction française pour ARK: Survival Ascended
 
 La traduction française officielle d'ASA est incomplète (des milliers de chaînes
 s'affichent en anglais) et truffée d'erreurs (« Ammo » rendu par « Mais »,
@@ -20,17 +20,38 @@ tous les serveurs (il n'agit que sur votre affichage).
 
 ## Installation (joueurs)
 
-1. Téléchargez `TradFR_P.pak` dans la
-   [dernière release](../../releases/latest).
-2. Copiez-le dans le dossier du jeu :
-   `…\SteamLibrary\steamapps\common\ARK Survival Ascended\ShooterGame\Content\Paks\`
-   (sous Windows, `installer.bat` fourni dans la release fait la copie pour vous).
-3. Lancez le jeu en français. C'est tout.
+**Windows (recommandé)** : téléchargez `installer.bat` et `TradFR.ps1` dans la
+[dernière release](../../releases/latest), mettez-les dans le même dossier et
+double-cliquez `installer.bat`. Le script trouve le jeu tout seul, télécharge
+la dernière version du patch, et vous propose d'activer la **mise à jour
+automatique** (une tâche planifiée vérifie les nouvelles versions à chaque
+ouverture de session ; relancer `installer.bat` sert aussi de mise à jour
+manuelle).
 
-**Mise à jour** : retéléchargez le fichier de la nouvelle release et remplacez
-l'ancien (pas de mise à jour automatique — ce n'est pas un mod CurseForge).
+**À la main** : téléchargez `TradFR_P.pak` dans la
+[dernière release](../../releases/latest) et copiez-le dans
+`…\SteamLibrary\steamapps\common\ARK Survival Ascended\ShooterGame\Content\Paks\`.
+Pour mettre à jour, remplacez le fichier par celui de la nouvelle release.
 
-**Désinstallation** : supprimez `TradFR_P.pak` du dossier `Paks`.
+**Linux / Steam Deck** : `maj_tradfr.sh` (fourni dans la release) installe et
+met à jour.
+
+Lancez le jeu en français, c'est tout.
+
+**Désinstallation** : supprimez `TradFR_P.pak` du dossier `Paks` (et la tâche
+planifiée « TradFR MAJ » si vous aviez activé la mise à jour automatique).
+
+## Pourquoi un pak et pas un mod CurseForge ?
+
+Le résultat est le même qu'un mod (rien du jeu n'est modifié, tout est
+réversible), mais la porte d'entrée diffère. Un mod ASA est fabriqué dans le
+DevKit officiel puis « cuit » par CurseForge avec son propre contenu, monté à
+part : cette chaîne ne permet pas de fournir un fichier à la place de la
+localisation du jeu de base. Le pak `_P`, lui, est chargé directement par le
+moteur au démarrage et peut la recouvrir. C'est pour cela qu'aucune
+retraduction du jeu de base n'existe en mod CurseForge, dans aucune langue :
+tout le monde passe par un pak. Seul inconvénient : pas de mise à jour par le
+jeu lui-même, d'où le script fourni.
 
 ## Signaler une erreur, proposer une correction
 
@@ -40,7 +61,7 @@ le monde.
 - **Le plus simple** : [ouvrir une issue](../../issues/new/choose) avec une
   capture d'écran et le texte fautif.
 - **Mieux** : proposer une pull request d'une ligne dans
-  `data/corrections.json` (`"namespace\tclé": "texte corrigé"` — la clé se
+  `data/corrections.json` (`"namespace\tclé": "texte corrigé"` : la clé se
   retrouve en cherchant le texte anglais dans `work/en.json` après extraction,
   ou demandez dans l'issue).
 
@@ -66,28 +87,28 @@ le monde.
 Prérequis : le jeu installé (les locres d'origine sont extraits de
 `pakchunk0-Windows.pak`, ils ne sont pas distribuables), Python 3, et la
 bibliothèque de décompression Oodle (`liboo2corelinux64.so.9` à placer dans
-`tools/retoc_cli-x86_64-unknown-linux-gnu/` — non redistribuable, copiez-la
+`tools/retoc_cli-x86_64-unknown-linux-gnu/` : non redistribuable, copiez-la
 depuis n'importe quel jeu Unreal ou le SDK Oodle).
 
 ### Données du patch
 
-- `data/overrides.json` — traductions des chaînes existantes (`"namespace\tclé": "texte"`)
-- `data/additions.json` — traductions des clés absentes du locres FR officiel
-- `data/corrections.json` — couche prioritaire appliquée en dernier (c'est ici
+- `data/overrides.json` : traductions des chaînes existantes (`"namespace\tclé": "texte"`)
+- `data/additions.json` : traductions des clés absentes du locres FR officiel
+- `data/corrections.json` : couche prioritaire appliquée en dernier (c'est ici
   que vont les correctifs communautaires)
-- `data/noms_officiels_ase.json` — table figée des noms officiels de créatures
+- `data/noms_officiels_ase.json` : table figée des noms officiels de créatures
   (ARK: Survival Evolved)
 
 ### Outils (`tools/`)
 
-- `pakv12.py` — lecteur du format pak V12 custom de Wildcard (index en clair,
+- `pakv12.py` : lecteur du format pak V12 custom de Wildcard (index en clair,
   compression Oodle) ; `repak` ne lit que jusqu'à la V11
-- `locres.py` — dump/rebuild/merge de fichiers `.locres` v3, bit-exact en
+- `locres.py` : dump/rebuild/merge de fichiers `.locres` v3, bit-exact en
   round-trip ; le merge greffe les clés manquantes en copiant les hashes du
   locres anglais, à leur position native
-- `integrer.py` — reconstruit `data/overrides.json` depuis les lots de
+- `integrer.py` : reconstruit `data/overrides.json` depuis les lots de
   traduction et `data/corrections.json`
-- `valider.py` / `audit.py` — contrôles (placeholders, balises, espaces de
+- `valider.py` / `audit.py` : contrôles (placeholders, balises, espaces de
   bord, anglais résiduel, glossaire)
 
 ### Notes techniques
