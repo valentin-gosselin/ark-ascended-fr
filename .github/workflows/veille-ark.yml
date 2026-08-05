@@ -70,7 +70,12 @@ jobs:
             -filelist /tmp/filelist.txt -dir /tmp/ark -max-downloads 16
           ls -l /tmp/ark/ShooterGame/Content/Paks/
 
+      - name: Construire le decompresseur Oodle libre
+        run: ./tools/construire_ooz.sh /tmp/libooz.so
+
       - name: Extraire les textes anglais
+        env:
+          OOZ_LIB: /tmp/libooz.so
         run: |
           python3 tools/pakv12.py extract \
             /tmp/ark/ShooterGame/Content/Paks/pakchunk0-WindowsServer.pak \

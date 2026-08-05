@@ -3,6 +3,7 @@
 
 L'index n'est pas chiffré dans ASA, la compression des données est Oodle.
 """
+import os
 import struct
 import sys
 
@@ -144,21 +145,49 @@ def read_index(path):
 
 
 _oodle = None
+_appel = None
+
+
+def _charger_oodle():
+    """Oodle officiel si disponible, sinon ooz (implementation libre).
+
+    Oodle n'est pas redistribuable : le depot n'en contient pas. La CI compile
+    ooz (github.com/powzix/ooz) et pointe OOZ_LIB dessus.
+    """
+    import ctypes
+    ici = os.path.dirname(os.path.abspath(__file__))
+    officiel = os.environ.get("OODLE_LIB") or os.path.join(ici, "oodle/lib/liboodle-data-shared.so")
+    if os.path.exists(officiel):
+        lib = ctypes.CDLL(officiel)
+        lib.OodleLZ_Decompress.restype = ctypes.c_ssize_t
+
+        def appel(src, dst, dst_len):
+            return lib.OodleLZ_Decompress(
+                src, ctypes.c_ssize_t(len(src)), dst, ctypes.c_ssize_t(dst_len),
+                1, 0, 0, None, ctypes.c_ssize_t(0), None, None, None,
+                ctypes.c_ssize_t(0), 3)
+        return lib, appel
+    libre = os.environ.get("OOZ_LIB") or os.path.join(ici, "libooz.so")
+    if os.path.exists(libre):
+        lib = ctypes.CDLL(libre)
+        lib.Ooz_Decompress.restype = ctypes.c_int
+
+        def appel(src, dst, dst_len):
+            return lib.Ooz_Decompress(src, ctypes.c_size_t(len(src)), dst,
+                                      ctypes.c_size_t(dst_len))
+        return lib, appel
+    raise RuntimeError(
+        "aucun decompresseur Oodle : placez liboodle-data-shared.so dans "
+        "tools/oodle/lib/, ou compilez ooz et pointez OOZ_LIB dessus")
 
 
 def oodle_decompress(src, dst_len):
-    global _oodle
-    import ctypes, os
+    global _oodle, _appel
+    import ctypes
     if _oodle is None:
-        lib = os.path.join(os.path.dirname(os.path.abspath(__file__)),
-                           "oodle/lib/liboodle-data-shared.so")
-        _oodle = ctypes.CDLL(lib)
-        _oodle.OodleLZ_Decompress.restype = ctypes.c_ssize_t
+        _oodle, _appel = _charger_oodle()
     dst = ctypes.create_string_buffer(dst_len)
-    n = _oodle.OodleLZ_Decompress(
-        src, ctypes.c_ssize_t(len(src)), dst, ctypes.c_ssize_t(dst_len),
-        1, 0, 0, None, ctypes.c_ssize_t(0), None, None, None,
-        ctypes.c_ssize_t(0), 3)
+    n = _appel(src, dst, dst_len)
     if n != dst_len:
         raise RuntimeError(f"oodle: {n} != {dst_len}")
     return dst.raw

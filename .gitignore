@@ -1,6 +1,7 @@
 liboo2core*
 *.pak
 __pycache__/
+tools/libooz.so
 tools/oodle/
 tools/oodle.zip
 tools/repak.tar.gz
