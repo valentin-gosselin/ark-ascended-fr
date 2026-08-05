@@ -33,6 +33,14 @@ DATA = ["overrides.json", "additions.json", "corrections.json"]
 MAX_INLINE = 40
 
 
+def memoriser(emp, fourni):
+    """En CI l'etat vit dans data/etat_steam.json : rien a ecrire ici."""
+    if fourni:
+        return
+    os.makedirs(os.path.dirname(ETAT), exist_ok=True)
+    json.dump({"signale": emp}, open(ETAT, "w"))
+
+
 def sh(*args, **kw):
     return subprocess.run(args, cwd=RACINE, capture_output=True, text=True, **kw)
 
@@ -192,7 +200,7 @@ def main():
 
     if not a_traduire and not a_revoir and not orphelines:
         print("mise a jour du jeu sans impact sur les textes")
-        json.dump({"signale": emp}, open(ETAT, "w"))
+        memoriser(emp, fourni)
         return 0
 
     # ce qui peut etre fait sans humain
@@ -232,7 +240,7 @@ def main():
         if push.returncode:
             print(f"push echoue : {push.stderr.strip()[:120]}")
 
-    json.dump({"signale": emp}, open(ETAT, "w"))
+    memoriser(emp, fourni)
     print(f"{len(a_traduire)} a traduire ({len(propositions)} pre-remplies), "
           f"{len(a_revoir)} a revoir, {n_orph} orphelines retirees, "
           f"{len(techniques)} techniques ecartees")
