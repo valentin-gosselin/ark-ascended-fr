@@ -14,7 +14,7 @@ import subprocess
 import sys
 
 RACINE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-BASE_COMMIT = "58d3325"
+BASE_COMMIT = "613747a"  # hash reecrit le 05/08/2026 (purge des binaires Oodle de l'historique)
 
 LOTS = [
     "work/batches/out/C_*.json",
