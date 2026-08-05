@@ -1,0 +1,10 @@
+[Unit]
+Description=TradFR - detecte les mises a jour d'ARK et prepare le travail de traduction
+Documentation=https://github.com/valentin-gosselin/ark-ascended-fr
+
+[Service]
+Type=oneshot
+WorkingDirectory=%h/ark-fr
+ExecStart=/usr/bin/python3 %h/ark-fr/tools/veille.py
+# le script attend que Steam ait fini d'ecrire le pak : jusqu'a 10 minutes
+TimeoutStartSec=1800

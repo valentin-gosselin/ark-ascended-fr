@@ -71,7 +71,16 @@ def traduisible(texte):
     t = texte.strip()
     if len(t) < 2 or not re.search(r"[A-Za-z]{2,}", t):
         return False
-    return not TECHNIQUE.search(t)
+    if TECHNIQUE.search(t):
+        return False
+    # marqueurs de dev du type **NotUsed**, **TODO**
+    if re.fullmatch(r"\*{1,2}[A-Za-z ]+\*{1,2}", t):
+        return False
+    # identifiant isole : un seul mot, sans espace, en CamelCase ou tout capitales
+    if " " not in t and (re.fullmatch(r"[A-Z][a-z]+(?:[A-Z][a-z]+)+", t)
+                         or re.fullmatch(r"[A-Z_]{3,}", t)):
+        return False
+    return True
 
 
 def main():

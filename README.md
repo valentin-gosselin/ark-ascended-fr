@@ -105,6 +105,28 @@ Le cycle : `./delta.py --lots` → traduire → verser dans `data/corrections.js
 La référence (`data/reference_en.json`) est versionnée dans le dépôt : n'importe
 qui peut donc calculer le delta, pas seulement le mainteneur d'origine.
 
+### Veille automatique
+
+`tools/veille.py` fait tout ça sans qu'on le lui demande. Installé en service
+utilisateur (`scripts/installer_veille.sh`), il vérifie chaque heure si le pak du
+jeu a changé, attend que Steam ait fini d'écrire, calcule le delta, puis :
+
+- retire des données du patch les clés que le jeu ne contient plus ;
+- écarte les chaînes techniques (debug, séparateurs, code du DevKit) ;
+- **propose automatiquement la traduction officielle d'ARK: Survival Evolved**
+  pour chaque chaîne dont la source anglaise y existe telle quelle — près de la
+  moitié du jeu est dans ce cas, ces lignes n'ont plus qu'à être confirmées ;
+- commite les lots dans `delta/` et **ouvre une issue GitHub** listant ce qui
+  reste à faire, avec le contexte de chaque chaîne.
+
+Chaque mise à jour n'est signalée qu'une fois. Si GitHub est injoignable, le
+rapport est écrit dans `delta/rapport.md`. Options : `--forcer` (refaire le
+rapport), `--local` (pas d'issue).
+
+Résultat : après une mise à jour d'ARK, une issue apparaît d'elle-même avec le
+travail déjà mâché, visible de tout le monde — la traduction ne dépend plus de
+quelqu'un qui pense à vérifier.
+
 Prérequis : le jeu installé (les locres d'origine sont extraits de
 `pakchunk0-Windows.pak`, ils ne sont pas distribuables), Python 3, et la
 bibliothèque de décompression Oodle (`liboo2corelinux64.so.9` à placer dans
