@@ -101,7 +101,8 @@ jobs:
           json.dump({"buildid": "${{ needs.detecter.outputs.buildid }}"},
                     open("data/etat_steam.json", "w"), indent=0)
           PY
-          git add data delta
+          git add data
+          [ -d delta ] && git add delta || true
           git diff --cached --quiet || git commit -m \
             "Veille : ARK build ${{ needs.detecter.outputs.buildid }}, lots de traduction mis a jour"
           git push
