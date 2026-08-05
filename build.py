@@ -46,7 +46,7 @@ def main():
     # Vérifié en jeu : un pak sans aucun ajout s'applique, le même pak avec
     # ajouts ne s'applique pas. Les additions sont donc désactivées par défaut ;
     # `--avec-additions` permet de refaire l'essai si on trouve la parade.
-    avec_add = "--avec-additions" in sys.argv
+    avec_add = "--sans-additions" not in sys.argv  # greffe validee en jeu le 05/08/2026
     edits = {}
     fichiers = ["overrides.json"] + (["additions.json"] if avec_add else [])
     for name in fichiers:
