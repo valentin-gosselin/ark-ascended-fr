@@ -50,7 +50,13 @@ def stable(chemin, essais=30, pause=20):
 
 
 def corpus_evolved():
-    """EN -> FR officiel d'ARK Survival Evolved, notre source d'autorite."""
+    """EN -> FR officiel d'ARK Survival Evolved, notre source d'autorite.
+
+    Versionne dans data/ pour que la veille tourne aussi en CI, sans le jeu.
+    """
+    fige = os.path.join(RACINE, "data/evolved_fr.json")
+    if os.path.exists(fige):
+        return json.load(open(fige))
     try:
         ase_en = json.load(open(os.path.join(RACINE, "work/ase_en.json")))
         ase_fr = json.load(open(os.path.join(RACINE, "work/ase_fr.json")))
@@ -79,6 +85,12 @@ def nettoyer_orphelines(orphelines):
 def cle(k):
     """La cle contient une tabulation : illisible dans un tableau markdown."""
     return k.replace("\t", " / ")
+
+
+def cellule(texte, taille=110):
+    """Un tableau markdown ne survit ni aux retours a la ligne ni aux barres."""
+    t = re.sub(r"[\r\n]+", " ⏎ ", texte.strip())[:taille]
+    return t.replace("|", "\\|")
 
 
 def corps_issue(rapport, a_traduire, a_revoir, propositions, n_tech, n_orph):
@@ -118,8 +130,8 @@ def corps_issue(rapport, a_traduire, a_revoir, propositions, n_tech, n_orph):
                 # une proposition, elle dit au traducteur de ne pas y toucher
                 cell = "_Evolved la laisse en anglais_"
             else:
-                cell = f"**Evolved** : {prop}"
-            L.append(f"| `{cle(k)}` | {v[:110].replace('|', '\\|')} | {cell} |")
+                cell = f"**Evolved** : {cellule(prop, 90)}"
+            L.append(f"| `{cle(k)}` | {cellule(v)} | {cell} |")
         if len(a_traduire) > MAX_INLINE:
             L.append(f"\n_(+ {len(a_traduire) - MAX_INLINE} autres dans `delta/a_traduire.json`)_")
         L.append("")
@@ -128,9 +140,9 @@ def corps_issue(rapport, a_traduire, a_revoir, propositions, n_tech, n_orph):
               "La traduction actuelle dit peut-etre autre chose que le jeu.", "",
               "| Cle | Avant | Apres | Traduction actuelle |", "|---|---|---|---|"]
         for k, d2 in list(a_revoir.items())[:MAX_INLINE]:
-            L.append(f"| `{cle(k)}` | {d2['avant'][:70].replace('|', '\\|')} | "
-                     f"{d2['apres'][:70].replace('|', '\\|')} | "
-                     f"{d2['traduction_actuelle'][:70].replace('|', '\\|')} |")
+            L.append(f"| `{cle(k)}` | {cellule(d2['avant'], 70)} | "
+                     f"{cellule(d2['apres'], 70)} | "
+                     f"{cellule(d2['traduction_actuelle'], 70)} |")
         if len(a_revoir) > MAX_INLINE:
             L.append(f"\n_(+ {len(a_revoir) - MAX_INLINE} autres dans `delta/a_revoir.json`)_")
     return "\n".join(L)
@@ -141,23 +153,33 @@ def main():
 
     forcer = "--forcer" in sys.argv
     local = "--local" in sys.argv
+    # --en <dump.json> : l'anglais est fourni (CI), le jeu n'a pas besoin d'etre installe
+    fourni = None
+    if "--en" in sys.argv:
+        fourni = sys.argv[sys.argv.index("--en") + 1]
     if not os.path.exists(REFERENCE):
         sys.exit("Aucune reference : lancez d'abord ./delta.py --figer")
 
     ref = json.load(open(REFERENCE))
-    emp = empreinte()
-    if emp == ref["pak"] and not forcer:
-        return 0  # le jeu n'a pas bouge
-    etat = json.load(open(ETAT)) if os.path.exists(ETAT) else {}
-    if etat.get("signale") == emp and not forcer:
-        return 0  # cette mise a jour a deja fait l'objet d'une issue
-
-    if not stable(SRC_PAK):
-        print("le pak est encore en cours d'ecriture, on reessaiera")
-        return 0
-
-    extraire()
-    ancien, nouveau = ref["chaines"], json.load(open(EN))
+    if fourni:
+        nouveau = json.load(open(fourni))
+        emp = {"taille": os.path.getsize(fourni), "date": 0}
+        if nouveau == ref["chaines"] and not forcer:
+            print("aucun changement de texte dans cette mise a jour")
+            return 0
+    else:
+        emp = empreinte()
+        if emp == ref["pak"] and not forcer:
+            return 0  # le jeu n'a pas bouge
+        etat = json.load(open(ETAT)) if os.path.exists(ETAT) else {}
+        if etat.get("signale") == emp and not forcer:
+            return 0  # cette mise a jour a deja fait l'objet d'une issue
+        if not stable(SRC_PAK):
+            print("le pak est encore en cours d'ecriture, on reessaiera")
+            return 0
+        extraire()
+        nouveau = json.load(open(EN))
+    ancien = ref["chaines"]
     trad = nos_traductions()
     ajoutees = {k: v for k, v in nouveau.items() if k not in ancien}
     nouvelles = {k: v for k, v in ajoutees.items() if k not in trad}

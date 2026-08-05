@@ -73,6 +73,9 @@ def traduisible(texte):
         return False
     if TECHNIQUE.search(t):
         return False
+    # commentaire ou separateur de code laisse dans les donnees
+    if t.startswith(("//", "--==", "==")) or re.fullmatch(r"[=\-_*#]{4,}.*", t):
+        return False
     # marqueurs de dev du type **NotUsed**, **TODO**
     if re.fullmatch(r"\*{1,2}[A-Za-z ]+\*{1,2}", t):
         return False

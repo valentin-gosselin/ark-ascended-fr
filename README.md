@@ -105,11 +105,20 @@ Le cycle : `./delta.py --lots` → traduire → verser dans `data/corrections.js
 La référence (`data/reference_en.json`) est versionnée dans le dépôt : n'importe
 qui peut donc calculer le delta, pas seulement le mainteneur d'origine.
 
-### Veille automatique
+### Veille automatique (GitHub Actions)
 
-`tools/veille.py` fait tout ça sans qu'on le lui demande. Installé en service
-utilisateur (`scripts/installer_veille.sh`), il vérifie chaque heure si le pak du
-jeu a changé, attend que Steam ait fini d'écrire, calcule le delta, puis :
+Le dépôt se surveille tout seul : `.github/workflows/veille-ark.yml` tourne
+quatre fois par jour **sur GitHub**, sans machine allumée, sans le jeu installé
+et sans compte Steam.
+
+Comment c'est possible : l'API publique de Steam donne le numéro de build d'ARK.
+S'il a changé, le workflow télécharge — en anonyme, et **uniquement ce fichier** —
+le pak de langue du *serveur dédié*, qui contient exactement les mêmes textes que
+le client pour 1,1 Go au lieu de 212 Go. Les textes s'extraient ensuite en Python
+pur (le fichier de langue n'est pas compressé, aucune bibliothèque propriétaire
+n'est nécessaire).
+
+Le workflow :
 
 - retire des données du patch les clés que le jeu ne contient plus ;
 - écarte les chaînes techniques (debug, séparateurs, code du DevKit) ;
@@ -119,13 +128,13 @@ jeu a changé, attend que Steam ait fini d'écrire, calcule le delta, puis :
 - commite les lots dans `delta/` et **ouvre une issue GitHub** listant ce qui
   reste à faire, avec le contexte de chaque chaîne.
 
-Chaque mise à jour n'est signalée qu'une fois. Si GitHub est injoignable, le
-rapport est écrit dans `delta/rapport.md`. Options : `--forcer` (refaire le
-rapport), `--local` (pas d'issue).
+Résultat : quelques heures après une mise à jour d'ARK, une issue apparaît d'elle-même
+avec le travail déjà mâché, visible de tout le monde. La traduction ne dépend de
+personne en particulier — n'importe qui peut répondre dans l'issue ou proposer une
+pull request.
 
-Résultat : après une mise à jour d'ARK, une issue apparaît d'elle-même avec le
-travail déjà mâché, visible de tout le monde — la traduction ne dépend plus de
-quelqu'un qui pense à vérifier.
+Le même script tourne à la main si besoin : `python3 tools/veille.py` (avec le jeu
+installé) ou `python3 tools/veille.py --en <dump.json> --local`.
 
 Prérequis : le jeu installé (les locres d'origine sont extraits de
 `pakchunk0-Windows.pak`, ils ne sont pas distribuables), Python 3, et la

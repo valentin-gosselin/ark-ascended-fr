@@ -1,0 +1,102 @@
+name: Veille ARK
+
+# Surveille les mises a jour d'ARK et prepare le travail de traduction.
+# Ne necessite ni le jeu, ni un compte Steam, ni une machine allumee : tout se
+# fait ici. Le pak de langue du serveur dedie contient exactement les memes
+# textes que le client, et pese 1,1 Go a telecharger au lieu de 212 Go.
+
+on:
+  schedule:
+    - cron: "17 */6 * * *"   # quatre fois par jour
+  workflow_dispatch:
+    inputs:
+      forcer:
+        description: "Recalculer meme si le buildid n'a pas change"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  detecter:
+    runs-on: ubuntu-latest
+    outputs:
+      change: ${{ steps.steam.outputs.change }}
+      buildid: ${{ steps.steam.outputs.buildid }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Lire le buildid publie par Steam
+        id: steam
+        run: |
+          # API publique, sans authentification : donne le buildid de la branche
+          # publique du client ARK: Survival Ascended (appid 2399830)
+          build=$(curl -sf --retry 3 --max-time 30 \
+            "https://api.steamcmd.net/v1/info/2399830" \
+            | python3 -c "import json,sys; print(json.load(sys.stdin)['data']['2399830']['depots']['branches']['public']['buildid'])")
+          [ -n "$build" ] || { echo "buildid introuvable"; exit 1; }
+          connu=$(python3 -c "import json,os; print(json.load(open('data/etat_steam.json'))['buildid'] if os.path.exists('data/etat_steam.json') else '')")
+          echo "buildid=$build" >> "$GITHUB_OUTPUT"
+          if [ "$build" != "$connu" ] || [ "${{ inputs.forcer }}" = "true" ]; then
+            echo "change=true" >> "$GITHUB_OUTPUT"
+            echo "MAJ detectee : $connu -> $build"
+          else
+            echo "change=false" >> "$GITHUB_OUTPUT"
+            echo "aucune MAJ (buildid $build)"
+          fi
+
+  delta:
+    needs: detecter
+    if: needs.detecter.outputs.change == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Recuperer DepotDownloader
+        run: |
+          gh release download --repo SteamRE/DepotDownloader \
+            --pattern "DepotDownloader-linux-x64.zip" --dir /tmp/dd
+          unzip -q /tmp/dd/DepotDownloader-linux-x64.zip -d /tmp/dd
+          chmod +x /tmp/dd/DepotDownloader
+        env:
+          GH_TOKEN: ${{ github.token }}
+
+      - name: Telecharger le pak de langue (anonyme, fichier unique)
+        run: |
+          echo 'regex:^ShooterGame/Content/Paks/pakchunk0-WindowsServer\.pak$' > /tmp/filelist.txt
+          /tmp/dd/DepotDownloader -app 2430930 -depot 2430931 -os windows \
+            -filelist /tmp/filelist.txt -dir /tmp/ark -max-downloads 16
+          ls -l /tmp/ark/ShooterGame/Content/Paks/
+
+      - name: Extraire les textes anglais
+        run: |
+          python3 tools/pakv12.py extract \
+            /tmp/ark/ShooterGame/Content/Paks/pakchunk0-WindowsServer.pak \
+            "../../../ShooterGame/Content/Localization/ShooterGame/en/ShooterGame.locres" \
+            /tmp/en.locres
+          python3 tools/locres.py dump /tmp/en.locres /tmp/en.json
+
+      - name: Calculer le delta, preparer le travail, ouvrir l'issue
+        run: |
+          git config user.name "Veille TradFR"
+          git config user.email "actions@github.com"
+          python3 tools/veille.py --en /tmp/en.json --forcer
+        env:
+          GH_TOKEN: ${{ github.token }}
+
+      - name: Avancer la reference et l'etat Steam
+        run: |
+          python3 - <<'PY'
+          import json
+          ref = json.load(open("data/reference_en.json"))
+          ref["chaines"] = json.load(open("/tmp/en.json"))
+          json.dump(ref, open("data/reference_en.json", "w"), ensure_ascii=False, indent=0)
+          json.dump({"buildid": "${{ needs.detecter.outputs.buildid }}"},
+                    open("data/etat_steam.json", "w"), indent=0)
+          PY
+          git add data delta
+          git diff --cached --quiet || git commit -m \
+            "Veille : ARK build ${{ needs.detecter.outputs.buildid }}, lots de traduction mis a jour"
+          git push
