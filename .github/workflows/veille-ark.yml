@@ -16,8 +16,8 @@ on:
         default: false
 
 permissions:
-  contents: write
-  issues: write
+  contents: write        # pousser la branche de la veille
+  pull-requests: write   # ouvrir la pull request qui porte le travail
 
 jobs:
   detecter:
@@ -26,7 +26,7 @@ jobs:
       change: ${{ steps.steam.outputs.change }}
       buildid: ${{ steps.steam.outputs.buildid }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Lire le buildid publie par Steam
         id: steam
@@ -52,7 +52,7 @@ jobs:
     if: needs.detecter.outputs.change == 'true'
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Recuperer DepotDownloader
         run: |
