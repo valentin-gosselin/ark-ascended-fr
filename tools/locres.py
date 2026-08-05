@@ -133,23 +133,53 @@ def build(src_path, edits_json, out_path, en_path=None):
     edits = json.load(open(edits_json))
     n_add = 0
     if en_path:
-        # ajoute les clés absentes du FR, hashes copiés depuis le EN
-        present = {(ns, k) for _, ns, keys in namespaces for _, k, _, _ in keys}
-        ns_map = {ns: i for i, (_, ns, _) in enumerate(namespaces)}
-        namespaces = [(h, ns, list(keys)) for h, ns, keys in namespaces]
+        # Ajoute les clés absentes du FR, hashes copiés depuis le EN.
+        # L'ordre du FR étant une sous-suite ordonnée de celui de l'EN, chaque
+        # clé greffée est insérée À SA POSITION NATIVE (celle de l'EN), pas en
+        # fin de liste : le fichier produit garde la structure d'un locres
+        # officiel (cf. es.locres qui charge en jeu avec 34 701 clés).
         _, en_namespaces, _, _ = read(en_path)
+        fr_ns = {ns: (h, {k: e for e in keys for k in [e[1]]})
+                 for h, ns, keys in namespaces}
+        new_namespaces = []
+        for h, ns, keys in namespaces:
+            en_keys = next((ks for _, n2, ks in en_namespaces if n2 == ns), None)
+            if en_keys is None:
+                new_namespaces.append((h, ns, list(keys)))
+                continue
+            fr_entries = {e[1]: e for e in keys}
+            en_names = {e[1] for e in en_keys}
+            out_keys = []
+            for key_hash, key, src_hash, idx in en_keys:
+                if key in fr_entries:
+                    out_keys.append(fr_entries[key])
+                else:
+                    ek = f"{ns}\t{key}"
+                    if ek in edits:
+                        strings.append((edits[ek], 1))
+                        out_keys.append((key_hash, key, src_hash,
+                                         len(strings) - 1))
+                        n_add += 1
+            # clés FR absentes de l'EN : conservées, dans leur ordre d'origine
+            for e in keys:
+                if e[1] not in en_names:
+                    out_keys.append(e)
+            new_namespaces.append((h, ns, out_keys))
+        # namespaces présents uniquement dans l'EN et référencés par les edits
+        fr_ns_names = {ns for _, ns, _ in namespaces}
         for ns_hash, ns, keys in en_namespaces:
+            if ns in fr_ns_names:
+                continue
+            out_keys = []
             for key_hash, key, src_hash, idx in keys:
                 ek = f"{ns}\t{key}"
-                if ek in edits and (ns, key) not in present:
-                    val = edits[ek]
-                    strings.append((val, 1))
-                    if ns not in ns_map:
-                        ns_map[ns] = len(namespaces)
-                        namespaces.append((ns_hash, ns, []))
-                    namespaces[ns_map[ns]][2].append(
-                        (key_hash, key, src_hash, len(strings) - 1))
+                if ek in edits:
+                    strings.append((edits[ek], 1))
+                    out_keys.append((key_hash, key, src_hash, len(strings) - 1))
                     n_add += 1
+            if out_keys:
+                new_namespaces.append((ns_hash, ns, out_keys))
+        namespaces = new_namespaces
     # nouvelle table de chaînes dédupliquée
     new_strings = []
     string_index = {}
