@@ -180,3 +180,18 @@ Projet non affilié à Studio Wildcard. Les textes traduits dérivent du contenu
 d'ARK: Survival Ascended (© Studio Wildcard) et ne sont distribués que pour
 permettre aux joueurs francophones de profiter du jeu ; sur demande des ayants
 droit, la distribution sera retirée.
+
+## Fonctionnement du dépôt (contributeurs)
+
+`master` est protégé : personne n'y pousse directement, tout passe par une pull
+request qui doit passer la validation automatique. Cela vaut aussi pour la veille
+automatique, qui ouvre une pull request comme n'importe quel contributeur.
+
+La validation (`tools/valider_donnees.py`, rejouée sur chaque pull request)
+vérifie que les fichiers de données sont du JSON valide, que les clés ont la
+forme attendue, que les **variables du jeu** (`{0}`, `%s`, `<RichColor>`) et les
+espaces de début et de fin sont préservés — une traduction qui les casse afficherait
+un texte tronqué en jeu — et qu'aucun binaire n'est ajouté.
+
+Pour contribuer : forkez, modifiez `data/corrections.json`, ouvrez une pull
+request. La validation vous dira tout de suite si quelque chose ne va pas.
