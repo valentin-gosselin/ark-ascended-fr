@@ -56,8 +56,13 @@ def detecteurs(en, ed):
         ("milliers a l'anglaise", lambda k, v: re.search(r"\d,\d{3}\b", v)
          and re.search(r"\d,\d{3}", en.get(k, "")), 0),
         ("anglais residuel", lambda k, v: re.search(r"\bwild [A-Z]|\bat level \d|\bThralls?\b", v), 0),
-        ("'note d'exploration'", lambda k, v: "ote d'exploration" in v, 0),
-        ("esclave/larbin (Thrall)", lambda k, v: re.search(r"\b(esclave|larbin)", v, re.I)
+        # les corrections passees ont plusieurs fois rate les variantes en
+        # capitales : les detecteurs les cherchent donc explicitement
+        ("'note d'exploration'", lambda k, v: re.search(r"otes? d'exploration", v, re.I), 0),
+        ("Keypad rendu 'clavier'", lambda k, v: re.search(r"\bKeypad\b", en.get(k, ""))
+         and re.search(r"clavier", v, re.I), 0),
+        ("accord 'la derniere code'", lambda k, v: re.search(r"la dernière code", v, re.I), 0),
+        ("esclave/larbin (Thrall)", lambda k, v: re.search(r"\b(esclave|larbin)s?\b", v, re.I)
          and "hrall" in en.get(k, ""), 0),
         ("Smithy rendu 'forge'", lambda k, v: re.search(r"\bSmithy\b", en.get(k, ""), re.I)
          and re.search(r"[Ff]orge", v), 0),
