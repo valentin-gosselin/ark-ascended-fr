@@ -72,10 +72,14 @@ def detecteurs(en, ed):
         # la VF officielle traduisait les noms de touches comme des mots
         # ordinaires : Slash -> « Sabrer », Tilde -> « Attacher », LeftShift ->
         # « Decalage a gauche ». Ces rendus ne doivent jamais revenir.
-        ("noms de touches absurdes", lambda k, v: v in (
-            "Sabrer", "Attacher", "Soumission", "Languette", "Chariot droit",
-            "Décalage à gauche", "Barre de barre", "Équivaut à", "Période",
-            "Leftmousebutton", "Numpadthree", "NumpadThere"), 0),
+        ("noms de touches absurdes", lambda k, v: en.get(k, "").strip() in (
+            "Slash", "Tilde", "MouseScrollUp", "MouseScrollDown", "Tab", "RightShift",
+            "LeftShift", "Backslash", "Equals", "Period", "LeftMouseButton",
+            "NumPadThree", "LeftBracket", "RightBracket", "CapsLock", "SpaceBar")
+         and not re.fullmatch(r"[^A-Za-z]|Maj (gauche|droite)|Ctrl (gauche|droite)|"
+                              r"Alt (gauche|droite)|Verr Maj|Espace|Tab|Retour arrière|"
+                              r"Num \d|Molette vers le (haut|bas)|Bouton (gauche|droit|central) de la souris",
+                              v.strip()), 0),
     ]
 
 
