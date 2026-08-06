@@ -77,6 +77,11 @@ le monde.
   cosmétiques), « - {NAME} - » et le journal de tribu en anglais viennent du code
   du jeu ou de mods, et non des fichiers de langue : aucun patch de traduction
   ne peut les atteindre.
+- L'écran des raccourcis clavier affiche les noms **bruts** de certaines touches
+  (`UnknownCharCode_201`, `MiddleMouseButton`…) : cet écran contourne le système
+  de traduction, contrairement à la barre d'objets qui affiche bien « & », « ( »…
+- Les lettres accentuées des touches (É, È, Ç, À) viennent directement de la
+  disposition clavier du système, pas des fichiers de langue.
 - Les entrées passées du journal de tribu restent en anglais (elles sont
   figées au moment de l'événement) ; les nouvelles seront en français.
 
