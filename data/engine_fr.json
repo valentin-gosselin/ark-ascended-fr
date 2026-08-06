@@ -1,0 +1,18 @@
+{
+"InputKeys\tAmpersand": "&",
+"InputKeys\tAsterix": "*",
+"InputKeys\tBackslash": "\\",
+"InputKeys\tColon": ":",
+"InputKeys\tComma": ",",
+"InputKeys\tEquals": "=",
+"InputKeys\tHyphen": "-",
+"InputKeys\tLeftBracket": "[",
+"InputKeys\tLeftParantheses": "(",
+"InputKeys\tPeriod": ".",
+"InputKeys\tQuote": "\"",
+"InputKeys\tRightBracket": "]",
+"InputKeys\tRightParantheses": ")",
+"InputKeys\tSemicolon": ";",
+"InputKeys\tSlash": "/",
+"InputKeys\tUnderscore": "_"
+}

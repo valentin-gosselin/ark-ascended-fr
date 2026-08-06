@@ -73,8 +73,10 @@ le monde.
   leurs accents en capitales (« NéCESSITE… ») : le même texte s'affiche
   normalement ailleurs, aucune donnée ne peut satisfaire les deux widgets.
   La VF officielle a le même artefact.
-- « Crafting Requirements », « WEIGHT », « - {NAME} - » et le journal de tribu
-  en anglais viennent du code du jeu ou de mods, pas des fichiers de langue.
+- « Crafting Requirements », « WEIGHT », « Last: », « ALLOWED » (liste des
+  cosmétiques), « - {NAME} - » et le journal de tribu en anglais viennent du code
+  du jeu ou de mods, et non des fichiers de langue : aucun patch de traduction
+  ne peut les atteindre.
 - Les entrées passées du journal de tribu restent en anglais (elles sont
   figées au moment de l'événement) ; les nouvelles seront en français.
 

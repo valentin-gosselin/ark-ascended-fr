@@ -20,6 +20,10 @@ ASA = "/mnt/Apps/SteamLibrary/steamapps/common/ARK Survival Ascended"
 PAKS = os.path.join(ASA, "ShooterGame/Content/Paks")
 SRC_PAK = os.path.join(PAKS, "pakchunk0-Windows.pak")
 LOCRES_IN_PAK = "../../../ShooterGame/Content/Localization/ShooterGame/{lang}/ShooterGame.locres"
+# Certains libelles ne sont pas dans le locres du jeu mais dans celui du moteur :
+# les noms de touches (namespace InputKeys) y vivent, d'ou l'affichage
+# « Esperluette » au lieu de « & » dans les raccourcis.
+ENGINE_IN_PAK = "../../../Engine/Content/Localization/Engine/fr/Engine.locres"
 WORK = os.path.join(ROOT, "work")
 REPAK = os.path.join(ROOT, "tools/repak_cli-x86_64-unknown-linux-gnu/repak")
 
@@ -79,6 +83,18 @@ def main():
     else:
         cmd += ["build", os.path.join(WORK, "ShooterGame_fr.locres")]
     run(*cmd, merged, os.path.join(stage, "ShooterGame.locres"))
+    # 3 bis. locres du moteur : uniquement les noms de touches
+    engine_data = os.path.join(ROOT, "data/engine_fr.json")
+    if os.path.exists(engine_data):
+        src = os.path.join(WORK, "Engine_fr.locres")
+        if not os.path.exists(src) or os.path.getmtime(src) < os.path.getmtime(SRC_PAK):
+            run(sys.executable, os.path.join(ROOT, "tools/pakv12.py"), "extract",
+                SRC_PAK, ENGINE_IN_PAK, src)
+        stage_e = os.path.join(WORK, "pak_stage/Engine/Content/Localization/Engine/fr")
+        os.makedirs(stage_e, exist_ok=True)
+        run(sys.executable, os.path.join(ROOT, "tools/locres.py"), "build", src,
+            engine_data, os.path.join(stage_e, "Engine.locres"))
+
     pak = os.path.join(WORK, "TradFR_P.pak")
     run(REPAK, "pack", "--version", "V11", "-m", "../../../", "-q",
         os.path.join(WORK, "pak_stage"), pak)
