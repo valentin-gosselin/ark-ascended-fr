@@ -99,7 +99,10 @@ def main():
         norm = {tuple(sorted(re.sub(r"\b(Wood|Wooden)\b", "Wood", n)
                             .replace("Gateframe", "Gateway")
                             .replace("Trapdoor Ceiling", "Hatchframe")
-                            .replace("Hatchframe", "Gateway").split()))
+                            .replace("Hatchframe", "Gateway")
+                            # « Stone Gateway » et « Stone Dinosaur Gateway »
+                            # designent le meme objet : le jeu emploie les deux
+                            .replace("Dinosaur ", "").split()))
                 for n in noms_en}
         return len(norm) == 1
     collisions = [ns for f, ns in noms.items() if len(ns) > 1 and not meme_objet(ns)]
