@@ -8134,5 +8134,15 @@
 "Content\t2111919246": "VOIR LA NOTE D'EXPLORATEUR",
 "GraphLiteral\t2866202377": "Activer la liaison au digicode le plus proche",
 "GraphLiteral\t2424561152": "Désactiver la liaison au digicode le plus proche",
-"GraphLiteral\t2667066748": "INTERFACE"
+"GraphLiteral\t2667066748": "INTERFACE",
+"Globals\t3924354068": "'",
+"Globals\t2356783179": "\\",
+"Globals\t1554437126": ",",
+"Globals\t798842749": "=",
+"Globals\t3533979111": "-",
+"Globals\t2924117258": ".",
+"Globals\t20204416": ";",
+"Globals\t2224810691": "/",
+"Globals\t87912519": "~",
+"Globals\t3385211057": "Tab"
 }

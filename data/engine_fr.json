@@ -14,5 +14,7 @@
 "InputKeys\tRightParantheses": ")",
 "InputKeys\tSemicolon": ";",
 "InputKeys\tSlash": "/",
-"InputKeys\tUnderscore": "_"
+"InputKeys\tUnderscore": "_",
+"InputKeys\tPageUp": "Page préc.",
+"InputKeys\tPageDown": "Page suiv."
 }
