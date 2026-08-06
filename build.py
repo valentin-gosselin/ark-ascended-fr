@@ -23,7 +23,7 @@ LOCRES_IN_PAK = "../../../ShooterGame/Content/Localization/ShooterGame/{lang}/Sh
 # Certains libelles ne sont pas dans le locres du jeu mais dans celui du moteur :
 # les noms de touches (namespace InputKeys) y vivent, d'ou l'affichage
 # « Esperluette » au lieu de « & » dans les raccourcis.
-ENGINE_IN_PAK = "../../../Engine/Content/Localization/Engine/fr/Engine.locres"
+ENGINE_IN_PAK = "../../../Engine/Content/Localization/Engine/{lang}/Engine.locres"
 WORK = os.path.join(ROOT, "work")
 REPAK = os.path.join(ROOT, "tools/repak_cli-x86_64-unknown-linux-gnu/repak")
 
@@ -86,13 +86,17 @@ def main():
     # 3 bis. locres du moteur : uniquement les noms de touches
     engine_data = os.path.join(ROOT, "data/engine_fr.json")
     if os.path.exists(engine_data):
-        src = os.path.join(WORK, "Engine_fr.locres")
-        if not os.path.exists(src) or os.path.getmtime(src) < os.path.getmtime(SRC_PAK):
-            run(sys.executable, os.path.join(ROOT, "tools/pakv12.py"), "extract",
-                SRC_PAK, ENGINE_IN_PAK, src)
+        for lang in ("fr", "en"):
+            out = os.path.join(WORK, f"Engine_{lang}.locres")
+            if not os.path.exists(out) or os.path.getmtime(out) < os.path.getmtime(SRC_PAK):
+                run(sys.executable, os.path.join(ROOT, "tools/pakv12.py"), "extract",
+                    SRC_PAK, ENGINE_IN_PAK.format(lang=lang), out)
         stage_e = os.path.join(WORK, "pak_stage/Engine/Content/Localization/Engine/fr")
         os.makedirs(stage_e, exist_ok=True)
-        run(sys.executable, os.path.join(ROOT, "tools/locres.py"), "build", src,
+        # merge et non build : certaines touches (Apostrophe, Caret...) n'ont
+        # aucune entree francaise, il faut les greffer depuis l'anglais
+        run(sys.executable, os.path.join(ROOT, "tools/locres.py"), "merge",
+            os.path.join(WORK, "Engine_fr.locres"), os.path.join(WORK, "Engine_en.locres"),
             engine_data, os.path.join(stage_e, "Engine.locres"))
 
     pak = os.path.join(WORK, "TradFR_P.pak")

@@ -16,5 +16,9 @@
 "InputKeys\tSlash": "/",
 "InputKeys\tUnderscore": "_",
 "InputKeys\tPageUp": "Page préc.",
-"InputKeys\tPageDown": "Page suiv."
+"InputKeys\tPageDown": "Page suiv.",
+"InputKeys\tApostrophe": "'",
+"InputKeys\tCaret": "^",
+"InputKeys\tDollar": "$",
+"InputKeys\tExclamation": "!"
 }
