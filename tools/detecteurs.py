@@ -69,6 +69,13 @@ def detecteurs(en, ed):
         ("'monté(e)'", lambda k, v: "monté(e)" in v, 0),
         ("'immunisé à/aux'", lambda k, v: re.search(r"[Ii]mmunis[ée]e?s? (à|aux|au)\b", v), 0),
         ("serie animee traduite", lambda k, v: "érie animée" in v.lower(), 0),
+        # la VF officielle traduisait les noms de touches comme des mots
+        # ordinaires : Slash -> « Sabrer », Tilde -> « Attacher », LeftShift ->
+        # « Decalage a gauche ». Ces rendus ne doivent jamais revenir.
+        ("noms de touches absurdes", lambda k, v: v in (
+            "Sabrer", "Attacher", "Soumission", "Languette", "Chariot droit",
+            "Décalage à gauche", "Barre de barre", "Équivaut à", "Période",
+            "Leftmousebutton", "Numpadthree", "NumpadThere"), 0),
     ]
 
 
