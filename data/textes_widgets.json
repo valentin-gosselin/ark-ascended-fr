@@ -43,6 +43,10 @@
   "Guard",
   "Garde"
  ],
+ "\t004FCC1C4EC4EE9ED76B3FAFC6130EB9": [
+  "If we just --",
+  "Si seulement on --"
+ ],
  "\t005FAFA645D1537832A14E9762DEBE3C": [
   "TUNNELS",
   "TUNNELS"
@@ -70,6 +74,10 @@
  "\t0088D4384B0E1B7FCAB0B0B713CBF4B8": [
   "No more stalling, Doctor.",
   "Assez tergiversé, Docteur."
+ ],
+ "\t0095C9384941B2209A17D38E96AE72E4": [
+  "WON: 2000",
+  "GAGNÉ : 2000"
  ],
  "\t00976CFE463B2E8135AEF6B54B21D7AA": [
   "Depth of Field Step",
@@ -102,6 +110,10 @@
  "\t00DF6EA14671BBC7DD692C90AFCAD87C": [
   "Gene Traits:",
   "Traits génétiques :"
+ ],
+ "\t00E212B74A258B82DC53329CE6F969C1": [
+  "ON",
+  "ACTIVÉ"
  ],
  "\t00E54ABC4638B45B724D1BA1B506C11B": [
   "Guard",
@@ -154,6 +166,10 @@
  "\t01579CFA40CDB777D70B2EBF467F4805": [
   "Once you disable the shielding over Arat Prime, you can upload the Codex, along with your own engrams.",
   "Une fois que vous aurez désactivé le bouclier au-dessus d'Arat Prime, vous pourrez téléverser le Codex, ainsi que vos propres engrammes."
+ ],
+ "\t01659CAA4790476486D3C1AB4CEB3C6C": [
+  "Diana...",
+  "Diana..."
  ],
  "\t016DAE2A47178E531ECEAAAD452361E6": [
   "Defense Commander",
@@ -214,6 +230,10 @@
  "\t01C4ECF246BA35C004550E9821381841": [
   "More like... existing in a state at one with the Universe,",
   "Plutôt comme... exister dans un état ne faisant qu'un avec l'Univers,"
+ ],
+ "\t01C581DC4B60D3375F97AEAAABB862AD": [
+  "Generator",
+  "Générateur"
  ],
  "\t01DF188B46081AFC56FBB0AC3A550BF6": [
   "Proto-Harvester Mastery",
@@ -591,6 +611,10 @@
   "Button 5",
   "Bouton 5"
  ],
+ "\t0509D51F496717CAE910B199B08DA507": [
+  "(While Thrown) Teleport to Spear",
+  "(Une fois lancée) Se téléporter à la lance"
+ ],
  "\t05156048438E319196BC2B89F82E39CD": [
   "Change Range From: ",
   "Modifier la plage depuis : "
@@ -610,6 +634,10 @@
  "\t0528D83449A2B5E640EA93B5BDF0FBCB": [
   "Sabotage",
   "Sabotage"
+ ],
+ "\t052F2E304D643BE32665A49AFF246F5D": [
+  "Harvest 1,000 Thatch",
+  "Récolter 1 000 branchages"
  ],
  "\t053577E74AB8EFBDDF7296BFB495B255": [
   "CHARGE",
@@ -674,6 +702,10 @@
  "\t05DD78244D28EB7E543903904F29AD4A": [
   "Guard",
   "Garde"
+ ],
+ "\t05DDF5A7424A41C0AF6545A6D09D8B78": [
+  "Wind Speed",
+  "Vitesse du vent"
  ],
  "\t05F45BBD459F0D2DE2CF9ABAD5A6C3B9": [
   "Tame Any 5 of the Following: Armadoggo, Dire Bear, Direwolf, Allosaurus, or Kaprosuchus",
@@ -823,6 +855,10 @@
   "DEPLOYED RIGS",
   "RIGS DÉPLOYÉS"
  ],
+ "\t06FE8F6E4A7F148CB343BD9139F9181D": [
+  "Generator",
+  "Générateur"
+ ],
  "\t07101245482985507F15AA91A8E50390": [
   "Hold",
   "Maintenir"
@@ -911,6 +947,10 @@
   "I will not see you destroy our way of life!",
   "Je ne vous laisserai pas détruire notre mode de vie !"
  ],
+ "\t07C3CD9D4F36F254C90BEDBA76B71CE4": [
+  "Alpha Creature Kill",
+  "Tuer une créature alpha"
+ ],
  "\t07E7F7C549184C3F7A5B84B0BF0E4AA2": [
   "Parts",
   "Pièces"
@@ -946,6 +986,10 @@
  "\t0816BBFF47FDE852A34A31A1A3370C21": [
   "Effects Quality",
   "Qualité des effets"
+ ],
+ "\t081741C0419ED65EFCEDEABF50AED587": [
+  "Sure...",
+  "Bien sûr..."
  ],
  "\t08351FFA427759FED5C248BEF022FCAA": [
   "Tek Blademaster",
@@ -999,6 +1043,10 @@
   "You found the master encryption key! Now I can decrypt the override code...",
   "Tu as trouvé la clé de chiffrement maîtresse ! Maintenant je peux décrypter le code de contournement..."
  ],
+ "\t08AE699F4337EE5D4BC7908FEF404E73": [
+  "Zoom Camera",
+  "Zoom de la caméra"
+ ],
  "\t08BD53D34324377D256B52A27CC0A7D7": [
   "Meeka:  Uh -- are you sure that was MY dad with you?",
   "Meeka :  Euh -- t'es sûr que c'était MON père avec toi ?"
@@ -1034,6 +1082,10 @@
  "\t09070FF448026F3A5C08A4A15079B8BC": [
   "EndAttack",
   "EndAttack"
+ ],
+ "\t09308A294A608AB879C021B872CC087B": [
+  "Sword Rack",
+  "râtelier à épées"
  ],
  "\t093C50544B82B89DAB4746919DDC0DEF": [
   "Expandable",
@@ -1138,6 +1190,10 @@
  "\t0A0828A642C797A8B215699C6BAA9FA6": [
   "Cannon",
   "Canon"
+ ],
+ "\t0A09CA8B40E14A084C6E62B0F9E96E05": [
+  "Turn Rudder",
+  "Tourner le gouvernail"
  ],
  "\t0A201A2B4089AEC1FEA65E8E15A2203C": [
   "Search Filter",
@@ -1250,6 +1306,10 @@
  "\t0B0DA12B4C16FD056166FEBEE6787A4C": [
   "Short description here consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et",
   "Courte description ici consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et"
+ ],
+ "\t0B17616049B655DF61A1D9B299AE8C8F": [
+  "Training Dummy",
+  "Mannequin d'entraînement"
  ],
  "\t0B18D798419BFE64A3A3D984A7397FA9": [
   "Enables Players to create their own recipes and cook custom foods using the recipes.",
@@ -1471,6 +1531,10 @@
   "Default",
   "Par défaut"
  ],
+ "\t0C8713E949A09433A99AF492CBAD97A9": [
+  "Sword Rack",
+  "râtelier à épées"
+ ],
  "\t0C8EB2C14223C98CCC5424BD686EF18A": [
   "Cannon",
   "Canon"
@@ -1522,6 +1586,10 @@
  "\t0D12F9E84FFC7E1D9B2AC19969D13CF7": [
   "The scaling factor for the amount of Water gained by tamed Creatures as a percentage of the default setting.",
   "Le facteur d'échelle de la quantité d'eau gagnée par les créatures apprivoisées, en pourcentage du réglage par défaut."
+ ],
+ "\t0D20ED5244EC9B766B6E3083303857F7": [
+  "Generator",
+  "Générateur"
  ],
  "\t0D25660A4A3BF0C5AAD685988515768A": [
   "Reverse Assassination",
@@ -1611,6 +1679,10 @@
   "And who knows, I might just grow on ya.",
   "Et qui sait, vous finirez peut-être par m'apprécier."
  ],
+ "\t0DFCEB7F4E1642480F0CF989D8332A59": [
+  "Unsort",
+  "Annuler le tri"
+ ],
  "\t0E082C32498B1F54B4C9939A61D06057": [
   "This link will open your system's default web browser. You\r\nwill need to navigate back to the game after you finish.",
   "Ce lien ouvrira le navigateur web par défaut de votre système. Vous\r\ndevrez revenir au jeu une fois terminé."
@@ -1682,6 +1754,10 @@
  "\t0E5E78DC4EB12BA0BAB0BC8C30AC538A": [
   "Tundra Power",
   "Puissance de la toundra"
+ ],
+ "\t0E63E6CB48FE2C8BE892F7A16C158393": [
+  "Generator",
+  "Générateur"
  ],
  "\t0E6493ED46298538FF00DF83797AFCA9": [
   "INVALID_(State_0)",
@@ -1783,6 +1859,10 @@
   "Auto Turret",
   "Tourelle automatique"
  ],
+ "\t0F32786143C770D0D08908B9EAA72FCB": [
+  "Back Nest",
+  "Nid arrière"
+ ],
  "\t0F3C99A64AD83FF5868CF2A9CCADDCFF": [
   "Cannon",
   "Canon"
@@ -1879,9 +1959,17 @@
   "Boxes",
   "Caisses"
  ],
+ "\t10148EF84A7CD3DD1A1A0D97E6E5F517": [
+  "Generator",
+  "Générateur"
+ ],
  "\t1030D58748906A78A0E4F19A29F1C8C5": [
   "Given time, you could wield such power. Power over death... and the power to give life.",
   "Avec le temps, vous pourriez manier un tel pouvoir. Le pouvoir sur la mort... et le pouvoir de donner la vie."
+ ],
+ "\t103CCF8F464DD30BEE5D51B92497087D": [
+  "Pathetic.",
+  "Pathétique."
  ],
  "\t10434C4C43E63ED6099B34853054F220": [
   "Urban Explorer",
@@ -1922,6 +2010,10 @@
  "\t109372A54CBA62843C5D0EB12052BC36": [
   "Disable All",
   "Tout désactiver"
+ ],
+ "\t10969D8F463082C497557BA01191B676": [
+  "Sky Gate",
+  "Portail céleste"
  ],
  "\t10A224984016096967A6CAA451F7DDAC": [
   "Enter your text here",
@@ -2003,6 +2095,10 @@
   "Respawn Interval Base Amount",
   "Valeur de base de l'intervalle de réapparition"
  ],
+ "\t11760A3E43CD147C6D41DD9B5DCE0306": [
+  "Generator",
+  "Générateur"
+ ],
  "\t1177D0974BB8512B2C0A269A29F952F2": [
   "MARKET NAME",
   "NOM DU MARCHÉ"
@@ -2059,6 +2155,10 @@
   "Disable Passive Healing",
   "Désactiver la guérison passive"
  ],
+ "\t11E70141457DD0E47584A2A687FC0107": [
+  "Spooky",
+  "Sinistre"
+ ],
  "\t11ECE1BC4BD429E2FF7C76A02D082A7E": [
   "Face Template",
   "Modèle de visage"
@@ -2090,6 +2190,10 @@
  "\t1211044944EC61F1D2D99FA6377C8083": [
   "Use their knowledge and resources to become stronger, to expand, and to conquer. ",
   "Utilisez leur savoir et leurs ressources pour devenir plus fort, vous étendre et conquérir. "
+ ],
+ "\t1215CD614D403E21D145CCA8D79B5521": [
+  "Health",
+  "Santé"
  ],
  "\t121DAF6C4A6C5ADD93F11992F26E6B10": [
   "Harvesting Health Increase",
@@ -2138,6 +2242,10 @@
  "\t127CE8A949D213E27A6EFCB890FB0BB2": [
   "Spotlight",
   "Projecteur"
+ ],
+ "\t1283CE48402D41816E6F7F9618A8FF2E": [
+  "Training Dummy",
+  "Mannequin d'entraînement"
  ],
  "\t1288069E4FCAA4EDD307198EBD503922": [
   "Guard",
@@ -2191,6 +2299,10 @@
   "Cryofridge",
   "Cryofrigo"
  ],
+ "\t1329F95A40BE298E944EDFB48DA69E35": [
+  "Hovered",
+  "Survolé"
+ ],
  "\t132A1AAD457961CC159782BA201015C2": [
   "DELETE MODE",
   "MODE SUPPRESSION"
@@ -2235,6 +2347,10 @@
   "Chance",
   "Chance"
  ],
+ "\t138F8EA045A71E16B86520A688C59970": [
+  "Health",
+  "Santé"
+ ],
  "\t1393B37E415F957CECC7F09B6D89E856": [
   "The scaling factor for the damage Creatures deal when harvesting resources. Higher values mean faster resource collection.",
   "Le facteur d'échelle des dégâts infligés par les créatures en récoltant des ressources. Des valeurs plus élevées accélèrent la récolte."
@@ -2258,6 +2374,10 @@
  "\t13BC99C14443A3519CC73DB042506CC7": [
   "Face 3",
   "Visage 3"
+ ],
+ "\t13CC57394FD66E264FBF7DAA13897514": [
+  "Updating...",
+  "Mise à jour..."
  ],
  "\t13CCD3CA4AEEF6F2B68B70A662442134": [
   "Distance Field Ambient Occlusion ( EXPENSIVE! )",
@@ -2371,9 +2491,17 @@
   "<<Meiyin and Diana Altaras>> Archival Audio 004\r\nCross-Reference: <<Helena Walker>>\r\n\r\nThe following conversation took place just after Helena was reunited with Meiyin on the Aberrant ARK.",
   "<<Mei-Yin et Diana Altaras>> Audio d'archives 004\r\nRéférence croisée : <<Helena Walker>>\r\n\r\nLa conversation suivante a eu lieu juste après qu'Helena a retrouvé Mei-Yin sur l'ARK aberrant."
  ],
+ "\t147A511B455E071158681792941BC422": [
+  "Sword Rack",
+  "râtelier à épées"
+ ],
  "\t148B60914C055E71C41AF082EBD5196A": [
   "Auto Turret",
   "Tourelle automatique"
+ ],
+ "\t148E0E6A48B7536F674AE9A4A04184C5": [
+  "Training Dummy",
+  "Mannequin d'entraînement"
  ],
  "\t148F3E8641168426510872A42E2E15B5": [
   "Urban Explorer",
@@ -2418,6 +2546,10 @@
  "\t151EA99349FFDAEC413645A9BAFDD007": [
   "Pending",
   "En attente"
+ ],
+ "\t151EEA7644DBD4E80495CBAB042FEBC7": [
+  "Sails",
+  "Voiles"
  ],
  "\t1533E3A54DBEEA8661089081DA4F4BE7": [
   "Marksman's Endgame",
@@ -2539,6 +2671,10 @@
   "Keep your distance from those Red Element crystals. They're leaking something terrible.",
   "Gardez vos distances avec ces cristaux d'Élément rouge. Ils laissent échapper quelque chose de terrible."
  ],
+ "\t161D04FF4A43E16673D01D9D25CD4ECD": [
+  "Sword Rack",
+  "râtelier à épées"
+ ],
  "\t16229B5645E5A5C6B63815BB8924B98D": [
   "Torpidity",
   "Torpeur"
@@ -2567,6 +2703,10 @@
   "Teleport Attack",
   "Attaque de téléportation"
  ],
+ "\t1664B37543694718DDEBBB9430F63132": [
+  "Unbreakable.",
+  "Incassable."
+ ],
  "\t1666008140AB459ADC0A8096359649B6": [
   "Bloodlust",
   "Soif de sang"
@@ -2578,6 +2718,10 @@
  "\t167C732741B550379BE7EAAFA162C2D5": [
   "Bio Expert",
   "Expert en biologie"
+ ],
+ "\t1684A41E467EF54FE8AB76B1643F2D4B": [
+  "ALL",
+  "TOUT"
  ],
  "\t1687D63346EB0D4CBA93B99B50398F44": [
   "Cannon",
@@ -2659,6 +2803,10 @@
   "Cannon",
   "Canon"
  ],
+ "\t172786B84BEBF6AA1A86798E54E56634": [
+  "Training Dummy",
+  "Mannequin d'entraînement"
+ ],
  "\t172ACFF14A6AC04B730D1C9365D29712": [
   "Guard",
   "Garde"
@@ -2694,6 +2842,10 @@
  "\t17AF6DB343FC940A130FFF8ECCDDE3B7": [
   "Wind",
   "Vent"
+ ],
+ "\t17B7A812474A9E2DEE1E9D9A21443F0D": [
+  "Sword Rack",
+  "râtelier à épées"
  ],
  "\t17B915BD4BF2AECE09387D9137B4A54B": [
   "There was another where we are now, but... that was destroyed.",
@@ -2834,6 +2986,10 @@
  "\t193CC1AE48B9FB4E99419D89804AA248": [
   "This mod is free to download. Upgrade to premium version to enjoy additional features.",
   "Ce mod est gratuit à télécharger. Passez à la version premium pour profiter de fonctionnalités supplémentaires."
+ ],
+ "\t194025134B4E973761D0E297D66AA7F2": [
+  "Generator",
+  "Générateur"
  ],
  "\t1961693A41463E7A412AE7939DBB06D6": [
   "Banish all regrets, Edmund, for sentimentality accomplishes nothing.",
@@ -3027,6 +3183,10 @@
   "Rain",
   "Pluie"
  ],
+ "\t1AF27D514797EE277F9EF3A80927F5DE": [
+  "FEED",
+  "NOURRIR"
+ ],
  "\t1AF2CFE74D1312D4FB311D8CBED75F0B": [
   "Respawn Interval Multiplier",
   "Multiplicateur d'intervalle de réapparition"
@@ -3046,6 +3206,18 @@
  "\t1B0197184060F06EE59786A59C9F80A9": [
   "Increased Against Large/Decreased Against Small",
   "Augmenté contre les grandes cibles/diminué contre les petites"
+ ],
+ "\t1B0643DA4249C267FEECA1AFC03DF457": [
+  "Generator",
+  "Générateur"
+ ],
+ "\t1B0D1C494D1E97E2280E0F9491857DFA": [
+  "Fire Cannons",
+  "Tirer au canon"
+ ],
+ "\t1B197A1847CA9FEA2D0E9887A04CA107": [
+  "ON",
+  "ACTIVÉ"
  ],
  "\t1B1F964D408838239F11C8B2A703A5B0": [
   "Elite Hunter",
@@ -3134,6 +3306,10 @@
  "\t1BCA6E7843CA4774311C4F93A3BDF2A3": [
   "Alliance",
   "Alliance"
+ ],
+ "\t1BD738CE4B32BEA9F5D729BD9CB48230": [
+  "Generator",
+  "Générateur"
  ],
  "\t1BDB3D8042C3C53B6A2CD68856389B28": [
   "Player Tooltip Setting:",
@@ -3259,6 +3435,10 @@
   "Guard",
   "Garde"
  ],
+ "\t1CC173B047635B49D43C91AC64AB146B": [
+  "Trap",
+  "Piège"
+ ],
  "\t1CC97846444B9F8D3A798AAE66E55CB0": [
   "Imprinter",
   "Imprégnateur"
@@ -3274,6 +3454,10 @@
  "\t1CEB33CA4A666ECCB6F1C8A039810A0F": [
   "Guard",
   "Garde"
+ ],
+ "\t1D0213364539FF6CDBE608BDD71D82C2": [
+  "Cloudy",
+  "Nuageux"
  ],
  "\t1D0D65D6480C683FD39A21ACB5B35651": [
   "Herbivores",
@@ -3671,6 +3855,14 @@
   "SELECT TO TRACK OR UNTRACK ON MAP",
   "SÉLECTIONNER POUR SUIVRE OU NE PLUS SUIVRE SUR LA CARTE"
  ],
+ "\t1FDB26854BCF2E8A9D34F299BC1491CF": [
+  "Sword Rack",
+  "râtelier à épées"
+ ],
+ "\t1FE97D2D4FFBBB1C2AA60AB1E0A2A718": [
+  "Sword Rack",
+  "râtelier à épées"
+ ],
  "\t1FE98721422AD29C09B26CA7767BFA6A": [
   "Max Quantity",
   "Quantité max"
@@ -3903,6 +4095,10 @@
   "Obtain 20 Nameless Venom",
   "Obtenir 20 de Venin de Nameless"
  ],
+ "\t21CBDDD24252CBA06C9667A5D7CE2138": [
+  "Stage 4",
+  "Étape 4"
+ ],
  "\t21CDC89B46DA26557BF90DAB2CBCF54C": [
   "Background Color",
   "Couleur d'arrière-plan"
@@ -3962,6 +4158,10 @@
  "\t2267362D43FC1BA090416E8C78F342A9": [
   "Louis",
   "Louis"
+ ],
+ "\t22776B7446047C2DE8F47294F3400FB7": [
+  "PAN:",
+  "PANORAMIQUE :"
  ],
  "\t2280B34C4D1DC8BB4EF8C28D2679495D": [
   "From here, my children can watch over every living thing in the valley and dispatch enforcers to deal with any interlopers or fugitives.",
@@ -4099,6 +4299,10 @@
   "{Crouch} Camera Mode",
   "Mode caméra {Crouch}"
  ],
+ "\t238759BF47A78C5C2C461082AF913D0F": [
+  "Primary",
+  "Principal"
+ ],
  "\t2389FCF14341194764B016A86F08EA7A": [
   "Santi and I are... we share something from that future we both came from.",
   "Santi et moi, on... on partage quelque chose de ce futur d'où nous venons tous les deux."
@@ -4167,6 +4371,10 @@
   "High-Tech Chemist",
   "Chimiste high-tech"
  ],
+ "\t240F383B47744E9E6F3C24B2BF28D6FE": [
+  "Training Dummy",
+  "Mannequin d'entraînement"
+ ],
  "\t242D4E014E58F1B057C598A8D589AA8A": [
   "LookingForFood",
   "LookingForFood"
@@ -4182,6 +4390,10 @@
  "\t2436AC7744F630C756F8108918B2485E": [
   "Slide",
   "Glisser"
+ ],
+ "\t24387F414838B6B0659A89927DF9D2D9": [
+  "Training Dummy",
+  "Mannequin d'entraînement"
  ],
  "\t2441F0694CCF3C511981FA960EF843A3": [
   "Besides, only I know how to deploy the Codex to create life.",
@@ -4254,6 +4466,10 @@
  "\t24E6AEA54E19D60C400A99A8A593BE24": [
   "Auto Turret",
   "Tourelle automatique"
+ ],
+ "\t24F0DF124032DFF4FD0CA6ABF1AF8F09": [
+  "MIMIC",
+  "IMITER"
  ],
  "\t24FCD3D8452195ABB27CE1858246B94A": [
   "Primitive Weapons",
@@ -4363,6 +4579,10 @@
   "This Creature drains torpor more quickly than normal",
   "Cette créature draine la torpeur plus rapidement que la normale"
  ],
+ "\t263665DD4216022E809F18AE26E79653": [
+  "Cooldown Reduction",
+  "Réduction du temps de recharge"
+ ],
  "\t263B9F504E2C495D881581906B54D1A5": [
   "Harvest 500,000 Common Resources",
   "Récolter 500 000 ressources communes"
@@ -4378,6 +4598,10 @@
  "\t2652268F465013F73EEA52B333E5B331": [
   "Craft 500 Ammo",
   "Fabriquer 500 munitions"
+ ],
+ "\t2652981547939FC17C20E89CD9C45137": [
+  "ON",
+  "ACTIVÉ"
  ],
  "\t265345C3422701B3C4CF5DA57A866028": [
   "Bob:  He wanted time to come up with a new secret weapon -- something big enough to go toe-to-toe with that Titan.",
@@ -4471,6 +4695,10 @@
   "...through the slipstream.",
   "...à travers le sillage."
  ],
+ "\t2726EC0541C4935F08D30DBCA003201A": [
+  "Sword Rack",
+  "râtelier à épées"
+ ],
  "\t2727D33440F4E40ADD934FB2525B4A26": [
   "Your pickaxes deal <RichColor Color=\"1, 0, 0.0, 1.0\">10%</> more damage and have a <RichColor Color=\"1, 0, 0.0, 1.0\">5%</> to stun an enemy for <RichColor Color=\"1, 0, 0.0, 1.0\">0.5s</> seconds.",
   "Vos pioches infligent <RichColor Color=\"1, 0, 0.0, 1.0\">10 %</> de dégâts supplémentaires et ont <RichColor Color=\"1, 0, 0.0, 1.0\">5 %</> de chances d'étourdir un ennemi pendant <RichColor Color=\"1, 0, 0.0, 1.0\">0,5 s</> secondes."
@@ -4514,6 +4742,10 @@
  "\t27729C3544603A987F7EA1963B6A10C9": [
   "The scaling factor for how much experience is gained as a result of killing tamed creatures.",
   "Le facteur d'échelle de l'expérience gagnée en tuant des créatures apprivoisées."
+ ],
+ "\t2781A35942534CF7B7C9BC84C0765831": [
+  "Together...",
+  "Ensemble..."
  ],
  "\t2783E3464490335DD6C237AAA4366996": [
   "Boxes",
@@ -4707,6 +4939,10 @@
   "Giantslaying",
   "Tueur de géants"
  ],
+ "\t295F52DA40034BE44E874FAC794B0A7C": [
+  "Sword Rack",
+  "râtelier à épées"
+ ],
  "\t296EE0F44F01924C8A5AF3835AD76368": [
   "Table",
   "Table"
@@ -4875,6 +5111,10 @@
   "Deal 1,000 Damage with Spears",
   "Infliger 1 000 dégâts avec des lances"
  ],
+ "\t2AB1E0B04E3F88317885289C291260FE": [
+  "Sword Rack",
+  "râtelier à épées"
+ ],
  "\t2AB94BCE418C093916EB6B88BD97D468": [
   "PARTNER ARKS",
   "ARKS PARTENAIRES"
@@ -4903,6 +5143,10 @@
   "Has increased carrying capacity",
   "A une capacité de charge accrue"
  ],
+ "\t2AF02EF6470DED2B9BCF52AD6EC3E041": [
+  "Rotate Sails",
+  "Orienter les voiles"
+ ],
  "\t2AF71BFA4C7CFD174F942AAFAD970607": [
   "I will make them hold.",
   "Je les ferai tenir."
@@ -4923,6 +5167,10 @@
   "Harvest 5,000 Bio Toxin",
   "Récolter 5 000 de Toxine biologique"
  ],
+ "\t2B4C7C5B4A72D5E415B00CB4449587AF": [
+  "Training Dummy",
+  "Mannequin d'entraînement"
+ ],
  "\t2B4D558343A1A9CF3B1742B4EE055B69": [
   "...alien world across the galaxy,",
   "...monde extraterrestre à l'autre bout de la galaxie,"
@@ -4930,6 +5178,10 @@
  "\t2B51562347528A55DEA7D28937719FC4": [
   "Veilwyn Ascension",
   "Ascension de Veilwyn"
+ ],
+ "\t2B51904E4207CABAEFF6E3A0A6FACE18": [
+  "Generator",
+  "Générateur"
  ],
  "\t2B5432724C6ADA2C4E158D84B8DAEAEC": [
   "None",
@@ -5146,6 +5398,10 @@
  "\t2D23569E4E261C35CEEA9E8A95E196C9": [
   "Auto Turret",
   "Tourelle automatique"
+ ],
+ "\t2D28CB824D12AB7594246DB282C3E93E": [
+  "Movement Speed",
+  "Vitesse de déplacement"
  ],
  "\t2D32F0B94D0AC7A8E3F104A7C1093D87": [
   "Bob:  Now that we had set up a base camp, our little tribe of misfits realized we were gonna need a chief.",
@@ -5411,6 +5667,10 @@
   "The scaling factor for the amount of Water gained by Players per point invested, as a percentage of the default setting.",
   "Le facteur d'échelle de l'eau gagnée par les joueurs par point investi, en pourcentage du réglage par défaut."
  ],
+ "\t2FB501474C7E7B7D2C537DAB229B37D4": [
+  "GlacialSwiftness",
+  "Vivacité glaciaire"
+ ],
  "\t2FD7D5A94CF2E0B94B58049DF9573CB0": [
   "Apprentice Builder",
   "Constructeur novice"
@@ -5623,6 +5883,10 @@
   "Elite Hunter",
   "Chasseur d'élite"
  ],
+ "\t31A686F94C57D738507D8BB4A09CA850": [
+  "Damage",
+  "Dégâts"
+ ],
  "\t31A6DF1E4934D132CA8D569CD9C91697": [
   "Rookie Scout",
   "Éclaireur débutant"
@@ -5707,6 +5971,10 @@
   "SHOW ALL",
   "TOUT AFFICHER"
  ],
+ "\t321E0F8040C14E69CE0AA98A1C48C974": [
+  "Added To Plant Pot",
+  "Ajouté au pot"
+ ],
  "\t323D24404D20F9F6A325B9A69BB031A5": [
   "Survival Boon",
   "Bienfait de survie"
@@ -5787,6 +6055,10 @@
   "Toggle Burrow Type",
   "Basculer le type de terrier"
  ],
+ "\t32E2D7E8471F8D5C78890FBB673FC780": [
+  "Generator",
+  "Générateur"
+ ],
  "\t32E961814A77C20C2A6B1AB9CB430A40": [
   "Crystal Caver",
   "Spéléologue de cristal"
@@ -5818,6 +6090,10 @@
  "\t331F296341A6210529F37CA7670248DA": [
   "Bob:  And it turned out Santiago was one of the people best suited to fight inside of those things...",
   "Bob :  Et il s'est avéré que Santiago était l'une des personnes les mieux placées pour se battre dans ces trucs..."
+ ],
+ "\t3326C78D4CCD1BD31D96E18E56234514": [
+  "Generator",
+  "Générateur"
  ],
  "\t3328886149E93D6AC81F2BA349DFA5C8": [
   "Sort by:",
@@ -5854,6 +6130,10 @@
  "\t33452AB74AFB92DA90E6A9998EC60934": [
   "Amount Q:",
   "Montant Q :"
+ ],
+ "\t33550C094AD69609A67927B0A8DF5E9A": [
+  "Sword Rack",
+  "râtelier à épées"
  ],
  "\t335B82D04C85990E146194B54A3D183C": [
   "Throw",
@@ -5974,6 +6254,10 @@
  "\t34960A5943BDEEC435F81F8AA611D436": [
   "Damage reflected",
   "Dégâts reflétés"
+ ],
+ "\t34A095A64EB16AA65CCFE08FBBB70A93": [
+  "Sword Rack",
+  "râtelier à épées"
  ],
  "\t34A1D3C3440D422DBBAB89A55DD48B02": [
   "Spotlight",
@@ -6155,6 +6439,10 @@
   "Torso Size",
   "Taille du torse"
  ],
+ "\t3659C6AA45021588F8712E9EE69DBF59": [
+  "Charge Time Reduction",
+  "Réduction du temps de charge"
+ ],
  "\t3661E4CE468295C326FF338D4AC50A80": [
   "SKILL TREE",
   "ARBRE DE COMPÉTENCES"
@@ -6231,6 +6519,10 @@
   "Industrial Ammo",
   "Munitions industrielles"
  ],
+ "\t36F118A34CFE8897E49E89A897B947C0": [
+  "Overcast",
+  "Couvert"
+ ],
  "\t36F3468D43AB536CE0CE7580E1F877E1": [
   "Disable Menu Transitions",
   "Désactiver les transitions de menu"
@@ -6267,6 +6559,10 @@
   "COSMETICS",
   "COSMÉTIQUES"
  ],
+ "\t3721636A44EB1B402D8074938CD8280E": [
+  "Training Dummy",
+  "Mannequin d'entraînement"
+ ],
  "\t3729B2AB40DEB4F8DF39A8A765532AC6": [
   "Progress: ",
   "Progression : "
@@ -6287,6 +6583,10 @@
   "HEAVY SWEEP",
   "BALAYAGE LOURD"
  ],
+ "\t375486DA48681F68718AC59EEDD05119": [
+  "Health",
+  "Santé"
+ ],
  "\t3755B2EB496C51C3C779169A6CE9AAC9": [
   "LIMIT INVITES",
   "LIMITER INVITATIONS"
@@ -6306,6 +6606,10 @@
  "\t376F7F794189768137D2119AAACA41C5": [
   "Fortification Expert",
   "Expert en fortification"
+ ],
+ "\t378E96794E12406B604433B50B564737": [
+  "Open/Close Cannon Ports",
+  "Ouvrir/fermer les sabords"
  ],
  "\t379F61AA4DFF6566CC33E3890570DF79": [
   "Siege of the King: Gamma",
@@ -6379,6 +6683,10 @@
   "BOG BIOME",
   "BIOME MARÉCAGEUX"
  ],
+ "\t38226E294B834DA2F4E62EBDADC73568": [
+  "Generator",
+  "Générateur"
+ ],
  "\t382A4F8B45360F89EF5D698AB0F18437": [
   "Background Distance",
   "Distance d'arrière-plan"
@@ -6406,6 +6714,10 @@
  "\t387A408741546DF2F0DB16AE9E693BD2": [
   "Enter Command Here",
   "Entrez la commande ici"
+ ],
+ "\t387DCE17449D02638D5B78BDE56A1D29": [
+  "Training Dummy",
+  "Mannequin d'entraînement"
  ],
  "\t3892117C4AEB2B0842C2EDAB8E3A01B1": [
   "...their thunderous steps echoing my failure.",
@@ -6539,6 +6851,10 @@
   "Guard",
   "Garde"
  ],
+ "\t39AA76E1408F816C7A0CD6AFD0827C74": [
+  "Throttle",
+  "Allure"
+ ],
  "\t39AD356E473100156BFA0FB0B1CD06C7": [
   "RESTORE BACK UP",
   "RESTAURER LA SAUVEGARDE"
@@ -6574,6 +6890,10 @@
  "\t3A265C1A46A5BC380AA3D3B09AE97821": [
   "Obtain 15 Spinosaurus Sails",
   "Obtenir 15 Voiles de Spinosaure"
+ ],
+ "\t3A3400F940352E3E7E9B3CB303C2053C": [
+  "for Info",
+  "pour les infos"
  ],
  "\t3A6C249240E672FFA2B8FA9DFFA36F59": [
   "Tower",
@@ -6662,6 +6982,10 @@
  "\t3B07864244A2A42A8AFE5C8CEB2EEC64": [
   "Workshop Initiate",
   "Initié de l'atelier"
+ ],
+ "\t3B0C8A604EA9B13FE79807944394A33D": [
+  "Training Dummy",
+  "Mannequin d'entraînement"
  ],
  "\t3B0D48054FBA4DF2B73F60B0F39F4781": [
   "Boxes",
@@ -6979,6 +7303,10 @@
   "Industrial Ammo",
   "Munitions industrielles"
  ],
+ "\t3D4620114128BF7A5B506489DF39FCA2": [
+  "Select...",
+  "Sélectionner..."
+ ],
  "\t3D4C54BF4A88B2BF5FFCF7A6F7BA0DD0": [
   "Torpidity",
   "Torpeur"
@@ -7043,6 +7371,10 @@
   "The scaling factor for the amount of Speed gained by tamed Creatures per point invested, as a percentage of the default setting.",
   "Facteur d'échelle pour la quantité de Vitesse gagnée par les créatures apprivoisées par point investi, en pourcentage du réglage par défaut."
  ],
+ "\t3DD8E29047A6201194964281C62E9A9F": [
+  "ON",
+  "ACTIVÉ"
+ ],
  "\t3DF026804798D53FB9637591418EE32B": [
   "ARMS",
   "BRAS"
@@ -7054,6 +7386,10 @@
  "\t3DFC9B744C94CDE92C759DBE8EB663CA": [
   "Deepsea Diving",
   "Plongée en eaux profondes"
+ ],
+ "\t3E0475FC47BF70083DC6A0B492073B2A": [
+  "TRAVEL",
+  "VOYAGER"
  ],
  "\t3E0BF71C4639D54A00A6B3A47C651E55": [
   "Don't fall for it, and keep your distance!",
@@ -7147,6 +7483,10 @@
   "HAIR",
   "CHEVEUX"
  ],
+ "\t3EDABE7443E1653BEB43D6BC93260241": [
+  "Training Dummy",
+  "Mannequin d'entraînement"
+ ],
  "\t3EDFA8A749DBE2714A5AB494B25AA34B": [
   "Desert-Bearing",
   "Résistant au désert"
@@ -7223,6 +7563,10 @@
   "Crosshair Color Over Enemy",
   "Couleur du réticule sur un ennemi"
  ],
+ "\t3F6E458E40E8B3E2C7A291A14B252274": [
+  "Replace Crop Plot with Pot",
+  "Remplacer la parcelle par un pot"
+ ],
  "\t3F7192B34DD24822764580A8D0147411": [
   "Equipment",
   "Équipement"
@@ -7246,6 +7590,10 @@
  "\t3F993C1849AC7BF3A5CBBEB0FC7ED907": [
   "Bob:  ...and you'll always need to stick by the folks who have your back.",
   "Bob :  ...et il faudra toujours rester proche des gens qui te soutiennent."
+ ],
+ "\t3FA8D9AD4652D3682877C79F8FACB296": [
+  "Generator",
+  "Générateur"
  ],
  "\t3FABEB6D475F575CA3D78E8FAF1C7A71": [
   "ATTACHED CREATURE",
@@ -7351,6 +7699,10 @@
   "Freeze Sky",
   "Geler le ciel"
  ],
+ "\t407F9CB5423CEED039DFEFBAAB1A4F16": [
+  "Movement Speed",
+  "Vitesse de déplacement"
+ ],
  "\t409351E3445C066B573928A8860DE845": [
   "Yang",
   "Yang"
@@ -7419,6 +7771,14 @@
   "The scaling factor for the damage turrets deal to Creatures. Higher values mean more damage.",
   "Le facteur d'échelle des dégâts infligés par les tourelles aux créatures. Des valeurs plus élevées signifient plus de dégâts."
  ],
+ "\t41344CF1496DEAE122C4AA98CFDA5950": [
+  "Damage",
+  "Dégâts"
+ ],
+ "\t413626EB474388A1304D2C8140FBBA0B": [
+  "Lumina gains confidence with each unanswered strike. She breathes hot orbs that she can leap to in an instant, just as she will leap to her counterpart's side. Umbra's presence stokes her fiery heart, making her faster and tougher.\r\n\r\nIt is possible to grapple with Lumina and learn to steer her flight. Dance with the dragon, and follow her lead. A worthy rider earns control of her bright fury and swiftness. Offer food when she grows hungry, and you will win her sacred bond.\r\n\r\nLumina is a creature of daytime, drawn out by the Sun's light.\r\nShe shall not harm the friendly, but foes will face her swift might.",
+  "Lumina gagne en assurance à chaque coup resté sans réponse. Elle souffle des orbes brûlantes vers lesquelles elle peut bondir en un instant, comme elle bondit au côté de son alter ego. La présence d’Umbra attise son cœur de feu et la rend plus rapide et plus endurante.\r\n\r\nIl est possible de s’agripper à Lumina et d’apprendre à guider son vol. Dansez avec la dragonne et laissez-vous mener. Un cavalier digne d’elle obtient la maîtrise de sa furie éclatante et de sa vivacité. Offrez-lui à manger quand la faim la prend, et vous gagnerez son lien sacré.\r\n\r\nLumina est une créature du jour, que la lumière du Soleil fait sortir.\r\nElle ne fera aucun mal à qui lui est ami, mais ses ennemis affronteront sa puissance fulgurante."
+ ],
  "\t41446D3A4D0D0B9A5805E0A92D67F15F": [
   "Guard",
   "Garde"
@@ -7430,6 +7790,10 @@
  "\t414A67E545098AAC2F541A92D8877F2C": [
   "Hold:",
   "Maintenir :"
+ ],
+ "\t416B247D42188A05570C5AB8DA43B55B": [
+  "ON",
+  "ACTIVÉ"
  ],
  "\t417D9BD84B5215F15111CFAD669BB88E": [
   "Roll Over",
@@ -7567,6 +7931,10 @@
   "RTV_painter",
   "RTV_painter"
  ],
+ "\t429003D74A873AA1BB1610871681DC2F": [
+  "Fire Resin",
+  "Résine de feu"
+ ],
  "\t42B7F62740A316FFDDF7D8B5BEF3081C": [
   "No Target selected with Gene Scanner to trade Traits.",
   "Aucune cible sélectionnée avec le Scanner génétique pour échanger des traits."
@@ -7642,6 +8010,10 @@
  "\t431F8DDB493D03CCDD7404B256ADEA24": [
   "CancelAttack",
   "CancelAttack"
+ ],
+ "\t43247B714B917D8F3678369E1E710504": [
+  "Draco Energy",
+  "Énergie draconique"
  ],
  "\t4326BF3146909049BD5DE3A422FB21F6": [
   "Weapon",
@@ -7779,6 +8151,10 @@
   "Guard",
   "Garde"
  ],
+ "\t440EEFC44F775CF1899469AF0FA6DBB5": [
+  "Generator",
+  "Générateur"
+ ],
  "\t44138CEC45E911CE82921E8125202C15": [
   "Sabotage",
   "Sabotage"
@@ -7786,6 +8162,10 @@
  "\t442CF9C545D8799854751D92F483ACFB": [
   "TOGGLE BOT SORTING",
   "BASCULER LE TRI DES BOTS"
+ ],
+ "\t443B0364439F6EBEC6D8A18497E574E8": [
+  "Training Dummy",
+  "Mannequin d'entraînement"
  ],
  "\t44402910463FDD5BE17349B77C5165A2": [
   "Voice Chat",
@@ -7802,6 +8182,10 @@
  "\t4453CBAE4561C63D12A24D8585B86EFB": [
   "Progress Label",
   "Étiquette de progression"
+ ],
+ "\t44555AF74ABB269E8F29FD8F977267D4": [
+  "Don't panic... Ol' HLN-A's got ya. One sec!",
+  "Pas de panique... la bonne vieille HLN-A est là. Une seconde !"
  ],
  "\t446500F04C1ECCD88CDBDC9F1BD011A2": [
   "Boss",
@@ -7879,6 +8263,10 @@
   "Guard",
   "Garde"
  ],
+ "\t44DFE20E45140A0CAA15BB9165D48E8E": [
+  "ON",
+  "ACTIVÉ"
+ ],
  "\t44EA8B9642EA1BB11BBE279187C6EC28": [
   "Industrial Ammo",
   "Munitions industrielles"
@@ -7898,6 +8286,10 @@
  "\t4511E06642C72443747EF88BBF99F641": [
   "Relic Gatherer",
   "Collecteur de reliques"
+ ],
+ "\t451B70D0459D2CD5B84E3DA4EB9EFEA5": [
+  "Sword Rack",
+  "râtelier à épées"
  ],
  "\t451CE317401E4EBDBE60C7944CC529B1": [
   "<status>",
@@ -7930,6 +8322,10 @@
  "\t454AB53B48D215FE639C3981BFABA4CF": [
   "Never let go. I -- I don't think I can face death again alone.",
   "Ne me lâche jamais. Je -- je crois que je ne peux pas affronter la mort à nouveau, seul."
+ ],
+ "\t4562603E4C8F5C6C524C2F850F4324B7": [
+  "ALL",
+  "TOUT"
  ],
  "\t4563B94E4EBEF0D05EC67CBDB94335FC": [
   "[Hide Copy Settings Visual Range]",
@@ -7987,6 +8383,10 @@
   "Meeka:  But you found him. Right?",
   "Meeka :  Mais tu l'as retrouvé. Pas vrai ?"
  ],
+ "\t45DCA5604CC61896A8AB389218DFEA7C": [
+  "Oh... that's not good.",
+  "Oh... ça ne sent pas bon."
+ ],
  "\t45DE11604ECC7E0A3451159FE129F17D": [
   "Jump",
   "Sauter"
@@ -8006,6 +8406,10 @@
  "\t4602C9524B937B69D93510922B5760D5": [
   "Secondary Font",
   "Police secondaire"
+ ],
+ "\t461B4EA646A44F8B5A52978A0172794F": [
+  "UNOFFICIAL",
+  "NON OFFICIEL"
  ],
  "\t461C63094138D7DCE6A09DAC942FFFB1": [
   "Time of Day",
@@ -8143,6 +8547,10 @@
   "Carnivore Chaser",
   "Chasseur de carnivores"
  ],
+ "\t47331E334FB76A712184F9BFFBD77B38": [
+  "Training Dummy",
+  "Mannequin d'entraînement"
+ ],
  "\t4745B2AC4A700B37CFB9E198B6A1C6D7": [
   "Harvest 250 Raw Meat",
   "Récolter 250 unités de viande crue"
@@ -8267,6 +8675,10 @@
   "Guard",
   "Garde"
  ],
+ "\t4850A7E6429804ABC735128CB866720B": [
+  "Harvest 1,000 Thatch",
+  "Récolter 1 000 branchages"
+ ],
  "\t485DC1754E010CBF6F14588BCEF23307": [
   "Guard",
   "Garde"
@@ -8335,6 +8747,10 @@
   "Gifts for the Sky",
   "Offrandes au ciel"
  ],
+ "\t48D8256C4F3BFCF32AAFA1B293B0C1D6": [
+  "Damage",
+  "Dégâts"
+ ],
  "\t48DE85DF420BA9268C06208A272770D0": [
   "Mods to Download:",
   "Mods à télécharger :"
@@ -8367,6 +8783,10 @@
   "Newly encountered cosmetics will be suppressed by default if enabled",
   "Si activé, les nouveaux cosmétiques rencontrés seront masqués par défaut"
  ],
+ "\t4926D54E43AA0D798350D9BD132F9CD6": [
+  "ON",
+  "ACTIVÉ"
+ ],
  "\t4931E9DE4BC0466A1E9B36A4DC1B64FF": [
   "Tower",
   "Tour"
@@ -8382,6 +8802,10 @@
  "\t4941F52B42BD563F764A889A87552BA2": [
   "Glider",
   "Planeur"
+ ],
+ "\t4945064F4A3C3061120B5E8E37FA76FB": [
+  "Travel in a Short Time",
+  "Parcourir une distance en peu de temps"
  ],
  "\t4955C6AE498AB1AC2277B8BCEA1619B7": [
   "Toggle Keybind Help UI",
@@ -8434,6 +8858,10 @@
  "\t49D2065F49C7F8AB893B93BC51BE2969": [
   "Infection Mastery",
   "Maîtrise de l'infection"
+ ],
+ "\t49DDD42E4D684A6C2A2E3198B7C9D024": [
+  "Training Dummy",
+  "Mannequin d'entraînement"
  ],
  "\t49E7ABAA45216399AFE67BBFDDE19EE3": [
   "Guard",
@@ -8502,6 +8930,10 @@
  "\t4A6DDF2E47123E2802BB92A14084A860": [
   "Eye Iris Outer Color",
   "Couleur extérieure de l'iris"
+ ],
+ "\t4A8D8EE84FD1046C28997B82495CC4DA": [
+  "Damage",
+  "Dégâts"
  ],
  "\t4A92A1D443054FE1ACF441AF03B74D26": [
   "Ocean Skirmisher",
@@ -8739,6 +9171,10 @@
   "Feels like we could learn a lot from each other.",
   "J'ai l'impression qu'on pourrait beaucoup apprendre l'un de l'autre."
  ],
+ "\t4C94239742A850C5D1DFEB84D2EA4A48": [
+  "Damage",
+  "Dégâts"
+ ],
  "\t4C9F54FF4519B3B7A41DA880E3747A8C": [
   "Cannon",
   "Canon"
@@ -8935,6 +9371,10 @@
   "RULES",
   "RÈGLES"
  ],
+ "\t4E3A80D34065B985627929A511877494": [
+  "We might be the only ones awake, so let's get geared up and deal with the corruption before it spreads.",
+  "Nous sommes peut-être les seuls éveillés : équipons-nous et réglons le problème de la corruption avant qu’elle ne se répande."
+ ],
  "\t4E3DA71C4D713BCF4461039E04BF9556": [
   "Lead the Pack",
   "Mener la meute"
@@ -8994,6 +9434,10 @@
  "\t4EDF4865448D2107A1E903A9B331AB56": [
   "Guard",
   "Garde"
+ ],
+ "\t4F0B585A4CC58E8F07B7FD9DF6995933": [
+  "Draco Skill Tree",
+  "Arbre de compétences draconique"
  ],
  "\t4F1B8E8B4A9D73AE6134F1B0757B0DBB": [
   "Carcass-Bearing",
@@ -9082,6 +9526,10 @@
  "\t4FA1B6C341068FA5888D479B468E4418": [
   "Your fishing rods have a {Chance} chance to <RichColor Color=\"1,0,0,1\">not</> consume durability on use.",
   "Vos cannes à pêche ont {Chance} de chances de <RichColor Color=\"1,0,0,1\">ne pas</> consommer de durabilité à l'usage."
+ ],
+ "\t4FAC73744E12519547EA239627DF4F72": [
+  "ON",
+  "ACTIVÉ"
  ],
  "\t4FB71696495AECE4A0E5AEB69F7A0D8A": [
   "...with our interstellar craft.",
@@ -9183,6 +9631,10 @@
   "Hold:",
   "Maintenir :"
  ],
+ "\t50EC91594A92BA0A3957E2B318F55D99": [
+  "Generator",
+  "Générateur"
+ ],
  "\t50EFAF964D3CE7BB671C0D8AF48DB07F": [
   "Enables an RPG-style pop-up text to appear, displaying damage numbers.",
   "Active un texte contextuel de style RPG affichant les valeurs de dégâts."
@@ -9235,6 +9687,14 @@
   "Magmasaur Egg",
   "Œuf de Magmasaur"
  ],
+ "\t514ADAE94A03501177FE408C1EC3BF1C": [
+  "ON",
+  "ACTIVÉ"
+ ],
+ "\t5150D1C249DD31C893FD4F84A7424EF2": [
+  "Delete",
+  "Supprimer"
+ ],
  "\t51514317479DEEF5D979FEACC1B01F08": [
   "Suspension: Max Drop",
   "Suspension : Chute max"
@@ -9271,6 +9731,10 @@
   "NEW\r\nFOLDER",
   "NOUVEAU\r\nDOSSIER"
  ],
+ "\t51DDD44C4B33FE34DCFEE785D8D0C362": [
+  "Cycle Cannon Ammo",
+  "Changer de munition de canon"
+ ],
  "\t51E6017C4BC60A70223458BCBB1B439A": [
   "BABYFY",
   "REBÉBÉISER"
@@ -9278,6 +9742,10 @@
  "\t51E86B7145D285E9C3D645B640D222F2": [
   "ENGRAM LIST",
   "LISTE DES ENGRAMMES"
+ ],
+ "\t51ECDCB44DE0CCBE970FF5A8599167B0": [
+  "ClearSky",
+  "Ciel dégagé"
  ],
  "\t51ED6B604742EF346D6892AB12577283": [
   "Crafting Speed",
@@ -9575,6 +10043,10 @@
   "Transfer_GeneTrait_FromGeneInfuserStructure_IntoScanner",
   "Transfer_GeneTrait_FromGeneInfuserStructure_IntoScanner"
  ],
+ "\t53DF27E04E85F87CCD7AA091121C0372": [
+  "ON",
+  "ACTIVÉ"
+ ],
  "\t53E4F2FC4032FAB267A2EE8669782AFF": [
   "Ocean Explorer",
   "Explorateur des océans"
@@ -9598,6 +10070,10 @@
  "\t540D9CE24B4188DE951BFBA55C6AE444": [
   "Increased Speed",
   "Vitesse augmentée"
+ ],
+ "\t5417E8164C4E5318007F07A7CAB3C6E1": [
+  "Generator",
+  "Générateur"
  ],
  "\t542A0A714BF25BE792AB7BA2EDFF9BB3": [
   "I expect those negotiations will be brief.",
@@ -9642,6 +10118,10 @@
  "\t54964DED41C1D4015E0EFDB2F563BC4F": [
   "Joined Red Team",
   "A rejoint l'équipe rouge"
+ ],
+ "\t549F36994BCABEBE5409908A58B5277E": [
+  "Damage",
+  "Dégâts"
  ],
  "\t54AAC9BD492D2A2E0F276BA4DD446661": [
   "Find your friends on",
@@ -9975,6 +10455,14 @@
   "Dropped Item Tooltip Setting:",
   "Paramètre d'infobulle des objets jetés :"
  ],
+ "\t5796D9EA4A0A2436B5E1B3ADFE4F97FD": [
+  "Training Dummy",
+  "Mannequin d'entraînement"
+ ],
+ "\t579A0FAE4B59FEE919F387B771024575": [
+  "ON",
+  "ACTIVÉ"
+ ],
  "\t579DA7C646C5D3ED9FC38E85D3B01760": [
   "Turn on your mistress and fight for my kingdom.",
   "Retournez-vous contre votre maîtresse et combattez pour mon royaume."
@@ -9982,6 +10470,10 @@
  "\t57A0F3FE4047E9DF66FFD0B1E90E0CBD": [
   "Bob:  How many times had we died and been brought back already? Just thinking about it gave me the heebie-jeebies.",
   "Bob :  Combien de fois on était déjà morts et ramenés ? Rien que d'y penser, ça me filait des frissons."
+ ],
+ "\t57A20DB64BED56E3E0691AA50C4F53B2": [
+  "Damage Percent Ignoring Armor",
+  "Pourcentage de dégâts ignorant l'armure"
  ],
  "\t57AABD32416CE6F338CB83B979DAEAD3": [
   "What? No. Though I did sort of peek at his notes about you.",
@@ -10047,6 +10539,10 @@
   "Flyers",
   "Volants"
  ],
+ "\t584368CE46218F22DC4C3383A5DF65E8": [
+  "Main Window",
+  "Fenêtre principale"
+ ],
  "\t584C91A04F57F2375DA960BA1199C681": [
   "Voice Volume",
   "Volume vocal"
@@ -10083,6 +10579,10 @@
   "Sabotage",
   "Sabotage"
  ],
+ "\t58B5D48542E4CAD48261A9BC64E0222F": [
+  "Generator",
+  "Générateur"
+ ],
  "\t58DBA66E428CD8BE54DE92BF681554AC": [
   "and",
   "et"
@@ -10098,6 +10598,10 @@
  "\t58DE915F41FE7AF0FCD7BA8EB8660F46": [
   "MIN",
   "MIN"
+ ],
+ "\t58FCB786433919A8AE96EAADAFE428C3": [
+  "Generator",
+  "Générateur"
  ],
  "\t58FF71BC4C5E2AE7D6C0749470CE4EF8": [
   "Parts",
@@ -10146,6 +10650,10 @@
  "\t5931812E4DF7A2A51EBAACAEE4DE20CA": [
   "Stage 2",
   "Étape 2"
+ ],
+ "\t59348E74409658D80795AFA4F00094D7": [
+  "Training Dummy",
+  "Mannequin d'entraînement"
  ],
  "\t594A75DC4C6364FDF2374EAFE70062DA": [
   "Natural resources are more durable.",
@@ -10291,6 +10799,10 @@
   "Mounted Opportunist",
   "Opportuniste monté"
  ],
+ "\t5A9ED16E45FE58D69550B8911235E5E4": [
+  "Generator",
+  "Générateur"
+ ],
  "\t5AA41A134F12A2A67FA6C6B825E09F2D": [
   "Cannon",
   "Canon"
@@ -10363,6 +10875,10 @@
   "     Chitin, Hide, Keratin, Organic Polymer, Pelt, Wool",
   "     Chitine, peau, kératine, polymère organique, fourrure, laine"
  ],
+ "\t5B947CC04F11F2F0583CD592B46B7E30": [
+  "Generator",
+  "Générateur"
+ ],
  "\t5B97E3964947FEF1B007D39EF8DF4EED": [
   "Woodland Worker",
   "Ouvrier forestier"
@@ -10374,6 +10890,10 @@
  "\t5BA81C9941479869A2B29DB8170F056B": [
   "You were born just before the time of the Three Kingdoms.",
   "Tu es né juste avant l'époque des Trois Royaumes."
+ ],
+ "\t5BAB89154E027F3383BFFF95CE5B1840": [
+  "Health",
+  "Santé"
  ],
  "\t5BAE33AE4536FA75002EA79BD15E2083": [
   "Amount 5:",
@@ -10458,6 +10978,10 @@
  "\t5C6738E149E97421F4C57C8D2A800620": [
   "Empty",
   "Vide"
+ ],
+ "\t5C688FD94294B6B8201FFCB501EADFF3": [
+  "Select...",
+  "Sélectionner..."
  ],
  "\t5C76D2A847A846CCFE0A6D8EE7D7D473": [
   "Curse Reflection",
@@ -10663,6 +11187,14 @@
   "MESSAGE  OF THE DAY",
   "MESSAGE  DU JOUR"
  ],
+ "\t5E5C6744449682138B0B598BAF907539": [
+  "Damage Resistance",
+  "Résistance aux dégâts"
+ ],
+ "\t5E66481A46FF6D41D8BC0B8B0C4F535E": [
+  "Generator",
+  "Générateur"
+ ],
  "\t5E68D6714F9700372DF26AAAF45FC4D5": [
   "Author Name",
   "Nom de l'auteur"
@@ -10686,6 +11218,10 @@
  "\t5E972C034F4C2A8EA01A8DAAC0401576": [
   "Meet the Pyromane, ARK: Survival Ascended's first Fantastic Tame! This fiery feline transforms from a flamethrowing shoulder-kitten into a rideable, lava-walking lion that sets enemies ablaze with explosive dashes. It even cooks meat, preserves jerky, and fuels forges for ultimate utility!",
   "Découvrez le Pyromane, le premier Fantastic Tame d'ARK : Survival Ascended ! Ce félin ardent passe du chaton d'épaule cracheur de flammes au lion chevauchable, marchant sur la lave, qui embrase ses ennemis avec des charges explosives. Il cuit même la viande, conserve la viande séchée et alimente les forges pour une utilité ultime !"
+ ],
+ "\t5E9C61274F56E30C2FED18A56DBC16A3": [
+  "Cloudy",
+  "Nuageux"
  ],
  "\t5E9CE20D42E0DB82F8BF68ABBBFB342C": [
   "Hatchlings are more eager to see the world.",
@@ -10723,6 +11259,10 @@
   "Descomposes in: ",
   "Se décompose dans : "
  ],
+ "\t5EFF79564D64844738DB67B66FB7FB33": [
+  "ON",
+  "ACTIVÉ"
+ ],
  "\t5F0438B84C316996DF168BA7E100DA59": [
   "Voice:",
   "Voix :"
@@ -10754,6 +11294,10 @@
  "\t5F263B684EE0C57DAA2AAF9037D8FA2D": [
   "- Gains {0}% movespeed buff that is lost for {1} seconds after dealing/receiving damage or gaining a new rider\r\n",
   "- Gagne un bonus de vitesse de déplacement de {0} % qui est perdu pendant {1} secondes après avoir infligé/reçu des dégâts ou gagné un nouveau cavalier\r\n"
+ ],
+ "\t5F2686D4458F14A6636D80BA21A047E1": [
+  "Training Dummy",
+  "Mannequin d'entraînement"
  ],
  "\t5F30E42D46E6ECF0380B78B385C1090B": [
   "Danger Seeker",
@@ -10806,6 +11350,10 @@
  "\t5F939FAB43C8A81E19DA6F9986896ACF": [
   "Server: {0}",
   "Serveur : {0}"
+ ],
+ "\t5F9B9582473E705ED267668B5C7C7FF4": [
+  "Mutations: ",
+  "Mutations : "
  ],
  "\t5FA207174530C334A0271894D4D330DF": [
   "Within Gene Scanner",
@@ -11002,6 +11550,10 @@
  "\t60FA31434F0289585B8FA4B2FA305AAC": [
   "The Reseed Protocol,",
   "Le Protocole de Réensemencement,"
+ ],
+ "\t610551AB4513E3265C38ED8801EAD75B": [
+  "Generator",
+  "Générateur"
  ],
  "\t610F9FDB4D22380197290C98C24BE3C0": [
   "Guard",
@@ -11215,6 +11767,10 @@
   "All Time",
   "Total"
  ],
+ "\t62C1DEA54508843045E892859461B733": [
+  "Generator",
+  "Générateur"
+ ],
  "\t62C553934FC7E0AE3C9872BA951A16B9": [
   "Color",
   "Couleur"
@@ -11274,6 +11830,10 @@
  "\t633ADD414754FE305AC9188364A7B750": [
   "Crafting Initiate",
   "Initié à la fabrication"
+ ],
+ "\t633CC73C4079D64F59D1D6BC377F1AA1": [
+  "Melee Damage",
+  "Dégâts de mêlée"
  ],
  "\t6356AC744D7B387AEB90E2814D8D3324": [
   "Cannon",
@@ -11375,6 +11935,10 @@
   "EMOTE KEY 1:",
   "TOUCHE D'ÉMOTE 1 :"
  ],
+ "\t6433AA3A4FDB9E1686411EB4F3364AF2": [
+  "Oxygen",
+  "Oxygène"
+ ],
  "\t64365FAF44300B1E32BBC59BFC5486D3": [
   "Another pylon almost overloaded.",
   "Encore un pylône presque en surcharge."
@@ -11382,6 +11946,10 @@
  "\t644C1AAF4FEE08E44E9DEB914029FA20": [
   "I had to... leave her behind.",
   "J'ai dû... l'abandonner derrière moi."
+ ],
+ "\t645BE8CC4E565DC4F81A1F8FD6DEA17E": [
+  "Training Dummy",
+  "Mannequin d'entraînement"
  ],
  "\t646530614D89DD9E9C4E4CB3A2FCCE35": [
   "This Creature has a robust Oxygen gene, and its offspring are more likely to inherit the higher of its parent's Oxygen stats",
@@ -11398,6 +11966,10 @@
  "\t64732BBF47B955761DFBE8800C940B36": [
   "That miserable creature will curse all of your defenses until you pin it down and take it out!",
   "Cette misérable créature maudira toutes vos défenses jusqu'à ce que vous la clouiez sur place et l'éliminiez !"
+ ],
+ "\t64808DD34CC9D1545A30079574D13B35": [
+  "Tame 50 Herbivores",
+  "Apprivoiser 50 herbivores"
  ],
  "\t6489F6C5413CEAD90D0593905965E48F": [
   "Download",
@@ -11563,6 +12135,10 @@
   "Cannon",
   "Canon"
  ],
+ "\t65D868FC41C9739764CA0EAD638EA70A": [
+  "Generator",
+  "Générateur"
+ ],
  "\t65D8E959413CCEB54AD0449AB49E77A9": [
   "...with all of the devices in this place, you can be restored!",
   "...avec tous les dispositifs de cet endroit, vous pouvez être restauré !"
@@ -11582,6 +12158,10 @@
  "\t65F161C64FF68FCE54D1C0A8C21F8CC3": [
   "Bob:  Anyways, I guess I finally hit one on its noggin enough times for it to think we were pals.",
   "Bob :  Bref, j'imagine que j'en ai enfin cogné une sur le crâne assez de fois pour qu'elle nous croie potes."
+ ],
+ "\t65F596CA42D27955B9111495FC82EFD7": [
+  "ON",
+  "ACTIVÉ"
  ],
  "\t65F71665419CC1AEAF08FE9C6AD6CEC6": [
   "Proto-Harvester",
@@ -11658,6 +12238,10 @@
  "\t66AA84D0466699E57DC6A0AEE2A511A8": [
   "Bones",
   "Os"
+ ],
+ "\t66B7AC65448E7EE5BEB34ABB1804B77A": [
+  "NEW",
+  "NOUVEAU"
  ],
  "\t66BF42764E77251272E586B240476CFF": [
   "Boxes",
@@ -11739,6 +12323,10 @@
   "Reduces the weight of meat in its inventory",
   "Réduit le poids de la viande dans son inventaire"
  ],
+ "\t6772BBE9424F7A1E6EDED6A6B61E8930": [
+  "ON",
+  "ACTIVÉ"
+ ],
  "\t6774F0CA4AE5FFCD06B40E9A7C118999": [
   "Okay, now you are sounding just a little crazy.",
   "Bon, là tu commences à avoir l'air un peu fou."
@@ -11750,6 +12338,10 @@
  "\t677C51614A2D44EB1A4F81A2AA2F90AE": [
   "Auto Turret",
   "Tourelle automatique"
+ ],
+ "\t678EAFAC44346DDEA5E501A3DB0EF3C6": [
+  "ON",
+  "ACTIVÉ"
  ],
  "\t6791FBD844FDD62AEF4B68889B4682F3": [
   "Craft 10,000 Sparkpowder",
@@ -11974,6 +12566,10 @@
  "\t69ADCCDB404DDB12AAED6C85B0596E68": [
   "Gain an Active Ability: <RichColor Color=\"1,0,0,1\">Ranged Possession</>. Using this skill while aiming at a Thrall in line of sight will possess them.",
   "Gagnez une Capacité active : <RichColor Color=\"1,0,0,1\">Possession à distance</>. Utiliser cette compétence en visant un Serviteur dans votre champ de vision pour le posséder."
+ ],
+ "\t69C28AFC45C4FBC65CBBAC9BA02685EC": [
+  "Generator",
+  "Générateur"
  ],
  "\t69C53D9B43240C130A27DAA69CCCB5F8": [
   "Delay:",
@@ -12223,6 +12819,10 @@
   "MOVE UP: ",
   "MONTER : "
  ],
+ "\t6B3DA6564F9E29DE279278ACFD45B3B7": [
+  "Training Dummy",
+  "Mannequin d'entraînement"
+ ],
  "\t6B690203481DCA9A629B8890E2F88E22": [
   "SET ITEM TYPE",
   "DÉFINIR TYPE D'OBJET"
@@ -12234,6 +12834,10 @@
  "\t6B7A8B1448CC5D7E39B3CEA320C3F405": [
   "Wild Creature Kill",
   "Élimination de créature sauvage"
+ ],
+ "\t6B7F9F3D445B8338D0AE9EA53DACEB4A": [
+  "Cooldown Reduction",
+  "Réduction du temps de recharge"
  ],
  "\t6B85ADC74C143D7C30CEF593411C99FB": [
   "Well... what are you waiting for? Get in there before he can lock you out again!",
@@ -12507,6 +13111,10 @@
   "Guard",
   "Garde"
  ],
+ "\t6DA2386B4455A43AB55C1484D2AE3D10": [
+  "USE",
+  "UTILISER"
+ ],
  "\t6DA767034D4528D16F1003A7BA77B34B": [
   "Your possessed Thralls deal {Damage} more damage.",
   "Vos Serviteurs possédés infligent {Damage} dégâts supplémentaires."
@@ -12550,6 +13158,10 @@
  "\t6DF348CE401DB4ED17374EABAAC7C786": [
   "Arms Fat",
   "Graisse des bras"
+ ],
+ "\t6E013FAF498D98FEFAD349AB638C4767": [
+  "Installing...",
+  "Installation..."
  ],
  "\t6E174DBB439BD491D75B67AF2E282947": [
   "Guard",
@@ -12799,6 +13411,10 @@
   "Guard",
   "Garde"
  ],
+ "\t70521C334A365AD353471A913503ADF2": [
+  "Training Dummy",
+  "Mannequin d'entraînement"
+ ],
  "\t7053CDAF447C39665845D59393D41AB5": [
   "Armor",
   "Armure"
@@ -12830,6 +13446,10 @@
  "\t70974BAA44998DD0227B5BB727EED1B3": [
   "FILTER RESULTS TO ONLY THOSE THAT CONTAIN THE ENTERED TEXT",
   "FILTRER LES RÉSULTATS POUR NE GARDER QUE CEUX CONTENANT LE TEXTE SAISI"
+ ],
+ "\t70A4391243491FE7AB7F4DA200324A18": [
+  "Dust",
+  "Poussière"
  ],
  "\t70A4EFEC4D5C100314A35CA3A5C1B3B4": [
   "Auto Turret",
@@ -12939,6 +13559,10 @@
   "Craft 150 Tranquilizer Arrows",
   "Fabriquer 150 flèches tranquillisantes"
  ],
+ "\t7162711143CFD4A5392E9D8139F9861E": [
+  "Locked",
+  "Verrouillé"
+ ],
  "\t7169AFF3447F25A2D91B1D8385438898": [
   "Enables the ability to level movement speed in flying Creatures (if Speed Leveling is enabled).",
   "Active la possibilité d'augmenter la vitesse de déplacement des créatures volantes (si l'augmentation de la vitesse est activée)."
@@ -13007,6 +13631,10 @@
   "Guard",
   "Garde"
  ],
+ "\t720BD7334362E257EB3CFBBEE6909F22": [
+  "Damage",
+  "Dégâts"
+ ],
  "\t7211872B42FBEEA352C336BF70CE238E": [
   "Off",
   "Désactivé"
@@ -13034,6 +13662,10 @@
  "\t7236099C480D4B13FD08079110105B37": [
   "{0} - {1}/{2} players",
   "{0} - {1}/{2} joueurs"
+ ],
+ "\t7248693847D20377307EC9A0F530920C": [
+  "Twilight Tamer",
+  "Dompteur du crépuscule"
  ],
  "\t724AD7644437B46B1A4067A023C8CDB0": [
   "Auto Turret",
@@ -13090,6 +13722,10 @@
  "\t72B742CF43747F9C85EECDAE4DE4027D": [
   "GeneInfuserStructureTraitStorageListUIOpen",
   "GeneInfuserStructureTraitStorageListUIOpen"
+ ],
+ "\t72CA9EDA46392DE4DE14BDAC83EA6024": [
+  "ElementRain",
+  "Pluie d’Élément"
  ],
  "\t72CBD32843B37738DD372F9A92DA5B6C": [
   "With all of your knowledge, you could probably do the same, given sufficient time...",
@@ -13174,6 +13810,10 @@
  "\t738325AF492F69B6B460B79C37413720": [
   "...are to enjoy the future we labored to build for them?",
   "...sont censés profiter de l'avenir que nous avons peiné à bâtir pour eux ?"
+ ],
+ "\t7397A5264E234F9A7A3DF688F20259E0": [
+  "Generator",
+  "Générateur"
  ],
  "\t73A62C234685104FC172BD9DCDB6FF0E": [
   "Oxygen-Frail",
@@ -13303,6 +13943,10 @@
   "Short",
   "Court"
  ],
+ "\t7474F02242FCBF1973F0518782898264": [
+  "MAP:",
+  "CARTE :"
+ ],
  "\t7486255C4FDE49AEE07A39A25EBFEE25": [
   "MAX_21",
   "MAX_21"
@@ -13338,6 +13982,10 @@
  "\t74B2123446A8BCB88A4AA8906ABDFFAD": [
   "Cannon",
   "Canon"
+ ],
+ "\t74B4E5DA4E6B24765AA035B74BF7437C": [
+  "Training Dummy",
+  "Mannequin d'entraînement"
  ],
  "\t74BA870A4C42F461A311CBA9D07DB5EC": [
   "Extreme Expedition",
@@ -13511,6 +14159,10 @@
   "Twin Imprint",
   "Double imprégnation"
  ],
+ "\t75FE34CA45511A6AACD73C9AEAFBA7D8": [
+  "Sword Rack",
+  "râtelier à épées"
+ ],
  "\t75FF5A2C47477F776878399E647E3905": [
   "Calves Muscle",
   "Muscle des mollets"
@@ -13579,6 +14231,10 @@
   "New Ally",
   "Nouvel allié"
  ],
+ "\t76B49E4D464A2DFE420886849802DA60": [
+  "Selected",
+  "Sélectionné"
+ ],
  "\t76C0C98B40E9454F0259A6A13D8178ED": [
   "Nothing Here To Dig",
   "Rien à creuser ici"
@@ -13646,6 +14302,10 @@
  "\t77C78BEA434B8627DEDA288647EC3A0D": [
   "Auto Turret",
   "Tourelle automatique"
+ ],
+ "\t77D06AB64541BC5FB23FBBBD3F6189EE": [
+  "ALL",
+  "TOUT"
  ],
  "\t77D400604C1420DF02707C8050CF69E3": [
   "Defeat 10 Bosses",
@@ -13771,6 +14431,10 @@
   "SELL",
   "VENDRE"
  ],
+ "\t7930B70F4B80C04ACC1A9A8BEEA354B8": [
+  "Sword Rack",
+  "râtelier à épées"
+ ],
  "\t793148CD458E962748F53A8027D35FC3": [
   "Parts",
   "Pièces"
@@ -13879,6 +14543,10 @@
   "Increased Experience",
   "Expérience augmentée"
  ],
+ "\t7A11ABDC4BEC4E9C2F62C0A337A13834": [
+  "Training Dummy",
+  "Mannequin d'entraînement"
+ ],
  "\t7A1781774B9A6048C38D4988BE540E46": [
   "Bob:  I think -- well, I better not tell you MY crackpot ideas.",
   "Bob :  Je crois -- bon, je ferais mieux de ne pas te dire MES idées farfelues."
@@ -13939,6 +14607,10 @@
   "Cannon",
   "Canon"
  ],
+ "\t7A64B27F4BDBFAA97F8C87BD17AADDD8": [
+  "Training Dummy",
+  "Mannequin d'entraînement"
+ ],
  "\t7A695D0242777536C202A98346A58A1C": [
   "INVENTORY",
   "INVENTAIRE"
@@ -13986,6 +14658,10 @@
  "\t7AD3AD46499584C0397CD69DD5818F4B": [
   "Umbra & Lumina Skill Tree",
   "Arbre de compétences Umbra et Lumina"
+ ],
+ "\t7AE46289449C2AF173EC88ADA1944849": [
+  "Primary",
+  "Principal"
  ],
  "\t7AF07D1141E321FD01C44D9FA5B8D4DD": [
   "Bones",
@@ -14067,9 +14743,17 @@
   "Beast Wrangler",
   "Dompteur de bêtes"
  ],
+ "\t7B6EA5924BDD80E1E2F9EAAAA11398B7": [
+  "Generator",
+  "Générateur"
+ ],
  "\t7B768F3145D79421C1BEFF8C07BF8D31": [
   "Buried deep within this planet is the core of the seed ship that brought us all here.",
   "Enfoui au plus profond de cette planète se trouve le noyau du vaisseau-graine qui nous a tous amenés ici."
+ ],
+ "\t7B82E69F4D253CB9C49D1C834AAA639D": [
+  "Find & Destroy Light Beacons",
+  "Trouver et détruire les balises de lumière"
  ],
  "\t7B85A15047AFCB8F1FC685BA5F4E557E": [
   "Sabotage",
@@ -14110,6 +14794,10 @@
  "\t7BC2C72F4C1FF7C6C545FCBE7E277B68": [
   "Craft from 25 Apprentice-or-Better Blueprints",
   "Fabriquer à partir de 25 plans de qualité Apprenti ou supérieure"
+ ],
+ "\t7BC796F349E332B772D6D3ADAAD6CBB6": [
+  "Oxygen",
+  "Oxygène"
  ],
  "\t7BCB7B67492D3E83F3E469B0365969C4": [
   "Loot 3 Green Cave Loot Crates",
@@ -14179,9 +14867,17 @@
   "Guard",
   "Garde"
  ],
+ "\t7C41037B4D3646CEB6C790A06650252C": [
+  "Spoil Timer",
+  "Minuteur de péremption"
+ ],
  "\t7C460F6F487867E4DE12CBBB2B78EAC3": [
   "If you can't deal with his Desmodus, you don't stand a chance against mine.",
   "Si vous n'arrivez pas à gérer son Desmodus, vous n'avez aucune chance contre le mien."
+ ],
+ "\t7C6796CD457794A67A578CB839512C5F": [
+  "Sword",
+  "Epée"
  ],
  "\t7C681719454937315BD920B07918C509": [
   "But everything in my head and my heart is telling me that...",
@@ -14190,6 +14886,10 @@
  "\t7C6B0F0E4C68F316F3998F9D0FA89484": [
   "Guard",
   "Garde"
+ ],
+ "\t7C73922A4DBE46A44F2956A8D46DE954": [
+  "Tame Info",
+  "Infos sur la créature"
  ],
  "\t7C79D0714585A9712CAA1B8004D4EDDF": [
   "This Creature has a frail Melee gene, and its offspring are more likely to inherit the lower of its parent's Melee stats",
@@ -14295,6 +14995,10 @@
   "to Feed the Helicoprion!",
   "pour nourrir l'Hélicoprion !"
  ],
+ "\t7D2D123D43AAB974F9A5D9A567D56EDB": [
+  "Cloudy",
+  "Nuageux"
+ ],
  "\t7D30343D472D023EE40E57B048116369": [
   "Apply Coloring, then Alt-Fire + Hotkey # to Set Regions!",
   "Ajouter un colorant dans le pistolet puis 'Tir secondaire + un n°' pour activer/désactiver la zone à peindre."
@@ -14395,6 +15099,10 @@
   "Auto Turret",
   "Tourelle automatique"
  ],
+ "\t7DE07ADF4A643909776217A5FA4093A9": [
+  "Fully Raise/Lower Sails",
+  "Hisser/affaler entièrement les voiles"
+ ],
  "\t7DE1476B44E32FDFACD7C18F9CF9ADF0": [
   "AdjustMaxStatusValueOfRiddenCreature",
   "AdjustMaxStatusValueOfRiddenCreature"
@@ -14414,6 +15122,10 @@
  "\t7E28E3D04B3F52999FA432AB3056E7D9": [
   "You are a broken soul.",
   "Vous êtes une âme brisée."
+ ],
+ "\t7E291333454BCB04563C83BCBD288FF4": [
+  "Generator",
+  "Générateur"
  ],
  "\t7E3335654B63E23ACE193BA83E60A4FE": [
   " : Increase Amount",
@@ -14523,6 +15235,10 @@
   "Auto Turret",
   "Tourelle automatique"
  ],
+ "\t7EF89B8F4E4C5063EA917D8990824EAF": [
+  "Maturation",
+  "Maturation"
+ ],
  "\t7EFC8E2C4A4A3A33AD7A7DA881CD4539": [
   "Glitch",
   "Bug"
@@ -14606,6 +15322,10 @@
  "\t7FD9DE174F6B3E48F06080AFE1D2A868": [
   "Loading Contents...",
   "Chargement du contenu..."
+ ],
+ "\t7FDB4C2144BFCEF9F8BFD1A0DD8D2EAB": [
+  "Installing...",
+  "Installation..."
  ],
  "\t7FE34E39457CE0A27EE994AAED0D5DAA": [
   "Motion Blur",
@@ -14771,6 +15491,10 @@
   "The scaling factor for the amount of Fortitude gained by tamed Creatures per point invested, as a percentage of the default setting.",
   "Facteur d'échelle pour la quantité de Constitution gagnée par les créatures apprivoisées par point investi, en pourcentage du réglage par défaut."
  ],
+ "\t8105B79446228F270C687FB966194E14": [
+  "Pressed",
+  "Appuyé"
+ ],
  "\t812363C4498BEC15C170BD9DB278AE9C": [
   "Rockwell told me that she would one day seek to destroy our colony.",
   "Rockwell m'a dit qu'elle chercherait un jour à détruire notre colonie."
@@ -14778,6 +15502,10 @@
  "\t8133D0744A098C874A89DCB036ED711D": [
   "Grand Explorer",
   "Grand Explorateur"
+ ],
+ "\t81342CDA4F873F20A7912F822B7BABE4": [
+  "Raise Anchor",
+  "Lever l'ancre"
  ],
  "\t813D587F47B0C2B0DE999BB6DC0A55DE": [
   "Time then for me to fulfill my end of our bargain,",
@@ -14846,6 +15574,10 @@
  "\t81B44D4942B419AAF3F6E5897540DFE1": [
   "Santiago knows his way around that junk better than anyone.",
   "Santiago se débrouille avec cette ferraille mieux que quiconque."
+ ],
+ "\t81B45C9B4D2459EB1DFDD8A9D5A0CE99": [
+  "Generator",
+  "Générateur"
  ],
  "\t81D202ED4B5C5A619A6428919D952981": [
   "VAULTING SLAM",
@@ -15179,6 +15911,10 @@
   "Were you expecting some other handsome, hairless hero? ",
   "Tu t'attendais à un autre héros séduisant et imberbe ? "
  ],
+ "\t845258FB415898B22C7F11950257092C": [
+  "Dust",
+  "Poussière"
+ ],
  "\t84585E644F047B25764CB7B6B0F2C8C2": [
   "Mods to Pruchase",
   "Mods à acheter"
@@ -15455,6 +16191,10 @@
   "Spotlight",
   "Projecteur"
  ],
+ "\t87107CEF48F57EB84A0262AEFF04CB82": [
+  "Generator",
+  "Générateur"
+ ],
  "\t871423A64869710BE48606B7C230419E": [
   "SELLER",
   "VENDEUR"
@@ -15478,6 +16218,10 @@
  "\t872BF0F34B4152EDBF455BA1715056C4": [
   "Chance to find loot",
   "Chance de trouver du butin"
+ ],
+ "\t873446B74C3FB347A6DA9AA8FF9361DC": [
+  "Generator",
+  "Générateur"
  ],
  "\t8736C3544F236B4DFF6B80ACC9D15CCD": [
   "Regrettably, their resistance will have to be put down for the greater good.",
@@ -15566,6 +16310,10 @@
  "\t87D741BF42A6D80545A5C0BCC633DEB2": [
   "Cannon",
   "Canon"
+ ],
+ "\t87DD868C42E1A63C7C7340A3B85A0C93": [
+  "Generator",
+  "Générateur"
  ],
  "\t87EFF4914EF730C424EC08942906DC06": [
   "Guard",
@@ -15659,6 +16407,10 @@
   "Boxes",
   "Caisses"
  ],
+ "\t88C1F7D043DE2C00F773918996632697": [
+  "RUN:",
+  "COURSE :"
+ ],
  "\t88D2DAB74EFF284527744A8CE67D00EE": [
   "But I did know your mom -- a long, long time ago...",
   "Mais je connaissais bien ta mère -- il y a très, très longtemps..."
@@ -15678,6 +16430,10 @@
  "\t891E298340DCD8025397E4A7BDB41D2D": [
   "Online Playing ASA",
   "En ligne, joue à ASA"
+ ],
+ "\t8936978049FC57F09AD9269FAD5D3EA0": [
+  "Generator",
+  "Générateur"
  ],
  "\t8959BCD54C5B40014FC9048EBAFB6AA6": [
   "Parts",
@@ -15991,6 +16747,10 @@
   "Bio Researcher",
   "Chercheur en biologie"
  ],
+ "\t8BE30792463A47797F0104B13C45FD2D": [
+  "Extra Armor",
+  "Armure supplémentaire"
+ ],
  "\t8BF408B049FACA15EFA67E8939B86DFA": [
   "WHISTLE \"LAND THIS FLYER\":",
   "SIFFLEMENT « FAIRE ATTERRIR » :"
@@ -16070,6 +16830,10 @@
  "\t8CA54A33429298A7776437BBC4397228": [
   "Guard",
   "Garde"
+ ],
+ "\t8CB7FBB44EF16E595E75BEB7594AD471": [
+  "ON",
+  "ACTIVÉ"
  ],
  "\t8CD30C2D41918598CA566DB4A828800D": [
   "Parts",
@@ -16251,6 +17015,10 @@
   "Enter Online ID",
   "Entrer l'ID en ligne"
  ],
+ "\t8DEA7FFF4BB472168984F1A973ADC63D": [
+  "USE:",
+  "UTILISER :"
+ ],
  "\t8DF060904138B9036B156F920C56E41A": [
   "Tides of Fortune",
   "Tides of Fortune"
@@ -16331,6 +17099,10 @@
   "HOLD",
   "MAINTENIR"
  ],
+ "\t8EA3F384492D075D3F077FB05B85DB6A": [
+  "Aim Cannon",
+  "Viser le canon"
+ ],
  "\t8EB2163D4CFFC6BA8E5E419C61940EF7": [
   "Unlock Bob's animated Explorer Notes to hear his legendary ARK saga! Experience 3 epic themes: ride Trains & tame the Oasisaur in the Wild West Frontier Showdown. Pilot Zeppelins with Cosmo & SIR-5rM8 in the subterranean Steampunk Ascent. Drive custom BattleRigs & fight alongside the Armadoggo in the post-apocalyptic Wasteland War!",
   "Débloquez les note d'explorateur animées de Bob pour découvrir sa légendaire saga ARK ! Vivez 3 thèmes épiques : chevauchez des trains et apprivoisez l'Oasisaure dans l'affrontement du Far West. Pilotez des zeppelins avec Cosmo et SIR-5rM8 dans l'ascension steampunk souterraine. Conduisez des BattleRigs personnalisés et combattez aux côtés de l'Armadoggo dans la guerre des terres dévastées post-apocalyptiques !"
@@ -16350,6 +17122,10 @@
  "\t8EC1B32744F98AC90DA0E7AB7FF75821": [
   "The wildlife is less deadly.",
   "La faune est moins mortelle."
+ ],
+ "\t8ECF2C7E4240BFE582D361B1508AF11B": [
+  "Oxygen",
+  "Oxygène"
  ],
  "\t8ED41BDD4CC6CAF8500EADB2B35322D3": [
   "The scaling factor for how often Babies want to cuddle. Higher numbers mean Players will need to cuddle with the baby more frequently to gain Imprinting Quality.",
@@ -16439,6 +17215,10 @@
   "Black Hole",
   "Trou noir"
  ],
+ "\t8FAC86684BB473A793DBB0AF575CF48F": [
+  "Generator",
+  "Générateur"
+ ],
  "\t8FB350B34B4FB120330FD7921EFCD211": [
   "Redeem A Code",
   "Échanger un code"
@@ -16466,6 +17246,10 @@
  "\t8FD2482B495EB4FF8DE9B2AAC688AF38": [
   "Imprint Any 1 of the Following Creatures to 100%: Equus, Kaprosuchus, Lymantria, Tapejara, or Thorny Dragon",
   "Imprégner à 100 % l'une des créatures suivantes : Equus, Kaprosuchus, Lymantria, Tapejara ou Lézard épineux"
+ ],
+ "\t8FDB898245538309DF4371986CB6B891": [
+  "Generator",
+  "Générateur"
  ],
  "\t8FDBC2D944DB74CF357597A3373363CC": [
   "Guard",
@@ -16554,6 +17338,10 @@
  "\t908790BB4148EA02BD1659BEC3949A77": [
   "Telekinesis",
   "Télékinésie"
+ ],
+ "\t909128274C3AB439B3D0C7B0F58A4ABA": [
+  "Discovery",
+  "Découverte"
  ],
  "\t90A37C044403E937EB9F429B0EE7BA53": [
   "Auto Turret",
@@ -16739,6 +17527,10 @@
   "GlacialPower",
   "GlacialPower"
  ],
+ "\t91CEA97D4BEF47ACED194F8BFCC7016E": [
+  "Generator",
+  "Générateur"
+ ],
  "\t91CF87544C0C1FD6674D47B9106314C4": [
   "Bottle",
   "Bouteille"
@@ -16762,6 +17554,10 @@
  "\t91E96D174A69E6ACE9BCBB9C19F6E699": [
   "Main Font",
   "Police principale"
+ ],
+ "\t9219E6A74C63B137A1314399E4CC0022": [
+  "ON",
+  "ACTIVÉ"
  ],
  "\t921FEA91405BFD2C878305A39F828AE2": [
   "REMOVE FILTER",
@@ -16867,6 +17663,10 @@
   "Meeka! Meeka! Meeka! ",
   "Meeka ! Meeka ! Meeka ! "
  ],
+ "\t9310377E4E00E0597CDB8DBEB3A3659A": [
+  "Speed Increase",
+  "Vitesse accrue"
+ ],
  "\t93123634414C0843ECE579B1603CFDFA": [
   "Surplus generators may seem wasteful, since they don't harm enemies or help allies.",
   "Les générateurs excédentaires peuvent sembler inutiles, puisqu'ils ne nuisent pas aux ennemis et n'aident pas les alliés."
@@ -16934,6 +17734,10 @@
  "\t93883071445C20C42148958A5E0C5889": [
   "...poison a guest in my own castle.",
   "...empoisonner un invité dans mon propre château."
+ ],
+ "\t938EEA2C477C8CBECA2F3BA6E5B5FC83": [
+  "SELECT...",
+  "SÉLECTIONNER..."
  ],
  "\t938FB80A4079873C02C6488BA582C868": [
   "Button 10",
@@ -17139,6 +17943,10 @@
   "Hear me, my Thrall.",
   "Écoute-moi, mon serviteur."
  ],
+ "\t95657F8647066A166EDC66B7F29FE03A": [
+  "Range Increase",
+  "Portée accrue"
+ ],
  "\t956931B641CBF56608B7889823F292B6": [
   "Delete Trait?",
   "Supprimer le trait ?"
@@ -17210,6 +18018,10 @@
  "\t95F956BD425CE8A54AE41EB8C0EE2ACB": [
   "Icicles",
   "Stalactites"
+ ],
+ "\t960310E444A1469849FD0AA3C6260288": [
+  "Training Dummy",
+  "Mannequin d'entraînement"
  ],
  "\t960433464F17B66B7329A68C9790DF22": [
   "Transfer_GeneTrait_FromScanner_IntoGeneInfuserStructure",
@@ -17703,6 +18515,10 @@
   "And then you met Diana Altaras -- a warrior as fierce as yourself.",
   "Et puis vous avez rencontré Diana Altaras -- une guerrière aussi féroce que vous."
  ],
+ "\t99B04900421A8F4AF1E03A91272A4CDD": [
+  "Generator",
+  "Générateur"
+ ],
  "\t99B7B06F464A737BB6DCACBDEEED84C1": [
   "STRAIGHT",
   "SUITE"
@@ -17731,6 +18547,10 @@
   "Meeka:  Oh no, why?",
   "Meeka :  Oh non, pourquoi ?"
  ],
+ "\t99FF86C744C3184BD938B5B74EC202DD": [
+  "GlacialEndurance",
+  "Endurance glaciaire"
+ ],
  "\t9A0AA687426CC74BE2C2489510122E0C": [
   "The scaling factor for the amount of Speed gained by Players per point invested, as a percentage of the default setting.",
   "Le facteur d'échelle de la vitesse gagnée par les joueurs par point investi, en pourcentage du réglage par défaut."
@@ -17746,6 +18566,10 @@
  "\t9A0C7DB047FDCDCE2759778C30A3D90B": [
   "Creatures you tame gain a {ImprintBonus} imprint bonus for you.",
   "Les créatures que vous apprivoisez gagnent un bonus d'imprégnation de {ImprintBonus} pour vous."
+ ],
+ "\t9A1B61544E173917CD29C38BAFFCD3BB": [
+  "Training Dummy",
+  "Mannequin d'entraînement"
  ],
  "\t9A32214442DFC245EF6A6A9FB7490724": [
   "Mutable Oxygen",
@@ -17770,6 +18594,10 @@
  "\t9A5B1A9749AB40E17CE2089DB13E4D4F": [
   "The seed ship is away. Project Genesis is a triumph.",
   "Le vaisseau-graine est parti. Le projet Genesis est un triomphe."
+ ],
+ "\t9A5C487C48B70917E7402CAD06894069": [
+  "Controller",
+  "Manette"
  ],
  "\t9A6C52724334562E249A09ABCF199BE8": [
   "Now, here at the end of the world, it is just you and I, the last of our kind. ",
@@ -17807,9 +18635,17 @@
   "Detonate Totem    ",
   "Faire détoner le totem    "
  ],
+ "\t9AB4A55044089433BE6EA5B6C301F4F1": [
+  "Surface",
+  "Surface"
+ ],
  "\t9AC291CE4F1E0B06978E5696468788DB": [
   "Actual Real Author",
   "Véritable auteur"
+ ],
+ "\t9AC8B94446D90BE6768890B055DFDECE": [
+  "Training Dummy",
+  "Mannequin d'entraînement"
  ],
  "\t9AD293F54E73A812CBB8D28EE47CFC88": [
   "TEXT",
@@ -17863,9 +18699,17 @@
   "Apex Carer",
   "Soigneur suprême"
  ],
+ "\t9B301F0940F9B364B92A2391633A7EED": [
+  "Generator",
+  "Générateur"
+ ],
  "\t9B3D62C04BB189B0DC407BA9A71A5DBD": [
   "Assuming that you even can...",
   "En admettant que vous le puissiez..."
+ ],
+ "\t9B42F6C7411570C11F80269B594E9B64": [
+  "Training Dummy",
+  "Mannequin d'entraînement"
  ],
  "\t9B4C1537438AE267C14AE5A5B853337D": [
   "Disables the spawning of Loot crates (artifact creates will still spawn).",
@@ -17919,6 +18763,10 @@
   "Siege of the King: Beta",
   "Siège du Roi : bêta"
  ],
+ "\t9BF84D9F48BB870C6FA3E4B9206AE430": [
+  "Generator",
+  "Générateur"
+ ],
  "\t9C04406045629EBDB15C408767E8196E": [
   "DELETE ALL SINGLE PLAYER SAVES",
   "SUPPRIMER TOUTES LES SAUVEGARDES SOLO"
@@ -17967,6 +18815,10 @@
   "Camo",
   "Camouflage"
  ],
+ "\t9CB619C448494AA5C87B35B54E7C2D54": [
+  "Damage",
+  "Dégâts"
+ ],
  "\t9CC0680349C2E4088C1C2093A04CD5E7": [
   "Cage",
   "Cage"
@@ -17986,6 +18838,10 @@
  "\t9CD987A245849ADCCC2A4CA8EFE279B4": [
   "Guard",
   "Garde"
+ ],
+ "\t9CDCB9E442CADE19A3FC8C927201C2D5": [
+  "Health",
+  "Santé"
  ],
  "\t9CDF5C754DBFCD79D36B71B4AD05B38F": [
   "Structure Decay Period",
@@ -18195,6 +19051,10 @@
   "Aberration Alpha",
   "Aberration Alpha"
  ],
+ "\t9EBA29C24323F44150F1D3A8FA45CAA9": [
+  "ON",
+  "ACTIVÉ"
+ ],
  "\t9EBEBD3242FCBBFE5F4D95998176EED6": [
   "Parts",
   "Pièces"
@@ -18210,6 +19070,10 @@
  "\t9EE150B94676D278134380BB3FEC8140": [
   "to start adasdfasfd",
   "pour démarrer adasdfasfd"
+ ],
+ "\t9EE18B54414BFA6FEC897298CF7043B0": [
+  "Training Dummy",
+  "Mannequin d'entraînement"
  ],
  "\t9EE8B3D142BE6E435E051C991BA8800B": [
   "Natural resources are more durable.",
@@ -18343,6 +19207,10 @@
   "Tower",
   "Tour"
  ],
+ "\t9FE0FF0640A83EDAD9237D9A2BCE06E6": [
+  "Generator",
+  "Générateur"
+ ],
  "\t9FEEFF8E4119A46B374E47B2491BFFAD": [
   "Kill 3 Wyverns",
   "Tuer 3 Wyvernes"
@@ -18418,6 +19286,10 @@
  "\tA09A6F2A49DE3DED6B1262A5CF510E2B": [
   "Report",
   "Signaler"
+ ],
+ "\tA09C50FB4E9CC5819D4E49A16C024F53": [
+  "Training Dummy",
+  "Mannequin d'entraînement"
  ],
  "\tA0A71F1F4E9CA13BB276E8B0DFB23033": [
   "Fire Bowl",
@@ -18583,6 +19455,10 @@
   "Ocean Trainer",
   "Dresseur des océans"
  ],
+ "\tA202E641491D47B0D186D9897F267B69": [
+  "Craft Amount",
+  "Quantité à fabriquer"
+ ],
  "\tA2142E104C3556097BD34C959DFC5101": [
   "Chance to increase damage",
   "Chance d'augmenter les dégâts"
@@ -18678,6 +19554,10 @@
  "\tA2B78BD94396EACB1C1F94A019664B23": [
   "It is impossible for my kind to transmit ourselves",
   "Il est impossible pour les miens de nous transmettre"
+ ],
+ "\tA2BC475B48018FCF5C87B8BA3E30C63B": [
+  "Training Dummy",
+  "Mannequin d'entraînement"
  ],
  "\tA2C985714B98FB64B350319CB926B481": [
   "PlayStartAnim",
@@ -18823,6 +19703,10 @@
   "Cannon",
   "Canon"
  ],
+ "\tA430A0DF4E96EF99707C20A2A4308A5E": [
+  "Distance Increase",
+  "Portée accrue"
+ ],
  "\tA43B1B5D494B48B4BD4533B454E2BF30": [
   "OWNED",
   "POSSÉDÉ"
@@ -18854,6 +19738,10 @@
  "\tA466E492441D9F7E51C082B38F0A53C1": [
   "Template Name",
   "Nom du modèle"
+ ],
+ "\tA469B2524D2196AFEA98FC976920CFCB": [
+  "Sword Rack",
+  "râtelier à épées"
  ],
  "\tA470C6B0438D776DBECCA693376DCB45": [
   "TANK",
@@ -18919,6 +19807,10 @@
   "Resource Regen Increase",
   "Augmentation de la régénération des ressources"
  ],
+ "\tA4F05EEA48C635B8FB785285C8727023": [
+  "Damage",
+  "Dégâts"
+ ],
  "\tA4F7364946E6C7233590518018AAF95D": [
   "Web Shot",
   "Tir de toile"
@@ -18966,6 +19858,10 @@
  "\tA54F8AC2497DE5EBD3F20EAF58E165E1": [
   "Bob:  Funny thing: all that shaking left a buncha stuff lying around that I could see was gonna come in handy.",
   "Bob :  Un truc drôle : toutes ces secousses ont laissé plein de trucs qui traînaient et dont je voyais bien qu'ils allaient servir."
+ ],
+ "\tA559DBAE45ABAFAC2F816DA34030E5FE": [
+  "Generator",
+  "Générateur"
  ],
  "\tA55A61E64E8D258C7F72438E08E6E2BA": [
   "Cloth",
@@ -19079,6 +19975,10 @@
   "Duration (seconds)",
   "Durée (secondes)"
  ],
+ "\tA62D11DC4720E2029206789A54C00366": [
+  "Max Damage Increase",
+  "Dégâts maximum accrus"
+ ],
  "\tA63B45F640D3AF7A13D02187163AF09D": [
   "Dino Group",
   "Groupe de dinos"
@@ -19158,6 +20058,10 @@
  "\tA7174BF44E4D02D00809A8A66640980F": [
   "press asdfasdf",
   "appuyer sur asdfasdf"
+ ],
+ "\tA71826FD4DAD5B3BF30D0BBAE15EDA40": [
+  "Sword Rack",
+  "râtelier à épées"
  ],
  "\tA71BA6AA40B3B59B9E38F788A0C70B0E": [
   "New Ally",
@@ -19403,6 +20307,14 @@
   "Bob:  Am I telling this story, or are you?",
   "Bob :  C'est moi qui raconte cette histoire, ou toi ?"
  ],
+ "\tA91C2CFE457707D826D188A651ADF646": [
+  "Sword Rack",
+  "râtelier à épées"
+ ],
+ "\tA9258C6A44C6E6AAB9B42DB2169310E3": [
+  "Rolled Up Sleeping Bag",
+  "Sac de couchage roulé"
+ ],
  "\tA92B310F4ACF39655815C383461AB5AB": [
   "Notify Player Joined",
   "Notifier quand un joueur rejoint"
@@ -19410,6 +20322,10 @@
  "\tA938B6A749704EF7A9B1E49677A149A4": [
   "Each type of tool you have equipped on your hotbar provides you with {DamageAndResistance} reduced damage taken and increased damage.",
   "Chaque type d'outil équipé sur votre barre de raccourcis vous procure {DamageAndResistance} de réduction des dégâts subis et d'augmentation des dégâts infligés."
+ ],
+ "\tA94BCB2B4D643E3C0620EA908E34641A": [
+  "Sword Rack",
+  "râtelier à épées"
  ],
  "\tA966C24A435FFB4579618FAADCCC9767": [
   "Craft 50 Structures",
@@ -19543,6 +20459,10 @@
   "Button 6",
   "Bouton 6"
  ],
+ "\tAAAA8A6A490BC6224BE082B81B662F31": [
+  "Generator",
+  "Générateur"
+ ],
  "\tAAB65CA6471528C64F291B9E0E41DF04": [
   "Ah, you've found the Great Western Bridge. Built to access the highlands to our west, by a seditious lord desperate to regain my favor.",
   "Ah, vous avez trouvé le Grand Pont de l'Ouest. Construit pour accéder aux hautes terres à l'ouest, par un seigneur séditieux prêt à tout pour regagner mes faveurs."
@@ -19567,6 +20487,10 @@
   "press",
   "appuyer"
  ],
+ "\tAAD052CF4047B296948F92931A5FFEB4": [
+  "Generator",
+  "Générateur"
+ ],
  "\tAAD6AEEB4ED461946B1F6681C7D92BFD": [
   "CAR SONG",
   "MUSIQUE DU VÉHICULE"
@@ -19574,6 +20498,10 @@
  "\tAADE7A214B431FF8A53C0B8556A2A7D6": [
   "100.0% (+90 Lvl)",
   "100,0 % (+90 Niv.)"
+ ],
+ "\tAAE0FC524446A191A15B7BA5C2690B57": [
+  "Generator",
+  "Générateur"
  ],
  "\tAAF60EB24972CD1581B86D9A3AF8BD2E": [
   "Deflect",
@@ -19602,6 +20530,10 @@
  "\tAB385C5040589BF61DCE38B3E2C462D2": [
   "Cosmetic Name Test",
   "Test de nom cosmétique"
+ ],
+ "\tAB4346F64C27C0FF1A9FA2B8D13BD1BE": [
+  "Training Dummy",
+  "Mannequin d'entraînement"
  ],
  "\tAB43C8EC40904BCC1FD52796C7306CB7": [
   "Cannon",
@@ -19683,6 +20615,10 @@
   "Mods List",
   "Liste des mods"
  ],
+ "\tABA7061A4AFCDD6C167A4C9872D4862A": [
+  "Mod Window",
+  "Fenêtre des mods"
+ ],
  "\tABA798594438682622A61BBAB93DD251": [
   "Melee/ Fire Torpedo",
   "Mêlée/ Tir de torpille"
@@ -19714,6 +20650,10 @@
  "\tABE40C704B3C61EF284390A6700CF274": [
   "Loot 50 Wild Treasure Chests",
   "Piller 50 coffres au trésor sauvages"
+ ],
+ "\tABF0197740F14845D01EB1B5BFC5E171": [
+  "Generator",
+  "Générateur"
  ],
  "\tAC0484504109ED7277A6DC8E0BA83421": [
   "Latitude: ",
@@ -19782,6 +20722,10 @@
  "\tACAD61704E6575A0EB959CAC6CD33DF5": [
   "Boxes",
   "Caisses"
+ ],
+ "\tACB8E9584BB5EB2BEC584FBD40722F05": [
+  "Generator",
+  "Générateur"
  ],
  "\tACC2298E41A1687C1AAEF09FD3B41A13": [
   "Everyone learns faster",
@@ -19923,6 +20867,10 @@
   "Select another category to discover more mods",
   "Sélectionnez une autre catégorie pour découvrir plus de mods"
  ],
+ "\tADB5117F49C5B8823A8D83852A91471B": [
+  "Aim Cannons",
+  "Viser les canons"
+ ],
  "\tADB641F5482F9AAD01231CA49D1C3CB8": [
   "Guard",
   "Garde"
@@ -19966,6 +20914,10 @@
  "\tADF8601D49C62AEA2B5277B6BB5A8EE1": [
   "{Reload} Unlink",
   "{Reload} Dissocier"
+ ],
+ "\tAE01415C4EB107C01306808068357F07": [
+  "ALL",
+  "TOUT"
  ],
  "\tAE02FADA4F633D33614CD09E59A51DD3": [
   "Safe Combined results have Quality up to the average Quality of component Blueprints, but can have Quality as low as half that average",
@@ -20058,6 +21010,10 @@
  "\tAEFF26C44F2EC41D120AD69B66A5B90F": [
   "Loot Structure",
   "Structure de butin"
+ ],
+ "\tAF000D3A40EB0BF75F91ABB494198FB8": [
+  "Generator",
+  "Générateur"
  ],
  "\tAF00663D486EDB1452914AB6E8C9D7A6": [
   "CLEAR ALL",
@@ -20251,6 +21207,10 @@
   "TEXT",
   "TEXTE"
  ],
+ "\tB0C8551C406B8271E2CC6490E95F1A21": [
+  "Training Dummy",
+  "Mannequin d'entraînement"
+ ],
  "\tB0CC125549FAAFFC13A3299355B7CBB5": [
   "TEXT",
   "TEXTE"
@@ -20294,6 +21254,10 @@
  "\tB10CCEA044188C7F10BA23975915847C": [
   "Infection Mastery",
   "Maîtrise de l'infection"
+ ],
+ "\tB10CFC384FEA0ABA2E5984BED59C2A15": [
+  "ON",
+  "ACTIVÉ"
  ],
  "\tB110BE9A40DF5DFBDD804F853DF65F98": [
   "Health Regeneration",
@@ -20442,6 +21406,10 @@
  "\tB22722914CBCE3F88161EAA72820DA58": [
   "Decoy Operative",
   "Agent leurre"
+ ],
+ "\tB22D587749D15C1131EC128024E1E680": [
+  "Training Dummy",
+  "Mannequin d'entraînement"
  ],
  "\tB22F84AB40FF4642774DDC8AE731A6CA": [
   "Supply Runner",
@@ -20611,6 +21579,10 @@
   "Seasoned Slayer",
   "Tueur aguerri"
  ],
+ "\tB39C8DCE4768D3523FE6C298556F375E": [
+  "Training Dummy",
+  "Mannequin d'entraînement"
+ ],
  "\tB39DF5C646361E287FE08E8A311CC192": [
   "DROP ITEM:",
   "LÂCHER L'OBJET :"
@@ -20671,6 +21643,14 @@
   "I have seen your memories within the Codex.",
   "J'ai vu vos souvenirs dans le Codex."
  ],
+ "\tB457996149D38C0562D5589B9340221D": [
+  "Stamina Reduction",
+  "Réduction du coût d'endurance"
+ ],
+ "\tB469F30344E91F254C2A409E7EA2549B": [
+  "ON",
+  "ACTIVÉ"
+ ],
  "\tB46BDE464D24BA7B5D77DBA88754475B": [
   "USE SLOT ITEM 1:",
   "UTILISER OBJET EMPLACEMENT 1 :"
@@ -20690,6 +21670,10 @@
  "\tB48E941D4D977DBD37644EBF462C1294": [
   "The toxic red phosphorescence of this place burns my bones from within.",
   "La phosphorescence rouge toxique de cet endroit me brûle les os de l'intérieur."
+ ],
+ "\tB492CA894501FB4D8945B3ABB9202C15": [
+  "Training Dummy",
+  "Mannequin d'entraînement"
  ],
  "\tB4978BBF4932CE7D76E6B19ABE3E1CBA": [
   "Skill Points",
@@ -20714,6 +21698,10 @@
  "\tB4E412C645CA71DD3FDE499F89597133": [
   "Harvesting Bonus",
   "Bonus de récolte"
+ ],
+ "\tB503FB334C8934B76A0D74B8A9ED393A": [
+  "Stage 5",
+  "Étape 5"
  ],
  "\tB504B68C4B0D10D48282B2AFA7962A12": [
   "Table",
@@ -20779,6 +21767,10 @@
   "RTV_pressureDivergenceTemp",
   "RTV_pressureDivergenceTemp"
  ],
+ "\tB5C0E61547FFF0161F3B438A9366A54C": [
+  "Raptor Skull",
+  "Crâne de raptor"
+ ],
  "\tB5C10EE440B4747DEF420394461646C3": [
   "STRAFE LEFT:",
   "PAS CHASSÉ GAUCHE :"
@@ -20834,6 +21826,10 @@
  "\tB624356E44D9EFDDE5C6A5B20BAF70CA": [
   "Int",
   "Int"
+ ],
+ "\tB6251833497BE14BC5CA369C7036152B": [
+  "Agreed...",
+  "D’accord..."
  ],
  "\tB635353A476EB0DF563AF698A77942A6": [
   "ORDER ADD/REMOVE TAME:",
@@ -20926,6 +21922,10 @@
  "\tB734E707415DFEAE4C91B098CD0E1B26": [
   "Guard",
   "Garde"
+ ],
+ "\tB748F6EA4A62CED7B8E5E89392C71ED1": [
+  "Generator",
+  "Générateur"
  ],
  "\tB749F9684B5F1F2A2C86FDB8FC633EDE": [
   "Allows Players to construct bases with multiple levels of floors on platform saddles.",
@@ -21030,6 +22030,10 @@
  "\tB812D3344896270DE58C4086687300C8": [
   "Dirt Camo",
   "Camo terre"
+ ],
+ "\tB82472E14DE871B8EFCA76B27B140334": [
+  "Poop",
+  "Excrément"
  ],
  "\tB8250AFB44E6FA01AD0048B44225E540": [
   "Craft 25 Tranquilizer Arrows",
@@ -21219,6 +22223,10 @@
   "Aw, hey. She must be really special, to make you hurt like this.",
   "Ah, hé. Elle doit être vraiment spéciale, pour te faire souffrir comme ça."
  ],
+ "\tBA2F04D948D3B826572812AC0C4C2992": [
+  "Front Nest",
+  "Nid avant"
+ ],
  "\tBA37EC63468CC01F77E2768CA8577191": [
   "Guard",
   "Garde"
@@ -21242,6 +22250,10 @@
  "\tBA5FC8DA41DED3B9B3006F8C765B484A": [
   "Desc Text",
   "Texte desc."
+ ],
+ "\tBA604C284670F7DE1D4D6FA731089EE2": [
+  "Sword Rack",
+  "râtelier à épées"
  ],
  "\tBA68555741C3F530E48F57A56A6C4F6A": [
   "Health regeneration per second",
@@ -21411,6 +22423,10 @@
   "press",
   "appuyer"
  ],
+ "\tBBA69D1F410E5D397F0475AD969BE95E": [
+  "Generator",
+  "Générateur"
+ ],
  "\tBBA8C22743725BD0141F529ECCC5BE73": [
   "Cannon",
   "Canon"
@@ -21418,6 +22434,10 @@
  "\tBBB0519748AED2163779F194F050ABE4": [
   "Dropped by:",
   "Lâché par :"
+ ],
+ "\tBBC266FF46A2E0C7048CC7AD41E10C05": [
+  "Generator",
+  "Générateur"
  ],
  "\tBBC31AB043F5634CAEC9019994A0A561": [
   "ACCEPT",
@@ -21443,6 +22463,14 @@
   "Guard",
   "Garde"
  ],
+ "\tBC074A834AC263DD2379419DF90F15AD": [
+  "Training Dummy",
+  "Mannequin d'entraînement"
+ ],
+ "\tBC08284E4EE4B02F6E6B50BE84D0C04C": [
+  "Training Dummy",
+  "Mannequin d'entraînement"
+ ],
  "\tBC08BC2F4E7258EE03145AB649539243": [
   "Cryofridge",
   "Cryofrigo"
@@ -21450,6 +22478,10 @@
  "\tBC11652940911FBA376BE387DAF5E045": [
   "And so, it is only a matter of time before we are reunited.",
   "Et ainsi, ce n'est qu'une question de temps avant que nous soyons réunis."
+ ],
+ "\tBC1339D04416E77DF599E2BA536891E5": [
+  "Generator",
+  "Générateur"
  ],
  "\tBC16802148A49D387D42F58FF0F2104E": [
   "Speed",
@@ -21531,6 +22563,10 @@
   "Main Menu Intro",
   "Intro du menu principal"
  ],
+ "\tBCCF1D43402B421997EDA98FD219761D": [
+  "Raise/Lower Sails",
+  "Hisser/affaler les voiles"
+ ],
  "\tBCD02621488865B8A9383A90D023C098": [
   "DiggingOut",
   "DiggingOut"
@@ -21542,6 +22578,10 @@
  "\tBCE1FCE844BC3460B2C77EA9211FF95E": [
   "But her fate was my fault... I let her die...",
   "Mais si elle a connu ce sort, c'est ma faute... je l'ai laissée mourir..."
+ ],
+ "\tBCF02C814910881F56DD4B9C31CDBC7E": [
+  "Cloudy",
+  "Nuageux"
  ],
  "\tBCFEEFBB4B1DBE433843DBB9723A309A": [
   "Using \"On Tick\"",
@@ -21607,6 +22647,10 @@
   "Guard",
   "Garde"
  ],
+ "\tBD5E6CEF4B8377A736040FBD87878262": [
+  "ON",
+  "ACTIVÉ"
+ ],
  "\tBD66DE344EFAC0D23087709E2A839AF9": [
   "Version:",
   "Version :"
@@ -21666,6 +22710,10 @@
  "\tBDDF40E3447DC0B9B9FCBCB135CC6DEF": [
   "You must go to Main Menu and reload the map for changes to take effect.",
   "Vous devez retourner au menu principal et recharger la carte pour que les changements prennent effet."
+ ],
+ "\tBDE1F5164CB79C8A78003DBB7D9C3B91": [
+  "Treasure Chest",
+  "Coffre au trésor"
  ],
  "\tBDECDDE745B43A812A1A458344C31866": [
   "No endorsement or affiliation is intended between Stadia and the manufacturers of non-Stadia controllers or consoles. STADIA, the Stadia beacon, Google, and related marks and logos are trademarks of Google LLC. All other trademarks are the property of their respective owners.",
@@ -21839,6 +22887,10 @@
   "LONG LONG NAME LONG NAME VERY",
   "LONG LONG NOM LONG NOM TRÈS"
  ],
+ "\tBFD1F67E43718C7EA91B9F81D24027AC": [
+  "Training Dummy",
+  "Mannequin d'entraînement"
+ ],
  "\tBFD61DC147B2F147E2BE38B0754EB7A7": [
   "Camouflage",
   "Camouflage"
@@ -21850,6 +22902,10 @@
  "\tBFE45A1740FD86AAA953188F1689E6E6": [
   "Just like the rest of our conversations, okay?",
   "Comme le reste de nos conversations, d'accord ?"
+ ],
+ "\tBFEC094E4335E630FDD286A2607194EF": [
+  "Damage",
+  "Dégâts"
  ],
  "\tBFF25F8D46F49EFAB3802A8A51945EF3": [
   "The scaling factor for the amount of Oxygen gained by Creatures when they are tamed as a percentage of the default setting, depending on taming effectiveness.",
@@ -21874,6 +22930,10 @@
  "\tC016726F472DDB78FE861F83825D18EC": [
   "Decoy Operative",
   "Agent leurre"
+ ],
+ "\tC01BF6FB4E277CAEC0E5628338D9A0DD": [
+  "Generator",
+  "Générateur"
  ],
  "\tC01C669D4D11B949354579B011C986E3": [
   "Drinking a soup, health or stamina brew has a {Chance} chance to <RichColor Color=\"1,0,0,1\">not</> consume the item.",
@@ -21922,6 +22982,10 @@
  "\tC0784AE14380EDF3B9D8879BCF0E2570": [
   "Inject_GeneTrait_IntoTargetCreature",
   "Inject_GeneTrait_IntoTargetCreature"
+ ],
+ "\tC07CEB1A4F4AF7BF7E45D3B5BA6F568A": [
+  "Oxygen",
+  "Oxygène"
  ],
  "\tC0926FE2486F8C0B3ECF5FB932B718C8": [
   "Sharpshooter",
@@ -21979,6 +23043,10 @@
   "Requires Original Dragon Hoard Key In Inventory",
   "Nécessite la Clé originale du trésor du Dragon dans l'inventaire"
  ],
+ "\tC1305F26497DF3503B52CFA786A4F250": [
+  "Training Dummy",
+  "Mannequin d'entraînement"
+ ],
  "\tC135557341A2C8A5654CD896BE4DCA64": [
   "Item",
   "Objet"
@@ -22030,6 +23098,10 @@
  "\tC18FF57B4C81C0E81124C0B46362B387": [
   "Equipment",
   "Équipement"
+ ],
+ "\tC1907FF94E75C2895FE890A448F5E405": [
+  "So, good news:  We passed the Genesis Simulation.",
+  "Bonne nouvelle : nous avons passé la simulation Genesis."
  ],
  "\tC1958EB14CC56B3483BA7F97B8CBA17E": [
   "AdjustOutputDamageOfRiddenCreature",
@@ -22187,6 +23259,10 @@
   "Initial Time Of Day",
   "Heure du jour initiale"
  ],
+ "\tC2D000504A7D089524496A8C5C0E75A9": [
+  "Primary",
+  "Principal"
+ ],
  "\tC2D0D8174695DE41EE0A7586962F2403": [
   "Chemistry Starter",
   "Débutant en chimie"
@@ -22246,6 +23322,10 @@
  "\tC322A30A46412490528B3AAE2481C6F5": [
   "Mounted Opportunist",
   "Opportuniste monté"
+ ],
+ "\tC329C00B4F738C3E448CD9909D771404": [
+  "Training Dummy",
+  "Mannequin d'entraînement"
  ],
  "\tC32ACB9C484E8CDE0CE4F3B0B38229B8": [
   "PAIR",
@@ -22307,9 +23387,17 @@
   "Guard",
   "Garde"
  ],
+ "\tC376EAEC43F1818A091814AF12B01ABE": [
+  "Bark Shield    ",
+  "Bouclier d’écorce    "
+ ],
  "\tC390213E4EF0AA8020BF88A2A12EC9F4": [
   "Too far, Doctor--!",
   "Trop loin, docteur-- !"
+ ],
+ "\tC3AA6AD64500DAECF0ACDB93FAE9143D": [
+  "Generator",
+  "Générateur"
  ],
  "\tC3B6CAB3460787B12144F4BABFC201C4": [
   "If I cannot stop you, there is still someone left... who can...",
@@ -22326,6 +23414,10 @@
  "\tC3C6B5A64C907732F1D0DA96B217E563": [
   "Blocking_(State_5)",
   "Blocking_(State_5)"
+ ],
+ "\tC3CDF1EC49E0A724437F2BADA4617397": [
+  "Nahhh.",
+  "Bof."
  ],
  "\tC3D67E2E468AE372FAFFA69C30AB09EA": [
   "Default Variable",
@@ -22439,6 +23531,10 @@
   "DYING",
   "MOURANT"
  ],
+ "\tC4C1E0084CAC448BBCE23BA069B65F97": [
+  "Generator",
+  "Générateur"
+ ],
  "\tC4CBEF8A437DD9E2E54D559DB2FF6C83": [
   "Their efforts free me to contemplate more existential threats.",
   "Leurs efforts me laissent libre de contempler des menaces plus existentielles."
@@ -22535,6 +23631,10 @@
   "Table",
   "Table"
  ],
+ "\tC60D08A845544EC65A216D83AEDA28D7": [
+  "Only Tamed Creatures",
+  "Créatures apprivoisées uniquement"
+ ],
  "\tC60D44654D8F9738A8CDF7B21153CE57": [
   "Imagine your own fiefdom out here. Bend the knee, and perhaps I'll reward you a secluded bit of these borderlands,",
   "Imaginez votre propre fief ici. Ployez le genou, et peut-être que je vous récompenserai d'un coin isolé de ces terres frontalières,"
@@ -22562,6 +23662,10 @@
  "\tC62B802841BF8C0A4EB978922F69673F": [
   "Ocean Trainer",
   "Dresseur des océans"
+ ],
+ "\tC63046944C6885F89E9A65A1D96C77FC": [
+  "MeteorRain",
+  "Pluie de météores"
  ],
  "\tC63D2A24429972FB926D58B92172AE75": [
   "Hold ",
@@ -22611,6 +23715,10 @@
   "Mating Interval Decrease",
   "Réduction de l'intervalle d'accouplement"
  ],
+ "\tC69C1CEF4C9F218C7431AD8809D1D48C": [
+  "What...?",
+  "Quoi... ?"
+ ],
  "\tC6A2D02444DC0E19A97F6CA1151AD286": [
   "...finding a better world.",
   "...trouver un monde meilleur."
@@ -22647,9 +23755,17 @@
   "The alien Element that ended our world has willed a titanic adversary into being...",
   "L'Élément extraterrestre qui a mis fin à notre monde a fait naître un adversaire titanesque..."
  ],
+ "\tC7101DA8420F0360D7125D891F3CCCC3": [
+  "Training Dummy",
+  "Mannequin d'entraînement"
+ ],
  "\tC710F2C2491DC331DC2077B154A1ACF5": [
   "All I ask in return for granting them asylum is an occasional tithe of blood.",
   "Tout ce que je demande en échange de leur asile, c'est une dîme occasionnelle de sang."
+ ],
+ "\tC72776344970BAF710489FAEB29B1543": [
+  "Sword Rack",
+  "râtelier à épées"
  ],
  "\tC727AA1845163FE57D98DC938A0E0D42": [
   "Apprentice Breeder",
@@ -22719,6 +23835,10 @@
   "Fire Wyvern Egg",
   "Œuf de Wyverne de Feu"
  ],
+ "\tC7D2C5554364AAA1B25F4BA42A71D92B": [
+  "Spoiling Time",
+  "Temps avant péremption"
+ ],
  "\tC7DB428A44A4CE56360B408CA748DB7A": [
   "Siege of the King: Gamma",
   "Siège du Roi : gamma"
@@ -22774,6 +23894,10 @@
  "\tC88637C8422A4451B73CE5966B8085A5": [
   "Provocation Protocol",
   "Protocole de provocation"
+ ],
+ "\tC891B2624667685E4776C59E667E8B94": [
+  "The other Survivors are still trapped in the simulation, but we're free!",
+  "Les autres survivants sont encore piégés dans la simulation, mais nous, nous sommes libres !"
  ],
  "\tC893924E43B0549ED41BFDB3202F512F": [
   "Such is the price of eternity. But only a pittance for its many spoils.",
@@ -23331,6 +24455,10 @@
   "Sabotage",
   "Sabotage"
  ],
+ "\tCD89634746D0E87A19C8B28038042242": [
+  "Training Dummy",
+  "Mannequin d'entraînement"
+ ],
  "\tCD99010A43039CEA52FAB1AC0A9FC176": [
   "Attack Speed",
   "Vitesse d'attaque"
@@ -23350,6 +24478,10 @@
  "\tCDAB95FE4BFC6A6BA91FFD9C0AD28568": [
   "Bio Expert",
   "Expert en biologie"
+ ],
+ "\tCDB77EC24D5BA9DF727D059B1EA4D939": [
+  "Generator",
+  "Générateur"
  ],
  "\tCDB8DB8E49A063C534B91EB46E3238B3": [
   "Multplayer Servers: 814",
@@ -23522,6 +24654,10 @@
  "\tCF606D0343175E478C9F0BA43CE6BA63": [
   "Lunge    ",
   "Ruée    "
+ ],
+ "\tCF6C3E19458F76CB5ADFF8B42227C36B": [
+  "Training Dummy",
+  "Mannequin d'entraînement"
  ],
  "\tCF6CAA5F40E7ACDB7E2CC792CA99DD14": [
   "Cannon",
@@ -23723,6 +24859,14 @@
   "Parts",
   "Pièces"
  ],
+ "\tD1312C9C4CC3C8A76764EEBA31A27B42": [
+  "Now that you aren't so squishy, we should figure out which part of the Colony-Ship we're in.",
+  "Maintenant que vous êtes moins fragile, voyons dans quelle partie du vaisseau-colonie nous sommes."
+ ],
+ "\tD139CDC0420EBECF7891EE9552F25470": [
+  "Welcome to the real world.",
+  "Bienvenue dans le monde réel."
+ ],
  "\tD1439B524C1548FA27F5EB854F53FE3E": [
   "Guard",
   "Garde"
@@ -23774,6 +24918,10 @@
  "\tD1B87D2F4C9DA7F0AC9EAD9525397170": [
   "Rex Skull",
   "Crâne de T-Rex"
+ ],
+ "\tD1BCDAF941771A8138AFDA8E5DEC0326": [
+  "It says here: 'Tek Suit for emergency use only'. This definitely qualifies.",
+  "Il est écrit : « combinaison Tek réservée aux urgences ». On y est."
  ],
  "\tD1CEDABE4C8A2CF14EE1308FD8CD47AE": [
   "Infection Tracker",
@@ -23899,6 +25047,10 @@
   "CoastalTreasureMap",
   "CoastalTreasureMap"
  ],
+ "\tD310C9204316A505B110A9986E6BC35B": [
+  "Only Tamed Creatures",
+  "Créatures apprivoisées uniquement"
+ ],
  "\tD312E1DC49E597F9C02FF9A194F4B43D": [
   "Report",
   "Signaler"
@@ -23922,6 +25074,10 @@
  "\tD338F91548769F70E6792EBA15315EFD": [
   "Guard",
   "Garde"
+ ],
+ "\tD340F0B042444E97E2FD92A047870FA1": [
+  "Yes.",
+  "Oui."
  ],
  "\tD34531784F8E3713F93E2DA9300E1F0F": [
   "Enables protection against raiding while a Player/Tribe is offline.",
@@ -24003,9 +25159,17 @@
   "InvestigatingFood",
   "InvestigatingFood"
  ],
+ "\tD3F2735C49F45EB30D29D5BCB785F0D1": [
+  "Open/Close Cannon Ports",
+  "Ouvrir/fermer les sabords"
+ ],
  "\tD3F7630D4088C0DBE008F59861C80E7F": [
   "ALL ITEMS",
   "TOUS LES OBJETS"
+ ],
+ "\tD40697E64B8351D57F61A483327BE88C": [
+  "Sword Rack",
+  "râtelier à épées"
  ],
  "\tD40D341E4CE96F25D00913B296FFAF13": [
   "Elite Hunter",
@@ -24071,6 +25235,10 @@
   "Crate Seeker",
   "Dévoreur de caisses"
  ],
+ "\tD4EA712D40310759DB009F9A8D22AACF": [
+  "Training Dummy",
+  "Mannequin d'entraînement"
+ ],
  "\tD4EC176D4A38E88907452A9503A2085A": [
   "Mineral-Bearing",
   "Riche en minerai"
@@ -24078,6 +25246,10 @@
  "\tD4EEEEBA4C8E486DDAA72EB2390CBB0A": [
   "Reverse Assassination",
   "Assassinat inversé"
+ ],
+ "\tD4F875514047350E963B0499016DF56B": [
+  "ON",
+  "ACTIVÉ"
  ],
  "\tD500EC6C4012A86ED84EBFB304997B90": [
   "Enables hardcore mode (Players revert to level 1 upon death).",
@@ -24275,6 +25447,10 @@
   "NON-DEDICATED",
   "NON DÉDIÉ"
  ],
+ "\tD678B5C74D217189A50F23BF1CAFB99D": [
+  "Generator",
+  "Générateur"
+ ],
  "\tD6957DBF41B38223F8C875A6ABEF8461": [
   "Loot Structure",
   "Structure de butin"
@@ -24307,6 +25483,10 @@
   "Meatsack",
   "Sac à viande"
  ],
+ "\tD71BA0444993AD5D52F804AAF46027AF": [
+  "Sword Rack",
+  "râtelier à épées"
+ ],
  "\tD726F57040DC0AA66687FCBA6FA1EDD8": [
   "Decoy Specialist",
   "Spécialiste des leurres"
@@ -24318,6 +25498,10 @@
  "\tD72EDF824092A8C7E65CF9BD7832D7AB": [
   "UPDATING...",
   "MISE À JOUR..."
+ ],
+ "\tD736B73045B60D456723ABA2A13E262D": [
+  "Drop Anchor",
+  "Jeter l'ancre"
  ],
  "\tD73E6537413CFF516110F1803EC01132": [
   "I would feel better if you were coming along.",
@@ -24415,6 +25599,10 @@
   "Fabulous Gorgeous Shelve",
   "Étagère fabuleusement magnifique"
  ],
+ "\tD7EF51AA4E73E27DFB546B9E382A0302": [
+  "Training Dummy",
+  "Mannequin d'entraînement"
+ ],
  "\tD7F3AE5C459BFA17D09ACE84B6E9F6AA": [
   "Beastmaster",
   "Maître des bêtes"
@@ -24487,6 +25675,10 @@
   "Guard",
   "Garde"
  ],
+ "\tD887B15F4BC25E718E36EFAA26248FC4": [
+  "Low",
+  "Faible"
+ ],
  "\tD889B3C04555D8464015E78D36FD3E16": [
   "Quads Muscle",
   "Muscle quadriceps"
@@ -24547,6 +25739,10 @@
   "It's been a day of reversals, I guess. I'd slunk off to brood somewhere, and Mei-Yin tracked me down to talk, mostly about a subject we'd been avoiding: Diana. Since she opened my wound, she'd open hers, she said.\r\n\r\nIt didn't feel like a fair trade. The way she clutches that necklace, and how she smiles when she remembers the woman who gave it to her, there's a gentleness there that she offers to nothing else. To persevere with a wound so deep that it may never heal, her will must be extraordinary, but...\r\n\r\nMaybe it helps that we're limping onward together, and maybe as long as we're here to prop each other up, we'll see this through.\r\n\r\nIn the end, Mei-Yin changed her vote, and the ayes had it. We're following the signal.",
   "Ç'a été une journée de renversements, j'imagine. Je m'étais éclipsée pour ruminer dans mon coin, et Mei-Yin m'a retrouvée pour parler, surtout d'un sujet qu'on évitait : Diana. Puisqu'elle avait rouvert ma plaie, elle rouvrirait la sienne, m'a-t-elle dit.\r\n\r\nÇa ne m'a pas semblé un échange équitable. La façon dont elle serre ce collier, et dont elle sourit quand elle se souvient de la femme qui le lui a donné, il y a là une douceur qu'elle n'offre à rien d'autre. Pour continuer avec une blessure si profonde qu'elle ne guérira peut-être jamais, sa volonté doit être extraordinaire, mais...\r\n\r\nÇa aide peut-être qu'on boitille côte à côte, et peut-être que tant qu'on sera là pour se soutenir l'une l'autre, on ira jusqu'au bout.\r\n\r\nAu final, Mei-Yin a changé son vote, et les pour l'ont emporté. On suit le signal."
  ],
+ "\tD8E3FEC4494E27C6ACB73790DBEE5ABF": [
+  "Han...? ",
+  "Han... ? "
+ ],
  "\tD8EFACD34504BCF8B3035C93B4F7C3F7": [
   "But what am I?",
   "Mais que suis-je ?"
@@ -24582,6 +25778,10 @@
  "\tD934CE314AEA9A7D9427EF8039C40C62": [
   "Defense Commander",
   "Commandant de la défense"
+ ],
+ "\tD939AE5440A312F3FF3E939DD24863B1": [
+  "Damage",
+  "Dégâts"
  ],
  "\tD94B74D741A24036E44509A00B1A85FA": [
   "Trust me, you're not going to fend her off that easily... Just try to stay out of her way!",
@@ -24799,6 +25999,10 @@
   "Face Fat",
   "Graisse du visage"
  ],
+ "\tDB35BC994FFF5DE29C246884F7955500": [
+  "Generator",
+  "Générateur"
+ ],
  "\tDB4892204B23B4B6177968B4E9013C8A": [
   "Guard",
   "Garde"
@@ -24806,6 +26010,10 @@
  "\tDB5CFAA04B81B54CBFC0EFAD922F578C": [
   "Purge the Ranks",
   "Purgez les rangs"
+ ],
+ "\tDB5FC0BD4DCD3A0376C3EFAA541E09E1": [
+  "Sword Rack",
+  "râtelier à épées"
  ],
  "\tDB651B764D76C553E66C7FA904630283": [
   "TEXT",
@@ -24862,6 +26070,10 @@
  "\tDBB2132E4A459C0B66200FA460443CB4": [
   "Status Text",
   "Texte de statut"
+ ],
+ "\tDBBA56A541CC04A6933BB283B4964083": [
+  "Generator",
+  "Générateur"
  ],
  "\tDBD050FF4A05C75B33575492C3540135": [
   "+ Premium Upgrade",
@@ -25071,6 +26283,10 @@
   "Alpha Megapithecus Masher",
   "Alpha Megapithecus Masher"
  ],
+ "\tDDB1084F4DC86C479B00BE8038F50983": [
+  "Stamina Reduction",
+  "Réduction du coût d'endurance"
+ ],
  "\tDDB19B6A4A93C2BECCD66CBD1B8FA1AE": [
   "Deepsea Diving",
   "Plongée en eaux profondes"
@@ -25143,6 +26359,10 @@
   "The Center is a massive new map for survivors to explore, nearly double the size of the playable geography of the Island landscape making it about 70 sq. kilometers. The Center complements the current ARK biomes with a rich, hand-drawn Tolkien-esque aesthetic. Filled with stunning lighting effects, lava rivers, giant picturesque mountains, misty floating islands, ancient underground ice caves, and more!",
   "The Center est une nouvelle carte massive à explorer pour les survivants, presque deux fois plus grande que la zone jouable de l'île, avec environ 70 km². The Center vient compléter les biosphères actuelles d'ARK avec une esthétique riche, dessinée à la main, aux accents dignes de Tolkien. Elle regorge d'effets de lumière saisissants, de rivières de lave, de montagnes gigantesques et pittoresques, d'îles flottantes embrumées, d'anciennes grottes de glace souterraines, et bien plus encore !"
  ],
+ "\tDE3F2E3D41B8DF4C69611EB2EF8C2207": [
+  "Training Dummy",
+  "Mannequin d'entraînement"
+ ],
  "\tDE4394F345C6564A95A23DB52855F70F": [
   "<img src=\"ImageStyle.Default\" path=\"/Game/PrimalEarth/UI/Inventory/Textures/IconRightClick.IconRightClick\"/> + <img src=\"ImageStyle.Default\" path=\"/Game/PrimalEarth/UI/Inventory/Textures/IconLeftClick.IconLeftClick\"/>",
   "<img src=\"ImageStyle.Default\" path=\"/Game/PrimalEarth/UI/Inventory/Textures/IconRightClick.IconRightClick\"/> + <img src=\"ImageStyle.Default\" path=\"/Game/PrimalEarth/UI/Inventory/Textures/IconLeftClick.IconLeftClick\"/>"
@@ -25182,6 +26402,10 @@
  "\tDEBC168E49DBB24DBAC8058548CA2B50": [
   "Why does she seem so single-mindedly determined to find my Codex?",
   "Pourquoi semble-t-elle si obstinément déterminée à trouver mon Codex ?"
+ ],
+ "\tDEC12AA64A3FA7C28CD0818C7071BC0D": [
+  "Tame 50 Herbivores",
+  "Apprivoiser 50 herbivores"
  ],
  "\tDEC2505F40701E76AF7CEA9821FDF05A": [
   "Your email",
@@ -25275,9 +26499,17 @@
   "Deal With this later",
   "S'en occuper plus tard"
  ],
+ "\tDF558FBA4C90FF2BB909E4B61C090D3F": [
+  "Sword Rack",
+  "râtelier à épées"
+ ],
  "\tDF5DDA924DFD5D2D8C8B03B909DAA7BC": [
   "WARNING!",
   "AVERTISSEMENT !"
+ ],
+ "\tDF60F55141DBCF284F57E08A5442E334": [
+  "Training Dummy",
+  "Mannequin d'entraînement"
  ],
  "\tDF6200834636A1D7A8E8D8A8D9D20333": [
   "You would make a fine queen for my people, and thereby earn your reward.",
@@ -25367,6 +26599,10 @@
   "Tower",
   "Tour"
  ],
+ "\tE01B95B8462A011E18F5A09B51F921BC": [
+  "Oxygen",
+  "Oxygène"
+ ],
  "\tE01BAD824A29B190F843C0ACA97BF4A6": [
   "Charge",
   "Charge"
@@ -25394,6 +26630,10 @@
  "\tE045A1BC4E02E58E6A5997A0ABCF804D": [
   "Chance",
   "Chance"
+ ],
+ "\tE048C8EE4810980086D7F0B63479230B": [
+  "BUY",
+  "ACHETER"
  ],
  "\tE0499FB6425F20D186095B9C671C078F": [
   "Food Drain",
@@ -25503,6 +26743,14 @@
   "I'm sorry, Meiyin. I should've been there for you when you needed me.",
   "Je suis désolée, Mei-Yin. J'aurais dû être là pour toi quand tu avais besoin de moi."
  ],
+ "\tE18786064968E84EC780D3B6037FA214": [
+  "Generator",
+  "Générateur"
+ ],
+ "\tE190A22E474D3FCFE19C5CB831687786": [
+  "Generator",
+  "Générateur"
+ ],
  "\tE1A05D9C4F21FC491692FBA6E9D34294": [
   "Egg Hatching Increase",
   "Augmentation de l'éclosion des œufs"
@@ -25510,6 +26758,10 @@
  "\tE1A3575946EE16DD9364559D245D5DE6": [
   "You can do this, Mei.",
   "Tu peux le faire, Mei."
+ ],
+ "\tE1A96ACE4FCED9BAB31750862EBA9619": [
+  "Generator",
+  "Générateur"
  ],
  "\tE1C2EB5149E35BBFB4ABA5A4A725F097": [
   "Harvest 1,000 Rare Mushrooms",
@@ -25543,6 +26795,10 @@
   "Nice thinking! This decoy might draw their attention away from you, while keeping them in the firing line.",
   "Bien pensé ! Ce leurre pourrait détourner leur attention de vous, tout en les gardant dans la ligne de mire."
  ],
+ "\tE1ED84F940A1F41FDC0335A326BEA1DC": [
+  "Durable Bait",
+  "Appât durable"
+ ],
  "\tE1EEAA594BC97465649C06A1CB1A4E7E": [
   "Only the first valid skin will apply.",
   "Seule la première apparence valide sera appliquée."
@@ -25574,6 +26830,10 @@
  "\tE2A66D644257C36FE03B628D37693924": [
   "Auto Turret",
   "Tourelle automatique"
+ ],
+ "\tE2AD959D4B6B137E17B19288F4F7191F": [
+  "Training Dummy",
+  "Mannequin d'entraînement"
  ],
  "\tE2C5362D4EA456E0A931168A64E3EA0D": [
   "Loot Structure",
@@ -25647,6 +26907,10 @@
   "Those tears still sting my eyes, as I work to conscript every local creature within reach to aid in my defense. ",
   "Ces larmes me piquent encore les yeux, tandis que je m'efforce d'enrôler toute créature locale à ma portée pour m'aider dans ma défense. "
  ],
+ "\tE37C0D3D4778DDD9CADC9E8992AB07EC": [
+  "Chibi Basket",
+  "Panier à chibis"
+ ],
  "\tE37DF1BD4A40DC8C9A63BEA4DD8526E9": [
   "OPEN STORE",
   "OUVRIR LA BOUTIQUE"
@@ -25711,6 +26975,10 @@
   "Diana Altaras was so brave, and fierce.",
   "Diana Altaras était si courageuse, et si farouche."
  ],
+ "\tE3BFE33747629F5FA7FA99AEB204E49B": [
+  "Cooldown Reduction",
+  "Réduction du temps de recharge"
+ ],
  "\tE3CC542D4FCD5FF61E5DCF9AEA8EFF99": [
   "TEXT",
   "TEXTE"
@@ -25738,6 +27006,10 @@
  "\tE40AAB274C6EC359889EDBB2BC28117E": [
   "Melee    ",
   "Mêlée    "
+ ],
+ "\tE412E42B43D9308DC08C57976411F220": [
+  "Training Dummy",
+  "Mannequin d'entraînement"
  ],
  "\tE41581FD4EBB1C8290BD689017E5A62F": [
   "You must Craft or deploy a Battle Rig before you may modify one.",
@@ -26271,9 +27543,17 @@
   "Guard",
   "Garde"
  ],
+ "\tE881F90B4441DD67E77F8ABA9F760E2C": [
+  "Deal Damage without receiving it",
+  "Infliger des dégâts sans en subir"
+ ],
  "\tE8AB2E204CF54E884EC19786EB4FBBAB": [
   "No Shuffle",
   "Pas de lecture aléatoire"
+ ],
+ "\tE8BA7B814EDD147CF21F9295640B8F21": [
+  "Training Dummy",
+  "Mannequin d'entraînement"
  ],
  "\tE8C61A9344031FE95612A59CE823A810": [
   "Unlock Bob's animated Explorer Notes to hear his legendary ARK saga! Experience 3 epic themes: ride Trains & tame the Oasisaur in the Wild West Frontier Showdown. Pilot Zeppelins with Cosmo & SIR-5rM8 in the subterranean Steampunk Ascent. Drive custom BattleRigs & fight alongside the Armadoggo in the post-apocalyptic Wasteland War!",
@@ -26419,6 +27699,10 @@
   "Decoy Specialist",
   "Spécialiste des leurres"
  ],
+ "\tE9D8EFA54C2B5C13CD1DA8B1041B1E52": [
+  "Sword Rack",
+  "râtelier à épées"
+ ],
  "\tE9DA69BA4880E17441FD3399E861EDC1": [
   "Unlocked Cosmetics",
   "COSMÉTIQUES DÉBLOQUÉS"
@@ -26442,6 +27726,10 @@
  "\tEA032A794D491FC0CFAC0EA5DC4FDFAC": [
   "OXYGEN",
   "OXYGÈNE"
+ ],
+ "\tEA15625E49780E0F5BD3B9A901F1F050": [
+  "Well, f--",
+  "Eh bien, m--"
  ],
  "\tEA3F070A4FA3E2D5F083748099E94BE9": [
   "STORED RIGS",
@@ -26563,6 +27851,10 @@
   "Danger Seeker",
   "Dévoreur de danger"
  ],
+ "\tEB61594B47BC54EC9F91598AF1AD9FC8": [
+  "Training Dummy",
+  "Mannequin d'entraînement"
+ ],
  "\tEB670BED4E1A1732B44C408AF9C86A51": [
   "RTV_draws",
   "RTV_draws"
@@ -26574,6 +27866,10 @@
  "\tEB6E11EE49D177A4337E538C60686AA2": [
   "UNEQUIP",
   "DÉSÉQUIPER"
+ ],
+ "\tEB7433B643AFE72FA72ADF93D7FEE60B": [
+  "Training Dummy",
+  "Mannequin d'entraînement"
  ],
  "\tEB755AEF41E24E2F79FBAAA6D6E29931": [
   "Taming Speed Multipler",
@@ -26650,6 +27946,10 @@
  "\tEC1EEA2342AE23A59CF40AA55D0CC359": [
   "EYE SETTINGS",
   "PARAMÈTRES DES YEUX"
+ ],
+ "\tEC2C23B143965009E20818A19B00B0D4": [
+  "Generator",
+  "Générateur"
  ],
  "\tEC2F33A24ADDDD5AA3A27D80575587FF": [
   "Containment Effort",
@@ -26995,6 +28295,10 @@
   "Danger Seeker",
   "Dévoreur de danger"
  ],
+ "\tEF3FCDD5437E3178F444AA9A150C0DF0": [
+  "Select...",
+  "Sélectionner..."
+ ],
  "\tEF4ABF974715AD68892C7880032EF898": [
   "Hurry up, or you're not going to end up with anything to show for all of this.",
   "Dépêche-toi, ou sinon tout ça n'aura servi à rien."
@@ -27179,6 +28483,10 @@
   "Cannon",
   "Canon"
  ],
+ "\tF0C8019047BEB45BCC1D54AFD0A2187F": [
+  "ON",
+  "ACTIVÉ"
+ ],
  "\tF0C82DC74F2CDE1DFCE1E9870EDA3663": [
   "Crate Seeker",
   "Dévoreur de caisses"
@@ -27202,6 +28510,10 @@
  "\tF10E2AA6420571209E64129250390B98": [
   "Guard",
   "Garde"
+ ],
+ "\tF118FAC4493E6C8682491D9194CDF9D8": [
+  "Bugger! The corruption's here too. Apparently, it followed us from the simulation.",
+  "Zut ! La corruption est ici aussi. Elle nous a visiblement suivis depuis la simulation."
  ],
  "\tF11ACF54470C8E98D21B559A23A23063": [
   "Parts",
@@ -27299,6 +28611,10 @@
   "Unclaimed Creature Kill",
   "Élimination de créature non réclamée"
  ],
+ "\tF1C939C84E47C4C4F9ADB193BD2356BF": [
+  "Training Dummy",
+  "Mannequin d'entraînement"
+ ],
  "\tF1D4C8F547B8F5C312140CB42DBD2A7F": [
   "DEPLOY RIG",
   "DÉPLOYER L'ENGIN"
@@ -27330,6 +28646,10 @@
  "\tF22BDEE84D04FB631797C49555F61881": [
   "Bob:  Somehow I was tumbling through the sky again, heading elsewhere in a hurry...",
   "Bob :  D'une façon ou d'une autre je culbutais à nouveau dans le ciel, filant ailleurs en vitesse..."
+ ],
+ "\tF22DFC23438B233106A6E098AA996A73": [
+  "Training Dummy",
+  "Mannequin d'entraînement"
  ],
  "\tF23E92AE411D2FC5BFEC03951D6533E6": [
   "Guard",
@@ -27379,6 +28699,10 @@
   "Attack_02_(State_11)",
   "Attack_02_(State_11)"
  ],
+ "\tF29981D641B36C2B70BADBA33093D7BC": [
+  "Training Dummy",
+  "Mannequin d'entraînement"
+ ],
  "\tF2AC8C224D04530C5BD880B61DF79518": [
   "Max Frame Rate",
   "Fréquence d'images maximale"
@@ -27410,6 +28734,10 @@
  "\tF2D5EA1C4562D87464F04A9FF6BC928E": [
   "Guard",
   "Garde"
+ ],
+ "\tF2DCEFDB4836AF19BCA71AB06175F76E": [
+  " Hello? Hellooooo! Wake up, Survivor!",
+  " Ohé ? Ohééééé ! Réveillez-vous, survivant !"
  ],
  "\tF2E4DFA94AA708928043D486A223AA60": [
   "Controls the levels of Creatures in the world, as well as the quality of loot drops.",
@@ -27451,6 +28779,10 @@
   "Tools of Survival",
   "Outils de survie"
  ],
+ "\tF32DC71941AED73069A40CA048E817D2": [
+  "Training Dummy",
+  "Mannequin d'entraînement"
+ ],
  "\tF33E15FF42ED9F43AB7051B9926D05FA": [
   "His... queen?",
   "Sa... reine ?"
@@ -27458,6 +28790,10 @@
  "\tF34329B14A50E04E041E28A335685C6E": [
   "Guard",
   "Garde"
+ ],
+ "\tF344255D41596619541E599EC82F86AB": [
+  "Health",
+  "Santé"
  ],
  "\tF34493BA4524F13804ED9C903DAA117C": [
   "WHISTLE \"ALL PASSIVE\":",
@@ -27482,6 +28818,10 @@
  "\tF3666AE74C60B196301E7EAD93EC84EC": [
   "to start",
   "pour commencer"
+ ],
+ "\tF384E80E49EC16D0A2F2B7A715D10479": [
+  "Overcast",
+  "Couvert"
  ],
  "\tF38DD921483E5A86BE5A038908E76A39": [
   "Guard",
@@ -27598,6 +28938,10 @@
  "\tF46AC9594EB66EA0232A8F95FCA4D780": [
   "Lower Arm Size",
   "Taille de l'avant-bras"
+ ],
+ "\tF46BA9BB487C51E897475896C3668DE1": [
+  "Dive for a period of time.",
+  "Piquer pendant un certain temps."
  ],
  "\tF47BF47E4C4DD503A8E10599F51ED606": [
   "TEXT",
@@ -28155,6 +29499,10 @@
   "Homestead Beginnings",
   "Débuts du foyer"
  ],
+ "\tF88AA68D4D66489FC3A74D86C336ACC4": [
+  "Sword Rack",
+  "râtelier à épées"
+ ],
  "\tF894A86B466988B76522A6B2069AF42C": [
   "Your thirst is reduced {ThirstDrainModifier} less from stamina drain.",
   "Votre soif est réduite de {ThirstDrainModifier} en moins par la baisse d'endurance."
@@ -28355,6 +29703,10 @@
   "This Creature is fiercely protective of its rider, even after they're no longer riding it",
   "Cette créature protège farouchement son cavalier, même après qu'il ne la monte plus"
  ],
+ "\tF9DFB7114F6D17063C25A1B210CFF2FF": [
+  "Oxygen",
+  "Oxygène"
+ ],
  "\tF9E00CC743C59D8F589CAC93680745FB": [
   "Better still, the isotope can bond with human hemoglobin to produce a new and more efficient type of biofuel.",
   "Mieux encore, l'isotope peut se lier à l'hémoglobine humaine pour produire un nouveau type de biocarburant plus efficace."
@@ -28375,6 +29727,10 @@
   "Parts",
   "Pièces"
  ],
+ "\tFA0EDCDC4AF22F2F39A3CE96765028D9": [
+  "Generator",
+  "Générateur"
+ ],
  "\tFA177A0345322DF661ACC7A9784D8932": [
   "CAP FRAMERATE:",
   "LIMITER LA FRÉQUENCE D'IMAGES :"
@@ -28386,6 +29742,10 @@
  "\tFA2BF79E4E9E02D18ABCECBB74DA2139": [
   "SKINS TO APPLY",
   "APPARENCES À APPLIQUER"
+ ],
+ "\tFA41B3254845DDBBBF07409A4AE8F94A": [
+  "But that's impossible... ",
+  "Mais c’est impossible... "
  ],
  "\tFA51A4D54C350DA6EE7D399AB6172D97": [
   "Focal Length Step",
@@ -28410,6 +29770,10 @@
  "\tFA748E4A470D8BBAC228E39E9415FA1F": [
   "There are plenty of other outposts under siege, should you remain so civically inclined.",
   "Il y a bien d'autres avant-postes assiégés, si vous restez aussi enclin au civisme."
+ ],
+ "\tFA81E0794FCE733F9F0F9CAE55824850": [
+  "Training Dummy",
+  "Mannequin d'entraînement"
  ],
  "\tFA8C4EFF4D30E2525F9282AF9614DE0D": [
   "Boxes",
@@ -28475,6 +29839,10 @@
   "Text Body",
   "Corps du texte"
  ],
+ "\tFAE2260E44EC567212CCB4A33D325DAC": [
+  "Oxygen Tank",
+  "Bouteille d’oxygène"
+ ],
  "\tFAF142D84B710823C77ABE8B5D0140BB": [
   "Once you kick yourself free of those constraints, the possibilities are... endless.",
   "Une fois libéré de ces contraintes, les possibilités sont... infinies."
@@ -28498,6 +29866,10 @@
  "\tFB42E6634180A278353BF3AD2E1D2C25": [
   "Cursed Vitality",
   "Vitalité maudite"
+ ],
+ "\tFB4EC4AD4349F7504F8F2C85AE342CCC": [
+  "NEW",
+  "NOUVEAU"
  ],
  "\tFB5C18A044060199E40C36A78CA560BA": [
   "TEXT",
@@ -28655,6 +30027,10 @@
   "Equipment",
   "Équipement"
  ],
+ "\tFC9FCCEA4018AC78DBE67A9D411E8382": [
+  "Generator",
+  "Générateur"
+ ],
  "\tFCAC5885436DC737A20BC1A71AC20727": [
   "PANTS",
   "PANTALON"
@@ -28719,6 +30095,10 @@
   "SHIRT",
   "PLASTRON"
  ],
+ "\tFD5E8F044E09DBFF306223906AD426AB": [
+  "Training Dummy",
+  "Mannequin d'entraînement"
+ ],
  "\tFD6655F046EBBEA0F6DC3893458824C5": [
   "Requires Digging Companion",
   "Nécessite un compagnon fouisseur"
@@ -28738,6 +30118,10 @@
  "\tFD9A3C1744AD6ECCE60A6D8F92093BF4": [
   "INVALID_0",
   "INVALID_0"
+ ],
+ "\tFD9C87B94A74EC1BD903868F356B3E4D": [
+  "Fire Cannons",
+  "Tirer au canon"
  ],
  "\tFD9D072F44C3EDE06CEB45B5010A5FE7": [
   "Meeka:  CLOWNS?",
@@ -28819,9 +30203,17 @@
   "Spotlight",
   "Projecteur"
  ],
+ "\tFE07EC964A2C6DBB0FF8E282A881CBC4": [
+  "FURY",
+  "FURIE"
+ ],
  "\tFE0CD61A43BCD8083100FCA2DA9090E9": [
   "TEXT",
   "TEXTE"
+ ],
+ "\tFE0F8AEA49964714A6C1259A6E9412FC": [
+  "Sword Rack",
+  "râtelier à épées"
  ],
  "\tFE131A8C4E81594F58C158A340F235C8": [
   "Spotlight",
@@ -28858,6 +30250,10 @@
  "\tFE54B59848266124579843896D364EBD": [
   "Cannon",
   "Canon"
+ ],
+ "\tFE599AA24EF5983D22FD98A9A983B082": [
+  "The power of Red Element",
+  "Le pouvoir de l'élément rouge"
  ],
  "\tFE5A800941BCE5726357D5AD3F804F5B": [
   "SELLER",
@@ -28946,6 +30342,10 @@
  "\tFEFBF6FE4D59A73D2132479755F6187C": [
   "A thousand years of darkness for another lifetime together...",
   "Mille ans d'obscurité pour une autre vie ensemble..."
+ ],
+ "\tFEFCE4144B0F9B3AAC4B2FAFC5D02F7D": [
+  "Damage Increase Per Hit",
+  "Dégâts accrus par coup"
  ],
  "\tFEFEEA534B475DF1319001B532FA6B52": [
   "A very kind offer... My name is Meiyin.",
@@ -32727,6 +34127,78 @@
   "Kill 50 Onyc",
   "Tuer 50 Onycs"
  ],
+ "DT_Milestones_Dragontopia\t071B85A644B0DFC51AD82799DD935AE6": [
+  "Deal 50000 damage with Lumina's projectile attacks",
+  "Infliger 50 000 dégâts avec les projectiles de Lumina"
+ ],
+ "DT_Milestones_Dragontopia\t184A048F4A9E18BB1158F5A5B26428BA": [
+  "Deal 5000 damage with Lumina's bite or claw attacks",
+  "Infliger 5 000 dégâts avec les morsures ou les griffes de Lumina"
+ ],
+ "DT_Milestones_Dragontopia\t2D180927405F389AD902568154ECFF06": [
+  "Deal 50000 damage with Lumina's bite or claw attacks",
+  "Infliger 50 000 dégâts avec les morsures ou les griffes de Lumina"
+ ],
+ "DT_Milestones_Dragontopia\t43D3253E46F8FB2472D0AEA15278DBDD": [
+  "Harvest 50 prime meats (Prime Meat, Mutton, or Prime Fish Meat) while riding Lumina",
+  "Récolter 50 viandes de qualité (viande de qualité, mouton ou poisson de qualité) en chevauchant Lumina"
+ ],
+ "DT_Milestones_Dragontopia\t52647FB14506B0A8C6DFD19F83AF8172": [
+  "Kill 5 wild Lumina",
+  "Tuer 5 Lumina sauvages"
+ ],
+ "DT_Milestones_Dragontopia\t53C403BC48290115D4F7B288380E6EA4": [
+  "Kill 15 wild Lumina",
+  "Tuer 15 Lumina sauvages"
+ ],
+ "DT_Milestones_Dragontopia\t5867215840F4E248CC8FA4A2E1272083": [
+  "Kill 30 wild Lumina",
+  "Tuer 30 Lumina sauvages"
+ ],
+ "DT_Milestones_Dragontopia\t5E1D638F4D5F21C8DDF5AF93497DBB7F": [
+  "Tame 5 Lumina",
+  "Apprivoiser 5 Lumina"
+ ],
+ "DT_Milestones_Dragontopia\t7327321348DE816202B97F969196250B": [
+  "Harvest 500 prime meats (Prime Meat, Mutton, or Prime Fish Meat) while riding Lumina",
+  "Récolter 500 viandes de qualité (viande de qualité, mouton ou poisson de qualité) en chevauchant Lumina"
+ ],
+ "DT_Milestones_Dragontopia\t7E1CA49C46071E80CD954880508FB2EC": [
+  "Claim 1 baby Lumina",
+  "Réclamer 1 bébé Lumina"
+ ],
+ "DT_Milestones_Dragontopia\tB082221A449517DDECE0948C153CEC3B": [
+  "Harvest 250 prime meats (Prime Meat, Mutton, or Prime Fish Meat) while riding Lumina",
+  "Récolter 250 viandes de qualité (viande de qualité, mouton ou poisson de qualité) en chevauchant Lumina"
+ ],
+ "DT_Milestones_Dragontopia\tB2C463B1450BA44C45E31AB35AFF3227": [
+  "Tame 3 Lumina",
+  "Apprivoiser 3 Lumina"
+ ],
+ "DT_Milestones_Dragontopia\tB877B4104437C08DFC4E33A146ECB5B5": [
+  "Claim 5 baby Lumina",
+  "Réclamer 5 bébés Lumina"
+ ],
+ "DT_Milestones_Dragontopia\tBBB7441147714D0C79186B8A7407DF2D": [
+  "Deal 25000 damage with Lumina's projectile attacks",
+  "Infliger 25 000 dégâts avec les projectiles de Lumina"
+ ],
+ "DT_Milestones_Dragontopia\tC8AD8A9346D390B598C8F3B9D46AD35F": [
+  "Deal 25000 damage with Lumina's bite or claw attacks",
+  "Infliger 25 000 dégâts avec les morsures ou les griffes de Lumina"
+ ],
+ "DT_Milestones_Dragontopia\tE9BDAFDE4861E6F5945721A03ABD6AD4": [
+  "Deal 5000 damage with Lumina's projectile attacks",
+  "Infliger 5 000 dégâts avec les projectiles de Lumina"
+ ],
+ "DT_Milestones_Dragontopia\tECC48E224DA029310221EB9E213508C7": [
+  "Tame 1 Lumina",
+  "Apprivoiser 1 Lumina"
+ ],
+ "DT_Milestones_Dragontopia\tFBCD89FF445F9374F540FEA149771C1A": [
+  "Claim 3 baby Lumina",
+  "Réclamer 3 bébés Lumina"
+ ],
  "DT_ShipSkills\tAdvancedLanteen_SkillDescription": [
   "Allied Ships within range gain a [MovementSpeedBonus]m/s movespeed bonus. In addition, this Ship reduces movement speed penalties while sailing into wind by {WindPenaltyReduction} on maps with directional wind.",
   "Les navires alliés à portée gagnent un bonus de vitesse de déplacement de [MovementSpeedBonus] m/s. De plus, ce navire réduit les pénalités de vitesse de déplacement en naviguant contre le vent de {WindPenaltyReduction} sur les cartes avec vent directionnel."
@@ -32931,21 +34403,93 @@
   "Smooth Rudder",
   "Gouvernail fluide"
  ],
+ "DT_ShipSkills\tWetDock_SkillDescription": [
+  "While anchored and the ship hasnt received damage for [Cooldown] seconds, this ship slowly repairs itself over time.",
+  "À l'ancre et sans dégâts subis pendant [Cooldown] secondes, ce navire se répare lentement de lui-même."
+ ],
  "DT_ShipSkills\tWetDock_SkillName": [
   "Wet Dock",
   "Cale humide"
+ ],
+ "DT_Skills_Dragontopia_UmbraLumina\t02A689724ED7DF24707FDD98D03875B1": [
+  "Anti-Tek Burst",
+  "Salve anti-Tek"
+ ],
+ "DT_Skills_Dragontopia_UmbraLumina\t0A6F339A4FE1FA961CF8F29580882E66": [
+  "Light Recall",
+  "Rappel de lumière"
+ ],
+ "DT_Skills_Dragontopia_UmbraLumina\t0A94F9DD40E744EDEDE79C97816C3ED7": [
+  "Eclipsar Burst Heal",
+  "Soin de salve éclipsaire"
+ ],
+ "DT_Skills_Dragontopia_UmbraLumina\t36D38AF14E6AF3971BD77089EFF632F1": [
+  "Hitting an allied Lumina with Umbra's Projectile Burst, or hitting an allied Umbra with Lumina's Projectile Burst, heals it.",
+  "Toucher un Lumina allié avec la salve d’Umbra, ou un Umbra allié avec celle de Lumina, le soigne."
+ ],
+ "DT_Skills_Dragontopia_UmbraLumina\t3BD4AED949FB424E72877182898054EA": [
+  "LUMINA ONLY. Allows Lumina to recall its last Light projectile back to itself.",
+  "LUMINA UNIQUEMENT. Permet à Lumina de rappeler à elle son dernier projectile de lumière."
+ ],
+ "DT_Skills_Dragontopia_UmbraLumina\t487C48064EC23E438C6D269FD195C123": [
+  "Light Teleport",
+  "Téléportation de lumière"
+ ],
+ "DT_Skills_Dragontopia_UmbraLumina\t6DA10A884252B9FC6F915D8110585360": [
+  "LUMINA ONLY. Unlocks the Light Teleport ability. Sets a teleport anchor that Lumina can teleport to.",
+  "LUMINA UNIQUEMENT. Débloque la téléportation de lumière : pose une ancre vers laquelle Lumina peut se téléporter."
+ ],
+ "DT_Skills_Dragontopia_UmbraLumina\t82BA06DF4AE25BBF5F65DCA66E1BBC11": [
+  "Projectile Burst also disables Tek-abilities and Tek-Structures on impact.",
+  "La salve de projectiles désactive aussi les capacités et structures Tek touchées."
+ ],
+ "DT_Skills_Dragontopia_UmbraLumina\tA7E006C845E839049122239C6AA5176C": [
+  "Piercing Light",
+  "Lumière perforante"
+ ],
+ "DT_Skills_Dragontopia_UmbraLumina\tB807870147F7722C60BA16935F88FF99": [
+  "LUMINA ONLY. Increases the damage of Lumina's Light projectiles each time they hits a target by {!LightProjMultiHitMultiplier}.",
+  "LUMINA UNIQUEMENT. Les projectiles de lumière de Lumina gagnent {!LightProjMultiHitMultiplier} de dégâts à chaque cible touchée."
+ ],
+ "DT_Skills_Dragontopia_UmbraLumina\tDF081095408735B1746FBFBADD2A0253": [
+  "Light Fusion",
+  "Fusion de lumière"
+ ],
+ "DT_Skills_Dragontopia_UmbraLumina\tF073BB2A4B9A705378FD62925F1764CE": [
+  "LUMINA ONLY. Allows Lumina's Light projectiles to pierce targets, hitting multiple enemies.",
+  "LUMINA UNIQUEMENT. Les projectiles de lumière de Lumina transpercent les cibles et touchent plusieurs ennemis."
+ ],
+ "DT_Skills_Dragontopia_UmbraLumina\tUmbraLumina_BiteClawCharge_SkillDescription": [
+  "Allows Umbra/Lumina to follow up Bite attacks with a Claw attack.",
+  "Permet à Umbra/Lumina d’enchaîner une attaque de griffes après une morsure."
  ],
  "DT_Skills_Dragontopia_UmbraLumina\tUmbraLumina_BiteClawCharge_SkillName": [
   "Claw Charge",
   "Charge des griffes"
  ],
+ "DT_Skills_Dragontopia_UmbraLumina\tUmbraLumina_DashClawRange_SkillDescription": [
+  "Increases the range Dash Claw by {!DashClawRange}.",
+  "Augmente la portée de Griffe fulgurante de {!DashClawRange}."
+ ],
  "DT_Skills_Dragontopia_UmbraLumina\tUmbraLumina_DashClawRange_SkillName": [
   "Dash Claw Range",
   "Portée de la griffe ruée"
  ],
+ "DT_Skills_Dragontopia_UmbraLumina\tUmbraLumina_DashClaw_SkillDescription": [
+  "Unlocks the Dash Claw ability:  Activate to dash in the direction of the crosshair, dealing damage to all targets it passes through",
+  "Débloque la griffe fulgurante : activez-la pour vous ruer dans la direction du réticule en blessant toutes les cibles traversées"
+ ],
  "DT_Skills_Dragontopia_UmbraLumina\tUmbraLumina_DashClaw_SkillName": [
   "Dash Claw",
   "Griffe éclair"
+ ],
+ "DT_Skills_Dragontopia_UmbraLumina\tUmbraLumina_DracoAllowMating_SkillDescription": [
+  "Allows Umbra/Lumina to mate.",
+  "Permet à Umbra/Lumina de s’accoupler."
+ ],
+ "DT_Skills_Dragontopia_UmbraLumina\tUmbraLumina_DracoAllowMating_SkillName": [
+  "Dragon Mating",
+  "Accouplement des dragons"
  ],
  "DT_Skills_Dragontopia_UmbraLumina\tUmbraLumina_DracoBackflip_SkillDescription": [
   "Unlocks the Draco Backflip maneuver.",
@@ -32963,6 +34507,14 @@
   "Draco Barrel Roll",
   "Tonneau du Draco"
  ],
+ "DT_Skills_Dragontopia_UmbraLumina\tUmbraLumina_DracoDiveSpeedMultiplier_SkillDescription": [
+  "Increases the speed multiplier applied while diving by {DiveBoostMaxCharge}.",
+  "Augmente le multiplicateur de vitesse en piqué de {DiveBoostMaxCharge}."
+ ],
+ "DT_Skills_Dragontopia_UmbraLumina\tUmbraLumina_DracoDiveSpeedMultiplier_SkillName": [
+  "Dive Speed Increase",
+  "Vitesse de piqué accrue"
+ ],
  "DT_Skills_Dragontopia_UmbraLumina\tUmbraLumina_DracoDive_SkillDescription": [
   "Unlocks the Draco Dive ability.",
   "Débloque la capacité Plongeon du Draco."
@@ -32970,6 +34522,78 @@
  "DT_Skills_Dragontopia_UmbraLumina\tUmbraLumina_DracoDive_SkillName": [
   "Dive",
   "Plonger"
+ ],
+ "DT_Skills_Dragontopia_UmbraLumina\tUmbraLumina_DracoDragonHornFlyAwayComeHereCooldown_SkillName": [
+  "Fly Away: Cooldown Reduction",
+  "Envol : réduction du temps de recharge"
+ ],
+ "DT_Skills_Dragontopia_UmbraLumina\tUmbraLumina_DracoDragonHornFlyAwayComeHere_SkillDescription": [
+  "Unlocks the Dragon Horn 'Fly Away' and 'Come Here' commands. Safely hides your bonded dragon in the skies, where it can't be harmed. Also, calls it back to you.",
+  "Débloque les commandes « Envol » et « Viens ici » du cor du dragon. Met votre dragon lié à l’abri dans les cieux, hors d’atteinte, et permet de le rappeler."
+ ],
+ "DT_Skills_Dragontopia_UmbraLumina\tUmbraLumina_DracoDragonHornFlyAwayComeHere_SkillName": [
+  "Dragon Horn: Fly Away",
+  "Cor du dragon : envol"
+ ],
+ "DT_Skills_Dragontopia_UmbraLumina\tUmbraLumina_DracoDragonHornGetMeCooldown_SkillDescription": [
+  "Reduces the cooldown of the Dragon Horn 'Get Me' command by {!!GetMeCooldownMultiplier}.",
+  "Réduit le temps de recharge de la commande « Viens me chercher » du cor du dragon de {!!GetMeCooldownMultiplier}."
+ ],
+ "DT_Skills_Dragontopia_UmbraLumina\tUmbraLumina_DracoDragonHornGetMeCooldown_SkillName": [
+  "Get Me: Cooldown Reduction",
+  "Viens me chercher : réduction du temps de recharge"
+ ],
+ "DT_Skills_Dragontopia_UmbraLumina\tUmbraLumina_DracoDragonHornGetMeDistance_SkillDescription": [
+  "Increases the range of the Dragon Horn 'Get Me' command by {GetMeDistanceMultiplier}.",
+  "Augmente la portée de la commande « Viens me chercher » du cor du dragon de {GetMeDistanceMultiplier}."
+ ],
+ "DT_Skills_Dragontopia_UmbraLumina\tUmbraLumina_DracoDragonHornGetMeDistance_SkillName": [
+  "Get Me: Distance Increase",
+  "Viens me chercher : portée accrue"
+ ],
+ "DT_Skills_Dragontopia_UmbraLumina\tUmbraLumina_DracoDragonHornGetMe_SkillDescription": [
+  "Unlocks the Dragon Horn 'Get Me' command. Calls your bonded dragon to quickly catch you on its back when it is far away.",
+  "Débloque la commande « Viens me chercher » du cor du dragon : appelle votre dragon lié pour qu’il vous récupère sur son dos, même de loin."
+ ],
+ "DT_Skills_Dragontopia_UmbraLumina\tUmbraLumina_DracoDragonHornGetMe_SkillName": [
+  "Dragon Horn: Get Me",
+  "Cor du dragon : viens me chercher"
+ ],
+ "DT_Skills_Dragontopia_UmbraLumina\tUmbraLumina_DracoDragonHornLink_SkillDescription": [
+  "Unlocks the ability to bond to the dragon if you tamed or hatched it. Control your bonded dragon from afar with a Dragon Horn, and even revive it from death.",
+  "Débloque le lien avec le dragon si vous l’avez apprivoisé ou fait éclore. Commandez votre dragon lié à distance avec un cor du dragon, et ranimez-le même après sa mort."
+ ],
+ "DT_Skills_Dragontopia_UmbraLumina\tUmbraLumina_DracoDragonHornLink_SkillName": [
+  "Draconic Bond",
+  "Lien draconique"
+ ],
+ "DT_Skills_Dragontopia_UmbraLumina\tUmbraLumina_DracoFlightSprintStaminaCostMultiplier_SkillName": [
+  "Sprint Flight Stamina Reduction",
+  "Réduction du coût d'endurance en vol rapide"
+ ],
+ "DT_Skills_Dragontopia_UmbraLumina\tUmbraLumina_DracoFury_SkillDescription": [
+  "Unlocks the Draco Fury ability. Umbra/Lumina passively generates Fury when dealing and receiving damage. At full Fury, it enters a rage for 10 seconds--becoming invulnerable to non-Structure damage, and reducing its attack and ability cooldowns.",
+  "Débloque la furie draconique. Umbra/Lumina accumule passivement de la furie en infligeant et en subissant des dégâts. À pleine furie, la créature entre en rage pendant 10 secondes : invulnérable aux dégâts autres que ceux des structures, et temps de recharge d’attaque et de capacités réduits."
+ ],
+ "DT_Skills_Dragontopia_UmbraLumina\tUmbraLumina_DracoFury_SkillName": [
+  "Draco Fury",
+  "Furie draconique"
+ ],
+ "DT_Skills_Dragontopia_UmbraLumina\tUmbraLumina_DracoManeuverCooldownMultiplier_SkillDescription": [
+  "Reduces the cooldown of flight maneuvers by {!!ManeuverCooldownMultiplier}.",
+  "Réduit le temps de recharge des manœuvres de vol de {!!ManeuverCooldownMultiplier}."
+ ],
+ "DT_Skills_Dragontopia_UmbraLumina\tUmbraLumina_DracoManeuverCooldownMultiplier_SkillName": [
+  "Maneuver Cooldown Reduction",
+  "Réduction du temps de recharge des manœuvres"
+ ],
+ "DT_Skills_Dragontopia_UmbraLumina\tUmbraLumina_DracoManeuverStaminaCostMultiplier_SkillDescription": [
+  "Reduces the stamina cost of all flight maneuvers by {!!ManeuverStaminaCost}.",
+  "Réduit le coût d'endurance de toutes les manœuvres de vol de {!!ManeuverStaminaCost}."
+ ],
+ "DT_Skills_Dragontopia_UmbraLumina\tUmbraLumina_DracoManeuverStaminaCostMultiplier_SkillName": [
+  "Maneuver Stamina Reduction",
+  "Réduction du coût d'endurance des manœuvres"
  ],
  "DT_Skills_Dragontopia_UmbraLumina\tUmbraLumina_DracoQuickTurn_SkillDescription": [
   "Unlocks the Draco Quick Turn maneuver.",
@@ -32979,9 +34603,81 @@
   "Draco Quick Turn",
   "Virage Rapide Draco"
  ],
+ "DT_Skills_Dragontopia_UmbraLumina\tUmbraLumina_DracoSprintFlightMode_SkillDescription": [
+  "Unlocks sprinting while flying.",
+  "Débloque le vol rapide."
+ ],
  "DT_Skills_Dragontopia_UmbraLumina\tUmbraLumina_DracoSprintFlightMode_SkillName": [
   "Sprint Flight Mode",
   "Mode de vol en sprint"
+ ],
+ "DT_Skills_Dragontopia_UmbraLumina\tUmbraLumina_PlasmaBurstChargeTime_SkillDescription": [
+  "Reduces the time needed to charge Projectile Burst by {!!PlasmaBurstChargeTime}.",
+  "Réduit le temps de charge de la salve de projectiles de {!!PlasmaBurstChargeTime}."
+ ],
+ "DT_Skills_Dragontopia_UmbraLumina\tUmbraLumina_PlasmaBurstChargeTime_SkillName": [
+  "Quick Burst",
+  "Salve rapide"
+ ],
+ "DT_Skills_Dragontopia_UmbraLumina\tUmbraLumina_PlasmaBurstLockOn_SkillDescription": [
+  "Allows Umbra/Lumina to lock onto targets during Projectile Burst.",
+  "Permet à Umbra/Lumina de verrouiller des cibles pendant la salve de projectiles."
+ ],
+ "DT_Skills_Dragontopia_UmbraLumina\tUmbraLumina_PlasmaBurstLockOn_SkillName": [
+  "Burst Lock-On",
+  "Verrouillage de salve"
+ ],
+ "DT_Skills_Dragontopia_UmbraLumina\tUmbraLumina_PlasmaBurst_SkillDescription": [
+  "Unlocks the Projectile Burst ability. Charge up energy to fire a rapid series of projectiles.",
+  "Débloque la salve de projectiles : accumulez de l’énergie pour tirer une rafale rapide."
+ ],
+ "DT_Skills_Dragontopia_UmbraLumina\tUmbraLumina_PlasmaBurst_SkillName": [
+  "Projectile Burst",
+  "Salve de projectiles"
+ ],
+ "DT_Skills_Dragontopia_UmbraLumina\tUmbraLumina_SwapTeleport_SkillDescription": [
+  "Unlocks the Eclipsar Teleport ability. Target an allied Lumina with Umbra, or an allied Umbra with Lumina, to Teleport to your ally.",
+  "Débloque la téléportation éclipsaire : visez un Lumina allié avec Umbra, ou un Umbra allié avec Lumina, pour vous téléporter jusqu’à lui."
+ ],
+ "DT_Skills_Dragontopia_UmbraLumina\tUmbraLumina_SwapTeleport_SkillName": [
+  "Eclipsar Teleport",
+  "Téléportation éclipsaire"
+ ],
+ "DT_Skills_Dragontopia_UmbraLumina\tUmbraLumina_SynergyBenefit_SkillDescription": [
+  "Increases the synergy bonus to stats gained while Umbra and Lumina are close to each other.",
+  "Augmente le bonus de synergie aux statistiques obtenu quand Umbra et Lumina sont proches."
+ ],
+ "DT_Skills_Dragontopia_UmbraLumina\tUmbraLumina_SynergyBenefit_SkillName": [
+  "Eclipsar Synergy",
+  "Synergie éclipsaire"
+ ],
+ "DT_Skills_Dragontopia_UmbraLumina\tUmbra_PlasmaProjectileRedirectLockOn_SkillDescription": [
+  "UMBRA ONLY. Allows Umbra to lock onto targets when redirecting its Plasma projectiles.",
+  "UMBRA UNIQUEMENT. Permet à Umbra de verrouiller des cibles en redirigeant ses projectiles de plasma."
+ ],
+ "DT_Skills_Dragontopia_UmbraLumina\tUmbra_PlasmaProjectileRedirectLockOn_SkillName": [
+  "Plasma Lock-on",
+  "Verrouillage plasma"
+ ],
+ "DT_Skills_Dragontopia_UmbraLumina\tUmbra_PlasmaProjectileRedirect_SkillDescription": [
+  "UMBRA ONLY. Allows Umbra to redirect its last Plasma projectile, at the cost of converting it into a smaller projectile.",
+  "UMBRA UNIQUEMENT. Permet à Umbra de rediriger son dernier projectile de plasma, au prix de sa transformation en projectile plus petit."
+ ],
+ "DT_Skills_Dragontopia_UmbraLumina\tUmbra_PlasmaProjectileRedirect_SkillName": [
+  "Plasma Redirect",
+  "Redirection plasma"
+ ],
+ "DT_Skills_Dragontopia_UmbraLumina\tUmbra_PlasmaProjectileTravelDamage_SkillDescription": [
+  "UMBRA ONLY. Plasma projectiles deal more damage the farther they travel. Can deal an additional {PlasmaProjectileTravelDamage} damage.",
+  "UMBRA UNIQUEMENT. Les projectiles de plasma infligent d’autant plus de dégâts qu’ils volent loin, jusqu’à {PlasmaProjectileTravelDamage} dégâts supplémentaires."
+ ],
+ "DT_Skills_Dragontopia_UmbraLumina\tUmbra_PlasmaProjectileTravelDamage_SkillName": [
+  "Plasma Momentum",
+  "Élan plasma"
+ ],
+ "DT_Skills_Dragontopia_UmbraLumina\tUmbra_PlasmaTeleport_SkillDescription": [
+  "UMBRA ONLY. Unlocks the Plasma Teleport ability. Umbra instantly dashes to its last Plasma projectile.",
+  "UMBRA UNIQUEMENT. Débloque la téléportation plasma : Umbra se rue instantanément vers son dernier projectile de plasma."
  ],
  "DT_Skills_Dragontopia_UmbraLumina\tUmbra_PlasmaTeleport_SkillName": [
   "Plasma Teleport",
@@ -33014,6 +34710,10 @@
  "GraphLiteral\t50647C9949659011BD7321B9EF2A0A14": [
   "QUIT GAME",
   "QUITTER LE JEU"
+ ],
+ "GraphLiteral\t689FBD7C4564F98191B90DAA73B2568A": [
+  "LEAVE GAME",
+  "QUITTER LA PARTIE"
  ],
  "GraphLiteral\t9E0B9A014C85A1F6A3EF6CA893591118": [
   "SETTINGS",
