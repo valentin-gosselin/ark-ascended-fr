@@ -82,7 +82,15 @@ def main():
                 os.path.join(WORK, "ShooterGame_en.locres")]
     else:
         cmd += ["build", os.path.join(WORK, "ShooterGame_fr.locres")]
-    run(*cmd, merged, os.path.join(stage, "ShooterGame.locres"))
+    # textes_widgets.json : cles qui n'existent dans AUCUN locres du jeu (FText
+    # posees en dur dans les widgets, jamais collectees par Wildcard). Elles ne
+    # peuvent pas etre greffees depuis l'anglais, elles sont creees de toutes
+    # pieces avec leurs hashes calcules (cf. tools/cityhash.py).
+    widgets = os.path.join(ROOT, "data/textes_widgets.json")
+    args_sup = [widgets] if (avec_add and os.path.exists(widgets)) else []
+    if args_sup:
+        print(f"textes_widgets.json: {len(json.load(open(widgets)))} entrées")
+    run(*cmd, merged, os.path.join(stage, "ShooterGame.locres"), *args_sup)
     # 3 bis. locres du moteur : uniquement les noms de touches
     engine_data = os.path.join(ROOT, "data/engine_fr.json")
     if os.path.exists(engine_data):

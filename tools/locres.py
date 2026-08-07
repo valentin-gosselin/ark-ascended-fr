@@ -13,8 +13,12 @@ Usage :
     sont ajoutées en copiant les hashes (namespace, clé, source) du fichier EN.
 """
 import json
+import os
 import struct
 import sys
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import cityhash
 
 MAGIC = bytes([0x0E, 0x14, 0x74, 0x75, 0x67, 0x4A, 0x03, 0xFC,
                0x4A, 0x15, 0x90, 0x9D, 0xC3, 0x37, 0x7F, 0x1B])
@@ -128,7 +132,45 @@ def dump(path, out_json):
     print(f"{path}: {len(data)} chaînes, {len(strings)} uniques, version {version}")
 
 
-def build(src_path, edits_json, out_path, en_path=None):
+def creer(namespaces, strings, nouvelles):
+    """Ajoute des entrées qui n'existent dans AUCUN locres du jeu.
+
+    Les autres chemins d'ajout recopient les hashes du locres anglais ; ici il
+    n'y a rien à recopier, donc on les calcule (cf. tools/cityhash.py). Le cas
+    d'usage : les FText posées en dur dans les widgets, que Wildcard n'a jamais
+    collectées — namespace vide, clé en GUID.
+
+    `nouvelles` : {"namespace\\tclé": ["source anglaise", "traduction"]}.
+    La source anglaise est indispensable : son hash sert au moteur à vérifier
+    que la traduction n'est pas périmée, et une traduction jugée périmée est
+    purement ignorée.
+    """
+    par_ns = {}
+    for plat, (src, fr) in nouvelles.items():
+        ns, _, cle = plat.partition("\t")
+        par_ns.setdefault(ns, []).append((cle, src, fr))
+
+    position = {ns: i for i, (_, ns, _) in enumerate(namespaces)}
+    n = 0
+    for ns, entrees in par_ns.items():
+        if ns not in position:
+            namespaces.append((cityhash.hash_cle(ns), ns, []))
+            position[ns] = len(namespaces) - 1
+        ns_hash, nom, cles = namespaces[position[ns]]
+        cles = list(cles)
+        deja = {c[1] for c in cles}
+        for cle, src, fr in entrees:
+            if cle in deja:      # le jeu l'a finalement collectée : ne pas doubler
+                continue
+            strings.append((fr, 1))
+            cles.append((cityhash.hash_cle(cle), cle,
+                         cityhash.hash_source(src), len(strings) - 1))
+            n += 1
+        namespaces[position[ns]] = (ns_hash, nom, cles)
+    return n
+
+
+def build(src_path, edits_json, out_path, en_path=None, nouvelles_json=None):
     version, namespaces, strings, total = read(src_path)
     edits = json.load(open(edits_json))
     n_add = 0
@@ -180,6 +222,10 @@ def build(src_path, edits_json, out_path, en_path=None):
             if out_keys:
                 new_namespaces.append((ns_hash, ns, out_keys))
         namespaces = new_namespaces
+    n_cree = 0
+    if nouvelles_json:
+        namespaces = list(namespaces)
+        n_cree = creer(namespaces, strings, json.load(open(nouvelles_json)))
     # nouvelle table de chaînes dédupliquée
     new_strings = []
     string_index = {}
@@ -231,7 +277,7 @@ def build(src_path, edits_json, out_path, en_path=None):
         w_fstring(tail, s)
         tail += struct.pack("<i", refs[i])
     open(out_path, "wb").write(out + bytes(tail))
-    print(f"{out_path}: {n_edit} modif(s), {n_add} ajout(s), "
+    print(f"{out_path}: {n_edit} modif(s), {n_add} greffe(s), {n_cree} création(s), "
           f"{len(new_strings)} chaînes uniques")
 
 
@@ -241,4 +287,6 @@ if __name__ == "__main__":
     elif sys.argv[1] == "build":
         build(sys.argv[2], sys.argv[3], sys.argv[4])
     elif sys.argv[1] == "merge":
-        build(sys.argv[2], sys.argv[4], sys.argv[5], en_path=sys.argv[3])
+        # merge <fr> <en> <edits> <out> [nouvelles.json]
+        build(sys.argv[2], sys.argv[4], sys.argv[5], en_path=sys.argv[3],
+              nouvelles_json=sys.argv[6] if len(sys.argv) > 6 else None)
