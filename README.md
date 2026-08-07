@@ -149,6 +149,14 @@ bibliothèque de décompression Oodle (`liboo2corelinux64.so.9` à placer dans
 `tools/retoc_cli-x86_64-unknown-linux-gnu/` : non redistribuable, copiez-la
 depuis n'importe quel jeu Unreal ou le SDK Oodle).
 
+### Suivi de l'usage
+
+    ./tools/stats.sh        # téléchargements par release, trafic, issues
+
+GitHub compte les téléchargements de chaque fichier de release, de façon
+permanente. Le trafic du dépôt (vues, clones) n'est en revanche conservé que
+14 jours et n'est visible que par le propriétaire.
+
 ### Données du patch
 
 - `data/overrides.json` : traductions des chaînes existantes (`"namespace\tclé": "texte"`)
