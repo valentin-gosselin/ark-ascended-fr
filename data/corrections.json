@@ -8197,5 +8197,7 @@
 "Content\t168284535": "Mangez-la pour obtenir un peu de nourriture, ou plantez-la pour cultiver votre propre buisson de Narcoberry.  Peut être planté dans les parcelles de culture petites, moyennes ou grandes.",
 "Content\t1762289557": "Tintoberry",
 "Content\t2186744929": "Narcoberry",
-"Globals\t1214218224": "Les Narcoberries peuvent assommer même les créatures les plus coriaces. Ce sont de puissants tranquillisants."
+"Globals\t1214218224": "Les Narcoberries peuvent assommer même les créatures les plus coriaces. Ce sont de puissants tranquillisants.",
+"GraphLiteral\t1420006459": "DÉSACTIVER ",
+"GraphLiteral\t2981367862": "ACTIVER "
 }
