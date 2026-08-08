@@ -12,6 +12,7 @@ Usage : ./build.py [--no-install]
 """
 import json
 import os
+import re
 import subprocess
 import sys
 
@@ -30,6 +31,21 @@ REPAK = os.path.join(ROOT, "tools/repak_cli-x86_64-unknown-linux-gnu/repak")
 
 def run(*args):
     subprocess.run(args, check=True)
+
+
+def jeu_lance():
+    """Vrai si ARK tourne. Sert a refuser d'ecraser le pak sous ses pieds."""
+    for pid in os.listdir("/proc"):
+        if not pid.isdigit():
+            continue
+        try:
+            with open(f"/proc/{pid}/cmdline", "rb") as f:
+                ligne = f.read().replace(b"\0", b" ").decode("utf-8", "replace")
+        except OSError:
+            continue
+        if re.search(r"ArkAscended\.exe|ShooterGame\.exe", ligne):
+            return True
+    return False
 
 
 def main():
@@ -82,7 +98,15 @@ def main():
                 os.path.join(WORK, "ShooterGame_en.locres")]
     else:
         cmd += ["build", os.path.join(WORK, "ShooterGame_fr.locres")]
-    run(*cmd, merged, os.path.join(stage, "ShooterGame.locres"))
+    # textes_widgets.json : cles qui n'existent dans AUCUN locres du jeu (FText
+    # posees en dur dans les widgets, jamais collectees par Wildcard). Elles ne
+    # peuvent pas etre greffees depuis l'anglais, elles sont creees de toutes
+    # pieces avec leurs hashes calcules (cf. tools/cityhash.py).
+    widgets = os.path.join(ROOT, "data/textes_widgets.json")
+    args_sup = [widgets] if (avec_add and os.path.exists(widgets)) else []
+    if args_sup:
+        print(f"textes_widgets.json: {len(json.load(open(widgets)))} entrées")
+    run(*cmd, merged, os.path.join(stage, "ShooterGame.locres"), *args_sup)
     # 3 bis. locres du moteur : uniquement les noms de touches
     engine_data = os.path.join(ROOT, "data/engine_fr.json")
     if os.path.exists(engine_data):
@@ -106,9 +130,18 @@ def main():
     # 4. installation
     if "--no-install" not in sys.argv:
         import shutil
+        if jeu_lance():
+            print("ARK tourne : installation annulée.\n"
+                  "  Le moteur garde le pak ouvert et mappé en mémoire. Le remplacer\n"
+                  "  a chaud ne met rien a jour et corrompt ce que le jeu lit encore :\n"
+                  "  des textes deja affiches repassent en anglais sans raison.\n"
+                  f"  Quittez le jeu puis copiez {pak} dans {PAKS},\n"
+                  "  ou relancez ./build.py.")
+            return 1
         shutil.copy2(pak, os.path.join(PAKS, "TradFR_P.pak"))
         print(f"installé dans {PAKS}")
+    return 0
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main() or 0)

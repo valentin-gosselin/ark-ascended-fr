@@ -14,6 +14,10 @@ traduction française entière par une version **révisée de bout en bout** :
 - accents corrigés dans les textes en capitales (fini les « SANTé » et
   « DéGâTS DE MéLéE »), quêtes « Tuez N… » accordées en genre et en nombre,
   séparateurs cassés des cartes au trésor réparés
+- **8 684 textes que le jeu n'a jamais proposés à la traduction** : Wildcard a
+  oublié de les collecter, ils s'affichaient donc en anglais dans les 14 langues
+  (panneau des cosmétiques, missions du tableau des primes, arbre de compétences
+  de Dragontopia, navigateur de mods, commandes des navires…)
 
 Aucun fichier du jeu n'est modifié : c'est un pak additionnel, compatible avec
 tous les serveurs (il n'agit que sur votre affichage).
@@ -73,10 +77,14 @@ le monde.
   leurs accents en capitales (« NéCESSITE… ») : le même texte s'affiche
   normalement ailleurs, aucune donnée ne peut satisfaire les deux widgets.
   La VF officielle a le même artefact.
-- « Crafting Requirements », « WEIGHT », « Last: », « ALLOWED » (liste des
-  cosmétiques), « - {NAME} - » et le journal de tribu en anglais viennent du code
-  du jeu ou de mods, et non des fichiers de langue : aucun patch de traduction
-  ne peut les atteindre.
+- « Crafting Requirements », « WEIGHT », « Last: », « - {NAME} - » et le journal
+  de tribu en anglais ne se trouvent dans aucun asset ni fichier de langue : ils
+  sont fabriqués par le code du jeu. Aucun patch de traduction ne peut les
+  atteindre.
+- Le menu déroulant du panneau des cosmétiques (ALL COSMETICS, ARMOR, HAT…)
+  affiche les valeurs de l'énumération C++ `EPrimalCustomCosmeticType`. Le jeu
+  ne consulte pas la table de traduction pour ces libellés (le code qui le
+  ferait n'existe que dans l'éditeur) : vérifié en jeu, il reste anglais.
 - L'écran des raccourcis clavier affiche les noms **bruts** de certaines touches
   (`UnknownCharCode_201`, `MiddleMouseButton`…) : cet écran contourne le système
   de traduction, contrairement à la barre d'objets qui affiche bien « & », « ( »…
@@ -157,6 +165,10 @@ depuis n'importe quel jeu Unreal ou le SDK Oodle).
   que vont les correctifs communautaires)
 - `data/noms_officiels_ase.json` : table figée des noms officiels de créatures
   (ARK: Survival Evolved)
+- `data/textes_widgets.json` : textes que Wildcard n'a jamais collectés, sous la
+  forme `"namespace\tclé": ["source anglaise", "traduction"]`. La source
+  anglaise y est obligatoire : ces clés n'existent dans aucun locres, rien
+  d'autre ne permet de retrouver le texte d'origine (voir plus bas)
 
 ### Outils (`tools/`)
 
@@ -169,6 +181,45 @@ depuis n'importe quel jeu Unreal ou le SDK Oodle).
   traduction et `data/corrections.json`
 - `valider.py` / `audit.py` : contrôles (placeholders, balises, espaces de
   bord, anglais résiduel, glossaire)
+- `cityhash.py` : les hashes des .locres v3, indispensables pour créer une clé
+  qui n'existe nulle part ; se vérifie contre les 77 535 hashes réels du jeu
+  (`python3 tools/cityhash.py --verifier`)
+- `textes_assets.py` / `balayer_assets.py` : lecture des FText d'un asset, et
+  balayage des 45 662 assets du jeu
+- `reporter_widgets.py` : reporte sur ces textes les traductions déjà faites
+  ailleurs dans le patch
+
+### Les textes que le jeu n'a jamais proposés à la traduction
+
+Des milliers de chaînes s'affichaient en anglais quoi qu'on mette dans les
+fichiers de langue. On les croyait écrites en dur dans le code C++. C'est faux.
+
+Ce sont des `FText` posées dans les assets. Une `FText` porte toujours un
+namespace et une clé, et le moteur interroge le locres avec ce couple au
+chargement du paquet. Wildcard n'a simplement jamais lancé la collecte de
+localisation sur ces assets : le couple n'est dans aucun locres, ni anglais ni
+français. Le moteur cherche, ne trouve rien, affiche la source. Dans un même
+widget, « OFFHAND » a une vraie clé et se traduit normalement, tandis que
+« CUSTOM COSMETICS » a un namespace vide et une clé en GUID, jamais collectée.
+
+Il suffit donc de créer l'entrée manquante. Rien d'autre ne change : ni asset
+modifié, ni conteneur `.utoc` à fabriquer, le même pak qu'avant.
+
+La seule difficulté est le calcul des hashes, là où tous les autres chemins
+d'ajout se contentent de les recopier depuis le locres anglais. Deux fonctions
+différentes, chacune validée contre les hashes réels du jeu :
+
+- **namespace et clé** : CityHash64 sur l'UTF-16, replié en 32 bits par la
+  recette d'Unreal (`bas + haut * 23`), une chaîne vide valant 0 ;
+- **chaîne source** : `FCrc::StrCrc32`, soit un CRC-32 sur l'UTF-32LE. Le moteur
+  s'en sert pour repérer une traduction périmée et l'ignorer — c'est pour cela
+  que `data/textes_widgets.json` stocke aussi la source anglaise.
+
+Pour refaire le balayage après une mise à jour du jeu :
+
+    tools/retoc_cli-*/retoc manifest <pakchunk0-Windows.utoc> work/pakstore.json
+    python3 tools/balayer_assets.py <liste.json> work/orphelines.json
+    python3 tools/reporter_widgets.py work/orphelines.json --ecrire
 
 ### Notes techniques
 

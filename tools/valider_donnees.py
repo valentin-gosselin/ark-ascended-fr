@@ -16,7 +16,10 @@ import sys
 RACINE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 FICHIERS = ("overrides.json", "additions.json", "corrections.json")
 CLE = re.compile(r"^[A-Za-z0-9_]+\t\S+$")   # certains namespaces sont des hashes
-VARIABLE = re.compile(r"\{[^}]*\}|%[a-z%]|</?[A-Za-z][^>]*>")
+# Les chevrons doubles ne sont pas des balises : les notes d'exploration s'en
+# servent pour citer un intervenant (« <<Mei-Yin et Diana Altaras>> »), et ces
+# noms se traduisent. Le retrait en tete evite de les confondre avec du balisage.
+VARIABLE = re.compile(r"\{[^}]*\}|%[a-z%]|(?<!<)</?[A-Za-z][^>]*>")
 # le jeu se sert des accolades comme texte litteral dans 4 chaines : ces ecarts
 # sont connus, verifies, et ne doivent pas faire echouer la validation
 ECARTS_CONNUS = 4
@@ -44,6 +47,38 @@ def main():
                 problemes.append(f"{nom} : {k!r} n'est pas une chaine de texte")
         trad.update(d)
 
+    # textes_widgets.json a une autre forme : {"ns\tcle": ["source EN", "FR"]}.
+    # La source anglaise y est indispensable -- ces cles n'existent dans aucun
+    # locres du jeu, donc rien d'autre ne permet de retrouver le texte d'origine,
+    # ni de calculer le hash qui empeche le moteur de juger la traduction perimee.
+    widgets = os.path.join(RACINE, "data/textes_widgets.json")
+    n_widgets = 0
+    if os.path.exists(widgets):
+        try:
+            d = json.load(open(widgets))
+        except (OSError, json.JSONDecodeError) as e:
+            erreur(f"textes_widgets.json : illisible ({e})")
+            return 1
+        n_widgets = len(d)
+        for k, v in d.items():
+            # le namespace est souvent vide (FText de widget) : le motif general
+            # ne s'applique pas, on verifie seulement qu'il y a une cle
+            if "\t" not in k or not k.split("\t", 1)[1]:
+                problemes.append(f"textes_widgets.json : cle mal formee {k!r}")
+                continue
+            if not (isinstance(v, list) and len(v) == 2
+                    and all(isinstance(x, str) for x in v)):
+                problemes.append(f"textes_widgets.json : {k!r} n'est pas "
+                                 f"une paire [source, traduction]")
+                continue
+            src, fr = v
+            if sorted(VARIABLE.findall(src)) != sorted(VARIABLE.findall(fr)):
+                problemes.append(f"textes_widgets.json : {k!r} : les variables "
+                                 f"ne correspondent pas a la source")
+            if (src[:1] == " ") != (fr[:1] == " ") or (src[-1:] == " ") != (fr[-1:] == " "):
+                problemes.append(f"textes_widgets.json : {k!r} : espace de debut "
+                                 f"ou de fin modifiee")
+
     ref = os.path.join(RACINE, "data/reference_en.json")
     ecarts = []
     if os.path.exists(ref):
@@ -66,7 +101,8 @@ def main():
         print(f"::error::... et {len(problemes) - 20} autres")
     if problemes:
         return 1
-    print(f"{len(trad)} traductions validees, {len(ecarts)} ecart(s) connu(s)")
+    print(f"{len(trad)} traductions validees, {n_widgets} textes de widgets, "
+          f"{len(ecarts)} ecart(s) connu(s)")
     return 0
 
 
