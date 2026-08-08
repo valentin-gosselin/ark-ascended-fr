@@ -74,7 +74,7 @@ def read_footer(f):
 
 
 def decode_entry(data, offset, comp_names):
-    """Décode une entrée compacte (bitfield) de l'index — cf. repak entry.rs."""
+    """Décode une entrée compacte (bitfield) de l'index - cf. repak entry.rs."""
     r = Reader(data, offset)
     bits = r.u32()
     comp_idx = (bits >> 23) & 0x3F

@@ -62,7 +62,7 @@ def main():
     #
     # ATTENTION : ajouter au locres des clés absentes de la version française
     # d'origine fait rejeter le fichier entier par Unreal, qui retombe alors
-    # silencieusement sur la traduction officielle — tout le patch est perdu.
+    # silencieusement sur la traduction officielle - tout le patch est perdu.
     # Vérifié en jeu : un pak sans aucun ajout s'applique, le même pak avec
     # ajouts ne s'applique pas. Les additions sont donc désactivées par défaut ;
     # `--avec-additions` permet de refaire l'essai si on trouve la parade.

@@ -4,7 +4,7 @@
 Contexte : certaines FText posées en dur dans les assets n'ont jamais été
 passées à la collecte de localisation par Wildcard. Leur couple
 namespace/clé n'existe donc dans aucun .locres, le moteur ne trouve rien et
-affiche l'anglais — quelle que soit la langue du jeu. Elles sont pourtant
+affiche l'anglais - quelle que soit la langue du jeu. Elles sont pourtant
 traduisibles : il suffit de créer l'entrée manquante (cf. tools/locres.py,
 fonction `creer`, et tools/cityhash.py pour les hashes).
 
