@@ -8,12 +8,13 @@ name: Valider une contribution
 # `pull_request_target`) et en lecture seule. Le code d'une contribution
 # exterieure ne peut donc ni ecrire dans le depot, ni acceder a un secret.
 
+# Sans filtre de chemins : la validation est un controle obligatoire de la
+# branche master, donc elle doit tourner sur *chaque* pull request. Filtree, elle
+# ne se declenchait pas sur une contribution qui ne touche qu'a la documentation,
+# et la pull request restait bloquee indefiniment en attente d'un controle qui ne
+# viendrait jamais. Elle prend une quinzaine de secondes, autant la jouer partout.
 on:
   pull_request:
-    paths:
-      - "data/**"
-      - "tools/**"
-      - "*.py"
 
 permissions:
   contents: read
