@@ -23,6 +23,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
+        with:
+          # historique complet : sans lui, la branche et sa base sont recuperees
+          # en profondeur 1 et n'ont donc aucun ancetre commun, ce qui fait
+          # echouer la comparaison de l'etape « aucun binaire ajoute »
+          fetch-depth: 0
 
       - name: Les fichiers de donnees sont du JSON valide
         run: |
@@ -37,7 +42,7 @@ jobs:
 
       - name: Aucun binaire ni fichier volumineux ajoute
         run: |
-          git fetch --no-tags --depth=1 origin "${{ github.base_ref }}"
+          git fetch --no-tags origin "${{ github.base_ref }}"
           # les binaires n'ont rien a faire dans un depot de traduction, et
           # certains (Oodle) ne sont pas redistribuables
           ajouts=$(git diff --name-only --diff-filter=A "origin/${{ github.base_ref }}"...HEAD)
