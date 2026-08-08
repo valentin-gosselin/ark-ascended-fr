@@ -49,13 +49,30 @@ planifiée « TradFR MAJ » si vous aviez activé la mise à jour automatique).
 
 Le résultat est le même qu'un mod (rien du jeu n'est modifié, tout est
 réversible), mais la porte d'entrée diffère. Un mod ASA est fabriqué dans le
-DevKit officiel puis « cuit » par CurseForge avec son propre contenu, monté à
-part : cette chaîne ne permet pas de fournir un fichier à la place de la
-localisation du jeu de base. Le pak `_P`, lui, est chargé directement par le
-moteur au démarrage et peut la recouvrir. C'est pour cela qu'aucune
-retraduction du jeu de base n'existe en mod CurseForge, dans aucune langue :
-tout le monde passe par un pak. Seul inconvénient : pas de mise à jour par le
-jeu lui-même, d'où le script fourni.
+DevKit officiel, « cuit » par CurseForge, et monté sous sa propre racine
+(`ShooterGame/Mods/<nom>/`). Il n'a donc pas accès au fichier de langue du jeu,
+qui vit ailleurs. Le pak `_P`, lui, est chargé directement par le moteur au
+démarrage et peut le recouvrir.
+
+Des mods de traduction existent bel et bien sur CurseForge, mais ils travaillent
+autrement : ils **recréent des widgets d'interface à la main** dans la langue
+voulue, et surchargent les données de jeu via un PrimalGameData. Le mod
+« Arabic Translation » en est l'exemple type — trois écrans refaits (panneau de
+statistiques, HUD, inventaire), un GameMode, un PrimalGameData, et aucun fichier
+de langue.
+
+Cette voie ne mène pas au même endroit. Recréer un widget traduit ses propres
+libellés, pas ce qu'il affiche : un panneau d'inventaire refait en français
+continuera de montrer « Narcotic », parce que ce nom vient de la base de textes
+du jeu. Or c'est là que vit l'essentiel du travail — 37 790 des 46 474 entrées
+de ce patch. Et surcharger un PrimalGameData ou un GameMode se charge côté
+serveur : le mod ne s'applique donc que là où l'administrateur l'a activé,
+jamais sur les officiels, et il entre en conflit avec tout autre mod touchant
+les mêmes éléments.
+
+Le pak, lui, ne touche que l'affichage local : il fonctionne sur n'importe quel
+serveur, officiels compris, sans conflit avec quoi que ce soit. Seul
+inconvénient : pas de mise à jour par le jeu lui-même, d'où le script fourni.
 
 ## Signaler une erreur, proposer une correction
 
