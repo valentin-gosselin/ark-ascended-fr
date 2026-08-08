@@ -20,6 +20,10 @@ CLE = re.compile(r"^[A-Za-z0-9_]+\t\S+$")   # certains namespaces sont des hashe
 # servent pour citer un intervenant (« <<Mei-Yin et Diana Altaras>> »), et ces
 # noms se traduisent. Le retrait en tete evite de les confondre avec du balisage.
 VARIABLE = re.compile(r"\{[^}]*\}|%[a-z%]|(?<!<)</?[A-Za-z][^>]*>")
+# Tirets cadratin et demi-cadratin : proscrits dans les traductions du projet,
+# on ecrit un tiret simple. La regle vaut aussi quand la source anglaise en
+# contient un.
+CADRATIN = re.compile(r"[–—]")
 # le jeu se sert des accolades comme texte litteral dans 4 chaines : ces ecarts
 # sont connus, verifies, et ne doivent pas faire echouer la validation
 ECARTS_CONNUS = 4
@@ -45,6 +49,8 @@ def main():
                 problemes.append(f"{nom} : cle mal formee {k!r}")
             elif not isinstance(v, str):
                 problemes.append(f"{nom} : {k!r} n'est pas une chaine de texte")
+            elif CADRATIN.search(v):
+                problemes.append(f"{nom} : {k!r} : tiret cadratin, ecrire un tiret simple")
         trad.update(d)
 
     # textes_widgets.json a une autre forme : {"ns\tcle": ["source EN", "FR"]}.
@@ -78,6 +84,11 @@ def main():
             if (src[:1] == " ") != (fr[:1] == " ") or (src[-1:] == " ") != (fr[-1:] == " "):
                 problemes.append(f"textes_widgets.json : {k!r} : espace de debut "
                                  f"ou de fin modifiee")
+            # seule la traduction est concernee : la source anglaise doit rester
+            # au caractere pres, son hash en depend
+            if CADRATIN.search(fr):
+                problemes.append(f"textes_widgets.json : {k!r} : tiret cadratin, "
+                                 f"ecrire un tiret simple")
 
     ref = os.path.join(RACINE, "data/reference_en.json")
     ecarts = []

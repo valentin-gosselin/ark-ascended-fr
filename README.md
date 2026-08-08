@@ -48,7 +48,7 @@ planifiée « TradFR MAJ » si vous aviez activé la mise à jour automatique).
 ## Pourquoi un pak et pas un mod CurseForge ?
 
 La question revient souvent, d'autant qu'il existe des mods de traduction sur
-CurseForge. Ils existent bel et bien — mais ils ne font pas la même chose.
+CurseForge. Ils existent bel et bien - mais ils ne font pas la même chose.
 
 **Un mod n'a pas accès au fichier de langue.** Un mod ASA est fabriqué dans le
 DevKit officiel, « cuit » par CurseForge, et monté sous sa propre racine
@@ -70,12 +70,12 @@ contenu, une fois ouvert :
 Trois écrans refaits, et **aucun fichier de langue**.
 
 **Pourquoi cette voie ne mène pas au même endroit.** Recréer un widget traduit
-ses propres libellés — ses titres, ses boutons — mais pas ce qu'il affiche. Un
+ses propres libellés - ses titres, ses boutons - mais pas ce qu'il affiche. Un
 panneau d'inventaire refait en français continuera de montrer « Narcotic »,
 parce que ce nom ne vient pas du widget mais de la base de textes du jeu. Or
 c'est là que vit l'essentiel du travail : **37 790 des 46 474 entrées** de ce
 patch. Pour les atteindre en mod, il faudrait redéfinir chaque objet, chaque
-engramme et chaque créature — autant refaire le jeu.
+engramme et chaque créature - autant refaire le jeu.
 
 **Et ce qu'on y perdrait.** Un PrimalGameData ou un GameMode personnalisé se
 charge côté serveur : le mod ne s'applique que là où l'administrateur l'a
@@ -141,7 +141,7 @@ anglais. `delta.py` rend ce décalage visible et produit le lot de travail exact
     ./delta.py --figer      # fige l'état courant comme nouvelle référence
 
 Les lots produits : `a_traduire.json` (nouvelles chaînes), `a_revoir.json` (l'anglais
-a changé, la traduction dit peut-être autre chose — avec la version actuelle en
+a changé, la traduction dit peut-être autre chose - avec la version actuelle en
 regard), `orphelines.json` (clés supprimées du jeu que le patch traduisait encore),
 `techniques.json` (écarté automatiquement : debug, séparateurs, code du DevKit).
 
@@ -157,7 +157,7 @@ quatre fois par jour **sur GitHub**, sans machine allumée, sans le jeu install�
 et sans compte Steam.
 
 Comment c'est possible : l'API publique de Steam donne le numéro de build d'ARK.
-S'il a changé, le workflow télécharge — en anonyme, et **uniquement ce fichier** —
+S'il a changé, le workflow télécharge - en anonyme, et **uniquement ce fichier** -
 le pak de langue du *serveur dédié*, qui contient exactement les mêmes textes que
 le client pour 1,1 Go au lieu de 212 Go. Les textes s'extraient ensuite en Python
 pur (le fichier de langue n'est pas compressé, aucune bibliothèque propriétaire
@@ -168,14 +168,14 @@ Le workflow :
 - retire des données du patch les clés que le jeu ne contient plus ;
 - écarte les chaînes techniques (debug, séparateurs, code du DevKit) ;
 - **propose automatiquement la traduction officielle d'ARK: Survival Evolved**
-  pour chaque chaîne dont la source anglaise y existe telle quelle — près de la
+  pour chaque chaîne dont la source anglaise y existe telle quelle - près de la
   moitié du jeu est dans ce cas, ces lignes n'ont plus qu'à être confirmées ;
 - commite les lots dans `delta/` et **ouvre une issue GitHub** listant ce qui
   reste à faire, avec le contexte de chaque chaîne.
 
 Résultat : quelques heures après une mise à jour d'ARK, une issue apparaît d'elle-même
 avec le travail déjà mâché, visible de tout le monde. La traduction ne dépend de
-personne en particulier — n'importe qui peut répondre dans l'issue ou proposer une
+personne en particulier - n'importe qui peut répondre dans l'issue ou proposer une
 pull request.
 
 Le même script tourne à la main si besoin : `python3 tools/veille.py` (avec le jeu
@@ -242,7 +242,7 @@ différentes, chacune validée contre les hashes réels du jeu :
 - **namespace et clé** : CityHash64 sur l'UTF-16, replié en 32 bits par la
   recette d'Unreal (`bas + haut * 23`), une chaîne vide valant 0 ;
 - **chaîne source** : `FCrc::StrCrc32`, soit un CRC-32 sur l'UTF-32LE. Le moteur
-  s'en sert pour repérer une traduction périmée et l'ignorer — c'est pour cela
+  s'en sert pour repérer une traduction périmée et l'ignorer - c'est pour cela
   que `data/textes_widgets.json` stocke aussi la source anglaise.
 
 Pour refaire le balayage après une mise à jour du jeu :
@@ -278,8 +278,8 @@ automatique, qui ouvre une pull request comme n'importe quel contributeur.
 La validation (`tools/valider_donnees.py`, rejouée sur chaque pull request)
 vérifie que les fichiers de données sont du JSON valide, que les clés ont la
 forme attendue, que les **variables du jeu** (`{0}`, `%s`, `<RichColor>`) et les
-espaces de début et de fin sont préservés — une traduction qui les casse afficherait
-un texte tronqué en jeu — et qu'aucun binaire n'est ajouté.
+espaces de début et de fin sont préservés - une traduction qui les casse afficherait
+un texte tronqué en jeu - et qu'aucun binaire n'est ajouté.
 
 Pour contribuer : forkez, modifiez `data/corrections.json`, ouvrez une pull
 request. La validation vous dira tout de suite si quelque chose ne va pas.

@@ -5,7 +5,7 @@ Le balayage des assets (tools/balayer_assets.py) trouve des milliers de FText
 que Wildcard n'a jamais passées à la collecte de localisation : leur couple
 namespace/clé n'est dans aucun .locres, donc elles s'affichent en anglais quelle
 que soit la langue. La grande majorité dit pourtant *exactement* la même chose
-qu'une chaîne que le patch traduit déjà ailleurs — les tables de primes en sont
+qu'une chaîne que le patch traduit déjà ailleurs - les tables de primes en sont
 l'exemple type : mêmes textes, mais une clé GUID dans l'asset et une clé
 numérique dans le locres.
 

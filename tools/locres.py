@@ -138,7 +138,7 @@ def creer(namespaces, strings, nouvelles):
     Les autres chemins d'ajout recopient les hashes du locres anglais ; ici il
     n'y a rien à recopier, donc on les calcule (cf. tools/cityhash.py). Le cas
     d'usage : les FText posées en dur dans les widgets, que Wildcard n'a jamais
-    collectées — namespace vide, clé en GUID.
+    collectées - namespace vide, clé en GUID.
 
     `nouvelles` : {"namespace\\tclé": ["source anglaise", "traduction"]}.
     La source anglaise est indispensable : son hash sert au moteur à vérifier
