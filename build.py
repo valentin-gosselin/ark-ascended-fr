@@ -12,6 +12,7 @@ Usage : ./build.py [--no-install]
 """
 import json
 import os
+import re
 import subprocess
 import sys
 
@@ -30,6 +31,21 @@ REPAK = os.path.join(ROOT, "tools/repak_cli-x86_64-unknown-linux-gnu/repak")
 
 def run(*args):
     subprocess.run(args, check=True)
+
+
+def jeu_lance():
+    """Vrai si ARK tourne. Sert a refuser d'ecraser le pak sous ses pieds."""
+    for pid in os.listdir("/proc"):
+        if not pid.isdigit():
+            continue
+        try:
+            with open(f"/proc/{pid}/cmdline", "rb") as f:
+                ligne = f.read().replace(b"\0", b" ").decode("utf-8", "replace")
+        except OSError:
+            continue
+        if re.search(r"ArkAscended\.exe|ShooterGame\.exe", ligne):
+            return True
+    return False
 
 
 def main():
@@ -114,9 +130,18 @@ def main():
     # 4. installation
     if "--no-install" not in sys.argv:
         import shutil
+        if jeu_lance():
+            print("ARK tourne : installation annulée.\n"
+                  "  Le moteur garde le pak ouvert et mappé en mémoire. Le remplacer\n"
+                  "  a chaud ne met rien a jour et corrompt ce que le jeu lit encore :\n"
+                  "  des textes deja affiches repassent en anglais sans raison.\n"
+                  f"  Quittez le jeu puis copiez {pak} dans {PAKS},\n"
+                  "  ou relancez ./build.py.")
+            return 1
         shutil.copy2(pak, os.path.join(PAKS, "TradFR_P.pak"))
         print(f"installé dans {PAKS}")
+    return 0
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main() or 0)
