@@ -47,15 +47,45 @@ planifiée « TradFR MAJ » si vous aviez activé la mise à jour automatique).
 
 ## Pourquoi un pak et pas un mod CurseForge ?
 
-Le résultat est le même qu'un mod (rien du jeu n'est modifié, tout est
-réversible), mais la porte d'entrée diffère. Un mod ASA est fabriqué dans le
-DevKit officiel puis « cuit » par CurseForge avec son propre contenu, monté à
-part : cette chaîne ne permet pas de fournir un fichier à la place de la
-localisation du jeu de base. Le pak `_P`, lui, est chargé directement par le
-moteur au démarrage et peut la recouvrir. C'est pour cela qu'aucune
-retraduction du jeu de base n'existe en mod CurseForge, dans aucune langue :
-tout le monde passe par un pak. Seul inconvénient : pas de mise à jour par le
-jeu lui-même, d'où le script fourni.
+La question revient souvent, d'autant qu'il existe des mods de traduction sur
+CurseForge. Ils existent bel et bien — mais ils ne font pas la même chose.
+
+**Un mod n'a pas accès au fichier de langue.** Un mod ASA est fabriqué dans le
+DevKit officiel, « cuit » par CurseForge, et monté sous sa propre racine
+(`ShooterGame/Mods/<nom>/`). Le fichier de langue du jeu vit ailleurs, dans le
+contenu de base, hors de sa portée. Le pak `_P`, lui, est chargé directement par
+le moteur au démarrage et peut le recouvrir.
+
+**Ce que font les mods de traduction, alors.** Ils recréent des widgets
+d'interface à la main dans la langue voulue, et surchargent les données de jeu
+via un PrimalGameData. Le mod « Arabic Translation » en est l'exemple type. Son
+contenu, une fois ouvert :
+
+    Arabic_CharacterStatsPanel     widget d'interface refait
+    Arabic_HUD                     widget d'interface refait
+    Arabic_Inventory               widget d'interface refait
+    Arabic_GameMode                mode de jeu personnalisé
+    PrimalGameData_BP_BlankMod     surcharge des données de jeu
+
+Trois écrans refaits, et **aucun fichier de langue**.
+
+**Pourquoi cette voie ne mène pas au même endroit.** Recréer un widget traduit
+ses propres libellés — ses titres, ses boutons — mais pas ce qu'il affiche. Un
+panneau d'inventaire refait en français continuera de montrer « Narcotic »,
+parce que ce nom ne vient pas du widget mais de la base de textes du jeu. Or
+c'est là que vit l'essentiel du travail : **37 790 des 46 474 entrées** de ce
+patch. Pour les atteindre en mod, il faudrait redéfinir chaque objet, chaque
+engramme et chaque créature — autant refaire le jeu.
+
+**Et ce qu'on y perdrait.** Un PrimalGameData ou un GameMode personnalisé se
+charge côté serveur : le mod ne s'applique que là où l'administrateur l'a
+activé, donc jamais sur les serveurs officiels. Il entre aussi en conflit avec
+tout autre mod touchant les mêmes éléments. Ce patch ne touche que votre
+affichage : il fonctionne sur n'importe quel serveur, officiels compris, sans
+que le serveur en sache quoi que ce soit, et sans conflit avec aucun mod.
+
+Seul inconvénient du pak : pas de mise à jour par le jeu lui-même, d'où le
+script fourni.
 
 ## Signaler une erreur, proposer une correction
 
