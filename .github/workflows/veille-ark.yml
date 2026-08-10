@@ -125,10 +125,31 @@ jobs:
           gh api -X POST "repos/$GITHUB_REPOSITORY/statuses/$(git rev-parse HEAD)" \
             -f state="$ETAT" -f context=valider \
             -f description="validation des donnees executee par la veille" >/dev/null
+          # Une mise a jour d'ARK ne touche pas forcement aux textes : dans ce
+          # cas la veille ne produit aucun rapport, et il n'y a que la reference
+          # anglaise et le numero de build a enregistrer. Sans corps de
+          # remplacement, l'ouverture de la pull request echouait sur un fichier
+          # absent (constate au build 24617560).
+          CORPS=delta/rapport.md
+          if [ ! -f "$CORPS" ]; then
+            CORPS=$(mktemp)
+            cat > "$CORPS" <<TXT
+          ARK est passe au build \`$BUILD\`, mais **aucun texte traduisible n'a
+          change** : la veille n'a produit aucun lot de travail.
+
+          Cette pull request ne fait qu'enregistrer le nouvel etat, pour que la
+          prochaine veille reparte de la bonne reference :
+
+          - \`data/reference_en.json\` : empreinte de l'anglais du jeu
+          - \`data/etat_steam.json\` : numero de build vu par la veille
+
+          Rien a relire cote traduction.
+          TXT
+          fi
           if gh pr view "$BRANCHE" >/dev/null 2>&1; then
             echo "pull request deja ouverte pour ce build"
           else
             gh pr create --base master --head "$BRANCHE" \
               --title "Veille : ARK build $BUILD" \
-              --body-file delta/rapport.md --label traduction
+              --body-file "$CORPS" --label traduction
           fi
