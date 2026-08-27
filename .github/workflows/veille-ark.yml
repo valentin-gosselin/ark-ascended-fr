@@ -32,11 +32,17 @@ jobs:
       - name: Lire le buildid publie par Steam
         id: steam
         run: |
-          # API publique, sans authentification : donne le buildid de la branche
-          # publique du client ARK: Survival Ascended (appid 2399830)
+          # On surveille le buildid du SERVEUR DEDIE (2430930), pas celui du
+          # client (2399830), parce que c'est son pak que la veille telecharge.
+          # Les deux ne sont pas mis a jour en meme temps : le 27/08/2026, le
+          # client est passe a 24970571 a 18h15 et le serveur a 24976862 a
+          # 21h55, pres de quatre heures plus tard. Se declencher sur le client
+          # ferait lire l'ANCIEN pak, conclure a tort que rien n'a change, puis
+          # enregistrer le nouveau buildid : les textes modifies seraient perdus
+          # pour de bon, la prochaine execution ne voyant plus de changement.
           build=$(curl -sf --retry 3 --max-time 30 \
-            "https://api.steamcmd.net/v1/info/2399830" \
-            | python3 -c "import json,sys; print(json.load(sys.stdin)['data']['2399830']['depots']['branches']['public']['buildid'])")
+            "https://api.steamcmd.net/v1/info/2430930" \
+            | python3 -c "import json,sys; print(json.load(sys.stdin)['data']['2430930']['depots']['branches']['public']['buildid'])")
           [ -n "$build" ] || { echo "buildid introuvable"; exit 1; }
           connu=$(python3 -c "import json,os; print(json.load(open('data/etat_steam.json'))['buildid'] if os.path.exists('data/etat_steam.json') else '')")
           echo "buildid=$build" >> "$GITHUB_OUTPUT"
