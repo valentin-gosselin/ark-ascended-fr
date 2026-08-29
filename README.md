@@ -218,6 +218,8 @@ depuis n'importe quel jeu Unreal ou le SDK Oodle).
   balayage des 45 662 assets du jeu
 - `reporter_widgets.py` : reporte sur ces textes les traductions déjà faites
   ailleurs dans le patch
+- `veille_assets.py` : repère le contenu neuf dont les textes n'ont jamais été
+  collectés, en ne balayant que les paquets apparus depuis le dernier passage
 
 ### Les textes que le jeu n'a jamais proposés à la traduction
 
@@ -253,17 +255,26 @@ n'y a rien à traduire. C'est arrivé avec le Concavenator, sorti le 26 août
 et l'aide des touches de la créature affichée en anglais.
 
 Détecter cela en intégration continue demanderait de télécharger les assets du
-jeu, soit 212 Go, contre 1,1 Go pour le seul pak de langue. **Après une mise à
-jour de contenu (nouvelle créature, nouvelle carte), il faut donc relancer le
-balayage à la main**, avec le jeu installé :
+jeu, soit 212 Go, contre 1,1 Go pour le seul pak de langue. `retoc` refuse de
+lire un `.utoc` sans son `.ucas`, donc même la simple liste des paquets est hors
+de portée d'un runner. **Après une mise à jour de contenu (nouvelle créature,
+nouvelle carte), le rattrapage se fait donc en local**, avec le jeu installé :
+
+    python3 tools/veille_assets.py
+
+Il ne balaie que les paquets **apparus depuis le dernier passage** : le premier
+appel sur une machine coûte une heure, les suivants sont instantanés. Chaque
+pull request de la veille rappelle de le lancer, c'est le seul endroit où le
+mainteneur le lira au bon moment.
+
+Pour un balayage complet, par exemple pour rejouer le tri avec un œil neuf :
 
     tools/retoc_cli-*/retoc manifest <pakchunk0-Windows.utoc>   # ecrit pakstore.json
     python3 tools/balayer_assets.py <liste.json> work/orphelines.json
     python3 tools/reporter_widgets.py work/orphelines.json --ecrire
 
-Le balayage complet prend environ une heure. Écrivez ses fichiers dans `work/`
-et non dans `/tmp` : sur bien des systèmes `/tmp` vit en mémoire et disparaît au
-redémarrage.
+Écrivez ses fichiers dans `work/` et non dans `/tmp` : sur bien des systèmes
+`/tmp` vit en mémoire et disparaît au redémarrage.
 
 Un contrôle rapide permet de repérer une créature oubliée sans tout balayer :
 chercher son nom dans `work/en.json`. S'il n'y est pas alors que ses assets

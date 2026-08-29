@@ -166,6 +166,24 @@ jobs:
           # --state open : sans cela, la pull request DEJA FUSIONNEE portant le
           # meme nom de branche etait trouvee, et la veille concluait a tort
           # qu'il n'y avait rien a ouvrir. Le travail disparaissait en silence.
+          # La veille ne voit que le fichier de langue. Un contenu dont les
+          # textes n'ont jamais ete collectes par Wildcard n'y figure pas et ne
+          # produit donc aucun ecart : c'est arrive avec le Concavenator. Le
+          # rappel est ajoute a chaque pull request, seul endroit ou le
+          # mainteneur le lira au bon moment.
+          cat >> "$CORPS" <<'TXT'
+          
+          ***
+          
+          **Contenu neuf ?** Cette veille ne voit que le fichier de langue. Si cette mise
+          a jour ajoute une creature, une carte ou un vehicule, ses textes peuvent n'avoir
+          jamais ete collectes par Wildcard : ils resteraient invisibles ici. Lancer alors
+          en local, avec le jeu installe :
+          
+              python3 tools/veille_assets.py
+          
+          Il ne balaie que les paquets apparus depuis le dernier passage.
+          TXT
           if [ -n "$(gh pr list --head "$BRANCHE" --state open --json number -q '.[].number')" ]; then
             echo "pull request deja ouverte pour ce build"
           else

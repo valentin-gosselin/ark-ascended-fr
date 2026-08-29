@@ -15087,6 +15087,10 @@
   "Darker",
   "Plus sombre"
  ],
+ "\t7D5923194D5ACAD27588CAA0C4EF4C9C": [
+  "LOG",
+  "JOURNAL"
+ ],
  "\t7D632649473F05EE19A3C69D50500C22": [
   "TEXT",
   "TEXTE"
@@ -26471,6 +26475,10 @@
   "Auto Turret",
   "Tourelle automatique"
  ],
+ "\tDE9F303C4AC47A936F10E69D22B7CCB3": [
+  "LOG",
+  "JOURNAL"
+ ],
  "\tDEA15DF64C413779D803FCA7516016BB": [
   "Guard",
   "Garde"
@@ -27822,6 +27830,10 @@
  "\tE9DA93E84CE06A032F230F8E310D4227": [
   "Supply Recovery",
   "Récupération de ravitaillement"
+ ],
+ "\tE9E9C9314D3B601A37ECA1A9942EC68F": [
+  "UI",
+  "Interface"
  ],
  "\tE9F8B367495F4384C8E7E9B70CC5A674": [
   "TOGGLE CHATBOX:",
