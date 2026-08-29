@@ -175,6 +175,10 @@
   "Defense Commander",
   "Commandant de la défense"
  ],
+ "\t016DEE5841BC03A5217352B64C19DC86": [
+  "Stamina Drain On Hit",
+  "Endurance drainée par coup"
+ ],
  "\t016FAB0248723713A93CF78C4FEE0BA4": [
   "Discover creations from our featured creator Somebody",
   "Découvrez les créations de notre créateur mis en avant Somebody"
@@ -718,6 +722,10 @@
  "\t060934A141204AED18AFCCAC5D47B58D": [
   "Color",
   "Couleur"
+ ],
+ "\t060DBE68426DE0B4AD2A868CE192A1F7": [
+  "Toggle Keybind Help UI",
+  "Afficher ou masquer l'aide des touches"
  ],
  "\t0610A8FA44EAC388BEAF92B4D065367B": [
   "- Creature's rider gains {0} Hyperthermic Insulation\r\n- Creature and its rider reduce incoming damage from HEAT-based attacks by {1}%\r\n",
@@ -4199,6 +4207,10 @@
   "Veilwyn Ascension",
   "Ascension de Veilwyn"
  ],
+ "\t22BED6BB495A5F3B73920E9E82D5B347": [
+  "Uppercut (while underground)",
+  "Uppercut (sous terre)"
+ ],
  "\t22C8041346C877EC14FFEF85B59D43EE": [
   "My children? Charlotte was my tender child. I have no other",
   "Mes enfants ? Charlotte était mon enfant tendre. Je n'en ai pas d'autre"
@@ -4662,6 +4674,10 @@
  "\t26C658364CE33D21C810968A40BF9C68": [
   " has received a growth surge!",
   " a reçu une poussée de croissance !"
+ ],
+ "\t26DB53894D06DE5D31DB1CB0B7B50A3C": [
+  "Extra Damage",
+  "Dégâts supplémentaires"
  ],
  "\t26EDE4064372DDED081C40BB2B1C0087": [
   "You and I can never coexist peacefully within our borders,",
@@ -5159,6 +5175,10 @@
   "Auto Turret",
   "Tourelle automatique"
  ],
+ "\t2B28A51A41A4A8EF8499E6B26DAA9438": [
+  "Roar",
+  "Rugir"
+ ],
  "\t2B316FD140FC66C10DC72F993FE929F0": [
   "asdf",
   "asdf"
@@ -5378,6 +5398,10 @@
  "\t2D1081D9431C52333E6B6F84E48EFB66": [
   "Placement Mode",
   "Mode de placement"
+ ],
+ "\t2D15B2E1443B6294AACEBFB43529728D": [
+  "Right Roll (in air)",
+  "Tonneau à droite (en vol)"
  ],
  "\t2D1C695A47E9E7F357BB57B135D7BB48": [
   "This must be a breeding center... Plenty of pens, feeding areas, even a landing pad for fliers!",
@@ -5614,6 +5638,10 @@
  "\t2F42D09B4A1092DC657215898546D092": [
   "SELLER",
   "VENDEUR"
+ ],
+ "\t2F47A64C4BCD48830E03138B89AB10F1": [
+  "Fiery Slam (Requires Hog's Wrath)",
+  "Frappe enflammée (nécessite la Fureur du sanglier)"
  ],
  "\t2F4AA61E480DB5D139B73F836B54B346": [
   "Gain an active ability: Summon [Amount] spectral direwolves to fight at your side for [Duration] seconds.",
@@ -6915,6 +6943,10 @@
   "Tower",
   "Tour"
  ],
+ "\t3A881CA546066B2F696F6C8004C2D73E": [
+  "Bobs Tall Tales or Astraeos",
+  "Bob's Tall Tales ou Astraeos"
+ ],
  "\t3A95C07E476CA8F2F19F8DBEFBC5079A": [
   "Cannon",
   "Canon"
@@ -7587,6 +7619,10 @@
   "Arm Length",
   "Longueur des bras"
  ],
+ "\t3F8DE85C4E063C53B47AB99F7BE357BA": [
+  "Backflip (in air)",
+  "Salto arrière (en vol)"
+ ],
  "\t3F993C1849AC7BF3A5CBBEB0FC7ED907": [
   "Bob:  ...and you'll always need to stick by the folks who have your back.",
   "Bob :  ...et il faudra toujours rester proche des gens qui te soutiennent."
@@ -8095,9 +8131,17 @@
   "Wait for the Helicoprion to become Tired!",
   "Attendez que l'Hélicoprion soit fatigué !"
  ],
+ "\t43B17BE44E2D4130020F03AB441D895B": [
+  "KABOOM! (Hog's Wrath Active)",
+  "BOUM ! (Fureur du sanglier active)"
+ ],
  "\t43B3672141C8EEAF47476AB5DE6E0C51": [
   "Mute",
   "Muet"
+ ],
+ "\t43BA36344248FD7E438D32B01C8D6BB7": [
+  "Animated Cosmetic Pack",
+  "Pack de cosmétiques animés"
  ],
  "\t43BB762D4B9E7BBC1CF301A8FA44CDE2": [
   "No animal indeed... soon you can show them what true power is.",
@@ -9383,6 +9427,10 @@
   "The adversary knows you have found his weakness.",
   "L'adversaire sait que tu as trouvé sa faiblesse."
  ],
+ "\t4E4439BD4122ED16D3CFF49A87981185": [
+  "Increases Cosmic Power",
+  "Augmente la puissance cosmique"
+ ],
  "\t4E458AEE491E128752A98B857D5D1F21": [
   "Relic Gatherer",
   "Collecteur de reliques"
@@ -9574,6 +9622,10 @@
  "\t50081AF94C972ED208992B96518EF451": [
   "FOCAL DISTANCE: ",
   "DISTANCE FOCALE : "
+ ],
+ "\t50093FDF4B33D2720A349587ED8B87CB": [
+  "Frontflip (in air)",
+  "Salto avant (en vol)"
  ],
  "\t501910E44940E7921DC88CB56566955B": [
   "Primitive Weapons",
@@ -11611,6 +11663,10 @@
   "Previous Music",
   "Musique précédente"
  ],
+ "\t617007864A0879B4F891C4BDA8E28C3B": [
+  "Damage Resistance",
+  "Résistance aux dégâts"
+ ],
  "\t61722CA2498DCF9575771E8D44039645": [
   "Oh yeah? Close? Like you and I close?",
   "Ah ouais ? Proches ? Proches comme toi et moi ?"
@@ -12110,6 +12166,10 @@
  "\t657E93D14AE302158FE91FAF00E3B0E3": [
   "You have a mod currently downloading. If you leave the Mod Browser it will cancel.",
   "Vous avez un mod en cours de téléchargement. Si vous quittez le Navigateur de mods, il sera annulé."
+ ],
+ "\t6582691A437821981642269569DC4369": [
+  "Bite",
+  "Morsure"
  ],
  "\t658AC095478E84F30A8E149B1AC20E99": [
   "Feel yourself weakening? I know you do.",
@@ -13975,6 +14035,10 @@
   "I suppose I have my answer.",
   "J'ai ma réponse, je suppose."
  ],
+ "\t749DABEA456916B6DDACDEA0B787C0B3": [
+  "Dust Cloud",
+  "Nuage de poussière"
+ ],
  "\t749ED3E448A1F26F50B583A84F358EE3": [
   "Thrall Counterstrike",
   "Contre-attaque de le Serviteur"
@@ -14282,6 +14346,10 @@
  "\t777BE9BA4C7010F97EB8C9AC88B1448A": [
   "Fahrenheit Temperature",
   "Température en Fahrenheit"
+ ],
+ "\t779036064EDEEA46A8EE88A6F870C87C": [
+  "Tames",
+  "Apprivoisés"
  ],
  "\t779DBC7D466C9C9A3FBFD2B11EB0E8F4": [
   "Bob:  She offered to fly us to see the ruins for ourselves. Not sure why I let the Professor and the Doc talk me into that.",
@@ -14618,6 +14686,14 @@
  "\t7A7AEF28409838DD34CA8E805715B8B1": [
   "press",
   "appuyer"
+ ],
+ "\t7A82A9874CCAC7831F096CA5AD3068E4": [
+  "Toggle Keybind Help UI    ",
+  "Afficher ou masquer l'aide des touches    "
+ ],
+ "\t7A87574F463AB1EE9DA73A91DF86960B": [
+  "Tail Smash (in air)",
+  "Coup de queue (en vol)"
  ],
  "\t7A92E0BD4240D81126AC5AA93C6F024D": [
   "MINIMAP",
@@ -18803,6 +18879,10 @@
   "This Creature has a frail Oxygen gene, and its offspring are more likely to inherit the lower of its parent's Oxygen stats",
   "Cette créature a un gène d'Oxygène faible, et sa progéniture est plus susceptible d'hériter de la plus basse des stats d'Oxygène de ses parents"
  ],
+ "\t9C74D982437EC339CDBE05941590AD49": [
+  "KTS",
+  "NDS"
+ ],
  "\t9C8F07C74C0E18C26C3EC3BF45C9CE5C": [
   "The stark cold jolts something loose in my mind. Betrayal... murder... madness... What had I done? ",
   "Le froid glacial libère quelque chose dans mon esprit. Trahison... meurtre... folie... Qu'avais-je fait ? "
@@ -21859,6 +21939,10 @@
   "Speaker",
   "Haut-parleur"
  ],
+ "\tB6AE728F4B3BB9534A0B1AB167B94204": [
+  "Roar",
+  "Rugir"
+ ],
  "\tB6AF0B984C16518201E1EE90843E0E50": [
   "And his spectacular skills, and mighty heart.",
   "Et ses talents spectaculaires, et son grand cœur."
@@ -24339,6 +24423,10 @@
   "- ADMIN MENU -",
   "- MENU ADMIN -"
  ],
+ "\tCC8BC021460CC6E13135DF9E48A12A94": [
+  "Hogs Wrath",
+  "Fureur du sanglier"
+ ],
  "\tCC928F804A4F409D7140FC99A1A0E53E": [
   "But you will...",
   "Mais vous allez..."
@@ -25819,6 +25907,10 @@
   "Enable Tether Mode",
   "Activer le mode longe"
  ],
+ "\tD9B141F24232EC7D7DEE9D81CAACA35D": [
+  "Tides of Fortune or Astraeos",
+  "Tides of Fortune ou Astraeos"
+ ],
  "\tD9B9D4E84306FAE719F46CA311A0AAA1": [
   "VSync Mode",
   "Mode VSync"
@@ -27263,6 +27355,14 @@
   "Tame 10 Creatures at 90% or Higher Effectiveness",
   "Apprivoiser 10 créatures avec une efficacité de 90 % ou plus"
  ],
+ "\tE633F9804583F6C6D6EAA2B7ACE954D3": [
+  "ACCESSORY",
+  "ACCESSOIRE"
+ ],
+ "\tE63750AA42DE0792EFB0429FFFFC15EC": [
+  "Ships",
+  "Navires"
+ ],
  "\tE64447764BCFDB0C1F508B9D9B75E921": [
   "Danger Seeker",
   "Dévoreur de danger"
@@ -27515,6 +27615,10 @@
   "LEGS",
   "JAMBES"
  ],
+ "\tE833DFAA4C53811BFDB35AA004E892D1": [
+  "Stamina Consumption",
+  "Consommation d'endurance"
+ ],
  "\tE835729A4ED8CEF5FC3AF39DE0C8D7B4": [
   "Increase Health Buffer Threshold From: ",
   "Augmenter le seuil du tampon de santé depuis : "
@@ -27526,6 +27630,10 @@
  "\tE854D8DB495000A4C357A1BAD7C056F1": [
   "You were going to run away together, to escape judgement. But she betrayed you...",
   "Vous alliez vous enfuir ensemble, pour échapper au jugement. Mais elle vous a trahi..."
+ ],
+ "\tE8559D9A4D08F7B418C9BFAEE6CD517E": [
+  ", WIND:",
+  ", VENT :"
  ],
  "\tE8601DBF49407FB98527ED8BDF74BA54": [
   "Guard",
@@ -27782,6 +27890,10 @@
  "\tEAC845DB44CCF7DD6E8855B30377B8E3": [
   "Auto Turret",
   "Tourelle automatique"
+ ],
+ "\tEAD2D4A54D958F207A22B1A064B6A0A1": [
+  "Bury/Unbury",
+  "S'enfouir / ressortir"
  ],
  "\tEAE5C31C43A1DD5EDBAC73BE3FD281C5": [
   "Auto Turret",
@@ -28735,6 +28847,10 @@
   "Guard",
   "Garde"
  ],
+ "\tF2DCAC484F79C4B0E0E6099C37E4C395": [
+  "Hog's Breath (Requires Hog's Wrath)",
+  "Souffle du sanglier (nécessite la Fureur du sanglier)"
+ ],
  "\tF2DCEFDB4836AF19BCA71AB06175F76E": [
   " Hello? Hellooooo! Wake up, Survivor!",
   " Ohé ? Ohééééé ! Réveillez-vous, survivant !"
@@ -28930,6 +29046,10 @@
  "\tF43828AC4D7AA18A02D4B59199B3FDB5": [
   "Auto Turret",
   "Tourelle automatique"
+ ],
+ "\tF45338C14E563C4137B3EB8D1E2889E3": [
+  "Tusk Gore",
+  "Coup de défenses"
  ],
  "\tF45CE20645BF0D4D2F385889C73FB0FB": [
   "CAMERA",
@@ -29538,6 +29658,10 @@
  "\tF8B5449B40AA3B30E82AA1B20C96E830": [
   "Harvest 10,000 Resources",
   "Récolter 10 000 ressources"
+ ],
+ "\tF8CD9EF841E486E1E6E7F4B049E924E1": [
+  "Melee    ",
+  "Mêlée    "
  ],
  "\tF8D589E74E8D6BA286025AB0C63729F7": [
   "- BUY IN -",
@@ -30386,6 +30510,10 @@
  "\tFF6B434942DFAA722A1FC0ADDF4A36C6": [
   "Search Filter",
   "Rechercher"
+ ],
+ "\tFF71F93E4ECD1FA11BE121AEB2381708": [
+  "Left Roll (in air)",
+  "Tonneau à gauche (en vol)"
  ],
  "\tFF7A927647F893287CE2D5BED9A6E048": [
   "Deltoid Muscle",
@@ -34199,6 +34327,14 @@
   "Claim 3 baby Lumina",
   "Réclamer 3 bébés Lumina"
  ],
+ "DT_ShipSkills\t30CE99E34DA0C0F3FA201098EB1E695B": [
+  "Ramming damage bonus",
+  "Bonus de dégâts d'éperonnage"
+ ],
+ "DT_ShipSkills\t8E58D7ED46476285C5EABB8EB5F3601A": [
+  "Duration (seconds)",
+  "Durée (secondes)"
+ ],
  "DT_ShipSkills\tAdvancedLanteen_SkillDescription": [
   "Allied Ships within range gain a [MovementSpeedBonus]m/s movespeed bonus. In addition, this Ship reduces movement speed penalties while sailing into wind by {WindPenaltyReduction} on maps with directional wind.",
   "Les navires alliés à portée gagnent un bonus de vitesse de déplacement de [MovementSpeedBonus] m/s. De plus, ce navire réduit les pénalités de vitesse de déplacement en naviguant contre le vent de {WindPenaltyReduction} sur les cartes avec vent directionnel."
@@ -34215,13 +34351,37 @@
   "Attack Dinghies",
   "Attaque des canots"
  ],
+ "DT_ShipSkills\tBA129B20454D4F93C17728BEA2D29EE2": [
+  "Duration (seconds)",
+  "Durée (secondes)"
+ ],
  "DT_ShipSkills\tBoardingParty_SkillDescription": [
   "Active Ability: For [Duration] seconds, allied Survivors on this Ship deal {!DamageBonus} more damage, and kills restore +[StaminaPerKill] Stamina.",
-  "Capacité active : pendant [Duration] secondes, les Survivants alliés sur ce vaisseau infligent {!DamageBonus} de dégâts supplémentaires, et les éliminations restaurent +[StaminaPerKill] d'Endurance."
+  "Capacité active : pendant [Duration] secondes, les Survivants alliés sur ce navire infligent {!DamageBonus} de dégâts supplémentaires, et les éliminations restaurent +[StaminaPerKill] d'Endurance."
  ],
  "DT_ShipSkills\tBoardingParty_SkillName": [
   "Boarding Party",
   "Groupe d'abordage"
+ ],
+ "DT_ShipSkills\tC18033DE46E871260430B1A1EA2E417F": [
+  "Active Ability: For [Duration] seconds, this Ship gains {!MovementSpeedBonus} movement speed and deals {!RamDamageBonus} more ramming damage. This skill will deactivate if this ship rams into another ship.",
+  "Capacité active : pendant [Duration] secondes, ce navire gagne {!MovementSpeedBonus} de vitesse de déplacement et inflige {!RamDamageBonus} de dégâts d'éperonnage supplémentaires. Cette compétence se désactive si le navire éperonne un autre navire."
+ ],
+ "DT_ShipSkills\tC441C66D4A87F41197E270882A9A6931": [
+  "Active Ability: For [Duration] seconds, this Ship's Flamethrowers activate, damaging enemies in front of the ship.",
+  "Capacité active : pendant [Duration] secondes, les lance-flammes de ce navire s'activent et blessent les ennemis devant lui."
+ ],
+ "DT_ShipSkills\tC9343B03455C53F1774F2C8FD5AA5096": [
+  "Ramming Speed",
+  "Vitesse d'éperonnage"
+ ],
+ "DT_ShipSkills\tD1F3E92C417334BC88461BBAB2446996": [
+  "Greek Fire",
+  "Feu grégeois"
+ ],
+ "DT_ShipSkills\tDA9DB3F84250FCAC946708BF31864486": [
+  "Movement speed bonus",
+  "Bonus de vitesse de déplacement"
  ],
  "DT_ShipSkills\tExposeWeakness_SkillDescription": [
   "Direct cannon hits mark the target, causing it to take {DamagePerStack} more damage from all cannons. Stacks up to [MaxStacks] times for [Duration] seconds.",
@@ -34241,7 +34401,7 @@
  ],
  "DT_ShipSkills\tGalley_SkillDescription": [
   "Allied Players on this Ship gain {!RegenBonus} Health and Stamina regen, and lose Water and Food {ConsumptionReduction} slower than normal.",
-  "Les joueurs alliés sur ce vaisseau gagnent {!RegenBonus} de régénération de Santé et d'Endurance, et perdent leur Eau et Nourriture {ConsumptionReduction} plus lentement que la normale."
+  "Les joueurs alliés sur ce navire gagnent {!RegenBonus} de régénération de Santé et d'Endurance, et perdent leur Eau et Nourriture {ConsumptionReduction} plus lentement que la normale."
  ],
  "DT_ShipSkills\tGalley_SkillName": [
   "Galley",
@@ -34261,7 +34421,7 @@
  ],
  "DT_ShipSkills\tGhostOars_SkillDescription": [
   "Active Ability: For [Duration] seconds, this Ship gains {!MovementSpeedBonus} movement speed and deals {!RamDamageBonus} more ramming damage.",
-  "Capacité active : pendant [Duration] secondes, ce vaisseau gagne {!MovementSpeedBonus} de vitesse de déplacement et inflige {!RamDamageBonus} de dégâts d'éperonnage supplémentaires."
+  "Capacité active : pendant [Duration] secondes, ce navire gagne {!MovementSpeedBonus} de vitesse de déplacement et inflige {!RamDamageBonus} de dégâts d'éperonnage supplémentaires."
  ],
  "DT_ShipSkills\tGhostOars_SkillName": [
   "Ghostly Wind",

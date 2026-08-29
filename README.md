@@ -245,11 +245,31 @@ différentes, chacune validée contre les hashes réels du jeu :
   s'en sert pour repérer une traduction périmée et l'ignorer - c'est pour cela
   que `data/textes_widgets.json` stocke aussi la source anglaise.
 
-Pour refaire le balayage après une mise à jour du jeu :
+**La veille automatique ne voit pas ces textes.** Elle compare l'anglais du
+fichier de langue à une référence figée : un contenu dont les textes ne s'y
+trouvent pas ne produit aucun écart, et elle annonce en toute bonne foi qu'il
+n'y a rien à traduire. C'est arrivé avec le Concavenator, sorti le 26 août
+2026 : 283 paquets d'assets dans le jeu, zéro chaîne dans le fichier de langue,
+et l'aide des touches de la créature affichée en anglais.
 
-    tools/retoc_cli-*/retoc manifest <pakchunk0-Windows.utoc> work/pakstore.json
+Détecter cela en intégration continue demanderait de télécharger les assets du
+jeu, soit 212 Go, contre 1,1 Go pour le seul pak de langue. **Après une mise à
+jour de contenu (nouvelle créature, nouvelle carte), il faut donc relancer le
+balayage à la main**, avec le jeu installé :
+
+    tools/retoc_cli-*/retoc manifest <pakchunk0-Windows.utoc>   # ecrit pakstore.json
     python3 tools/balayer_assets.py <liste.json> work/orphelines.json
     python3 tools/reporter_widgets.py work/orphelines.json --ecrire
+
+Le balayage complet prend environ une heure. Écrivez ses fichiers dans `work/`
+et non dans `/tmp` : sur bien des systèmes `/tmp` vit en mémoire et disparaît au
+redémarrage.
+
+Un contrôle rapide permet de repérer une créature oubliée sans tout balayer :
+chercher son nom dans `work/en.json`. S'il n'y est pas alors que ses assets
+existent, ses textes n'ont pas été collectés. Attention, les dossiers d'assets
+portent souvent un nom de code (`Gorilla` pour le Mégapithèque, `Owl` pour la
+Chouette des neiges) : l'absence du nom de dossier ne prouve rien à elle seule.
 
 ### Notes techniques
 
