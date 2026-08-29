@@ -87,6 +87,24 @@ def main():
     if hors and not avec_add:
         print(f"{len(hors)} clés inconnues écartées (protection)")
         edits = {k: v for k, v in edits.items() if k in fr_keys}
+    # Propositions communautaires : une contribution deposee depuis l'interface
+    # web arrive sous forme d'un petit fichier par personne. Les appliquer
+    # directement evite d'imposer une seconde fusion apres chaque contribution ;
+    # tools/integrer_propositions.py les replie dans les donnees quand on veut.
+    props_widgets = {}
+    dossier = os.path.join(ROOT, "data/propositions")
+    if os.path.isdir(dossier):
+        n_prop = 0
+        for nom in sorted(os.listdir(dossier)):
+            if not nom.endswith(".json"):
+                continue
+            p = json.load(open(os.path.join(dossier, nom), encoding="utf-8"))
+            edits.update(p.get("corrections", {}))
+            props_widgets.update(p.get("widgets", {}))
+            n_prop += 1
+        if n_prop:
+            print(f"propositions : {n_prop} fichier(s), "
+                  f"{len(props_widgets)} texte(s) de widget")
     merged = os.path.join(WORK, "edits_merged.json")
     json.dump(edits, open(merged, "w"), ensure_ascii=False, indent=0)
     # 3. locres patché + pak
@@ -103,6 +121,11 @@ def main():
     # peuvent pas etre greffees depuis l'anglais, elles sont creees de toutes
     # pieces avec leurs hashes calcules (cf. tools/cityhash.py).
     widgets = os.path.join(ROOT, "data/textes_widgets.json")
+    if props_widgets and os.path.exists(widgets):
+        fusion = json.load(open(widgets, encoding="utf-8"))
+        fusion.update(props_widgets)
+        widgets = os.path.join(WORK, "textes_widgets_effectif.json")
+        json.dump(fusion, open(widgets, "w", encoding="utf-8"), ensure_ascii=False)
     args_sup = [widgets] if (avec_add and os.path.exists(widgets)) else []
     if args_sup:
         print(f"textes_widgets.json: {len(json.load(open(widgets)))} entrées")

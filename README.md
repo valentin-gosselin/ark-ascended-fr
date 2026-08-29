@@ -94,7 +94,13 @@ le monde.
 
 - **Le plus simple** : [ouvrir une issue](../../issues/new/choose) avec une
   capture d'écran et le texte fautif.
-- **Mieux** : proposer une pull request d'une ligne dans
+- **Traduire vous-même, sans rien installer** :
+  [l'interface de traduction](https://valentin-gosselin.github.io/ark-ascended-fr/)
+  affiche les 47 478 lignes du jeu avec leur traduction actuelle. Cherchez,
+  corrigez, et le bouton « Proposer » ouvre GitHub avec votre contribution déjà
+  écrite : un fork, une branche et une pull request sont créés automatiquement.
+  Il faut un compte GitHub, gratuit, et rien d'autre.
+- **En ligne de commande** : une pull request d'une ligne dans
   `data/corrections.json` (`"namespace\tclé": "texte corrigé"` : la clé se
   retrouve en cherchant le texte anglais dans `work/en.json` après extraction,
   ou demandez dans l'issue).
@@ -200,6 +206,33 @@ depuis n'importe quel jeu Unreal ou le SDK Oodle).
   anglaise y est obligatoire : ces clés n'existent dans aucun locres, rien
   d'autre ne permet de retrouver le texte d'origine (voir plus bas)
 
+### L'interface de traduction
+
+`site/` est une page statique publiee sur GitHub Pages par
+`.github/workflows/pages.yml`. Elle sert a ceux qui veulent traduire sans
+connaitre Git : recherche dans les 47 478 lignes, filtre sur celles qui n'ont
+pas de traduction propre, champ de proposition.
+
+Le bouton « Proposer » n'ouvre pas la pull request lui-meme : GitHub n'autorise
+pas l'authentification depuis une page statique, ses points d'entree ne
+renvoyant pas les en-tetes CORS. Il ouvre l'editeur de GitHub **prerempli**, ce
+qui revient au meme pour le contributeur et evite d'avoir a enregistrer une
+application OAuth. La contribution atterrit dans `data/propositions/`, un petit
+fichier par personne :
+
+    {"corrections": {"namespace\tcle": "texte"},
+     "widgets":     {"namespace\tcle": ["source anglaise", "texte"]}}
+
+Deux destinations parce que les textes non collectes gardent leur source
+anglaise, dont le hash conditionne leur prise en compte par le moteur.
+
+`tools/valider_donnees.py` verifie ces fichiers comme le reste : variables du
+jeu preservees, espaces de bord, pas de tiret cadratin, cle connue du jeu,
+source anglaise inchangee. `build.py` les applique directement, en derniere
+couche : une contribution fusionnee prend effet sans autre manipulation.
+`tools/integrer_propositions.py --ecrire` les replie dans les donnees et les
+supprime quand elles s'accumulent.
+
 ### Outils (`tools/`)
 
 - `pakv12.py` : lecteur du format pak V12 custom de Wildcard (index en clair,
@@ -220,6 +253,8 @@ depuis n'importe quel jeu Unreal ou le SDK Oodle).
   ailleurs dans le patch
 - `veille_assets.py` : repère le contenu neuf dont les textes n'ont jamais été
   collectés, en ne balayant que les paquets apparus depuis le dernier passage
+- `exporter_site.py` : produit les données de l'interface de traduction
+- `integrer_propositions.py` : replie les contributions dans les données
 
 ### Les textes que le jeu n'a jamais proposés à la traduction
 
