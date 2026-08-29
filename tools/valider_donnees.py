@@ -90,6 +90,73 @@ def main():
                 problemes.append(f"textes_widgets.json : {k!r} : tiret cadratin, "
                                  f"ecrire un tiret simple")
 
+    # Propositions communautaires deposees depuis l'interface web : un petit
+    # fichier par contribution, verifie ici comme le reste. C'est le filet de
+    # securite d'un contributeur qui ne connait ni Git ni le format des cles.
+    dossier = os.path.join(RACINE, "data/propositions")
+    n_prop = 0
+    if os.path.isdir(dossier):
+        source_en = {}
+        chemin_ref = os.path.join(RACINE, "data/reference_en.json")
+        if os.path.exists(chemin_ref):
+            source_en = json.load(open(chemin_ref))["chaines"]
+        widgets_connus = {}
+        chemin_w = os.path.join(RACINE, "data/textes_widgets.json")
+        if os.path.exists(chemin_w):
+            widgets_connus = json.load(open(chemin_w))
+
+        for nom in sorted(os.listdir(dossier)):
+            if not nom.endswith(".json"):
+                problemes.append(f"propositions/{nom} : seuls des fichiers .json sont acceptes")
+                continue
+            try:
+                p = json.load(open(os.path.join(dossier, nom), encoding="utf-8"))
+            except (OSError, json.JSONDecodeError) as e:
+                erreur(f"propositions/{nom} : illisible ({e})")
+                return 1
+            if not isinstance(p, dict) or set(p) - {"corrections", "widgets", "auteur"}:
+                problemes.append(f"propositions/{nom} : attendu « corrections » et « widgets »")
+                continue
+
+            for cle, texte in (p.get("corrections") or {}).items():
+                n_prop += 1
+                etiq = f"propositions/{nom} : {cle!r}"
+                if not isinstance(texte, str) or not texte.strip():
+                    problemes.append(f"{etiq} : traduction vide")
+                    continue
+                if CADRATIN.search(texte):
+                    problemes.append(f"{etiq} : tiret cadratin, ecrire un tiret simple")
+                src = source_en.get(cle)
+                if src is None:
+                    problemes.append(f"{etiq} : cle inconnue du jeu")
+                    continue
+                if sorted(VARIABLE.findall(src)) != sorted(VARIABLE.findall(texte)):
+                    problemes.append(f"{etiq} : les variables ne correspondent pas a la source")
+                if (src[:1] == " ") != (texte[:1] == " ") or (src[-1:] == " ") != (texte[-1:] == " "):
+                    problemes.append(f"{etiq} : espace de debut ou de fin modifiee")
+
+            for cle, paire in (p.get("widgets") or {}).items():
+                n_prop += 1
+                etiq = f"propositions/{nom} : {cle!r}"
+                if not (isinstance(paire, list) and len(paire) == 2
+                        and all(isinstance(x, str) for x in paire)):
+                    problemes.append(f"{etiq} : attendu une paire [source, traduction]")
+                    continue
+                src, texte = paire
+                if not texte.strip():
+                    problemes.append(f"{etiq} : traduction vide")
+                    continue
+                if CADRATIN.search(texte):
+                    problemes.append(f"{etiq} : tiret cadratin, ecrire un tiret simple")
+                # la source anglaise doit rester au caractere pres : son hash
+                # conditionne la prise en compte de la ligne par le moteur
+                if cle in widgets_connus and widgets_connus[cle][0] != src:
+                    problemes.append(f"{etiq} : la source anglaise a ete modifiee")
+                if sorted(VARIABLE.findall(src)) != sorted(VARIABLE.findall(texte)):
+                    problemes.append(f"{etiq} : les variables ne correspondent pas a la source")
+                if (src[:1] == " ") != (texte[:1] == " ") or (src[-1:] == " ") != (texte[-1:] == " "):
+                    problemes.append(f"{etiq} : espace de debut ou de fin modifiee")
+
     ref = os.path.join(RACINE, "data/reference_en.json")
     ecarts = []
     if os.path.exists(ref):
@@ -113,7 +180,7 @@ def main():
     if problemes:
         return 1
     print(f"{len(trad)} traductions validees, {n_widgets} textes de widgets, "
-          f"{len(ecarts)} ecart(s) connu(s)")
+          f"{n_prop} proposition(s), {len(ecarts)} ecart(s) connu(s)")
     return 0
 
 

@@ -1,0 +1,47 @@
+name: Publier l'interface de traduction
+
+# Sert site/ sur GitHub Pages. Les donnees consultees par la page (47 478
+# lignes, 6,6 Mo) sont regenerees ici a partir de data/ : elles ne sont jamais
+# versionnees, elles n'en sont qu'une projection.
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - "site/**"
+      - "data/**"
+      - "tools/exporter_site.py"
+      - ".github/workflows/pages.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Une seule publication a la fois, sans annuler celle en cours.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  publier:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploiement.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Verifier les donnees avant de les publier
+        run: python3 tools/valider_donnees.py
+
+      - name: Produire les donnees de la page
+        run: python3 tools/exporter_site.py site/donnees.json
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+      - id: deploiement
+        uses: actions/deploy-pages@v4

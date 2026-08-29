@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TradFR - proposer une traduction</title>
+<style>
+:root {
+  color-scheme: light dark;
+  --fond: #f6f7f9;
+  --carte: #ffffff;
+  --bord: #d8dce2;
+  --texte: #1b1f24;
+  --doux: #59626d;
+  --accent: #2f6f4f;
+  --accent-fond: #e6f2ec;
+  --alerte: #8a4b16;
+  --alerte-fond: #fdf1e3;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --fond: #14171a;
+    --carte: #1c2024;
+    --bord: #2e343b;
+    --texte: #e8eaed;
+    --doux: #98a2ad;
+    --accent: #6cc196;
+    --accent-fond: #1a2b23;
+    --alerte: #e0a366;
+    --alerte-fond: #2a2118;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--fond); color: var(--texte);
+  font: 15px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+.enveloppe { max-width: 1080px; margin: 0 auto; padding: 24px 16px 96px; }
+h1 { font-size: 22px; margin: 0 0 4px; }
+.sous { color: var(--doux); margin: 0 0 20px; }
+.carte {
+  background: var(--carte); border: 1px solid var(--bord);
+  border-radius: 10px; padding: 14px 16px; margin-bottom: 14px;
+}
+.barre { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+input[type=search], input[type=text], textarea {
+  font: inherit; color: inherit; background: var(--carte);
+  border: 1px solid var(--bord); border-radius: 7px; padding: 8px 10px;
+}
+input[type=search] { flex: 1 1 260px; }
+button {
+  font: inherit; cursor: pointer; border-radius: 7px; padding: 8px 13px;
+  border: 1px solid var(--bord); background: var(--carte); color: inherit;
+}
+button.actif { background: var(--accent-fond); border-color: var(--accent); color: var(--accent); font-weight: 600; }
+button.principal { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+button:disabled { opacity: .5; cursor: default; }
+.compte { color: var(--doux); font-size: 13px; margin: 10px 2px; }
+.ligne { border-top: 1px solid var(--bord); padding: 12px 0; }
+.ligne:first-child { border-top: 0; }
+.en { margin: 0 0 7px; white-space: pre-wrap; overflow-wrap: anywhere;
+      max-height: 220px; overflow-y: auto; }
+.cle { font: 12px/1.4 ui-monospace, SFMono-Regular, Menlo, monospace; color: var(--doux); }
+.etiq {
+  display: inline-block; font-size: 11px; padding: 1px 7px; border-radius: 20px;
+  background: var(--alerte-fond); color: var(--alerte); margin-left: 6px;
+}
+.etiq.widget { background: var(--accent-fond); color: var(--accent); }
+textarea { width: 100%; min-height: 42px; resize: vertical; }
+textarea.modifie { border-color: var(--accent); background: var(--accent-fond); }
+.panier {
+  position: fixed; left: 0; right: 0; bottom: 0; background: var(--carte);
+  border-top: 1px solid var(--bord); padding: 11px 16px;
+}
+.panier .dedans { max-width: 1080px; margin: 0 auto; display: flex; gap: 12px; align-items: center; }
+.panier p { margin: 0; flex: 1; color: var(--doux); font-size: 14px; }
+.pagination { display: flex; gap: 8px; align-items: center; margin-top: 14px; }
+details summary { cursor: pointer; font-weight: 600; }
+details p, details li { color: var(--doux); }
+code { font: 12.5px ui-monospace, SFMono-Regular, Menlo, monospace;
+       background: var(--fond); padding: 1px 5px; border-radius: 4px; }
+a { color: var(--accent); }
+</style>
+</head>
+<body>
+<div class="enveloppe">
+
+<h1>TradFR - proposer une traduction</h1>
+<p class="sous">Toutes les lignes de texte d'ARK: Survival Ascended, avec leur traduction actuelle. Corrigez ce qui vous gene, proposez ce qui manque.</p>
+
+<div class="carte">
+  <details>
+    <summary>Comment ca marche</summary>
+    <p>Cherchez une ligne, modifiez le francais, puis cliquez sur <strong>Proposer</strong> en bas. GitHub s'ouvre avec votre contribution deja ecrite : il ne reste qu'a confirmer. Un fork, une branche et une pull request sont crees automatiquement.</p>
+    <p>Il faut un compte GitHub, gratuit. Vous n'avez rien a installer et vous ne pouvez rien casser : chaque proposition est verifiee automatiquement, puis relue avant d'etre integree.</p>
+    <p>Quelques reperes pour traduire :</p>
+    <ul>
+      <li>Les noms d'objets et de creatures suivent <strong>ARK: Survival Evolved</strong> : Smilodon, Croquette, Argile, Dino-Porte.</li>
+      <li>Les variables entre accolades comme <code>{0}</code>, <code>%s</code> ou <code>&lt;RichColor&gt;</code> doivent etre <strong>reprises telles quelles</strong>, sinon le texte s'affiche tronque en jeu.</li>
+      <li>Gardez les espaces de debut et de fin a l'identique : le jeu colle souvent plusieurs morceaux bout a bout.</li>
+      <li>Espace insecable avant <code>! ? : ;</code> et pas de tiret cadratin, on ecrit un tiret simple.</li>
+    </ul>
+  </details>
+</div>
+
+<div class="carte">
+  <div class="barre">
+    <input type="search" id="q" placeholder="Chercher en francais ou en anglais..." autocomplete="off">
+    <button id="f-tout" class="actif">Tout</button>
+    <button id="f-manquant">Sans traduction</button>
+    <button id="f-widget">Textes non collectes</button>
+  </div>
+  <p class="compte" id="compte">Chargement des donnees...</p>
+</div>
+
+<div class="carte" id="liste"></div>
+<div class="pagination" id="pagination"></div>
+
+</div>
+
+<div class="panier" hidden id="panier">
+  <div class="dedans">
+    <p id="panier-texte"></p>
+    <button id="vider">Tout annuler</button>
+    <button id="proposer" class="principal">Proposer</button>
+  </div>
+</div>
+
+<script>
+const DEPOT = "valentin-gosselin/ark-ascended-fr";
+const BRANCHE = "master";
+// L'URL d'edition prefille l'editeur de GitHub. Les navigateurs et les serveurs
+// plafonnent la longueur d'une URL : au-dela d'une quinzaine de lignes la
+// contribution ne passerait plus, et une pull request courte se relit mieux.
+const MAX_PAR_ENVOI = 15;
+const PAR_PAGE = 60;
+
+const LOCRES = 0, WIDGET = 1;
+let lignes = [], filtrees = [], page = 0, filtre = "tout";
+const modifs = new Map();
+
+const $ = (id) => document.getElementById(id);
+const sansAccent = (s) => s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
+// « Rex » rendu par « Rex » n'est pas une lacune : on ne signale que les
+// chaines vides, et les textes de plusieurs mots restes identiques a l'anglais.
+const DEUX_MOTS = /[A-Za-z]{2,}\s+[A-Za-z]{2,}/;
+const manquante = (l) =>
+  !l[2] || (l[2].trim() === l[1].trim() && DEUX_MOTS.test(l[1]));
+
+fetch("donnees.json")
+  .then((r) => r.json())
+  .then((d) => {
+    lignes = d.lignes;
+    appliquer();
+  })
+  .catch(() => { $("compte").textContent = "Impossible de charger les donnees."; });
+
+function appliquer() {
+  const q = sansAccent($("q").value.trim());
+  filtrees = lignes.filter((l) => {
+    if (filtre === "manquant" && !manquante(l)) return false;
+    if (filtre === "widget" && l[3] !== WIDGET) return false;
+    if (!q) return true;
+    return sansAccent(l[1]).includes(q) || sansAccent(l[2]).includes(q);
+  });
+  page = 0;
+  rendre();
+}
+
+function rendre() {
+  const total = filtrees.length;
+  const debut = page * PAR_PAGE;
+  const lot = filtrees.slice(debut, debut + PAR_PAGE);
+
+  $("compte").textContent = total
+    ? `${total.toLocaleString("fr-FR")} ligne${total > 1 ? "s" : ""}` +
+      (total > PAR_PAGE ? `, affichage ${debut + 1} a ${Math.min(debut + PAR_PAGE, total)}` : "")
+    : "Aucune ligne ne correspond.";
+
+  const liste = $("liste");
+  liste.textContent = "";
+  for (const l of lot) {
+    const [cle, en, fr, type] = l;
+    const bloc = document.createElement("div");
+    bloc.className = "ligne";
+
+    const p = document.createElement("p");
+    p.className = "en";
+    p.textContent = en;
+    bloc.appendChild(p);
+
+    const zone = document.createElement("textarea");
+    zone.value = modifs.has(cle) ? modifs.get(cle) : fr;
+    zone.rows = Math.min(10, Math.ceil((zone.value.length || 1) / 90));
+    if (modifs.has(cle)) zone.classList.add("modifie");
+    zone.addEventListener("input", () => {
+      const v = zone.value;
+      if (v === fr) modifs.delete(cle); else modifs.set(cle, v);
+      zone.classList.toggle("modifie", modifs.has(cle));
+      majPanier();
+    });
+    bloc.appendChild(zone);
+
+    const bas = document.createElement("div");
+    bas.style.marginTop = "6px";
+    const c = document.createElement("span");
+    c.className = "cle";
+    c.textContent = cle.replace("\t", " / ");
+    bas.appendChild(c);
+    if (manquante(l)) {
+      const e = document.createElement("span");
+      e.className = "etiq";
+      e.textContent = "sans traduction";
+      bas.appendChild(e);
+    }
+    if (type === WIDGET) {
+      const e = document.createElement("span");
+      e.className = "etiq widget";
+      e.textContent = "texte non collecte par le jeu";
+      bas.appendChild(e);
+    }
+    bloc.appendChild(bas);
+    liste.appendChild(bloc);
+  }
+
+  const pag = $("pagination");
+  pag.textContent = "";
+  if (total > PAR_PAGE) {
+    const pages = Math.ceil(total / PAR_PAGE);
+    const prec = document.createElement("button");
+    prec.textContent = "Precedent";
+    prec.disabled = page === 0;
+    prec.onclick = () => { page--; rendre(); window.scrollTo(0, 0); };
+    const suiv = document.createElement("button");
+    suiv.textContent = "Suivant";
+    suiv.disabled = page >= pages - 1;
+    suiv.onclick = () => { page++; rendre(); window.scrollTo(0, 0); };
+    const etat = document.createElement("span");
+    etat.className = "compte";
+    etat.textContent = `page ${page + 1} sur ${pages}`;
+    pag.append(prec, suiv, etat);
+  }
+  majPanier();
+}
+
+function majPanier() {
+  const n = modifs.size;
+  $("panier").hidden = n === 0;
+  if (!n) return;
+  const trop = n > MAX_PAR_ENVOI;
+  $("panier-texte").textContent = trop
+    ? `${n} lignes modifiees. Envoyez-en ${MAX_PAR_ENVOI} au plus a la fois : au-dela, GitHub refuse le lien.`
+    : `${n} ligne${n > 1 ? "s" : ""} modifiee${n > 1 ? "s" : ""}.`;
+  $("proposer").disabled = trop;
+}
+
+$("q").addEventListener("input", appliquer);
+for (const [id, val] of [["f-tout", "tout"], ["f-manquant", "manquant"], ["f-widget", "widget"]]) {
+  $(id).addEventListener("click", () => {
+    filtre = val;
+    for (const b of ["f-tout", "f-manquant", "f-widget"]) $(b).classList.toggle("actif", b === id);
+    appliquer();
+  });
+}
+$("vider").addEventListener("click", () => { modifs.clear(); rendre(); });
+
+$("proposer").addEventListener("click", () => {
+  // Deux destinations : les chaines du fichier de langue vont dans la couche
+  // de corrections, les textes non collectes gardent leur source anglaise
+  // parce que son hash conditionne leur prise en compte par le moteur.
+  const parCle = new Map(lignes.map((l) => [l[0], l]));
+  const contenu = { corrections: {}, widgets: {} };
+  for (const [cle, texte] of modifs) {
+    const l = parCle.get(cle);
+    if (!l) continue;
+    if (l[3] === WIDGET) contenu.widgets[cle] = [l[1], texte];
+    else contenu.corrections[cle] = texte;
+  }
+  const jeton = Math.random().toString(36).slice(2, 8);
+  const nom = `data/propositions/${new Date().toISOString().slice(0, 10)}-${jeton}.json`;
+  const url = `https://github.com/${DEPOT}/new/${BRANCHE}` +
+    `?filename=${encodeURIComponent(nom)}` +
+    `&value=${encodeURIComponent(JSON.stringify(contenu, null, 1))}`;
+  window.open(url, "_blank", "noopener");
+});
+</script>
+</body>
+</html>
