@@ -1,0 +1,327 @@
+{
+ "Content\t106180718": {
+  "avant": "Apotheosis, 100% W",
+  "apres": "Apotheosis",
+  "traduction_actuelle": "Apotheosis, 100% W"
+ },
+ "Content\t3966249463": {
+  "avant": "Bloodfall's Hallow, 40% W",
+  "apres": "Bloodfall's Hallow",
+  "traduction_actuelle": "Le Val de Bloodfall, 40 % O"
+ },
+ "Content\t4010879623": {
+  "avant": "Central Canyons, 65% W",
+  "apres": "Central Canyons",
+  "traduction_actuelle": "Canyons centraux, 65 % O"
+ },
+ "Content\t3965361091": {
+  "avant": "Central Dunes, 100% W",
+  "apres": "Central Dunes",
+  "traduction_actuelle": "Dunes centrales, 100 % W"
+ },
+ "Content\t2603597470": {
+  "avant": "Central High Desert, 20% W",
+  "apres": "Central High Desert",
+  "traduction_actuelle": "Haut désert central, 20 % O"
+ },
+ "Content\t304233085": {
+  "avant": "Central Mountains, 85% W",
+  "apres": "Central Mountains",
+  "traduction_actuelle": "Montagnes centrales, 85 % O"
+ },
+ "Content\t2190492857": {
+  "avant": "Central Oasis, 40% W",
+  "apres": "Central Oasis",
+  "traduction_actuelle": "Oasis centrale, 40 % O"
+ },
+ "Content\t342803853": {
+  "avant": "Central River, 100% W",
+  "apres": "Central River",
+  "traduction_actuelle": "Rivière centrale, 100 % W"
+ },
+ "Content\t788808566": {
+  "avant": "Copper Peaks, 40% W",
+  "apres": "Copper Peaks",
+  "traduction_actuelle": "Pics de cuivre, 40 % W"
+ },
+ "Content\t2100103852": {
+  "avant": "Crook's Canyon, 60% W",
+  "apres": "Crook's Canyon",
+  "traduction_actuelle": "Canyon du Brigand, 60 % W"
+ },
+ "Content\t2777316296": {
+  "avant": "Desert Savannah, 40% W",
+  "apres": "Desert Savannah",
+  "traduction_actuelle": "Savane désertique, 40 % O"
+ },
+ "Content\t1603979720": {
+  "avant": "Eastern Badlands - 40% Wind",
+  "apres": "Eastern Badlands",
+  "traduction_actuelle": "Terres désolées orientales - 40 % de vent"
+ },
+ "Content\t4269289180": {
+  "avant": "Eastern Dunes, 100% W",
+  "apres": "Eastern Dunes",
+  "traduction_actuelle": "Dunes orientales, 100 % W"
+ },
+ "Content\t34036965": {
+  "avant": "Eastern Low Desert, 20% W",
+  "apres": "Eastern Low Desert",
+  "traduction_actuelle": "Désert bas oriental, 20 % O"
+ },
+ "Content\t1416693347": {
+  "avant": "Eastern Oasis, 40% W",
+  "apres": "Eastern Oasis",
+  "traduction_actuelle": "Oasis orientale, 40 % O"
+ },
+ "Content\t1875414225": {
+  "avant": "Eldritch Isle, 100% W",
+  "apres": "Eldritch Isle",
+  "traduction_actuelle": "Île occulte, 100 % W"
+ },
+ "Content\t459767830": {
+  "avant": "Emberfall, 100% W",
+  "apres": "Emberfall",
+  "traduction_actuelle": "Emberfall, 100 % O"
+ },
+ "Content\t828477148": {
+  "avant": "Fire Swamp, 40% W",
+  "apres": "Fire Swamp",
+  "traduction_actuelle": "Marais de feu, 40 % O"
+ },
+ "Content\t4248734417": {
+  "avant": "Halcyon Plains, 80% W",
+  "apres": "Halcyon Plains",
+  "traduction_actuelle": "Plaines sereines, 80 % W"
+ },
+ "Content\t1460102601": {
+  "avant": "LowerHalcyon Plains, 80% W",
+  "apres": "LowerHalcyon Plains",
+  "traduction_actuelle": "Plaines basses d'Halcyon, 80 % O"
+ },
+ "Content\t3265012676": {
+  "avant": "Midland Savannah, 85% W",
+  "apres": "Midland Savannah",
+  "traduction_actuelle": "Savane centrale, 85 % O"
+ },
+ "Content\t2654385893": {
+  "avant": "Northern Canyons, 65% W",
+  "apres": "Northern Canyons",
+  "traduction_actuelle": "Canyons du Nord, 65 % O"
+ },
+ "Content\t1427880896": {
+  "avant": "Northern Dunes, 100% W",
+  "apres": "Northern Dunes",
+  "traduction_actuelle": "Dunes du Nord, 100 % O"
+ },
+ "Content\t1608198668": {
+  "avant": "Northern East Badlands - 40% Wind",
+  "apres": "Northern East Badlands",
+  "traduction_actuelle": "Terres désolées du Nord-Est - 40 % de vent"
+ },
+ "Content\t332997423": {
+  "avant": "Northern East Dunes, 100% W",
+  "apres": "Northern East Dunes",
+  "traduction_actuelle": "Dunes du Nord-Est, 100 % O"
+ },
+ "Content\t4140676642": {
+  "avant": "Northern East High Desert, 20% W",
+  "apres": "Northern East High Desert",
+  "traduction_actuelle": "Haut désert du Nord-Est, 20 % O"
+ },
+ "Content\t2769659763": {
+  "avant": "Northern High Desert, 20% W",
+  "apres": "Northern High Desert",
+  "traduction_actuelle": "Haut désert septentrional, 20 % O"
+ },
+ "Content\t3284247045": {
+  "avant": "Northern Islands, 80% W",
+  "apres": "Northern Islands",
+  "traduction_actuelle": "Îles du Nord, 80 % O"
+ },
+ "Content\t3498515828": {
+  "avant": "Northern Mountains Summit, 85% W",
+  "apres": "Northern Mountains Summit",
+  "traduction_actuelle": "Sommet des montagnes du Nord, 85 % O"
+ },
+ "Content\t1990163714": {
+  "avant": "Northern Mountains, 85% W",
+  "apres": "Northern Mountains",
+  "traduction_actuelle": "Montagnes du Nord, 85 % O"
+ },
+ "Content\t992148033": {
+  "avant": "Northern West Dunes, 100% W",
+  "apres": "Northern West Dunes",
+  "traduction_actuelle": "Dunes du Nord-Ouest, 100 % O"
+ },
+ "Content\t2286871348": {
+  "avant": "Northern West High Desert, 20% W",
+  "apres": "Northern West High Desert",
+  "traduction_actuelle": "Haut désert du Nord-Ouest, 20 % O"
+ },
+ "Content\t2591845222": {
+  "avant": "Northern West Mountains, 85% W",
+  "apres": "Northern West Mountains",
+  "traduction_actuelle": "Montagnes du Nord-Ouest, 85 % O"
+ },
+ "Content\t3384335407": {
+  "avant": "Northern West Oasis, 40% W",
+  "apres": "Northern West Oasis",
+  "traduction_actuelle": "Oasis nord-ouest, 40 % O"
+ },
+ "Content\t1392615881": {
+  "avant": "Northland, 100% W",
+  "apres": "Northland",
+  "traduction_actuelle": "Terres du Nord, 100 % O"
+ },
+ "Content\t481211986": {
+  "avant": "Oasis Dunes, 40% W",
+  "apres": "Oasis Dunes",
+  "traduction_actuelle": "Oasis Dunes, 40% W"
+ },
+ "Content\t68737041": {
+  "avant": "South East Dunes, 100% W",
+  "apres": "South East Dunes",
+  "traduction_actuelle": "Dunes du Sud-Est, 100 % O"
+ },
+ "Content\t2113324491": {
+  "avant": "Southern Dunes, 100% W",
+  "apres": "Southern Dunes",
+  "traduction_actuelle": "Dunes du Sud, 100 % O"
+ },
+ "Content\t2103523761": {
+  "avant": "Southern East Badlands - 40% Wind",
+  "apres": "Southern East Badlands",
+  "traduction_actuelle": "Terres désolées du Sud-Est - 40 % de vent"
+ },
+ "Content\t2846385441": {
+  "avant": "Southern East Canyons, 65% W",
+  "apres": "Southern East Canyons",
+  "traduction_actuelle": "Canyons du Sud-Est, 65 % O"
+ },
+ "Content\t2257904499": {
+  "avant": "Southern East High Desert, 20% W",
+  "apres": "Southern East High Desert",
+  "traduction_actuelle": "Haut désert du Sud-Est, 20 % O"
+ },
+ "Content\t774661099": {
+  "avant": "Southern East Low Desert, 20% W",
+  "apres": "Southern East Low Desert",
+  "traduction_actuelle": "Désert bas du Sud-Est, 20 % O"
+ },
+ "Content\t1223148960": {
+  "avant": "Southern East Mountains Summit, 85% W",
+  "apres": "Southern East Mountains Summit",
+  "traduction_actuelle": "Sommet des montagnes du Sud-Est, 85 % O"
+ },
+ "Content\t158078965": {
+  "avant": "Southern High Desert, 20% W",
+  "apres": "Southern High Desert",
+  "traduction_actuelle": "Haut désert méridional, 20 % O"
+ },
+ "Content\t2665249299": {
+  "avant": "Southern Low Desert, 20% W",
+  "apres": "Southern Low Desert",
+  "traduction_actuelle": "Désert bas méridional, 20 % O"
+ },
+ "Content\t1349256835": {
+  "avant": "Southern Mountains, 85% W",
+  "apres": "Southern Mountains",
+  "traduction_actuelle": "Montagnes du Sud, 85 % O"
+ },
+ "Content\t2539342535": {
+  "avant": "Southern West Dunes, 100% W",
+  "apres": "Southern West Dunes",
+  "traduction_actuelle": "Dunes du Sud-Ouest, 100 % O"
+ },
+ "Content\t4162303589": {
+  "avant": "Southern West High Desert, 20% W",
+  "apres": "Southern West High Desert",
+  "traduction_actuelle": "Haut désert du Sud-Ouest, 20 % O"
+ },
+ "Content\t1119944783": {
+  "avant": "Southern West Mountains, 85% W",
+  "apres": "Southern West Mountains",
+  "traduction_actuelle": "Montagnes du Sud-Ouest, 85 % O"
+ },
+ "Content\t694533443": {
+  "avant": "Southern West Oasis, 40% W",
+  "apres": "Southern West Oasis",
+  "traduction_actuelle": "Oasis sud-ouest, 40 % O"
+ },
+ "Content\t1625466750": {
+  "avant": "The Great Forest North, 40% W",
+  "apres": "The Great Forest North",
+  "traduction_actuelle": "Grande Forêt du Nord, 40 % O"
+ },
+ "Content\t3848696232": {
+  "avant": "The Great Forest, 40% W",
+  "apres": "The Great Forest",
+  "traduction_actuelle": "La Grande Forêt, 40 % O"
+ },
+ "Content\t2578098154": {
+  "avant": "The Great Valley, 60% W",
+  "apres": "The Great Valley",
+  "traduction_actuelle": "La Grande Vallée, 60 % O"
+ },
+ "Content\t3734262654": {
+  "avant": "The Tropics, 80% W",
+  "apres": "The Tropics",
+  "traduction_actuelle": "Les Tropiques, 80 % W"
+ },
+ "Content\t3188879467": {
+  "avant": "The Wetlands, 40% W",
+  "apres": "The Wetlands",
+  "traduction_actuelle": "Les Zones humides, 40 % O"
+ },
+ "Content\t956505616": {
+  "avant": "The White Shoals, 100% W",
+  "apres": "The White Shoals",
+  "traduction_actuelle": "Les Hauts-Fonds blancs, 100 % O"
+ },
+ "Content\t1821952655": {
+  "avant": "The World Scar, 20% W",
+  "apres": "The World Scar",
+  "traduction_actuelle": "La Cicatrice du Monde, 20 % O"
+ },
+ "Content\t4085071057": {
+  "avant": "Tundrafalls, 80% W",
+  "apres": "Tundrafalls",
+  "traduction_actuelle": "Tundrafalls, 80 % W"
+ },
+ "Content\t3277293439": {
+  "avant": "Wander's End, 100% W",
+  "apres": "Wander's End",
+  "traduction_actuelle": "Fin du Vagabond, 100 % W"
+ },
+ "Content\t3002886438": {
+  "avant": "Wander's Hope, 80% W",
+  "apres": "Wander's Hope",
+  "traduction_actuelle": "Espoir du Vagabond, 80 % W"
+ },
+ "Content\t3334664864": {
+  "avant": "Wander's Tail, 100% W",
+  "apres": "Wander's Tail",
+  "traduction_actuelle": "Queue du Vagabond, 100 % O"
+ },
+ "Content\t673436168": {
+  "avant": "Waterfall, 65% W",
+  "apres": "Waterfall",
+  "traduction_actuelle": "Cascade, 65 % W"
+ },
+ "Content\t2592870433": {
+  "avant": "Western Dunes, 100% W",
+  "apres": "Western Dunes",
+  "traduction_actuelle": "Dunes occidentales, 100 % O"
+ },
+ "Content\t3528143960": {
+  "avant": "Western High Desert, 20% W",
+  "apres": "Western High Desert",
+  "traduction_actuelle": "Haut désert occidental, 20 % O"
+ },
+ "Content\t872042624": {
+  "avant": "Western Mountains, 85% W",
+  "apres": "Western Mountains",
+  "traduction_actuelle": "Montagnes occidentales, 85 % O"
+ }
+}
