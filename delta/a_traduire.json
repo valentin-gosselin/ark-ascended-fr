@@ -1,0 +1,946 @@
+{
+ "Content\t3646967": {
+  "en": "+10% damage, damage resistance and cooldown reduction for each survivor controlling Cerberax",
+  "proposition_evolved": null
+ },
+ "Content\t496766118": {
+  "en": "60% damage incoming reduction",
+  "proposition_evolved": null
+ },
+ "Content\t1707025796": {
+  "en": "At 3 Swallow stacks, Gargantar can swallow you.",
+  "proposition_evolved": null
+ },
+ "Content\t1574827247": {
+  "en": "Board Center Head",
+  "proposition_evolved": null
+ },
+ "Content\t2382311697": {
+  "en": "Board Left Head",
+  "proposition_evolved": null
+ },
+ "Content\t4248629747": {
+  "en": "Board Right Head",
+  "proposition_evolved": null
+ },
+ "Content\t1541496319": {
+  "en": "Cerberax",
+  "proposition_evolved": null
+ },
+ "Content\t3710952621": {
+  "en": "Cerberax Burn",
+  "proposition_evolved": null
+ },
+ "Content\t482979029": {
+  "en": "Cerberax Devour abilities gain additional effects",
+  "proposition_evolved": null
+ },
+ "Content\t4176681895": {
+  "en": "Cerberax Dominion",
+  "proposition_evolved": null
+ },
+ "Content\t1186908183": {
+  "en": "Cerberax Dossier",
+  "proposition_evolved": null
+ },
+ "Content\t382284212": {
+  "en": "Cerberax Saddle",
+  "proposition_evolved": null
+ },
+ "Content\t602440253": {
+  "en": "Cerberax Venom",
+  "proposition_evolved": null
+ },
+ "Content\t1133462860": {
+  "en": "Cerberus Passenger",
+  "proposition_evolved": null
+ },
+ "Content\t3229741455": {
+  "en": "Cerberus Wild Riding",
+  "proposition_evolved": null
+ },
+ "Content\t4260182215": {
+  "en": "Chibi-Megaraptor",
+  "proposition_evolved": null
+ },
+ "Content\t1419265489": {
+  "en": "Corrupt Head",
+  "proposition_evolved": null
+ },
+ "Content\t2992744431": {
+  "en": "Damage received from Cerberax increased by 5% per stack",
+  "proposition_evolved": null
+ },
+ "Content\t653042883": {
+  "en": "Electric Head",
+  "proposition_evolved": null
+ },
+ "Content\t1731254286": {
+  "en": "Equip a Cerberax with this to ride it.",
+  "proposition_evolved": null
+ },
+ "Content\t3595022346": {
+  "en": "Equip a Gargantar with this to ride it.",
+  "proposition_evolved": null
+ },
+ "Content\t1572539705": {
+  "en": "Fertilized Gargantar Egg",
+  "proposition_evolved": null
+ },
+ "Content\t3778037049": {
+  "en": "Fire Head",
+  "proposition_evolved": null
+ },
+ "Content\t504498961": {
+  "en": "Gargantar Dossier",
+  "proposition_evolved": null
+ },
+ "Content\t1099891526": {
+  "en": "Gargantar Saddle",
+  "proposition_evolved": null
+ },
+ "Content\t3987835968": {
+  "en": "Infernal Empowerment",
+  "proposition_evolved": null
+ },
+ "Content\t1599237476": {
+  "en": "Ingest Cooldown",
+  "proposition_evolved": null
+ },
+ "Content\t2379497043": {
+  "en": "Inside Gargantar",
+  "proposition_evolved": null
+ },
+ "Content\t1694854532": {
+  "en": "Output damage reduced by 5% per stack",
+  "proposition_evolved": null
+ },
+ "Content\t137916632": {
+  "en": "Receive damage over time, with amount increasing per stack",
+  "proposition_evolved": null
+ },
+ "Content\t1564232775": {
+  "en": "Startled FLy",
+  "proposition_evolved": null
+ },
+ "Content\t1686910068": {
+  "en": "Swallow",
+  "proposition_evolved": null
+ },
+ "Content\t1858514425": {
+  "en": "Threefold Dominion",
+  "proposition_evolved": null
+ },
+ "Content\t257124096": {
+  "en": "You cannot be ingested by Gargantar again",
+  "proposition_evolved": null
+ },
+ "Content\t22843635": {
+  "en": "accent accents",
+  "proposition_evolved": null
+ },
+ "Content\t3063275203": {
+  "en": "main lower",
+  "proposition_evolved": null
+ },
+ "Content\t2998544441": {
+  "en": "main upper",
+  "proposition_evolved": null
+ },
+ "Content\t834121587": {
+  "en": "stripe accent",
+  "proposition_evolved": null
+ },
+ "DT_Milestones_Dragontopia_Gargantar\t1691756546": {
+  "en": "Claim 1 baby Gargantar",
+  "proposition_evolved": null
+ },
+ "DT_Milestones_Dragontopia_Gargantar\t788027644": {
+  "en": "Claim 2 baby Gargantar",
+  "proposition_evolved": null
+ },
+ "DT_Milestones_Dragontopia_Gargantar\t2714596713": {
+  "en": "Claim 3 baby Gargantar",
+  "proposition_evolved": null
+ },
+ "DT_Milestones_Dragontopia_Gargantar\t2611626622": {
+  "en": "Deal 10000 damage to swallowed enemies with a Gargantar's Acid Reflux",
+  "proposition_evolved": null
+ },
+ "DT_Milestones_Dragontopia_Gargantar\t1708380408": {
+  "en": "Deal 15000 damage with a Gargantar's spit",
+  "proposition_evolved": null
+ },
+ "DT_Milestones_Dragontopia_Gargantar\t997226138": {
+  "en": "Deal 15000 damage with a Gargantar's vomit",
+  "proposition_evolved": null
+ },
+ "DT_Milestones_Dragontopia_Gargantar\t3936994517": {
+  "en": "Deal 2000 damage to swallowed enemies with a Gargantar's Acid Reflux",
+  "proposition_evolved": null
+ },
+ "DT_Milestones_Dragontopia_Gargantar\t6613640": {
+  "en": "Deal 2000 damage with a Gargantar's spit",
+  "proposition_evolved": null
+ },
+ "DT_Milestones_Dragontopia_Gargantar\t4025424872": {
+  "en": "Deal 2000 damage with a Gargantar's vomit",
+  "proposition_evolved": null
+ },
+ "DT_Milestones_Dragontopia_Gargantar\t3742415866": {
+  "en": "Deal 250000 damage while riding a Gargantar",
+  "proposition_evolved": null
+ },
+ "DT_Milestones_Dragontopia_Gargantar\t3703416745": {
+  "en": "Deal 30000 damage to swallowed enemies with a Gargantar's Acid Reflux",
+  "proposition_evolved": null
+ },
+ "DT_Milestones_Dragontopia_Gargantar\t1288940466": {
+  "en": "Deal 5000 damage while riding a Gargantar",
+  "proposition_evolved": null
+ },
+ "DT_Milestones_Dragontopia_Gargantar\t3306834579": {
+  "en": "Deal 50000 damage while riding a Gargantar",
+  "proposition_evolved": null
+ },
+ "DT_Milestones_Dragontopia_Gargantar\t4274450928": {
+  "en": "Deal 50000 damage with a Gargantar's spit",
+  "proposition_evolved": null
+ },
+ "DT_Milestones_Dragontopia_Gargantar\t2535710330": {
+  "en": "Deal 50000 damage with a Gargantar's vomit",
+  "proposition_evolved": null
+ },
+ "DT_Milestones_Dragontopia_Gargantar\t3393547017": {
+  "en": "Dive for 2500m while riding a Gargantar",
+  "proposition_evolved": null
+ },
+ "DT_Milestones_Dragontopia_Gargantar\t3496254919": {
+  "en": "Dive for 500m while riding a Gargantar",
+  "proposition_evolved": null
+ },
+ "DT_Milestones_Dragontopia_Gargantar\t1927492623": {
+  "en": "Dive for 7500m while riding a Gargantar",
+  "proposition_evolved": null
+ },
+ "DT_Milestones_Dragontopia_Gargantar\t3058968618": {
+  "en": "Grab 15 enemy creatures with a Gargantar",
+  "proposition_evolved": null
+ },
+ "DT_Milestones_Dragontopia_Gargantar\t2959996789": {
+  "en": "Grab 3 enemy creatures with a Gargantar",
+  "proposition_evolved": null
+ },
+ "DT_Milestones_Dragontopia_Gargantar\t1977135172": {
+  "en": "Grab 40 enemy creatures with a Gargantar",
+  "proposition_evolved": null
+ },
+ "DT_Milestones_Dragontopia_Gargantar\t761028522": {
+  "en": "Harvest 100 crystal riding a Gargantar",
+  "proposition_evolved": null
+ },
+ "DT_Milestones_Dragontopia_Gargantar\t3441212131": {
+  "en": "Harvest 100 obsidian riding a Gargantar",
+  "proposition_evolved": null
+ },
+ "DT_Milestones_Dragontopia_Gargantar\t1702124813": {
+  "en": "Harvest 100 raw meat riding a Gargantar",
+  "proposition_evolved": null
+ },
+ "DT_Milestones_Dragontopia_Gargantar\t673552647": {
+  "en": "Harvest 1000 crystal riding a Gargantar",
+  "proposition_evolved": null
+ },
+ "DT_Milestones_Dragontopia_Gargantar\t3250602007": {
+  "en": "Harvest 1000 raw meat riding a Gargantar",
+  "proposition_evolved": null
+ },
+ "DT_Milestones_Dragontopia_Gargantar\t1510280365": {
+  "en": "Harvest 10000 metal riding a Gargantar",
+  "proposition_evolved": null
+ },
+ "DT_Milestones_Dragontopia_Gargantar\t3393542163": {
+  "en": "Harvest 150 prime meat riding a Gargantar",
+  "proposition_evolved": null
+ },
+ "DT_Milestones_Dragontopia_Gargantar\t91061683": {
+  "en": "Harvest 150 rare mushrooms riding a Gargantar",
+  "proposition_evolved": null
+ },
+ "DT_Milestones_Dragontopia_Gargantar\t3511008383": {
+  "en": "Harvest 20000 wood riding a Gargantar",
+  "proposition_evolved": null
+ },
+ "DT_Milestones_Dragontopia_Gargantar\t1734474668": {
+  "en": "Harvest 25 prime meat riding a Gargantar",
+  "proposition_evolved": null
+ },
+ "DT_Milestones_Dragontopia_Gargantar\t1907224477": {
+  "en": "Harvest 25 rare mushrooms riding a Gargantar",
+  "proposition_evolved": null
+ },
+ "DT_Milestones_Dragontopia_Gargantar\t2756025813": {
+  "en": "Harvest 250 metal riding a Gargantar",
+  "proposition_evolved": null
+ },
+ "DT_Milestones_Dragontopia_Gargantar\t2807693482": {
+  "en": "Harvest 2500 metal riding a Gargantar",
+  "proposition_evolved": null
+ },
+ "DT_Milestones_Dragontopia_Gargantar\t240602527": {
+  "en": "Harvest 3000 obsidian riding a Gargantar",
+  "proposition_evolved": null
+ },
+ "DT_Milestones_Dragontopia_Gargantar\t1464438663": {
+  "en": "Harvest 4000 crystal riding a Gargantar",
+  "proposition_evolved": null
+ },
+ "DT_Milestones_Dragontopia_Gargantar\t413243373": {
+  "en": "Harvest 500 prime meat riding a Gargantar",
+  "proposition_evolved": null
+ },
+ "DT_Milestones_Dragontopia_Gargantar\t2839467347": {
+  "en": "Harvest 500 rare mushrooms riding a Gargantar",
+  "proposition_evolved": null
+ },
+ "DT_Milestones_Dragontopia_Gargantar\t3226097621": {
+  "en": "Harvest 500 wood riding a Gargantar",
+  "proposition_evolved": null
+ },
+ "DT_Milestones_Dragontopia_Gargantar\t239047899": {
+  "en": "Harvest 5000 raw meat riding a Gargantar",
+  "proposition_evolved": null
+ },
+ "DT_Milestones_Dragontopia_Gargantar\t3626602404": {
+  "en": "Harvest 5000 wood riding a Gargantar",
+  "proposition_evolved": null
+ },
+ "DT_Milestones_Dragontopia_Gargantar\t2531130586": {
+  "en": "Harvest 750 obsidian riding a Gargantar",
+  "proposition_evolved": null
+ },
+ "DT_Milestones_Dragontopia_Gargantar\t4229161970": {
+  "en": "Kill 10 creatures while riding a Gargantar",
+  "proposition_evolved": null
+ },
+ "DT_Milestones_Dragontopia_Gargantar\t3599357502": {
+  "en": "Kill 10 wild Gargantar",
+  "proposition_evolved": null
+ },
+ "DT_Milestones_Dragontopia_Gargantar\t2043641432": {
+  "en": "Kill 20 wild Gargantar",
+  "proposition_evolved": null
+ },
+ "DT_Milestones_Dragontopia_Gargantar\t3194323524": {
+  "en": "Kill 250 creatures while riding a Gargantar",
+  "proposition_evolved": null
+ },
+ "DT_Milestones_Dragontopia_Gargantar\t1138356543": {
+  "en": "Kill 3 wild Gargantar",
+  "proposition_evolved": null
+ },
+ "DT_Milestones_Dragontopia_Gargantar\t3051651622": {
+  "en": "Kill 75 creatures while riding a Gargantar",
+  "proposition_evolved": null
+ },
+ "DT_Milestones_Dragontopia_Gargantar\t4215288954": {
+  "en": "Receive 1000 damage while a Gargantar is in Fortress mode",
+  "proposition_evolved": null
+ },
+ "DT_Milestones_Dragontopia_Gargantar\t3156729522": {
+  "en": "Receive 1000 damage while riding a Gargantar",
+  "proposition_evolved": null
+ },
+ "DT_Milestones_Dragontopia_Gargantar\t251764436": {
+  "en": "Receive 15000 damage while a Gargantar is in Fortress mode",
+  "proposition_evolved": null
+ },
+ "DT_Milestones_Dragontopia_Gargantar\t3861252676": {
+  "en": "Receive 15000 damage while riding a Gargantar",
+  "proposition_evolved": null
+ },
+ "DT_Milestones_Dragontopia_Gargantar\t3220136931": {
+  "en": "Receive 5000 damage while a Gargantar is in Fortress mode",
+  "proposition_evolved": null
+ },
+ "DT_Milestones_Dragontopia_Gargantar\t654044742": {
+  "en": "Receive 5000 damage while riding a Gargantar",
+  "proposition_evolved": null
+ },
+ "DT_Milestones_Dragontopia_Gargantar\t3332562825": {
+  "en": "Tame 1 Gargantar",
+  "proposition_evolved": null
+ },
+ "DT_Milestones_Dragontopia_Gargantar\t3101333295": {
+  "en": "Tame 2 Gargantar",
+  "proposition_evolved": null
+ },
+ "DT_Milestones_Dragontopia_Gargantar\t2465378125": {
+  "en": "Tame 3 Gargantar",
+  "proposition_evolved": null
+ },
+ "DT_Milestones_Dragontopia_Gargantar\t3140244624": {
+  "en": "Travel 25000 meters riding a Gargantar",
+  "proposition_evolved": null
+ },
+ "DT_Milestones_Dragontopia_Gargantar\t2115800824": {
+  "en": "Travel 5000 meters riding a Gargantar",
+  "proposition_evolved": null
+ },
+ "DT_Milestones_Dragontopia_Gargantar\t3292545552": {
+  "en": "Travel 75000 meters riding a Gargantar",
+  "proposition_evolved": null
+ },
+ "DT_Skills_Dragontopia_UmbraLumina\t1748302199": {
+  "en": "Acid Ingest",
+  "proposition_evolved": null
+ },
+ "DT_Skills_Dragontopia_UmbraLumina\t273061275": {
+  "en": "Acid Reflux",
+  "proposition_evolved": null
+ },
+ "DT_Skills_Dragontopia_UmbraLumina\t3480423300": {
+  "en": "Acid Spit and Vomit apply stacks that increase the target’s damage taken. Enemies require 3 stacks to be swallowed. Enemy swallowing is only available in PvP, wild creatures cannot be swallowed in PvE, and requires to be flying.",
+  "proposition_evolved": null
+ },
+ "DT_Skills_Dragontopia_UmbraLumina\t1004640851": {
+  "en": "Allows Gargantar to swallow creatures up to {Modifier_Gargantar_Grab_Drag} of its maximum drag weight capacity.",
+  "proposition_evolved": null
+ },
+ "DT_Skills_Dragontopia_UmbraLumina\t3387539828": {
+  "en": "Allows eligible flying creatures to be swallowed.",
+  "proposition_evolved": null
+ },
+ "DT_Skills_Dragontopia_UmbraLumina\t742230626": {
+  "en": "Allows your dragon to mate.",
+  "proposition_evolved": null
+ },
+ "DT_Skills_Dragontopia_UmbraLumina\t1890509445": {
+  "en": "Backflip",
+  "proposition_evolved": "Backflip"
+ },
+ "DT_Skills_Dragontopia_UmbraLumina\t856411773": {
+  "en": "Barrel Roll",
+  "proposition_evolved": null
+ },
+ "DT_Skills_Dragontopia_UmbraLumina\t1498969062": {
+  "en": "Become immobile and reduce incoming damage while consuming Stomach Filling.",
+  "proposition_evolved": null
+ },
+ "DT_Skills_Dragontopia_UmbraLumina\t2679074159": {
+  "en": "Bond with a dragon you tamed or hatched and command it using a Dragon Horn.",
+  "proposition_evolved": null
+ },
+ "DT_Skills_Dragontopia_UmbraLumina\t3185792310": {
+  "en": "Call your bonded dragon to pick you up.",
+  "proposition_evolved": null
+ },
+ "DT_Skills_Dragontopia_UmbraLumina\t321745796": {
+  "en": "Dive Speed",
+  "proposition_evolved": null
+ },
+ "DT_Skills_Dragontopia_UmbraLumina\t1886485806": {
+  "en": "Dragon Horn: Fly Away & Come Here",
+  "proposition_evolved": null
+ },
+ "DT_Skills_Dragontopia_UmbraLumina\t1506295816": {
+  "en": "Enemies inside Gargantar take acid damage based on their maximum Health.",
+  "proposition_evolved": null
+ },
+ "DT_Skills_Dragontopia_UmbraLumina\t1864855984": {
+  "en": "Fly Away & Come Here Cooldown",
+  "proposition_evolved": null
+ },
+ "DT_Skills_Dragontopia_UmbraLumina\t995169682": {
+  "en": "Fortress",
+  "proposition_evolved": null
+ },
+ "DT_Skills_Dragontopia_UmbraLumina\t921587934": {
+  "en": "Get Me Cooldown",
+  "proposition_evolved": null
+ },
+ "DT_Skills_Dragontopia_UmbraLumina\t571128859": {
+  "en": "Get Me Range",
+  "proposition_evolved": null
+ },
+ "DT_Skills_Dragontopia_UmbraLumina\t2049164572": {
+  "en": "Grab",
+  "proposition_evolved": "Saisir"
+ },
+ "DT_Skills_Dragontopia_UmbraLumina\t1217123012": {
+  "en": "Grab Flyers",
+  "proposition_evolved": null
+ },
+ "DT_Skills_Dragontopia_UmbraLumina\t190345981": {
+  "en": "Grab Weight Limit",
+  "proposition_evolved": null
+ },
+ "DT_Skills_Dragontopia_UmbraLumina\t1046697393": {
+  "en": "Harvest resources to build Stomach Filling. A fuller stomach provides greater damage reduction.",
+  "proposition_evolved": null
+ },
+ "DT_Skills_Dragontopia_UmbraLumina\t2452623146": {
+  "en": "Increases maximum dive bonus speed by {!DiveBoostMaxCharge}.",
+  "proposition_evolved": null
+ },
+ "DT_Skills_Dragontopia_UmbraLumina\t2463126044": {
+  "en": "Inhale",
+  "proposition_evolved": null
+ },
+ "DT_Skills_Dragontopia_UmbraLumina\t3645072647": {
+  "en": "Inhale nearby resources and corpses. Harvesting resources builds Stomach Filling. Cannot be used while carrying a creature.",
+  "proposition_evolved": null
+ },
+ "DT_Skills_Dragontopia_UmbraLumina\t4033470264": {
+  "en": "Maneuver Cooldown",
+  "proposition_evolved": null
+ },
+ "DT_Skills_Dragontopia_UmbraLumina\t816066543": {
+  "en": "Maneuver Efficiency",
+  "proposition_evolved": null
+ },
+ "DT_Skills_Dragontopia_UmbraLumina\t1756043232": {
+  "en": "Quick Turn",
+  "proposition_evolved": null
+ },
+ "DT_Skills_Dragontopia_UmbraLumina\t2048084042": {
+  "en": "Reduces flight maneuver cooldowns by {!!ManeuverCooldownMultiplier}.",
+  "proposition_evolved": null
+ },
+ "DT_Skills_Dragontopia_UmbraLumina\t1301554210": {
+  "en": "Reduces flight maneuver stamina costs by {!!ManeuverStaminaCost}.",
+  "proposition_evolved": null
+ },
+ "DT_Skills_Dragontopia_UmbraLumina\t590251233": {
+  "en": "Reduces stamina consumed while sprinting in flight by {!!SprintStaminaCost}.",
+  "proposition_evolved": null
+ },
+ "DT_Skills_Dragontopia_UmbraLumina\t449165934": {
+  "en": "Reduces the Fly Away and Come Here cooldowns by {!!FlyAwayCooldownMultiplier}.",
+  "proposition_evolved": null
+ },
+ "DT_Skills_Dragontopia_UmbraLumina\t2004351140": {
+  "en": "Reduces the Get Me cooldown by {!!GetMeCooldownMultiplier}.",
+  "proposition_evolved": null
+ },
+ "DT_Skills_Dragontopia_UmbraLumina\t1352272989": {
+  "en": "Send your bonded dragon into the sky for safety, then call it back.",
+  "proposition_evolved": null
+ },
+ "DT_Skills_Dragontopia_UmbraLumina\t496700457": {
+  "en": "Sets the Get Me command's range to {GetMeDistanceMultiplier} of its base range.",
+  "proposition_evolved": null
+ },
+ "DT_Skills_Dragontopia_UmbraLumina\t2800029935": {
+  "en": "Spray acid in front of Gargantar, dealing damage and consuming Stomach Filling.",
+  "proposition_evolved": null
+ },
+ "DT_Skills_Dragontopia_UmbraLumina\t1251047676": {
+  "en": "Sprint Flight",
+  "proposition_evolved": null
+ },
+ "DT_Skills_Dragontopia_UmbraLumina\t387141694": {
+  "en": "Sprint Flight Efficiency",
+  "proposition_evolved": null
+ },
+ "DT_Skills_Dragontopia_UmbraLumina\t1520037640": {
+  "en": "Stomach Shield",
+  "proposition_evolved": null
+ },
+ "DT_Skills_Dragontopia_UmbraLumina\t65261934": {
+  "en": "Swallow and protect an eligible allied creature. Activate again to spit it out. (Requires to be flying)",
+  "proposition_evolved": null
+ },
+ "DT_Skills_Dragontopia_UmbraLumina\t1224873377": {
+  "en": "Unlocks diving during flight.",
+  "proposition_evolved": null
+ },
+ "DT_Skills_Dragontopia_UmbraLumina\t2053815896": {
+  "en": "Unlocks the backflip flight maneuver.",
+  "proposition_evolved": null
+ },
+ "DT_Skills_Dragontopia_UmbraLumina\t3466502578": {
+  "en": "Unlocks the barrel roll flight maneuver.",
+  "proposition_evolved": null
+ },
+ "DT_Skills_Dragontopia_UmbraLumina\t1849816434": {
+  "en": "Unlocks the quick turn flight maneuver.",
+  "proposition_evolved": null
+ },
+ "DT_Skills_Dragontopia_UmbraLumina\t1952908907": {
+  "en": "Vomit",
+  "proposition_evolved": null
+ },
+ "GraphLiteral\t3713149528": {
+  "en": " Available!",
+  "proposition_evolved": null
+ },
+ "GraphLiteral\t417727159": {
+  "en": " Available)",
+  "proposition_evolved": null
+ },
+ "GraphLiteral\t887519024": {
+  "en": " Level ",
+  "proposition_evolved": null
+ },
+ "GraphLiteral\t2582858241": {
+  "en": " to escape!",
+  "proposition_evolved": null
+ },
+ "GraphLiteral\t717114301": {
+  "en": " to get out",
+  "proposition_evolved": null
+ },
+ "GraphLiteral\t3115654252": {
+  "en": "% | Effectiveness: ",
+  "proposition_evolved": null
+ },
+ "GraphLiteral\t3988036250": {
+  "en": "Assert Dominance Over Cerberax!",
+  "proposition_evolved": null
+ },
+ "GraphLiteral\t1844839387": {
+  "en": "Bone doesnt exist: ",
+  "proposition_evolved": null
+ },
+ "GraphLiteral\t3024993928": {
+  "en": "Burn Breath",
+  "proposition_evolved": null
+ },
+ "GraphLiteral\t3274339329": {
+  "en": "Cerberus Teleport Destination",
+  "proposition_evolved": null
+ },
+ "GraphLiteral\t4050491679": {
+  "en": "Checking valid target after target changed",
+  "proposition_evolved": null
+ },
+ "GraphLiteral\t2662985807": {
+  "en": "Clearing Target",
+  "proposition_evolved": null
+ },
+ "GraphLiteral\t2175022073": {
+  "en": "Common name: Cerberax \r\nSpecies:\t\tCerberax tricipitis\r\nTime:\t\t\tUnknown\r\nDiet:\t\t\tCarnivore\r\nTemperament:\tAggressive\r\n\r\nWild\r\nSomething affecting evolution on the ARKs seems to have a knack for mythology! Cerberax tricipitis is a huge three-headed canid, capable of taking on even a Rex or Ossidon in a fair fight. Anything short of a Giga or Carcha is going to have a tough time fighting Cerberax. Its sheer size allows it to take a beating, so be sure to make it bleed if you plan to fight one.\r\n\r\nThe three heads of Cerberax all use separate tactics, but their real strength is working together. The right head applies fire to subdue its prey, while consuming venom to cripple it. The left head applies venom to weaken it prey, while consuming fire to heal its body. The central head coordinates the other two, resulting in more damage from the side heads, and causing their venom and their flames to spread to nearby targets.\r\n\r\nDomesticated\r\nTaming Cerberax involves winning over not one, but three animals. When subdued by narcotics, all its adrenaline surges to a single head. By quickly mounting that head and placating its anger, you can wear down its reserves of energy. Another head will wake, so repeat until all three collapse and you can feed it into submission.\r\n\r\nOnce finally tamed, Cerberax is best ridden by a team of three Survivors. One Survivor controls the body and main head, while the other Survivors control the left and right heads to maximize combat efficiency. Working as a team, the three heads bolster each other's abilities to their maximum potential!",
+  "proposition_evolved": null
+ },
+ "GraphLiteral\t2985498706": {
+  "en": "Creature Weight Multiplier",
+  "proposition_evolved": null
+ },
+ "GraphLiteral\t2505478701": {
+  "en": "Cyan",
+  "proposition_evolved": "Cyan"
+ },
+ "GraphLiteral\t2807117728": {
+  "en": "Dark",
+  "proposition_evolved": null
+ },
+ "GraphLiteral\t1796391398": {
+  "en": "Dead Sat Mask",
+  "proposition_evolved": null
+ },
+ "GraphLiteral\t1176804837": {
+  "en": "Dead Val Mask",
+  "proposition_evolved": null
+ },
+ "GraphLiteral\t2617446870": {
+  "en": "Devour Burn",
+  "proposition_evolved": null
+ },
+ "GraphLiteral\t2851310957": {
+  "en": "Devour Venom",
+  "proposition_evolved": null
+ },
+ "GraphLiteral\t908165103": {
+  "en": "Doesnt use threat",
+  "proposition_evolved": null
+ },
+ "GraphLiteral\t2569636040": {
+  "en": "Dominion Roar",
+  "proposition_evolved": null
+ },
+ "GraphLiteral\t1732889933": {
+  "en": "Drop Quality Weapons & Tools to Tame",
+  "proposition_evolved": null
+ },
+ "GraphLiteral\t791429372": {
+  "en": "Extends Inhale's resource-harvesting range to {Modifier_Gargantar_Inhale_Range} of its maximum reach.",
+  "proposition_evolved": null
+ },
+ "GraphLiteral\t2625149790": {
+  "en": "Extends Vomit's range to {Modifier_Gargantar_Vomit_Range} of its maximum reach.",
+  "proposition_evolved": null
+ },
+ "GraphLiteral\t3932142894": {
+  "en": "Feed Cerberax as it Attacks!",
+  "proposition_evolved": null
+ },
+ "GraphLiteral\t2237861791": {
+  "en": "Feed Gargantar",
+  "proposition_evolved": null
+ },
+ "GraphLiteral\t3496037551": {
+  "en": "FirePressed_Controller",
+  "proposition_evolved": "FirePressed_Controller"
+ },
+ "GraphLiteral\t3096529390": {
+  "en": "Gargantar",
+  "proposition_evolved": null
+ },
+ "GraphLiteral\t2224435742": {
+  "en": "Gargantar Skill Tree",
+  "proposition_evolved": null
+ },
+ "GraphLiteral\t518439347": {
+  "en": "Gargantar eats more than he can ever digest. That insatiable hunger makes him a voracious harvester and walking stockpile. Your steeds and supplies will enjoy the protection of his ample and sturdy gut.\r\n\r\nThe way into Gargantar's heart is through his stomach. Let him swallow you whole, then force him to gag and vomit you back up. While he is still queasy, take control and guide him to more appealing food.",
+  "proposition_evolved": null
+ },
+ "GraphLiteral\t847932352": {
+  "en": "Harvest All",
+  "proposition_evolved": null
+ },
+ "GraphLiteral\t205929747": {
+  "en": "Harvest Only: ",
+  "proposition_evolved": null
+ },
+ "GraphLiteral\t215127420": {
+  "en": "Inhalation Mode",
+  "proposition_evolved": null
+ },
+ "GraphLiteral\t1592947524": {
+  "en": "Inhale Range",
+  "proposition_evolved": null
+ },
+ "GraphLiteral\t1411179095": {
+  "en": "Inhale:",
+  "proposition_evolved": null
+ },
+ "GraphLiteral\t4160982005": {
+  "en": "Invalid threat target: ",
+  "proposition_evolved": null
+ },
+ "GraphLiteral\t2639489084": {
+  "en": "Kill the Target!",
+  "proposition_evolved": null
+ },
+ "GraphLiteral\t2997766521": {
+  "en": "Layer 1",
+  "proposition_evolved": null
+ },
+ "GraphLiteral\t2197970373": {
+  "en": "Lead Cerberax Towards Prey!",
+  "proposition_evolved": null
+ },
+ "GraphLiteral\t3844229463": {
+  "en": "Live Sat Mask",
+  "proposition_evolved": null
+ },
+ "GraphLiteral\t3356759380": {
+  "en": "Live Val Mask",
+  "proposition_evolved": null
+ },
+ "GraphLiteral\t1498810053": {
+  "en": "Magenta",
+  "proposition_evolved": "Magenta"
+ },
+ "GraphLiteral\t3242478545": {
+  "en": "Min",
+  "proposition_evolved": null
+ },
+ "GraphLiteral\t994933563": {
+  "en": "Mod ID",
+  "proposition_evolved": null
+ },
+ "GraphLiteral\t2987448606": {
+  "en": "Mount {0}",
+  "proposition_evolved": null
+ },
+ "GraphLiteral\t4291556707": {
+  "en": "Move Closer To Head To Mount",
+  "proposition_evolved": null
+ },
+ "GraphLiteral\t1499026707": {
+  "en": "No Harvest",
+  "proposition_evolved": null
+ },
+ "GraphLiteral\t1143077120": {
+  "en": "No Harvesting",
+  "proposition_evolved": null
+ },
+ "GraphLiteral\t754730480": {
+  "en": "Not player controller",
+  "proposition_evolved": null
+ },
+ "GraphLiteral\t675136209": {
+  "en": "Null Target",
+  "proposition_evolved": null
+ },
+ "GraphLiteral\t229679044": {
+  "en": "Out of Time!",
+  "proposition_evolved": null
+ },
+ "GraphLiteral\t605170046": {
+  "en": "Outside of threat detection range",
+  "proposition_evolved": null
+ },
+ "GraphLiteral\t2246064815": {
+  "en": "Power Attack (Hold to repeat)",
+  "proposition_evolved": null
+ },
+ "GraphLiteral\t1821513324": {
+  "en": "Prepare to be spat out!",
+  "proposition_evolved": null
+ },
+ "GraphLiteral\t2644100287": {
+  "en": "Preparing...",
+  "proposition_evolved": null
+ },
+ "GraphLiteral\t1570142138": {
+  "en": "Put Taming Food in Last Item Slot To Feed!",
+  "proposition_evolved": "Mettez de la nourriture dans le dernier emplacement de votre barre de raccourcis pour l'apprivoiser !"
+ },
+ "GraphLiteral\t2926926720": {
+  "en": "Range Multiplier",
+  "proposition_evolved": null
+ },
+ "GraphLiteral\t2005830905": {
+  "en": "Same team",
+  "proposition_evolved": null
+ },
+ "GraphLiteral\t3358382461": {
+  "en": "Sat",
+  "proposition_evolved": null
+ },
+ "GraphLiteral\t666358498": {
+  "en": "Sat Max",
+  "proposition_evolved": null
+ },
+ "GraphLiteral\t2166407444": {
+  "en": "Sat Min",
+  "proposition_evolved": null
+ },
+ "GraphLiteral\t2774944076": {
+  "en": "Set Threatened: ",
+  "proposition_evolved": null
+ },
+ "GraphLiteral\t886774684": {
+  "en": "Starting and in immediate aggro range",
+  "proposition_evolved": null
+ },
+ "GraphLiteral\t1409383869": {
+  "en": "Stomach Fill Cost Multiplier",
+  "proposition_evolved": null
+ },
+ "GraphLiteral\t30608905": {
+  "en": "Target is ignored, keep ignoring",
+  "proposition_evolved": null
+ },
+ "GraphLiteral\t4253239548": {
+  "en": "Target is out of detection range and not ignored, ignore",
+  "proposition_evolved": null
+ },
+ "GraphLiteral\t695848237": {
+  "en": "Target is outside of ignoring range, stop ignoring",
+  "proposition_evolved": null
+ },
+ "GraphLiteral\t3871647341": {
+  "en": "Target past threat distance and threat display finished, clear aggro and ignore",
+  "proposition_evolved": null
+ },
+ "GraphLiteral\t1298630873": {
+  "en": "Target within delayed aggro distance",
+  "proposition_evolved": null
+ },
+ "GraphLiteral\t542677908": {
+  "en": "Target within immediate aggro distance",
+  "proposition_evolved": null
+ },
+ "GraphLiteral\t3681481484": {
+  "en": "Threefold Dominion {0}%",
+  "proposition_evolved": null
+ },
+ "GraphLiteral\t124824106": {
+  "en": "Too far for threat display",
+  "proposition_evolved": null
+ },
+ "GraphLiteral\t2506357567": {
+  "en": "User.SourceMesh",
+  "proposition_evolved": null
+ },
+ "GraphLiteral\t2942123150": {
+  "en": "Uses {Modifier_Gargantar_Vomit_Cost} of Vomit's base Stomach Filling cost.",
+  "proposition_evolved": null
+ },
+ "GraphLiteral\t3307393309": {
+  "en": "Val",
+  "proposition_evolved": null
+ },
+ "GraphLiteral\t1573430812": {
+  "en": "Val Max",
+  "proposition_evolved": null
+ },
+ "GraphLiteral\t4217353706": {
+  "en": "Val Min",
+  "proposition_evolved": null
+ },
+ "GraphLiteral\t2336559149": {
+  "en": "Venom Breath",
+  "proposition_evolved": null
+ },
+ "GraphLiteral\t4187150030": {
+  "en": "View Harvesting Levels",
+  "proposition_evolved": null
+ },
+ "GraphLiteral\t522752177": {
+  "en": "Vomit Cost",
+  "proposition_evolved": null
+ },
+ "GraphLiteral\t1620334191": {
+  "en": "Vomit Range",
+  "proposition_evolved": null
+ },
+ "GraphLiteral\t3788006343": {
+  "en": "Yellow",
+  "proposition_evolved": "Jaune"
+ },
+ "GraphLiteral\t2501659579": {
+  "en": "You must own {0} to mount this creature",
+  "proposition_evolved": null
+ },
+ "GraphLiteral\t2653246438": {
+  "en": "[Input Key]",
+  "proposition_evolved": null
+ },
+ "GraphLiteral\t3389791669": {
+  "en": "checking valid target when updating threat target",
+  "proposition_evolved": null
+ },
+ "GraphLiteral\t3513895476": {
+  "en": "prev_",
+  "proposition_evolved": null
+ },
+ "GraphLiteral\t3561790577": {
+  "en": "prev_GI_",
+  "proposition_evolved": null
+ },
+ "GraphLiteral\t2552666985": {
+  "en": "{AccessInventory}",
+  "proposition_evolved": null
+ },
+ "GraphLiteral\t1128728007": {
+  "en": "{Crouch}",
+  "proposition_evolved": null
+ },
+ "GraphLiteral\t310203179": {
+  "en": "{Fire}",
+  "proposition_evolved": null
+ },
+ "GraphLiteral\t293020648": {
+  "en": "{Reload}",
+  "proposition_evolved": null
+ },
+ "GraphLiteral\t317704997": {
+  "en": "{Use}",
+  "proposition_evolved": null
+ }
+}
