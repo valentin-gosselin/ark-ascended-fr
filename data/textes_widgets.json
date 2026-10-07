@@ -397,7 +397,7 @@
  ],
  "\t0349729F4DBB269EFF6F35A547E3155B": [
   "The scaling factor for the amount of Fortitude gained by Creatures when they are tamed as a percentage of the default setting, depending on taming effectiveness.",
-  "Le facteur d'échelle de la quantité de Constitution gagnée par les créatures lorsqu'elles sont apprivoisées, en pourcentage du réglage par défaut, selon l'efficacité d'apprivoisement."
+  "Le facteur d'échelle de la quantité de Résistance gagnée par les créatures lorsqu'elles sont apprivoisées, en pourcentage du réglage par défaut, selon l'efficacité d'apprivoisement."
  ],
  "\t034E4C294FED2CA7C83E6C836BD7CFBD": [
   "Chance to cause bleed",
@@ -1533,7 +1533,7 @@
  ],
  "\t0C7E928A4FD254F90D778BAE4532B5FC": [
   "The scaling factor for the amount of Fortitude gained by tamed Creatures as a percentage of the default setting.",
-  "Le facteur d'échelle de la constitution gagnée par les créatures apprivoisées, en pourcentage du réglage par défaut."
+  "Le facteur d'échelle de la résistance gagnée par les créatures apprivoisées, en pourcentage du réglage par défaut."
  ],
  "\t0C8422FE46473D850E979C938025BA07": [
   "Default",
@@ -1709,7 +1709,7 @@
  ],
  "\t0E13A7DB41A89598947A41958DBB4CB9": [
   "Cursed Fortitude",
-  "Constitution maudite"
+  "Résistance maudite"
  ],
  "\t0E17BAFC4A65D7EA269EDFB61EF30EB8": [
   "Boxes",
@@ -2201,7 +2201,7 @@
  ],
  "\t1215CD614D403E21D145CCA8D79B5521": [
   "Health",
-  "Santé"
+  "Vie"
  ],
  "\t121DAF6C4A6C5ADD93F11992F26E6B10": [
   "Harvesting Health Increase",
@@ -2357,7 +2357,7 @@
  ],
  "\t138F8EA045A71E16B86520A688C59970": [
   "Health",
-  "Santé"
+  "Vie"
  ],
  "\t1393B37E415F957CECC7F09B6D89E856": [
   "The scaling factor for the damage Creatures deal when harvesting resources. Higher values mean faster resource collection.",
@@ -2465,7 +2465,7 @@
  ],
  "\t1430A5AE4D9FDF57B03BA884F1DAEBC8": [
   "Shotgun Sheriff",
-  "Shérif au fusil à canon scié"
+  "Shérif au fusil à pompe"
  ],
  "\t144231C640087ABC3E934A9F7313AA7B": [
   "press",
@@ -3049,7 +3049,7 @@
  ],
  "\t19C037BF4092B13DE7E79AA28DB5970D": [
   "Fortitude",
-  "Constitution"
+  "Résistance"
  ],
  "\t19D2C14A445E7B3241E7AAA3B9EF8510": [
   "when you are looking at a target",
@@ -4645,7 +4645,7 @@
  ],
  "\t268553BE4FFFC47C1721F99739083EFC": [
   "Fortitude",
-  "Constitution"
+  "Résistance"
  ],
  "\t2688606B477EF52A3C7C53ADE923F104": [
   "Guard",
@@ -6613,7 +6613,7 @@
  ],
  "\t375486DA48681F68718AC59EEDD05119": [
   "Health",
-  "Santé"
+  "Vie"
  ],
  "\t3755B2EB496C51C3C779169A6CE9AAC9": [
   "LIMIT INVITES",
@@ -8297,7 +8297,7 @@
  ],
  "\t44D7DC9F4A6E57CC9CE8BBA89E10202C": [
   "The scaling factor for the amount of Fortitude gained by tamed Creatures as a percentage of the default setting.",
-  "Le facteur d'échelle de la constitution gagnée par les créatures apprivoisées, en pourcentage du réglage par défaut."
+  "Le facteur d'échelle de la résistance gagnée par les créatures apprivoisées, en pourcentage du réglage par défaut."
  ],
  "\t44DC35DC4B055390A6C1BEA595795127": [
   "Kill",
@@ -9057,7 +9057,7 @@
  ],
  "\t4B3168DD4F17E5C4BA6014A6FF052FF1": [
   "HEALTH",
-  "SANTÉ"
+  "VIE"
  ],
  "\t4B3C777E44738A8E500BB2920451184F": [
   "Tek Blademaster",
@@ -10945,7 +10945,7 @@
  ],
  "\t5BAB89154E027F3383BFFF95CE5B1840": [
   "Health",
-  "Santé"
+  "Vie"
  ],
  "\t5BAE33AE4536FA75002EA79BD15E2083": [
   "Amount 5:",
@@ -13857,7 +13857,7 @@
  ],
  "\t736F1B5C4DA42491B56382AA4C17315F": [
   "Shotgun Sheriff",
-  "Shérif au fusil à canon scié"
+  "Shérif au fusil à pompe"
  ],
  "\t73741CF64897D024D3F07C8989B23513": [
   "Parts",
@@ -14601,7 +14601,7 @@
  ],
  "\t7A03BF7045D55FB7267214982BF432C2": [
   "HEALTH",
-  "SANTÉ"
+  "VIE"
  ],
  "\t7A0744AC47BCA7CFB876F79EA4623013": [
   "Meiyin",
@@ -15569,7 +15569,7 @@
  ],
  "\t80F9B1C2468C35E35360B2AEDEEAAC6D": [
   "The scaling factor for the amount of Fortitude gained by tamed Creatures per point invested, as a percentage of the default setting.",
-  "Facteur d'échelle pour la quantité de Constitution gagnée par les créatures apprivoisées par point investi, en pourcentage du réglage par défaut."
+  "Facteur d'échelle pour la quantité de Résistance gagnée par les créatures apprivoisées par point investi, en pourcentage du réglage par défaut."
  ],
  "\t8105B79446228F270C687FB966194E14": [
   "Pressed",
@@ -15777,7 +15777,7 @@
  ],
  "\t827E44AF43616E1715DFBDAFB920DBA0": [
   "Fortitude",
-  "Constitution"
+  "Résistance"
  ],
  "\t8281295143078E175A4A879BC0027F53": [
   "Effectiveness",
@@ -16605,7 +16605,7 @@
  ],
  "\t8A2084E34AFFEB28919DA4A50CAC1A17": [
   "Fortitude",
-  "Constitution"
+  "Résistance"
  ],
  "\t8A250CA94356FD061382B28639F9AF71": [
   "Cannon",
@@ -17257,7 +17257,7 @@
  ],
  "\t8F517AB14838BE6A432C10BC801A6EA5": [
   "Shotgun Sheriff",
-  "Shérif au fusil à canon scié"
+  "Shérif au fusil à pompe"
  ],
  "\t8F55D7474F33CD2DB26F5AB29137B6D4": [
   "SpiritTotemPlace_15",
@@ -17413,7 +17413,7 @@
  ],
  "\t9070A811478B349F61D6E6AEC656F89B": [
   "Fortitude",
-  "Constitution"
+  "Résistance"
  ],
  "\t908790BB4148EA02BD1659BEC3949A77": [
   "Telekinesis",
@@ -18925,7 +18925,7 @@
  ],
  "\t9CDCB9E442CADE19A3FC8C927201C2D5": [
   "Health",
-  "Santé"
+  "Vie"
  ],
  "\t9CDF5C754DBFCD79D36B71B4AD05B38F": [
   "Structure Decay Period",
@@ -20209,7 +20209,7 @@
  ],
  "\tA7B45CE14F82DB0675AD49B5FBA8AA03": [
   "The scaling factor for the amount of Fortitude gained by Players per point invested, as a percentage of the default setting.",
-  "Facteur d'échelle pour la quantité de Constitution gagnée par les joueurs par point investi, en pourcentage du réglage par défaut."
+  "Facteur d'échelle pour la quantité de Résistance gagnée par les joueurs par point investi, en pourcentage du réglage par défaut."
  ],
  "\tA7C74C2B41AC97BBC5A7AD97F57DC3B8": [
   "The scaling factor for the amount of Water gained by Creatures when they are tamed as a percentage of the default setting, depending on taming effectiveness.",
@@ -21261,7 +21261,7 @@
  ],
  "\tB06CDCD347DD9AE99DFB77B3E24F9E07": [
   "Shotgun Sheriff",
-  "Shérif au fusil à canon scié"
+  "Shérif au fusil à pompe"
  ],
  "\tB082B7F245D7BA521E9C89900F3EA214": [
   "That sounds like a challenge.",
@@ -21613,7 +21613,7 @@
  ],
  "\tB365B0A74FFBC3974EA51E91C0C4E49F": [
   "Fortitude",
-  "Constitution"
+  "Résistance"
  ],
  "\tB3699B144288C09A23F6488C434100A6": [
   "Your repair cost of Items and Structures is reduced by {CostReduction}.",
@@ -28921,7 +28921,7 @@
  ],
  "\tF344255D41596619541E599EC82F86AB": [
   "Health",
-  "Santé"
+  "Vie"
  ],
  "\tF34493BA4524F13804ED9C903DAA117C": [
   "WHISTLE \"ALL PASSIVE\":",
