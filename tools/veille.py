@@ -160,7 +160,8 @@ def corps_issue(rapport, a_traduire, a_revoir, propositions, n_tech, n_orph):
 
 
 def main():
-    from delta import EN, REFERENCE, SRC_PAK, empreinte, extraire, nos_traductions, traduisible
+    import chemins
+    from delta import EN, REFERENCE, empreinte, extraire, nos_traductions, traduisible
 
     forcer = "--forcer" in sys.argv
     local = "--local" in sys.argv
@@ -185,7 +186,7 @@ def main():
         etat = json.load(open(ETAT)) if os.path.exists(ETAT) else {}
         if etat.get("signale") == emp and not forcer:
             return 0  # cette mise a jour a deja fait l'objet d'une issue
-        if not stable(SRC_PAK):
+        if not stable(chemins.chunk0()):
             print("le pak est encore en cours d'ecriture, on reessaiera")
             return 0
         extraire()
