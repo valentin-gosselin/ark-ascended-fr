@@ -129,6 +129,15 @@ jobs:
           # le robot ne pousse jamais sur master : il ouvre une pull request,
           # relue et fusionnee par un humain comme n'importe quelle contribution
           BRANCHE="veille/build-$BUILD"
+          # Tant que la pull request d'un build n'est pas fusionnee, master
+          # garde l'ancien buildid et chaque passage redetecte le meme build.
+          # Le force-push qui suit effacait alors les traductions committees
+          # sur la branche (constate au build 26564816). Le contenu recalcule
+          # etant identique, on laisse la branche telle quelle.
+          if [ -n "$(gh pr list --head "$BRANCHE" --state open --json number -q '.[].number')" ]; then
+            echo "pull request deja ouverte pour ce build, branche laissee intacte"
+            exit 0
+          fi
           git checkout -B "$BRANCHE"
           git commit -m "Veille : ARK build $BUILD, lots de traduction mis a jour"
           git push -u origin "$BRANCHE" --force
