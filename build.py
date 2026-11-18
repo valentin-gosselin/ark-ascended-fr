@@ -148,6 +148,9 @@ def main():
     pak = os.path.join(WORK, "TradFR_P.pak")
     run(REPAK, "pack", "--version", "V11", "-m", "../../../", "-q",
         os.path.join(WORK, "pak_stage"), pak)
+    # Depuis l'UE 5.8, un pak au pied v11 de repak est ignore par le jeu
+    import pak_asa
+    print("pied v12, version du jeu %d.%d" % pak_asa.adapter(pak, chemins.chunk0()))
     print(f"pak : {pak} ({os.path.getsize(pak)} octets)")
     # 4. installation
     if "--no-install" not in sys.argv:
