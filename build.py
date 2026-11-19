@@ -5,7 +5,8 @@ Pipeline :
   1. extrait ShooterGame.locres (fr + en) depuis pakchunk0 du jeu (cache dans work/)
   2. applique data/overrides.json (corrections) et data/additions.json
      (traductions des clés manquantes) via tools/locres.py
-  3. packe le résultat en TradFR_P.pak (pak V11, monté par le jeu via le suffixe _P)
+  3. packe le résultat en TradFR_P.pak (monté par le jeu via le suffixe _P),
+     accompagné de TradFR_P.utoc et TradFR_P.ucas vides, exigés depuis l'UE 5.8
   4. l'installe dans le dossier Paks du jeu
 
 Usage : ./build.py [--no-install]
@@ -26,6 +27,7 @@ LOCRES_IN_PAK = "../../../ShooterGame/Content/Localization/ShooterGame/{lang}/Sh
 ENGINE_IN_PAK = "../../../Engine/Content/Localization/Engine/{lang}/Engine.locres"
 WORK = os.path.join(ROOT, "work")
 REPAK = os.path.join(ROOT, "tools/repak_cli-x86_64-unknown-linux-gnu/repak")
+RETOC = os.path.join(ROOT, "tools/retoc_cli-x86_64-unknown-linux-gnu/retoc")
 
 
 def run(*args):
@@ -148,9 +150,13 @@ def main():
     pak = os.path.join(WORK, "TradFR_P.pak")
     run(REPAK, "pack", "--version", "V11", "-m", "../../../", "-q",
         os.path.join(WORK, "pak_stage"), pak)
-    # Depuis l'UE 5.8, un pak au pied v11 de repak est ignore par le jeu
+    # Depuis l'UE 5.8, le jeu ignore un pak tel que repak l'ecrit : voir
+    # tools/pak_asa.py. Le .utoc et le .ucas vides se livrent avec le pak.
     import pak_asa
     print("pied v12, version du jeu %d.%d" % pak_asa.adapter(pak, chemins.chunk0()))
+    print("index complet retire, %d repertoires dans l'index prune"
+          % pak_asa.sans_index_complet(pak))
+    pak_asa.conteneur_vide(pak, RETOC)
     print(f"pak : {pak} ({os.path.getsize(pak)} octets)")
     # 4. installation
     if "--no-install" not in sys.argv:
@@ -171,7 +177,9 @@ def main():
                   f"  Quittez le jeu puis copiez {pak} dans {chemins.paks()},\n"
                   "  ou relancez ./build.py.")
             return 1
-        shutil.copy2(pak, os.path.join(chemins.paks(), "TradFR_P.pak"))
+        for ext in (".pak", ".utoc", ".ucas"):
+            shutil.copy2(os.path.splitext(pak)[0] + ext,
+                         os.path.join(chemins.paks(), "TradFR_P" + ext))
         print(f"installé dans {chemins.paks()}")
     return 0
 

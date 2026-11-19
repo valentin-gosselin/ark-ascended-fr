@@ -5,6 +5,8 @@ param([switch]$Auto)
 
 $Repo = "valentin-gosselin/ark-ascended-fr"
 $Pak  = "TradFR_P.pak"
+# depuis l'UE 5.8, le jeu ignore le .pak sans son .utoc/.ucas du meme nom
+$Fichiers = @("TradFR_P.pak", "TradFR_P.utoc", "TradFR_P.ucas")
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 $ProgressPreference = "SilentlyContinue"
 
@@ -43,18 +45,39 @@ $distante = $rel.tag_name
 $locale = "(absente)"
 if (Test-Path $verFile) { $locale = (Get-Content $verFile -First 1).Trim() }
 
-if (($locale -eq $distante) -and (Test-Path $cible)) {
+$complet = $true
+foreach ($f in $Fichiers) { if (-not (Test-Path (Join-Path $paks $f))) { $complet = $false } }
+
+if (($locale -eq $distante) -and $complet) {
     Write-Host "TradFR deja a jour ($locale)."
 } else {
     if (Get-Process ArkAscended -ErrorAction SilentlyContinue) {
         Write-Host "ARK est en cours d'execution : fermez le jeu puis relancez la mise a jour."
         exit 1
     }
-    $asset = $rel.assets | Where-Object { $_.name -eq $Pak }
     Write-Host "Telechargement de TradFR $distante..."
-    Invoke-WebRequest $asset.browser_download_url -OutFile $cible
+    $tmp = Join-Path ([IO.Path]::GetTempPath()) ("TradFR_" + [Guid]::NewGuid())
+    New-Item -ItemType Directory -Force $tmp | Out-Null
+    try {
+        foreach ($f in $Fichiers) {
+            $asset = $rel.assets | Where-Object { $_.name -eq $f }
+            if (-not $asset) { throw "Fichier $f absent de la release $distante" }
+            Invoke-WebRequest $asset.browser_download_url -OutFile (Join-Path $tmp $f)
+        }
+        # les trois fichiers ne sont copies qu'une fois tous telecharges
+        foreach ($f in $Fichiers) { Move-Item -Force (Join-Path $tmp $f) (Join-Path $paks $f) }
+    } finally {
+        Remove-Item -Recurse -Force $tmp -ErrorAction SilentlyContinue
+    }
     Set-Content -Path $verFile -Value $distante
     Write-Host "Installe : $cible ($locale -> $distante)"
+}
+
+# la tache planifiee execute une copie du script : la rafraichir, sinon une
+# ancienne copie continuerait de ne telecharger que le .pak (UE 5.8)
+$copie = Join-Path $env:LOCALAPPDATA "TradFR\TradFR.ps1"
+if ((-not $Auto) -and (Test-Path $copie)) {
+    Copy-Item $MyInvocation.MyCommand.Path $copie -Force
 }
 
 # proposition de mise a jour automatique (tache a l'ouverture de session)
