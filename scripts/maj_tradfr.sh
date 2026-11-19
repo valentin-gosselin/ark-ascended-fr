@@ -14,7 +14,10 @@ if [[ -z "$PAKS" ]]; then
     done
 fi
 [[ -d "$PAKS" ]] || { echo "Dossier Paks introuvable ; passez-le en argument." >&2; exit 1; }
-distante=$(curl -fsSL "https://api.github.com/repos/$REPO/releases/latest" | grep -oPm1 '"tag_name":\s*"\K[^"]+')
+# pas de « curl | grep -m1 » : grep s'arrete a la premiere ligne, curl echoue
+# alors en ecrivant la suite et pipefail fait sortir le script sans rien dire
+json=$(curl -fsSL "https://api.github.com/repos/$REPO/releases/latest")
+distante=$(grep -oPm1 '"tag_name":\s*"\K[^"]+' <<<"$json")
 locale=$(cat "$PAKS/$PAK.version" 2>/dev/null || echo "(absente)")
 complet=1
 for f in "${FICHIERS[@]}"; do [[ -f "$PAKS/$f" ]] || complet=0; done
