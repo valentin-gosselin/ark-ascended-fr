@@ -32,17 +32,21 @@ automatique** (une tâche planifiée vérifie les nouvelles versions à chaque
 ouverture de session ; relancer `installer.bat` sert aussi de mise à jour
 manuelle).
 
-**À la main** : téléchargez `TradFR_P.pak` dans la
-[dernière release](../../releases/latest) et copiez-le dans
+**À la main** : téléchargez les **trois** fichiers `TradFR_P.pak`,
+`TradFR_P.utoc` et `TradFR_P.ucas` dans la
+[dernière release](../../releases/latest) et copiez-les ensemble dans
 `…\SteamLibrary\steamapps\common\ARK Survival Ascended\ShooterGame\Content\Paks\`.
-Pour mettre à jour, remplacez le fichier par celui de la nouvelle release.
+Depuis la mise à jour Unreal Engine 5.8 d'ARK (novembre 2026), le jeu ignore
+`TradFR_P.pak` s'il est seul : les trois fichiers vont ensemble, avec ce nom
+exact. Pour mettre à jour, remplacez-les par ceux de la nouvelle release.
 
 **Linux / Steam Deck** : `maj_tradfr.sh` (fourni dans la release) installe et
 met à jour.
 
 Lancez le jeu en français, c'est tout.
 
-**Désinstallation** : supprimez `TradFR_P.pak` du dossier `Paks` (et la tâche
+**Désinstallation** : supprimez `TradFR_P.pak`, `TradFR_P.utoc` et
+`TradFR_P.ucas` du dossier `Paks` (et la tâche
 planifiée « TradFR MAJ » si vous aviez activé la mise à jour automatique).
 
 ## Pourquoi un pak et pas un mod CurseForge ?
@@ -323,6 +327,10 @@ Chouette des neiges) : l'absence du nom de dossier ne prouve rien à elle seule.
   `ShooterGame/Content/Localization/ShooterGame/<lang>/ShooterGame.locres`
 - Paks non chiffrés, pas de fichiers .sig : les paks custom `_P` sont chargés
   sans vérification de signature
+- Depuis l'UE 5.8 (ARK v98), un pak n'est monté que si un `.utoc` du même nom
+  l'accompagne, et un pak doté d'un index complet des répertoires voit ses
+  fichiers ignorés au profit de ceux du jeu : `tools/pak_asa.py` retire cet
+  index et livre un conteneur IoStore vide (issue #62)
 - Le jeu met certains libellés en capitales avec une routine qui ignore les
   accents (bug moteur `ToUpper` ASCII, présent dans les 14 langues) : les
   libellés concernés (stats, noms d'objets accentués) sont pré-capitalisés

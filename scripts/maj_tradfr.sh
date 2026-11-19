@@ -4,6 +4,8 @@
 set -euo pipefail
 REPO="valentin-gosselin/ark-ascended-fr"
 PAK="TradFR_P.pak"
+# depuis l'UE 5.8, le jeu ignore le .pak sans son .utoc/.ucas du meme nom
+FICHIERS=(TradFR_P.pak TradFR_P.utoc TradFR_P.ucas)
 PAKS="${1:-}"
 if [[ -z "$PAKS" ]]; then
     for lib in "$HOME/.steam/steam" "$HOME/.local/share/Steam" /mnt/*/SteamLibrary "$HOME"/*/SteamLibrary; do
@@ -14,10 +16,21 @@ fi
 [[ -d "$PAKS" ]] || { echo "Dossier Paks introuvable ; passez-le en argument." >&2; exit 1; }
 distante=$(curl -fsSL "https://api.github.com/repos/$REPO/releases/latest" | grep -oPm1 '"tag_name":\s*"\K[^"]+')
 locale=$(cat "$PAKS/$PAK.version" 2>/dev/null || echo "(absente)")
-if [[ "$locale" == "$distante" && -f "$PAKS/$PAK" ]]; then
+complet=1
+for f in "${FICHIERS[@]}"; do [[ -f "$PAKS/$f" ]] || complet=0; done
+if [[ "$locale" == "$distante" && $complet == 1 ]]; then
     echo "TradFR déjà à jour ($locale)."; exit 0
 fi
+if pgrep -f ArkAscended.exe >/dev/null; then
+    echo "ARK est en cours d'exécution : fermez le jeu puis relancez la mise à jour." >&2; exit 1
+fi
 echo "Téléchargement de TradFR $distante..."
-curl -fL -o "$PAKS/$PAK" "https://github.com/$REPO/releases/latest/download/$PAK"
+tmp=$(mktemp -d)
+trap 'rm -rf "$tmp"' EXIT
+for f in "${FICHIERS[@]}"; do
+    curl -fL -o "$tmp/$f" "https://github.com/$REPO/releases/download/$distante/$f"
+done
+# les trois fichiers ne sont copies qu'une fois tous telecharges
+for f in "${FICHIERS[@]}"; do mv -f "$tmp/$f" "$PAKS/$f"; done
 echo "$distante" > "$PAKS/$PAK.version"
 echo "Installé : $PAKS/$PAK ($locale -> $distante)"

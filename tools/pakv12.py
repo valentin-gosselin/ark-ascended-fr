@@ -117,8 +117,11 @@ def read_index(path):
     entry_count = r.i32()
     path_hash_seed = r.u64()
     has_path_hash = r.i32()
+    phi_offset = phi_size = None
     if has_path_hash:
-        r.u64(); r.u64(); r.bytes(20)
+        phi_offset = r.u64()
+        phi_size = r.u64()
+        r.bytes(20)
     has_full_dir = r.i32()
     fdi_offset = fdi_size = None
     if has_full_dir:
@@ -129,9 +132,16 @@ def read_index(path):
     encoded = r.bytes(encoded_size)
     files_count = r.i32()  # entrées non encodées, normalement 0
     with open(path, "rb") as f:
-        f.seek(fdi_offset)
-        fdi = f.read(fdi_size)
-    r2 = Reader(fdi)
+        if has_full_dir:
+            f.seek(fdi_offset)
+            fdi = f.read(fdi_size)
+            r2 = Reader(fdi)
+        else:
+            # nos paks n'ont plus d'index complet (UE 5.8, voir pak_asa.py) :
+            # les repertoires sont dans l'index prune, apres les hashes
+            f.seek(phi_offset)
+            r2 = Reader(f.read(phi_size))
+            r2.p = 4 + 12 * r2.i32()
     dir_count = r2.i32()
     files = {}
     for _ in range(dir_count):
