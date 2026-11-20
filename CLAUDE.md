@@ -85,6 +85,10 @@ y deposer le pak modifierait un serveur de jeu en production.
     python3 tools/valider_donnees.py   filet de securite, ce que verifie la CI
     python3 tools/integrer_propositions.py --ecrire   replie les contributions web
 
+Avant de traduire du contenu, lire `contexte/` : ce que Wildcard a annonce de
+chaque creature, objet et mecanique depuis 2015, avec les noms officiels. Le
+completer a chaque Community Crunch.
+
 La veille GitHub Actions ouvre une PR a chaque nouveau build d'ARK. Elle ne voit
 que le fichier de langue : **le balayage des assets se lance a la main**, la CI
 ne peut pas le faire (il faudrait les 212 Go du jeu).
